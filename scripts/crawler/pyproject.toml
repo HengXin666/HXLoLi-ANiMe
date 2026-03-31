@@ -1,0 +1,8 @@
+[project]
+name = "hxloli-anime-crawler"
+version = "0.1.0"
+description = "HXLoLi-ANiMe Bangumi 番剧爬虫"
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.32.5",
+]

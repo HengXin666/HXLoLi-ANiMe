@@ -24,16 +24,21 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: 📦 安装依赖
-        run: pip install requests
+      - name: 📦 安装 uv 及依赖
+        run: |
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+          source $HOME/.cargo/env
+          uv sync
+        working-directory: ./scripts/crawler
 
       - name: 🕷️ 运行爬虫
         env:
           BGM_TOKEN: ${{ secrets.BGM_TOKEN }}
           BGM_USERNAME: ${{ secrets.BGM_USERNAME }}
         run: |
-          cd scripts/crawler
-          python Api.py -u "${BGM_USERNAME:-heng_xin}" -o "${BGM_TOKEN}"
+          source $HOME/.cargo/env
+          uv run Api.py -u "${BGM_USERNAME:-heng_xin}" -o "${BGM_TOKEN}"
+        working-directory: ./scripts/crawler
 
       - name: 📊 检查数据变化
         id: changes
@@ -58,8 +63,8 @@ jobs:
       - name: 💾 提交更新
         if: steps.changes.outputs.changed == 'true'
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git commit -m "chore: 自动更新番剧数据 ($(date +%Y-%m-%d))"
+          git config user.name "Heng_Xin[LoLi-Bot]"
+          git config user.email "282000500@qq.com"
+          git commit -m "[LoLi-Bot]: ご主人さま、アニメデータを更新しましたにゃ ($(date +%Y-%m-%d))"
           git push
           echo "✅ 数据已提交, cdn-tag.yml 将自动触发"

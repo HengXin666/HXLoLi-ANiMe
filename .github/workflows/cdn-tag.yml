@@ -178,7 +178,7 @@ jobs:
             await github.rest.repos.createOrUpdateFileContents({
               owner, repo,
               path: 'data/animeCdnVersion.ts',
-              message: `chore: update ANIME_CDN_TAG to ${newTag}`,
+              message: `[LoLi-Bot]: update ANIME_CDN_TAG to ${newTag}`,
               content: Buffer.from(updatedContent).toString('base64'),
               sha: file.sha,
               branch: branchName
