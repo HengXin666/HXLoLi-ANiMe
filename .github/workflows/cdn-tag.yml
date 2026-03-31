@@ -91,11 +91,10 @@ jobs:
 
           NEW_IMAGE_COUNT=$(echo "${CHANGED_FILES}" | grep -c '\.jpg$' || true)
 
-          # ── 构建 PR 标题 (带《》番剧名, 最多展示 3 部, 超出用"等N部") ──
-          PR_TITLE="🎬 ANiMe: "
+          # ── 构建 PR 标题: [LoLi-Bot] 同步 ANiMe: 《xxx》更新xxx ──
+          PR_TITLE="[LoLi-Bot] 同步 ANiMe: "
 
           if [ "${NEW_ANIME_COUNT}" -gt 0 ]; then
-            # 取番剧名列表
             NAMES_ARRAY=$(echo -e "${NEW_ANIME_NAMES}" | head -n 3)
             TITLE_NAMES=""
             while IFS= read -r name; do
@@ -145,12 +144,18 @@ jobs:
       # ── 4. 向主仓库 HXLoLi 发 PR 更新 animeCdnVersion.ts ──
       - name: 🔄 向 HXLoLi 发 PR
         uses: actions/github-script@v7
+        env:
+          NEW_TAG: ${{ steps.tag.outputs.tag }}
+          PR_TITLE: ${{ steps.diff.outputs.pr_title }}
+          PR_BODY: ${{ steps.diff.outputs.pr_body }}
         with:
           github-token: ${{ secrets.HXLOLI_PR_TOKEN }}
           script: |
             const owner = 'HengXin666';
             const repo = 'HXLoLi';
-            const newTag = '${{ steps.tag.outputs.tag }}';
+            const newTag = process.env.NEW_TAG;
+            const prTitle = process.env.PR_TITLE;
+            const prBody = process.env.PR_BODY;
             const branchName = `auto/anime-cdn-${newTag}`;
 
             const { data: ref } = await github.rest.git.getRef({
@@ -186,8 +191,8 @@ jobs:
 
             await github.rest.pulls.create({
               owner, repo,
-              title: `${{ steps.diff.outputs.pr_title }}`,
-              body: `${{ steps.diff.outputs.pr_body }}`,
+              title: prTitle,
+              body: prBody,
               head: branchName,
               base: 'main'
             });
