@@ -3,6 +3,7 @@ name: 🏷️ CDN Tag & 同步主仓库
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -21,9 +22,9 @@ jobs:
       - name: 🏷️ 创建 CDN Tag
         id: tag
         run: |
-          RANDOM_STR=$(head -c 100 /dev/urandom | tr -dc 'a-zA-Z0-9' | head -c 6)
           TIMESTAMP=$(date +%Y%m%d%H%M%S)
-          NEW_TAG="HX-${RANDOM_STR}-${TIMESTAMP}"
+          RANDOM_STR=$(head -c 100 /dev/urandom | tr -dc 'a-zA-Z0-9' | head -c 6)
+          NEW_TAG="HX-${TIMESTAMP}-${RANDOM_STR}"
 
           git tag "${NEW_TAG}"
           git push origin "${NEW_TAG}"
