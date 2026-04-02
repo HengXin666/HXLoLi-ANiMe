@@ -231,13 +231,18 @@ class Api:
                 offset += limit
 
             except requests.exceptions.RequestException as e:
-                description: str = response.json().get("description", "")
+                try:
+                    description: str = response.json().get("description", "")
+                except Exception:
+                    description = ""
                 if description.startswith("offset"):
                     return
                 print(f"获取用户追番列表失败: {e}")
+                return  # 非 offset 错误 (如 401 Unauthorized) 直接退出, 避免死循环
             except json.JSONDecodeError:
                 print("解析追番列表响应失败, 内容可能不是有效的JSON。")
                 print("响应内容:", response.text)
+                return  # 解析失败也退出, 避免死循环
 
     def _get_anime_kyara_data(self, kyara_ref: Character) -> None:
         """获取角色详细信息"""
@@ -365,7 +370,10 @@ class Api:
 
                 offset += limit
         except requests.exceptions.RequestException as e:
-            description: str = response.json().get("description", "")
+            try:
+                description: str = response.json().get("description", "")
+            except Exception:
+                description = ""
             if description.startswith("offset"):
                 return
             print(
