@@ -1,0 +1,340 @@
+name: "[LoLi-ANiMe]: 爬取番剧数据 & CDN Tag"
+
+# ─────────────────────────────────────────────────────
+# 触发条件:
+#   1. 定时触发 - 北京时间凌晨 0:00 (UTC 16:00) + 下午 15:00 (UTC 07:00)
+#   2. push 到 main (仅 scripts/ 或 data/ 变更)
+#   3. 手动触发
+#
+# 唯一流水线:
+#   初始化 → 爬取 → push → 打 Tag → 向 HXLoLi 发 PR
+# ─────────────────────────────────────────────────────
+
+on:
+  schedule:
+    # 北京时间凌晨 0:00 (UTC 16:00)
+    - cron: '0 16 * * *'
+    # 北京时间下午 15:00 (UTC 07:00)
+    - cron: '0 7 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/**'
+      - 'data/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  pipeline:
+    name: 初始化 → 爬取 → Tag → PR
+    # 跳过 Bot 自己的提交, 避免无限循环
+    if: >-
+      github.event_name != 'push' ||
+      !contains(github.event.head_commit.message, '[LoLi-Bot]')
+    runs-on: ubuntu-latest
+
+    steps:
+      # ══════════════════════════════════════
+      # 阶段 1: 初始化
+      # ══════════════════════════════════════
+
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: 🐍 配置 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 📦 安装 uv 及依赖
+        run: |
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+          source $HOME/.cargo/env
+          uv sync
+        working-directory: ./scripts/crawler
+
+      # ══════════════════════════════════════
+      # 阶段 2: 爬取
+      # ══════════════════════════════════════
+
+      - name: 🕷️ 运行爬虫
+        env:
+          BGM_TOKEN: ${{ secrets.BGM_TOKEN }}
+          BGM_USERNAME: ${{ secrets.BGM_USERNAME }}
+        run: |
+          source $HOME/.cargo/env
+          uv run Api.py -u "${BGM_USERNAME:-heng_xin}" -o "${BGM_TOKEN}"
+        working-directory: ./scripts/crawler
+
+      # ══════════════════════════════════════
+      # 阶段 3: 检查变化 & push
+      # ══════════════════════════════════════
+
+      - name: 📊 检查数据变化
+        id: changes
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "📭 没有数据变化"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+
+            # 统计变化
+            CHANGED_FILES=$(git diff --cached --name-only)
+            NEW_IMAGES=$(echo "${CHANGED_FILES}" | grep '\.jpg$' | wc -l || true)
+            JSON_CHANGED=$(echo "${CHANGED_FILES}" | grep '\.json$' | wc -l || true)
+
+            echo "new_images=${NEW_IMAGES}" >> "$GITHUB_OUTPUT"
+            echo "json_changed=${JSON_CHANGED}" >> "$GITHUB_OUTPUT"
+            echo "📬 检测到变化: ${JSON_CHANGED} JSON, ${NEW_IMAGES} 图片"
+          fi
+
+      - name: 💾 提交并推送
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "Heng_Xin[LoLi-Bot]"
+          git config user.email "282000500@qq.com"
+          git commit -m "[LoLi-Bot]: ご主人さま、アニメデータを更新しましたにゃ ($(date +%Y-%m-%d))"
+          git push
+
+      # ══════════════════════════════════════
+      # 阶段 4: 打 CDN Tag & 清理旧 Tag
+      # ══════════════════════════════════════
+
+      - name: 🏷️ 创建 CDN Tag
+        if: steps.changes.outputs.changed == 'true'
+        id: tag
+        run: |
+          TIMESTAMP=$(date +%Y%m%d%H%M%S)
+          RANDOM_STR=$(head -c 100 /dev/urandom | tr -dc 'a-zA-Z0-9' | head -c 6)
+          NEW_TAG="HX-${TIMESTAMP}-${RANDOM_STR}"
+
+          git tag "${NEW_TAG}"
+          git push origin "${NEW_TAG}"
+
+          echo "tag=${NEW_TAG}" >> "$GITHUB_OUTPUT"
+          echo "✅ CDN tag: ${NEW_TAG}"
+
+      - name: 🗑️ 清理旧 Tag
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          BOT_TAGS=$(git tag -l 'HX-*' --sort=-creatordate)
+          TAG_COUNT=$(echo "${BOT_TAGS}" | grep -c '^HX-' || true)
+
+          if [ "${TAG_COUNT}" -gt 2 ]; then
+            echo "${BOT_TAGS}" | tail -n +3 | while IFS= read -r tag; do
+              [ -n "${tag}" ] && git push origin --delete "${tag}" 2>/dev/null || true
+              [ -n "${tag}" ] && git tag -d "${tag}" 2>/dev/null || true
+            done
+          fi
+
+      # ══════════════════════════════════════
+      # 阶段 5: 分析更新内容 & 向 HXLoLi 发 PR
+      # ══════════════════════════════════════
+
+      - name: 📊 分析番剧更新内容
+        if: steps.changes.outputs.changed == 'true'
+        id: diff
+        run: |
+          CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD 2>/dev/null || echo "")
+
+          NEW_ANIME_NAMES=""   # 新增番剧名 (换行分隔)
+          NEW_ANIME_COUNT=0
+          UPDATED_ANIME_NAMES=""  # 更新番剧名 (换行分隔)
+          UPDATED_ANIME_COUNT=0
+          NEW_IMAGE_COUNT=0
+          DETAILS=""
+
+          if echo "${CHANGED_FILES}" | grep -q "ANiMeRecord.json"; then
+            if command -v jq &> /dev/null; then
+              CURRENT_IDS=$(jq -r '.[].anime_data.id' data/ANiMeRecord.json 2>/dev/null | sort)
+              PREVIOUS_IDS=$(git show HEAD~1:data/ANiMeRecord.json 2>/dev/null | jq -r '.[].anime_data.id' 2>/dev/null | sort)
+
+              if [ -n "${PREVIOUS_IDS}" ]; then
+                # ── 新增番剧: 当前有、之前没有的 ID ──
+                NEW_IDS=$(comm -23 <(echo "${CURRENT_IDS}") <(echo "${PREVIOUS_IDS}"))
+                NEW_ANIME_COUNT=$(echo "${NEW_IDS}" | grep -c '^[0-9]' || true)
+
+                if [ "${NEW_ANIME_COUNT}" -gt 0 ]; then
+                  DETAILS="### 🆕 新增番剧\n"
+                  for id in ${NEW_IDS}; do
+                    NAME_CN=$(jq -r ".[] | select(.anime_data.id == ${id}) | .anime_data.name_cn" data/ANiMeRecord.json 2>/dev/null)
+                    NAME=$(jq -r ".[] | select(.anime_data.id == ${id}) | .anime_data.name" data/ANiMeRecord.json 2>/dev/null)
+                    SCORE=$(jq -r ".[] | select(.anime_data.id == ${id}) | .anime_data.score" data/ANiMeRecord.json 2>/dev/null)
+                    DATE=$(jq -r ".[] | select(.anime_data.id == ${id}) | .anime_data.date" data/ANiMeRecord.json 2>/dev/null)
+                    DISPLAY_NAME="${NAME_CN:-${NAME}}"
+                    NEW_ANIME_NAMES="${NEW_ANIME_NAMES}${DISPLAY_NAME}\n"
+                    DETAILS="${DETAILS}- **《${DISPLAY_NAME}》** (${NAME}) ⭐${SCORE} | 📅${DATE}\n"
+                  done
+                fi
+
+                # ── 更新番剧: 两边都有, 但 JSON 内容变化了的 ID ──
+                COMMON_IDS=$(comm -12 <(echo "${CURRENT_IDS}") <(echo "${PREVIOUS_IDS}"))
+                for id in ${COMMON_IDS}; do
+                  OLD_ENTRY=$(git show HEAD~1:data/ANiMeRecord.json 2>/dev/null | jq -c ".[] | select(.anime_data.id == ${id})" 2>/dev/null)
+                  NEW_ENTRY=$(jq -c ".[] | select(.anime_data.id == ${id})" data/ANiMeRecord.json 2>/dev/null)
+                  if [ "${OLD_ENTRY}" != "${NEW_ENTRY}" ]; then
+                    UPDATED_ANIME_COUNT=$((UPDATED_ANIME_COUNT + 1))
+                    NAME_CN=$(jq -r ".[] | select(.anime_data.id == ${id}) | .anime_data.name_cn" data/ANiMeRecord.json 2>/dev/null)
+                    NAME=$(jq -r ".[] | select(.anime_data.id == ${id}) | .anime_data.name" data/ANiMeRecord.json 2>/dev/null)
+                    DISPLAY_NAME="${NAME_CN:-${NAME}}"
+                    UPDATED_ANIME_NAMES="${UPDATED_ANIME_NAMES}${DISPLAY_NAME}\n"
+                  fi
+                done
+
+                if [ "${UPDATED_ANIME_COUNT}" -gt 0 ]; then
+                  DETAILS="${DETAILS}### 🔄 更新番剧\n"
+                  while IFS= read -r name; do
+                    [ -z "${name}" ] && continue
+                    DETAILS="${DETAILS}- 《${name}》\n"
+                  done <<< "$(echo -e "${UPDATED_ANIME_NAMES}")"
+                fi
+              else
+                NEW_ANIME_COUNT=$(jq '. | length' data/ANiMeRecord.json 2>/dev/null || echo "?")
+              fi
+            fi
+          fi
+
+          NEW_IMAGE_COUNT=$(echo "${CHANGED_FILES}" | grep -c '\.jpg$' || true)
+
+          # ── 辅助函数: 从名字列表构建 《A》《B》《C》 格式 ──
+          build_title_names() {
+            local names_str="$1"
+            local max_show="$2"
+            local result=""
+            local count=0
+            while IFS= read -r name; do
+              [ -z "${name}" ] && continue
+              count=$((count + 1))
+              [ "${count}" -gt "${max_show}" ] && break
+              result="${result}《${name}》"
+            done <<< "$(echo -e "${names_str}")"
+            echo "${result}"
+          }
+
+          # ── 构建 PR 标题: [LoLi-Bot] 同步 ANiMe: ────
+          PR_TITLE="[LoLi-Bot] 同步 ANiMe: "
+          TITLE_PARTS=""
+
+          # 新增部分
+          if [ "${NEW_ANIME_COUNT}" -gt 0 ]; then
+            TITLE_NAMES=$(build_title_names "${NEW_ANIME_NAMES}" 3)
+            if [ "${NEW_ANIME_COUNT}" -le 3 ]; then
+              TITLE_PARTS="新增 ${TITLE_NAMES}"
+            else
+              TITLE_PARTS="新增 ${TITLE_NAMES} 等 ${NEW_ANIME_COUNT} 部番剧"
+            fi
+          fi
+
+          # 更新部分
+          if [ "${UPDATED_ANIME_COUNT}" -gt 0 ]; then
+            TITLE_NAMES=$(build_title_names "${UPDATED_ANIME_NAMES}" 3)
+            UPDATE_PART=""
+            if [ "${UPDATED_ANIME_COUNT}" -le 3 ]; then
+              UPDATE_PART="更新 ${TITLE_NAMES}"
+            else
+              UPDATE_PART="更新 ${TITLE_NAMES} 等 ${UPDATED_ANIME_COUNT} 部番剧信息"
+            fi
+            if [ -n "${TITLE_PARTS}" ]; then
+              TITLE_PARTS="${TITLE_PARTS}, ${UPDATE_PART}"
+            else
+              TITLE_PARTS="${UPDATE_PART}"
+            fi
+          fi
+
+          # 仅图片变化
+          if [ -z "${TITLE_PARTS}" ] && [ "${NEW_IMAGE_COUNT}" -gt 0 ]; then
+            TITLE_PARTS="新增 ${NEW_IMAGE_COUNT} 张图片"
+          fi
+
+          # 兜底: 其他文件变化 (如脚本更新等)
+          if [ -z "${TITLE_PARTS}" ]; then
+            TITLE_PARTS="数据同步 ($(date +%Y-%m-%d))"
+          fi
+
+          PR_TITLE="${PR_TITLE}${TITLE_PARTS}"
+
+          # ── 构建 PR 正文 ──
+          PR_BODY="## 📺 HXLoLi-ANiMe 数据同步\n\n"
+          PR_BODY="${PR_BODY}更新 \`ANIME_CDN_TAG\` → \`${{ steps.tag.outputs.tag }}\`\n\n"
+          [ -n "${DETAILS}" ] && PR_BODY="${PR_BODY}${DETAILS}\n"
+          PR_BODY="${PR_BODY}### 📊 统计\n"
+          PR_BODY="${PR_BODY}| 项目 | 数量 |\n|------|------|\n"
+          PR_BODY="${PR_BODY}| 新增番剧 | ${NEW_ANIME_COUNT} |\n"
+          PR_BODY="${PR_BODY}| 更新信息 | ${UPDATED_ANIME_COUNT} |\n"
+          PR_BODY="${PR_BODY}| 新增图片 | ${NEW_IMAGE_COUNT} |\n"
+          PR_BODY="${PR_BODY}\n---\n*由 HXLoLi-ANiMe CI 自动生成*"
+
+          echo "pr_title=${PR_TITLE}" >> "$GITHUB_OUTPUT"
+
+          {
+            echo "pr_body<<ENDOFBODY"
+            echo -e "${PR_BODY}"
+            echo "ENDOFBODY"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: 🔄 向 HXLoLi 发 PR
+        if: steps.changes.outputs.changed == 'true'
+        uses: actions/github-script@v7
+        env:
+          NEW_TAG: ${{ steps.tag.outputs.tag }}
+          PR_TITLE: ${{ steps.diff.outputs.pr_title }}
+          PR_BODY: ${{ steps.diff.outputs.pr_body }}
+        with:
+          github-token: ${{ secrets.HXLOLI_PR_TOKEN }}
+          script: |
+            const owner = 'HengXin666';
+            const repo = 'HXLoLi';
+            const newTag = process.env.NEW_TAG;
+            const prTitle = process.env.PR_TITLE;
+            const prBody = process.env.PR_BODY;
+            const branchName = `auto/anime-cdn-${newTag}`;
+
+            // 创建分支
+            const { data: ref } = await github.rest.git.getRef({
+              owner, repo, ref: 'heads/main'
+            });
+
+            await github.rest.git.createRef({
+              owner, repo,
+              ref: `refs/heads/${branchName}`,
+              sha: ref.object.sha
+            });
+
+            // 更新 animeCdnVersion.ts
+            const { data: file } = await github.rest.repos.getContent({
+              owner, repo,
+              path: 'data/animeCdnVersion.ts',
+              ref: 'main'
+            });
+
+            const content = Buffer.from(file.content, 'base64').toString('utf-8');
+            const updatedContent = content.replace(
+              /export const ANIME_CDN_TAG = '.*?';/,
+              `export const ANIME_CDN_TAG = '${newTag}';`
+            );
+
+            await github.rest.repos.createOrUpdateFileContents({
+              owner, repo,
+              path: 'data/animeCdnVersion.ts',
+              message: `${prTitle}`,
+              content: Buffer.from(updatedContent).toString('base64'),
+              sha: file.sha,
+              branch: branchName
+            });
+
+            // 创建 PR (合入后 commit 格式由 squash merge title 决定)
+            const { data: pr } = await github.rest.pulls.create({
+              owner, repo,
+              title: prTitle,
+              body: prBody,
+              head: branchName,
+              base: 'main'
+            });
+
+            console.log(`✅ PR #${pr.number} created: ${prTitle}`);
