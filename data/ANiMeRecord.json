@@ -8857,9 +8857,9 @@
             "__dataclass__": "ANiMeData"
         },
         "user_status": {
-            "watch_status": 3,
+            "watch_status": 2,
             "watched_eps": 10,
-            "last_update": "2026-04-03T13:39:13+08:00",
+            "last_update": "2026-04-06T19:20:49+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
@@ -201430,8 +201430,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 0,
-            "last_update": "2026-04-05T20:26:33+08:00",
+            "watched_eps": 1,
+            "last_update": "2026-04-06T19:20:35+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
@@ -203754,6 +203754,341 @@
                         }
                     ],
                     "__dataclass__": "Character"
+                },
+                {
+                    "id": 207857,
+                    "name": "川渕禀埜",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/f0/d1/207857_crt_Re8iQ.jpg",
+                    "actor_ids": [],
+                    "name_cn": "川渕禀埜",
+                    "summary": "堀北班学生。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "川渕禀埜",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": [
+                                {
+                                    "v": "https://x.com/youkosozitsu/media"
+                                }
+                            ],
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 207858,
+                    "name": "吹石丞",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/4a/0e/207858_crt_fVb7J.jpg",
+                    "actor_ids": [],
+                    "name_cn": "吹石丞",
+                    "summary": "堀北班学生。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "吹石丞",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": [
+                                {
+                                    "v": "https://x.com/youkosozitsu/media"
+                                }
+                            ],
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 207859,
+                    "name": "沖谷京介",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/56/d7/207859_crt_YOODX.jpg",
+                    "actor_ids": [],
+                    "name_cn": "冲谷京介",
+                    "summary": "堀北班学生。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "冲谷京介",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": [
+                                {
+                                    "v": "https://x.com/youkosozitsu/media"
+                                }
+                            ],
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 207860,
+                    "name": "牧田進",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/bb/b0/207860_crt_Ij5A3.jpg",
+                    "actor_ids": [],
+                    "name_cn": "牧田进",
+                    "summary": "堀北班学生。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "牧田进",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": [
+                                {
+                                    "v": "https://x.com/youkosozitsu/media"
+                                }
+                            ],
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 207861,
+                    "name": "鬼塚武蔵",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/d1/12/207861_crt_e7rxg.jpg",
+                    "actor_ids": [],
+                    "name_cn": "鬼冢武蔵",
+                    "summary": "堀北班学生。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "鬼冢武蔵",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": [
+                                {
+                                    "v": "https://x.com/youkosozitsu/media"
+                                }
+                            ],
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 207863,
+                    "name": "今永大成",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/8e/bf/207863_crt_T5Mt4.jpg",
+                    "actor_ids": [],
+                    "name_cn": "今永大成",
+                    "summary": "堀北班学生。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "今永大成",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": [
+                                {
+                                    "v": "https://x.com/youkosozitsu/media"
+                                }
+                            ],
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 207864,
+                    "name": "矢田澄",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/8e/17/207864_crt_mzaYD.jpg",
+                    "actor_ids": [],
+                    "name_cn": "矢田澄",
+                    "summary": "堀北班学生。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "矢田澄",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": [
+                                {
+                                    "v": "https://x.com/youkosozitsu/media"
+                                }
+                            ],
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 207867,
+                    "name": "西村竜子",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/8c/7c/207867_crt_dklif.jpg",
+                    "actor_ids": [],
+                    "name_cn": "",
+                    "summary": "堀北班学生。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": [
+                                {
+                                    "v": "https://x.com/youkosozitsu/media"
+                                }
+                            ],
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 207868,
+                    "name": "市橋瑠璃",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/99/f0/207868_crt_0W70Z.jpg",
+                    "actor_ids": [],
+                    "name_cn": "市桥瑠璃",
+                    "summary": "堀北班学生。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "市桥瑠璃",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": [
+                                {
+                                    "v": "https://x.com/youkosozitsu/media"
+                                }
+                            ],
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 207869,
+                    "name": "園田千代",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/e8/02/207869_crt_Xu4WM.jpg",
+                    "actor_ids": [],
+                    "name_cn": "园田 千代",
+                    "summary": "堀北班学生。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "园田 千代",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": [
+                                {
+                                    "v": "https://x.com/youkosozitsu/media"
+                                }
+                            ],
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
                 }
             ],
             "relations": [
@@ -203822,10 +204157,10 @@
                 {
                     "id": 1650962,
                     "name": "リーダーたる覚悟",
-                    "name_cn": "",
+                    "name_cn": "领袖的觉悟",
                     "air_date": "2026-04-01",
                     "desc": "特別試験に向けて宝泉と交渉をしようとする堀北だが、会って話すことは拒否されてしまう。\r\nなんとしても1年Dクラスと対等な協力関係を結びたいと奔走する堀北に対し、\r\n七瀬が水面下での交渉を申し出る。\r\n\r\n脚本：重信 康　\r\n絵コンテ：佐々木憲世　\r\n演出：椎名真子\r\n総作画監督：山形孝二/永田陽菜　\r\n作画監督：中野すが子/小野木三斉/福田梨生/像素映画",
-                    "duration_seconds": 0,
+                    "duration_seconds": 1420,
                     "ep": 3,
                     "sort": 3,
                     "type": 0,
@@ -203834,10 +204169,10 @@
                 {
                     "id": 1650963,
                     "name": "刃の向く先",
-                    "name_cn": "",
+                    "name_cn": "刀刃指向的前方",
                     "air_date": "2026-04-01",
                     "desc": "ついに始まった堀北と宝泉の交渉。\r\nプライベートポイントを出すことを協力の条件とする宝泉に対し、堀北は対等な関係を譲らない。\r\n交渉決裂の予感を察し、七瀬は綾小路から教わった情報を伝えて宝泉とさらなる交渉をしようとする。\r\nしかし、宝泉の強気な態度は変わらず――。\r\n\r\n脚本：重信 康　\r\n絵コンテ：北村真咲　\r\n演出：野亦則行\r\n総作画監督：山形孝二/市川美帆/米本沙織/永田陽菜　\r\n作画監督：中野すが子/伊藤 哲也/小野木三斉/福田梨生/米本 沙織/所沢映画",
-                    "duration_seconds": 0,
+                    "duration_seconds": 1420,
                     "ep": 4,
                     "sort": 4,
                     "type": 0,
@@ -203992,8 +204327,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 0,
-            "last_update": "2026-04-05T20:25:52+08:00",
+            "watched_eps": 1,
+            "last_update": "2026-04-06T19:42:59+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
