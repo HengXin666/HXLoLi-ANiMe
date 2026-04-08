@@ -9511,5 +9511,40 @@
         "short_summary": "VIMS 所属\r\n\r\n出身地　千葉県\r\n趣味　散歩、電車旅、歌唱\r\n特技　テニス\r\n資格　英検2級\r\n芸歴　日本ナレーション演技研究所",
         "image_url": "https://lain.bgm.tv/pic/crt/l/34/17/41968_prsn_26Oef.jpg?r=1623239791",
         "__dataclass__": "Actor"
+    },
+    {
+        "id": 90082,
+        "name": "西薗雪乃",
+        "short_summary": "誕生日1996年12月21日。\r\n星座 いて座。",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/04/90/90082_prsn_gHhoa.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 64088,
+        "name": "羽鳥颯希",
+        "short_summary": "主な出演作品\r\n\r\nアニメーション\r\n\r\n    「魔法少女にあこがれて」#9\r\n    ショートアニメ「メギド７２」\r\n    「TRIGUN STANPEDE 」\r\n\r\n劇場版アニメーション\r\n\r\n    「乙女ゲームの破滅フラグしかない悪役令嬢に転生してしまった…」\r\n\r\nゲーム\r\n\r\n    「セガNET麻雀 MJ」（テンホー）\r\n    「レキシクロニクル」　紫式部　足利義満　徳川慶喜\r\n\r\nナレーション\r\n\r\n    「放置少女」\r\n\r\nその他\r\n\r\n        テレビCMナレーション\r\n        「おおいた冠地どり」\r\n        「わがまま！気まま！旅気分！」\r\n        「SEAT」\r\n\r\nボイスコミック\r\n\r\n    「おい、ハズレスキルだと思われていた《チートコード操作》が化け物すぎるんだが」",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/cf/4c/64088_prsn_5dJ5M.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 74157,
+        "name": "梨本ひおり",
+        "short_summary": "アミュレート準所属の新人声優。",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/4f/79/74157_prsn_xauuc.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 70331,
+        "name": "羽澄なな",
+        "short_summary": "",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/14/c5/70331_prsn_N3JJD.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 18764,
+        "name": "中野さいま",
+        "short_summary": "小学生の頃は劇団に所属。その後、声の芝居に興味を持ち代々木アニメーション学院東京本部校アニメソングコースへ入学。\r\n\r\nアニメ『石田とあさくら』のヒロイン佐藤役で入学1年目にして声優デビュー。その後、在学中にソニー・ミュージックアーティスツへ所属となる。日本国外、香港、台湾、マレーシアなどのアニメイベントなどにも多数出演し、持ち前の歌声を披露している。\r\n\r\n自身も出演していたTVアニメ『アクエリオンロゴス』では、2クール目の挿入歌も担当していた。\r\n\r\n2018年にソニー・ミュージックアーティスツを退所し、2019年にステイラックへ移籍した。",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/d9/38/18764_prsn_H7CC7.jpg?r=1686728878",
+        "__dataclass__": "Actor"
     }
 ]

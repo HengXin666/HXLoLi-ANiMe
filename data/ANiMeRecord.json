@@ -7444,8 +7444,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 9,
-            "last_update": "2026-04-07T13:35:37+08:00",
+            "watched_eps": 10,
+            "last_update": "2026-04-08T13:29:34+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
@@ -14401,7 +14401,7 @@
                     "id": 201720,
                     "name": "真弓",
                     "relation": "闲角",
-                    "image_url": "",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/3b/6e/201720_crt_4Y839.jpg",
                     "actor_ids": [
                         67773
                     ],
@@ -14417,7 +14417,7 @@
                     "id": 201721,
                     "name": "蜜柑",
                     "relation": "闲角",
-                    "image_url": "",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/09/d1/201721_crt_2ZeHn.jpg",
                     "actor_ids": [
                         32858
                     ],
@@ -14433,7 +14433,7 @@
                     "id": 201722,
                     "name": "夏夜",
                     "relation": "闲角",
-                    "image_url": "",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/0a/49/201722_crt_x0sU3.jpg",
                     "actor_ids": [
                         18733
                     ],
@@ -14465,7 +14465,7 @@
                     "id": 201724,
                     "name": "竹葉",
                     "relation": "闲角",
-                    "image_url": "",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/57/93/201724_crt_y3Icd.jpg",
                     "actor_ids": [
                         80924
                     ],
@@ -14497,7 +14497,7 @@
                     "id": 202399,
                     "name": "亜門",
                     "relation": "闲角",
-                    "image_url": "",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/b0/1d/202399_crt_3TBki.jpg",
                     "actor_ids": [
                         28452
                     ],
@@ -14513,7 +14513,7 @@
                     "id": 202400,
                     "name": "花梨",
                     "relation": "闲角",
-                    "image_url": "",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/da/cf/202400_crt_uOruW.jpg",
                     "actor_ids": [
                         26994
                     ],
@@ -14529,7 +14529,7 @@
                     "id": 202401,
                     "name": "杉山",
                     "relation": "闲角",
-                    "image_url": "",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/5d/bd/202401_crt_VzQH4.jpg",
                     "actor_ids": [
                         52738
                     ],
@@ -14545,7 +14545,7 @@
                     "id": 202402,
                     "name": "蕨",
                     "relation": "闲角",
-                    "image_url": "",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/c5/d5/202402_crt_b534U.jpg",
                     "actor_ids": [
                         47172
                     ],
@@ -14561,7 +14561,7 @@
                     "id": 202403,
                     "name": "水戸",
                     "relation": "闲角",
-                    "image_url": "",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/36/ae/202403_crt_iyApq.jpg",
                     "actor_ids": [
                         59342
                     ],
@@ -14577,7 +14577,7 @@
                     "id": 202404,
                     "name": "檜皮",
                     "relation": "闲角",
-                    "image_url": "",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/3f/91/202404_crt_GCmOc.jpg",
                     "actor_ids": [
                         70435
                     ],
@@ -14593,7 +14593,7 @@
                     "id": 203643,
                     "name": "尼内",
                     "relation": "闲角",
-                    "image_url": "",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/17/c8/203643_crt_Uc78j.jpg",
                     "actor_ids": [
                         48281
                     ],
@@ -14620,7 +14620,7 @@
                     "id": 203644,
                     "name": "井湾",
                     "relation": "闲角",
-                    "image_url": "",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/1a/16/203644_crt_3iJJb.jpg",
                     "actor_ids": [
                         88776
                     ],
@@ -14647,7 +14647,7 @@
                     "id": 203645,
                     "name": "樺子",
                     "relation": "闲角",
-                    "image_url": "",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/95/fb/203645_crt_9Z9Mu.jpg",
                     "actor_ids": [
                         29413
                     ],
@@ -14674,7 +14674,7 @@
                     "id": 203646,
                     "name": "酒蒔",
                     "relation": "闲角",
-                    "image_url": "",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/12/27/203646_crt_zri6R.jpg",
                     "actor_ids": [
                         88777
                     ],
@@ -14701,7 +14701,7 @@
                     "id": 203647,
                     "name": "涼香",
                     "relation": "闲角",
-                    "image_url": "",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/93/7e/203647_crt_g9rRQ.jpg",
                     "actor_ids": [
                         29570
                     ],
@@ -14728,7 +14728,7 @@
                     "id": 203648,
                     "name": "中路",
                     "relation": "闲角",
-                    "image_url": "",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/32/a9/203648_crt_0DCIy.jpg",
                     "actor_ids": [
                         68669
                     ],
@@ -14755,7 +14755,7 @@
                     "id": 203649,
                     "name": "西田",
                     "relation": "闲角",
-                    "image_url": "",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/e6/c4/203649_crt_VFlz8.jpg",
                     "actor_ids": [
                         88778
                     ],
@@ -14782,7 +14782,7 @@
                     "id": 203650,
                     "name": "緋川",
                     "relation": "闲角",
-                    "image_url": "",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/2e/9c/203650_crt_LTJjL.jpg",
                     "actor_ids": [
                         42293
                     ],
@@ -14809,7 +14809,7 @@
                     "id": 203651,
                     "name": "宝来",
                     "relation": "闲角",
-                    "image_url": "",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/38/76/203651_crt_NBdb5.jpg",
                     "actor_ids": [
                         40327
                     ],
@@ -14836,7 +14836,7 @@
                     "id": 203652,
                     "name": "遊奈",
                     "relation": "闲角",
-                    "image_url": "",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/6d/c2/203652_crt_wTERL.jpg",
                     "actor_ids": [
                         30812
                     ],
@@ -14876,6 +14876,264 @@
                         {
                             "key": "简体中文名",
                             "value": "人面树",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 207529,
+                    "name": "椿姫",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/a7/f7/207529_crt_kkx4F.jpg",
+                    "actor_ids": [
+                        90082
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 207533,
+                    "name": "静河",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/af/b4/207533_crt_l9R49.jpg",
+                    "actor_ids": [],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 207535,
+                    "name": "船原",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/51/1c/207535_crt_12Xx0.jpg",
+                    "actor_ids": [],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 207540,
+                    "name": "葉隱",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/f5/30/207540_crt_hgoVR.jpg",
+                    "actor_ids": [],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 207546,
+                    "name": "天宮",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/40/19/207546_crt_thUIx.jpg",
+                    "actor_ids": [
+                        53001
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 207547,
+                    "name": "伊森",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/68/0b/207547_crt_9Tslk.jpg",
+                    "actor_ids": [
+                        52093
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 207549,
+                    "name": "風上",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/26/10/207549_crt_PhvpQ.jpg",
+                    "actor_ids": [
+                        64088
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 207551,
+                    "name": "果音",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/ea/fa/207551_crt_s2ba1.jpg",
+                    "actor_ids": [
+                        74157
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 207552,
+                    "name": "櫛枝",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/b2/f2/207552_crt_FiM67.jpg",
+                    "actor_ids": [
+                        36705
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 207553,
+                    "name": "梢枝",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/54/8b/207553_crt_MWA3V.jpg",
+                    "actor_ids": [
+                        70331
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 207554,
+                    "name": "茉莉",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/24/32/207554_crt_s3b1p.jpg",
+                    "actor_ids": [
+                        18764
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 207555,
+                    "name": "瑞菜",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/8b/b4/207555_crt_xS2FX.jpg",
+                    "actor_ids": [
+                        9356
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "女",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -14944,6 +15202,15 @@
                     "relation": "续集",
                     "type": 2,
                     "image_url": "https://lain.bgm.tv/pic/cover/l/80/d8/638185_TkcSk.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 639465,
+                    "name": "死亡遊戯で飯を食う。 アニメ公式ガイドブック",
+                    "name_cn": "",
+                    "relation": "书籍",
+                    "type": 1,
+                    "image_url": "",
                     "__dataclass__": "Relation"
                 }
             ],
@@ -15084,9 +15351,9 @@
             "__dataclass__": "ANiMeData"
         },
         "user_status": {
-            "watch_status": 3,
+            "watch_status": 4,
             "watched_eps": 5,
-            "last_update": "2026-02-25T13:32:50+08:00",
+            "last_update": "2026-04-08T13:09:01+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
