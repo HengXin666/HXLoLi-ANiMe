@@ -201803,6 +201803,80 @@
                     "__dataclass__": "Character"
                 },
                 {
+                    "id": 35610,
+                    "name": "フェルト",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/3d/7f/35610_crt_7cGLP.jpg?r=1607416547",
+                    "actor_ids": [
+                        7297
+                    ],
+                    "name_cn": "菲鲁特",
+                    "summary": "くすんだ金髪に勝気な赤い目、尖った八重歯がチャームポイントの浮浪女児。王都の貧民街育ちで、幼さに見合わないタフで強かな性格の持ち主。",
+                    "birth_year": null,
+                    "birth_month": 8,
+                    "birth_day": 8,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "菲鲁特",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "8月8日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "153cm",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 35611,
+                    "name": "ラインハルト・ヴァン・アストレア",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/08/1c/35611_crt_dPC0m.jpg?r=1607643229",
+                    "actor_ids": [
+                        4724
+                    ],
+                    "name_cn": "莱茵哈鲁特·梵·阿斯特雷亚",
+                    "summary": "「――そこまでだ」\r\n燃えるような赤毛に、空を映したような澄みきった青い瞳を持つ美青年。\r\n洗練された仕草に、言動一つ一つが他者への思いやりに満ちた完璧超人。\r\n『剣聖』と呼ばれる騎士の中の騎士であり、王都でも知らぬものがいない有名人。\r\n普段は王城で近衛隊に所属しているが、この日は非番で王都を散策している。\r\n普段から休日でも、市井の人々のために力を尽くす青年が、この日に目にしたものは――。",
+                    "birth_year": null,
+                    "birth_month": 1,
+                    "birth_day": 1,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "莱茵哈鲁特·梵·阿斯特雷亚",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "1月1日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "184cm",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
                     "id": 35614,
                     "name": "ラム",
                     "relation": "配角",
@@ -201904,6 +201978,78 @@
                     "__dataclass__": "Character"
                 },
                 {
+                    "id": 35618,
+                    "name": "クルシュ・カルステン",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/c1/db/35618_crt_FB1Zs.jpg?r=1611899294",
+                    "actor_ids": [],
+                    "name_cn": "库珥修·卡尔斯腾",
+                    "summary": "「問おう。恥ずかしいとは思わないのかと」\r\nルグニカ王国カルステン公爵家当主の肩書きを持つ男装の麗人。\r\n自分にも他者にも厳しい姿勢と、正しくあることを追及する人物。\r\n生まれながらに人の上に立つカリスマを持ち、若くして当主を継いだ才媛。\r\nルグニカ王国の次代の王を決める王選の候補者であり、最有力候補。\r\n騎士はフェリス。付き合いは幼少の頃からで、強い信頼関係にある。",
+                    "birth_year": null,
+                    "birth_month": 4,
+                    "birth_day": 4,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "库珥修·卡尔斯腾",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "4月4日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "168cm",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 35619,
+                    "name": "フェリックス・アーガイル",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/04/30/35619_crt_33Hqd.jpg?r=1607416859",
+                    "actor_ids": [
+                        3970
+                    ],
+                    "name_cn": "菲利克斯·阿盖尔",
+                    "summary": "「んふー、恥ずかしがっちゃってきゃーわゆい」\r\nフリフリの衣装に愛らしい仕草、そして頭には柔らかなネコミミ。\r\n挙動や言動の端々に『狙っている』感があるが、それがやけに似合う。\r\n王選候補であるクルシュの騎士であり、王都でも随一の治癒魔法の使い手。\r\n長い付き合いであるクルシュへの忠誠心は、王選ペアの中でも特に強い。\r\nそのわりに天然の気がある主に嘘を教えて遊ぶ癖がある。さすがフェリスあざとい。",
+                    "birth_year": null,
+                    "birth_month": 1,
+                    "birth_day": 16,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "菲利克斯·阿盖尔",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "1月16日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "172cm",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
                     "id": 35620,
                     "name": "アナスタシア・ホーシン",
                     "relation": "配角",
@@ -201978,6 +202124,195 @@
                     "__dataclass__": "Character"
                 },
                 {
+                    "id": 35622,
+                    "name": "ヴィルヘルム・ヴァン・アストレア",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/99/8f/35622_crt_eI7OC.jpg?r=1611783510",
+                    "actor_ids": [],
+                    "name_cn": "威尔海姆·梵·阿斯特雷亚",
+                    "summary": "外号“剑鬼”，身上有着大量伤痕的老人。将王选使者带往罗兹瓦尔宅邸的老车夫。剑术高超，本人形容自己并不具备相关才能，靠的仅是持续挥剑半辈子。\r\n很爱自己的妻子，谈论夫妻之间事情时的那份率直让昴都退避三舍。经过锻炼的肉体以及身上散发出的霸气非同常人。",
+                    "birth_year": null,
+                    "birth_month": 5,
+                    "birth_day": 7,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "威尔海姆·梵·阿斯特雷亚",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "5月7日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "178cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "年龄",
+                            "value": "61岁",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 35624,
+                    "name": "ロズワール・L・メイザース",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/39/65/35624_crt_Syrkm.jpg?r=1607416226",
+                    "actor_ids": [
+                        1096
+                    ],
+                    "name_cn": "罗兹瓦尔·L·梅札斯",
+                    "summary": "「君は私になーぁにを望むのかな？」\r\nルグニカ王国貴族で、辺境伯の立場にある有力者。\r\n王国有数の魔法使いでもあり、王城では筆頭宮廷魔導士としても知られる人物。\r\nその立派な肩書きと溢れる才能を、奇行奇言と道化のメイクで台無しにする変わり者。\r\n好んで顔を白く塗り、ピエロの化粧と他人をおちょくる言動で事態を掻き回す変人。\r\n付いた渾名が『亜人趣味』である彼と、エミリアの関係性やいかに。",
+                    "birth_year": null,
+                    "birth_month": 9,
+                    "birth_day": 16,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "罗兹瓦尔·L·梅札斯",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "9月16日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "186cm",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 40565,
+                    "name": "ラチンス",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/af/52/40565_crt_IW3xN.jpg?r=1607417287",
+                    "actor_ids": [],
+                    "name_cn": "拉珍斯",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "拉珍斯",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 40566,
+                    "name": "カンバリー",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/60/00/40566_crt_6K632.jpg?r=1607417055",
+                    "actor_ids": [],
+                    "name_cn": "汉巴利",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "汉巴利",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 40661,
+                    "name": "ガストン",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/11/c7/40661_crt_SSgAP.jpg?r=1606783729",
+                    "actor_ids": [],
+                    "name_cn": "加斯顿",
+                    "summary": "街中でスバルに絡んだ3人のチンピラたち。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "加斯顿",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 41146,
+                    "name": "ペトラ・レイテ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/69/8d/41146_crt_7uZ8C.jpg?r=1607417413",
+                    "actor_ids": [
+                        16031
+                    ],
+                    "name_cn": "佩特拉·雷蒂",
+                    "summary": "阿拉姆村的少女，12岁。梦想是长大后到都市制衣。昴在阿拉姆村认识的众多小孩之一。",
+                    "birth_year": null,
+                    "birth_month": 2,
+                    "birth_day": 14,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "佩特拉·雷蒂",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "2月14日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "wiki",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
                     "id": 41153,
                     "name": "メィリィ・ポートルート",
                     "relation": "配角",
@@ -202005,6 +202340,132 @@
                     "__dataclass__": "Character"
                 },
                 {
+                    "id": 42481,
+                    "name": "フレデリカ・バウマン",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/82/84/42481_crt_g5xHv.jpg?r=1611940438",
+                    "actor_ids": [
+                        3922
+                    ],
+                    "name_cn": "弗雷德莉卡·鲍尔曼",
+                    "summary": "罗兹瓦尔宅邸的女仆，24岁。身材挺拔，身高略高于菜月昴。有四分之一的亚人血统。\r\n在罗兹瓦尔宅邸服务了十年，近年前往梅札斯分家的蜜罗德家服务。",
+                    "birth_year": null,
+                    "birth_month": 12,
+                    "birth_day": 6,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "弗雷德莉卡·鲍尔曼",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "12月6日",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 43047,
+                    "name": "オットー・スーウェン",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/e1/2e/43047_crt_UiqlV.jpg?r=1607417327",
+                    "actor_ids": [
+                        7605
+                    ],
+                    "name_cn": "奥托·苏文",
+                    "summary": "灰发的青年行商人，20岁。独自经商四年不太顺利。因想要出清库存的油货而被昴卷入白鲸事件。\r\n有后天变异才拥有的『言霊の加护』。能够与任何能发声的生物进行交谈。由于使用还不够纯熟，平时处于能力自我封印状态。频繁使用会对身体产生负担。",
+                    "birth_year": null,
+                    "birth_month": 3,
+                    "birth_day": 24,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "奥托·苏文",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "3月24日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "177cm",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 43458,
+                    "name": "ミミ・パールバトン",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/00/87/43458_crt_XZyD7.jpg?r=1606783597",
+                    "actor_ids": [
+                        10640
+                    ],
+                    "name_cn": "蜜蜜·帕尔巴顿",
+                    "summary": "效忠安娜塔西亚的私设佣兵团“铁之牙”副团长，猫的兽人少女。作为安娜塔西亚的护卫与其一起行动。\r\n身高不及昴的腰身，幼小的兽人少女，但是在铁之牙是仅次于团长的实力者。有着两个弟弟。",
+                    "birth_year": null,
+                    "birth_month": 5,
+                    "birth_day": 5,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "蜜蜜·帕尔巴顿",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "5月5日",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 44129,
+                    "name": "リカード・ウェルキン",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/30/51/44129_crt_ODm0o.jpg?r=1606783471",
+                    "actor_ids": [],
+                    "name_cn": "里卡多·威尔金",
+                    "summary": "アナスタシアの私兵の傭兵団「鉄の牙」の団長。身長約2メートルの犬の獣人（コボルト）。カララギ弁を話し、声がかなり大きい。アナスタシアとは昔からの知り合い。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "里卡多·威尔金",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
                     "id": 46445,
                     "name": "パトラッシュ",
                     "relation": "配角",
@@ -202019,6 +202480,43 @@
                         {
                             "key": "简体中文名",
                             "value": "帕特拉修",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 57372,
+                    "name": "ガーフィール・ティンゼル",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/94/0e/57372_crt_lyB99.jpg?r=1503760868",
+                    "actor_ids": [
+                        4950
+                    ],
+                    "name_cn": "嘉飞尔·汀泽尔",
+                    "summary": "法兰黛莉卡同母异父的弟弟，从小在圣域长大的孤儿，与琉兹情同婆孙，有四分之一的亚人血统，14岁，诞生日为10月12日。\r\n留着金色短发、具备猫科猛兽特有的凶悍眼神和白色犬齿，额间有一道白色伤痕。身材并不高壮但全身精实悍练。个性单纯温柔，虽然是个与年纪相符且神经大条的中二病轻症患者，但相当喜欢阅读。\r\n拥有“地灵的加护”，能借由接触地面进行恢复，并有限地改变视野范围内的地貌。自称是罗兹瓦尔底下最强的男人，外号“圣域之盾”，单恋对象是拉姆。是爱蜜莉雅王选阵营里实质上最强的战力。",
+                    "birth_year": null,
+                    "birth_month": 10,
+                    "birth_day": 12,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "嘉飞尔·汀泽尔",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "10月12日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "wiki",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -202123,6 +202621,162 @@
                         {
                             "key": "个人状态",
                             "value": "魔女教『暴食』·『美食家』",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 85421,
+                    "name": "シリウス・ロマネコンティ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/9a/aa/85421_crt_KZkYy.jpg",
+                    "actor_ids": [],
+                    "name_cn": "西莉乌斯·罗曼尼康帝",
+                    "summary": "魔女教の幹部である大罪司教の一人。『憤怒』担当。左目を除いて、全身に包帯を乱雑に纏う不気味な怪人。\r\nペテルギウスの姓である「ロマネコンティ」を名乗っている。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "西莉乌斯·罗曼尼康帝",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "别号",
+                            "value": "愤怒担当",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "发色",
+                            "value": "银髮",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "瞳色",
+                            "value": "紫瞳",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "所属团体",
+                            "value": "魔女教",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 158908,
+                    "name": "ヨシュア・ユークリウス",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/d0/c5/158908_crt_33lo0.jpg",
+                    "actor_ids": [],
+                    "name_cn": "乔舒亚·尤克历乌斯",
+                    "summary": "ユリウスの弟で、モノクルが印象的な美少年。 スバルたちを水門都市プリステラへと誘うアナスタシアからの遣いとして、ミミと共にロズワール邸にやってくる。",
+                    "birth_year": null,
+                    "birth_month": 1,
+                    "birth_day": 10,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "乔舒亚·尤克历乌斯",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "1月10日",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 165235,
+                    "name": "フレド・トンプソン",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/a7/6d/165235_crt_c5dQT.jpg?r=1727887970",
+                    "actor_ids": [
+                        67776
+                    ],
+                    "name_cn": "弗雷德·汤普生",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "弗雷德·汤普生",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 165236,
+                    "name": "ラフィール・トンプソン",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/94/32/165236_crt_849XK.jpg?r=1727892684",
+                    "actor_ids": [
+                        41551
+                    ],
+                    "name_cn": "拉菲尔·汤普生",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "拉菲尔·汤普生",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 165237,
+                    "name": "リアラ・トンプソン",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/22/ea/165237_crt_RyHL8.jpg?r=1727892673",
+                    "actor_ids": [
+                        4893
+                    ],
+                    "name_cn": "莉亚拉·汤普生",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "莉亚拉·汤普生",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -202246,7 +202900,7 @@
                 {
                     "id": 638494,
                     "name": "Re:ゼロから始める休憩時間 4rd season",
-                    "name_cn": "",
+                    "name_cn": "Re：从零开始的休息时间4",
                     "relation": "衍生",
                     "type": 2,
                     "image_url": "https://lain.bgm.tv/pic/cover/l/66/a4/638494_E7Ieh.jpg",
@@ -202275,10 +202929,10 @@
                 {
                     "id": 1656866,
                     "name": "君を連れ出す理由／ゴージャス・タイガー・リローデッド",
-                    "name_cn": "",
+                    "name_cn": "带妳出来的原因／华丽猛虎，重装上阵",
                     "air_date": "2026-04-08",
                     "desc": "魔女教大罪司教の襲撃をなんとか退けたスバルたちだったが、『色欲』に姿を変えられた人々、『暴食』に名前や記憶を奪われた者たちなど、失った代償は大きかった。現状解決の糸口を探る中、アナスタシアの提案でルグニカ三英傑の一人、『賢者』シャウラの住まうプレアデス監視塔へ向かうことを決意する。一方、療養のためプリステラに残ったガーフィールはミミと一緒に、記憶を失った母リアラの家を訪れていた。\r\n\r\n脚本：横谷昌宏　\r\n絵コンテ：頂 真司　\r\n演出：篠原正寛\r\n総作画監督：佐川 遥　\r\n作画監督：三浦 瞳",
-                    "duration_seconds": 0,
+                    "duration_seconds": 1420,
                     "ep": 1,
                     "sort": 67,
                     "type": 0,
@@ -202409,8 +203063,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 0,
-            "last_update": "2026-04-05T20:26:03+08:00",
+            "watched_eps": 1,
+            "last_update": "2026-04-09T13:40:25+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
@@ -205142,8 +205796,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 4,
-            "last_update": "2026-04-07T13:11:37+08:00",
+            "watched_eps": 5,
+            "last_update": "2026-04-09T13:18:41+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
