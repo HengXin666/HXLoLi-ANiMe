@@ -7444,8 +7444,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 11,
-            "last_update": "2026-04-10T13:30:02+08:00",
+            "watched_eps": 12,
+            "last_update": "2026-04-14T13:25:53+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
@@ -201328,7 +201328,827 @@
             "date": "2026-04-03",
             "summary": "举行开国祭，并与各国建立起邦交的魔国联邦「坦派斯特」，朝着实现让人类与魔物一起生活的世界「人魔共荣圈」迈出了步伐。\r\n跨越种族的隔阂携手合作，魔国联邦「坦派斯特」日益繁荣。然而，在这背后，却有些人将魔王利姆路的崛起视为危险讯号。他们就是西尔特罗斯王国五大老之首的前「勇者」格兰贝尔．罗素与其孙女玛莉安贝尔．罗素。主张以支配守护人类的格兰贝尔和玛莉安贝尔布下重重计谋，并与利姆路发生冲突。\r\n另一方面，在黄金乡埃尔德拉，魔王雷昂也基于某种目的展开了行动。身为人类守护者的勇者与支配世界的魔王。在各方谋略的彼此交错之下，某位「勇者」即将苏醒――。\r\n怀抱着无法退让的信念，利姆路的下一场战斗即将开始。\r\n\r\n\r\n[简介原文]\r\n開国祭を開き、各国と国交を結んだ魔国連邦（テンペスト）は、人と魔物が共に暮らせる世界「人魔共栄圏」の実現に向けて歩みだす。\r\n種族の壁を越え、手を取り合い、繁栄していく魔国連邦（テンペスト）。しかし、その裏で魔王リムルの台頭を危険視する者たちがいた。シルトロッゾ王国五大老の長である元〝勇者〟グランベル・ロッゾとその孫娘、マリアベル・ロッゾ。支配による人類守護を掲げるグランベルとマリアベルは策謀を巡らせ、リムルと激突する。\r\n一方、黄金郷エルドラドでは魔王レオンがある目的のために動き出す。人類の守護者である勇者と、世界を支配する魔王。様々な思惑が交錯する中、ひとりの〝勇者〟が目覚めようとしていた――。\r\n譲れない思いを胸に、リムルの次なる戦いが始まる。",
             "total_episodes": 24,
-            "characters": [],
+            "characters": [
+                {
+                    "id": 33119,
+                    "name": "リムル＝テンペスト",
+                    "relation": "主角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/56/a8/33119_crt_OJVai.jpg?r=1608925227",
+                    "actor_ids": [
+                        32164
+                    ],
+                    "name_cn": "利姆路·坦派斯特",
+                    "summary": "[center][b][color=#CAEAF6][size=18]爱好和平的魔王史莱姆[/size][/color][/b][/center]\r\n自朱拉大森林洞窟内的魔素凝聚而诞生的史莱姆。前世是异世界人，为三十多岁的上班族「[url=https://bgm.tv/character/154999]三上悟[/url]」，某天被[url=https://bgm.tv/character/155026]随机杀人魔[/url]刺中背部三两下结束性命。临死之际，他想了些无聊事，结果竟转生成史莱姆。\r\n具备多项技能，尤其是获得了多达四种堪称世界上最顶级的「究极技能」。分别是演算能力优越、传授不少知识的「[url=https://bgm.tv/character/99626]智慧之王拉斐尔[/url]」、能吸收一切并将之保存的「暴食之王别西卜」、集先前获得技能之大成的「誓约之王乌列尔」、能召唤龙型[url=https://bgm.tv/character/63520]维尔德拉[/url]的「暴风之王维尔德拉」，这些全都是相当犯规的能力。\r\n不仅保有前世记忆，转生还获得「[url=https://bgm.tv/character/7908]大贤者[/url]」、「捕食者」等便利技能，并且跟世上最强的「龙种」维尔德拉成为朋友，利姆路的史莱姆生涯有了个相当美好的开端。反过来说，也因为这些好处，他才会走上波澜万丈之路。先是跟小鬼族（哥布林）相遇，接着统率住在森林里的许多魔物，后来甚至当上魔物王国「朱拉·坦派斯特联邦国（魔国联邦）」的盟主，并且跃升为「魔王」的一员。\r\n这样的利姆路的性格，一方面由于保有身为日本人的记忆，基本上性情温和爱好和平。可是，他经历了一些事后，如今身上也多了一份残酷，绝不放过伤害同伴的人。\r\n此外，他的基本行动理念，就是「希望打造不分种族，大家都能快快乐乐舒适过生活的国度」。他就这么顺从渴望胡冲乱撞，如今魔国联邦的衣食住行不管跟哪个国家相比都毫不逊色。\r\n外表就像Q弹的月白色馒头。女生都觉得他「好可爱」，非常受欢迎。可以藉「暴食之王」的其中一项效果「拟态」变身成人型，变身姿态有如同乡的异界访客[url=https://bgm.tv/character/63521]静[/url]的孩童模样。成了有对水灵大眼、银发散发淡淡蓝彩的美少女姿态，但史莱姆没有性别之分，变身后仍是中性体。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "利姆路·坦派斯特",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "无",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "种族",
+                            "value": "妖魔族→魔黏性精神体→龙魔黏性星神体",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "称号",
+                            "value": "新星、圣魔混世皇",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "虚拟体",
+                            "value": "幽灵法师",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 63520,
+                    "name": "ヴェルドラ＝テンペスト",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/43/c4/63520_crt_292IO.jpg",
+                    "actor_ids": [
+                        5121
+                    ],
+                    "name_cn": "维鲁多拉·坦派斯特",
+                    "summary": "リムルが最初にこの世界に出現した洞窟内で最初に言葉を交わした魔物であり、その際は300年前に戦った勇者によって「無限牢獄」に封印されていた。リムルの名を名付け、またリムルに苗字を貰いこの世界で最初のリムルの友達となった。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "维鲁多拉·坦派斯特",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "種族",
+                            "value": "竜種",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 63814,
+                    "name": "ベニマル",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/fb/83/63814_crt_lIM1x.jpg?r=1543863260",
+                    "actor_ids": [
+                        12483
+                    ],
+                    "name_cn": "红丸",
+                    "summary": "オークによって滅ぼされた大鬼族（オーガ）族長の息子。真紅の髪と瞳、漆黒の角を持つ。\r\n正義感の強い性格で、許せないことには真っ直ぐに立ち向かう。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "红丸",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "180cm",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 63815,
+                    "name": "シュナ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/4e/1a/63815_crt_tYMtt.jpg?r=1543863271",
+                    "actor_ids": [
+                        10838
+                    ],
+                    "name_cn": "朱菜",
+                    "summary": "ベニマルの妹で大鬼族（オーガ）の姫。\r\n薄桃色の髪に白磁のような角を持つ。\r\n可憐な美貌だけでなく、調理や被服の才能に恵まれている。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "朱菜",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "155cm",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 63816,
+                    "name": "シオン",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/9d/a4/63816_crt_pZzLL.jpg?r=1543863291",
+                    "actor_ids": [
+                        10887
+                    ],
+                    "name_cn": "紫苑",
+                    "summary": "紫の髪と黒曜石のような角を持つ大鬼族（オーガ）の一族。\r\n見た目はクールビューティーだが、その戦闘力は髙い。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "紫苑",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "170cm",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 63817,
+                    "name": "ソウエイ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/03/aa/63817_crt_A7A77.jpg?r=1543863312",
+                    "actor_ids": [
+                        5872
+                    ],
+                    "name_cn": "苍影",
+                    "summary": "元オーガ一族の家臣でリムル直属の隠密集団「藍闇衆（クラヤミ）」首領。情報収集に長け戦闘力も高い。性格は冷酷でリムルの「雑魚であっても無闇に殺すな」という命令を徹底的に甚振ったのちに回復薬を与えて放逐するという手順で実行している。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "苍影",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 63819,
+                    "name": "ミリム・ナーヴァ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/17/fb/63819_crt_flFTw.jpg?r=1631686794",
+                    "actor_ids": [
+                        4962
+                    ],
+                    "name_cn": "米莉姆·纳瓦",
+                    "summary": "第一世代魔王，龙魔人，称号为“破坏的暴君”。\r\n在魔国联邦偶像票选中有很高的人气。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "米莉姆·纳瓦",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "種族",
+                            "value": "竜魔人（ドラゴノイド）",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "所属",
+                            "value": "失われた竜の都",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 65043,
+                    "name": "ランガ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/92/6c/65043_crt_VbJj5.jpg",
+                    "actor_ids": [
+                        31823
+                    ],
+                    "name_cn": "岚牙",
+                    "summary": "リムルのペットとして常にリムルの影の中に潜んでいる強力な魔物の狼。見た目は巨大かつ威圧的。\r\nリムルとの最初の縁は当時の牙狼族のボスであった父親に率いられ、リグルドが治めるゴブリン村を襲ったことから。\r\nリムルが防衛に助力し、父が敗北・死亡したことから一族の長となり、リムルに服従することを選び一族もろともに絶対の忠誠を誓う。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "岚牙",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "雄",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 65084,
+                    "name": "ディアブロ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/ba/4b/65084_crt_VjzJl.jpg?r=1718781669",
+                    "actor_ids": [
+                        4015
+                    ],
+                    "name_cn": "迪亚波罗",
+                    "summary": "利姆鲁召唤出来的原初恶魔“原初之黑”，“黑”色派系恶魔的领袖。迪亚波罗与魔王奇伊·克林姆兹自太古时代的熟人，二人曾经在魔界争夺霸权，决战最终以平手收场。\r\n\r\n性格我行我素，在以实力至上主义的恶魔之中为极端的异类。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "迪亚波罗",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "无",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "称号",
+                            "value": "魔神王（デモンロード），魔神王，Demon Lord",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "https://www.ten-sura.com/character/diablo",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 65862,
+                    "name": "ゴブタ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/41/35/65862_crt_pZCPA.jpg",
+                    "actor_ids": [
+                        23379
+                    ],
+                    "name_cn": "哥布塔",
+                    "summary": "ゴブリン村に住んでいたゴブリンのひとりで、リムルの名付けの際にホブゴブリンへ進化したが進化後も見た目がさほど変わっていない。\r\n脳天気で褒められるとすぐに調子づくお調子者だが、やるべき時を見誤らない頑張り屋でもある。\r\n周囲からはムードメーカーとして可愛がられており、嵐牙狼の召喚術を最初に成功させる、専用武器である魔法武器を使いこなすなどその才能を見せている。\r\nランガ配下の分身体と自身の配下のホブゴブリン部隊がたまたま同数に近かったことから1人1匹のコンビを組むことになり、その結果狼鬼兵部隊（ゴブリンライダー）の隊長の座に就いた。後には街の警護、戦闘時の露払い役として働いている。\r\nリムルの部下であり悪友のような立場で仕えている。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "哥布塔",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 66226,
+                    "name": "ラミリス",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/69/56/66226_crt_G1xFS.jpg?r=1552152244",
+                    "actor_ids": [
+                        24132
+                    ],
+                    "name_cn": "拉米莉丝",
+                    "summary": "居住在迷宫里的妖精，第一世代魔王。\r\n有着像“迷宫妖精”、“妖精女王”、“原精灵女王”等各种不同的异名。\r\n自称拥有48种必杀技。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "拉米莉丝",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "30 cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "種族",
+                            "value": "妖精族（ピクシー）",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 66227,
+                    "name": "坂口日向",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/69/1e/66227_crt_lul1u.jpg?r=1608925749",
+                    "actor_ids": [
+                        5824
+                    ],
+                    "name_cn": "坂口日向",
+                    "summary": "異世界に呼び出された元日本人。剣技は人間の最高位に近い能力で一度はリムルを死の瀬戸際まで追い込んだ。西方世界最強の剣士と呼ばれ、法皇直属近衛団筆頭騎士と聖騎士団長を兼任している。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "坂口日向",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 66230,
+                    "name": "ゲルド",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/60/81/66230_crt_F3yzz.jpg",
+                    "actor_ids": [
+                        5030
+                    ],
+                    "name_cn": "盖鲁德",
+                    "summary": "猪头魔王旗下的猪头族将军幸存者，被利姆鲁命名后进化成猪人族并任命其为猪人王。被利姆鲁以死去的猪头魔王“盖鲁德”的名字所命名。个性朴实耿直，做为建设部门的干部非常尽责，为魔国联邦的建设做出许多贡献，身怀着极为优秀的防御力与魔王级的武技，会为了同伴豪不吝啬使出自己的力量。\r\n平时统率著被称为“黄色军团”的同族部下进行工程，战时则立时化身为战斗部队加入战斗。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "盖鲁德",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "种族",
+                            "value": "猪头将军→猪人王→猪神",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "称号",
+                            "value": "守征王",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 66282,
+                    "name": "ガルド・ミョルマイル",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/46/22/66282_crt_UNu86.jpg",
+                    "actor_ids": [
+                        5467
+                    ],
+                    "name_cn": "贾鲁德·缪鲁麦尔",
+                    "summary": "初登場時はブルムンド王国王都の一角に屋敷を持つ大商人で、後にリムルの作った回復薬を縁に首都リムルへ移住し、テンペストの財務統括部門と広報宣伝責任者として幹部に取り立てられることになる。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "贾鲁德·缪鲁麦尔",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 66291,
+                    "name": "三崎剣也",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/06/8c/66291_crt_Qv8JR.jpg",
+                    "actor_ids": [
+                        16264
+                    ],
+                    "name_cn": "三崎剑也",
+                    "summary": "小说刚出场时十岁。利姆路的学生。为了抑制庞大的魔素，在身体中寄宿著光之上位精灵。\r\n由于利姆路对优树感到怀疑，故趁开国祭时带到魔国联邦进行保护，并接受日向与白老等人执导。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "三崎剑也",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 66292,
+                    "name": "関口良太",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/eb/9c/66292_crt_5qGIs.jpg",
+                    "actor_ids": [
+                        14414
+                    ],
+                    "name_cn": "关口良太",
+                    "summary": "小说刚出场时十岁。利姆路的学生。为了抑制庞大的魔素，在身体中寄宿著虚拟上位精灵【水风】\r\n由于利姆路对优树感到怀疑，故趁开国祭时带到魔国联邦进行保护，并接受日向与白老等人执导。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "关口良太",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 66293,
+                    "name": "アリス・ロンド",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/d8/83/66293_crt_Y6DBW.jpg",
+                    "actor_ids": [
+                        18600
+                    ],
+                    "name_cn": "爱丽丝·伦德",
+                    "summary": "女性，小说刚出场时九岁。利姆路的学生。为了抑制庞大的魔素，在身体中寄宿著虚拟上位精灵【空】。\r\n由于利姆路对优树感到怀疑，故趁开国祭时带到魔国联邦进行保护，并接受日向与白老等人执导。\r\n称号为“女帝”，在利姆路的学生之中是仅次于库洛艾的强者。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "爱丽丝·伦德",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 66295,
+                    "name": "クロエ・オベール",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/1d/dc/66295_crt_j0a9j.jpg",
+                    "actor_ids": [
+                        10601
+                    ],
+                    "name_cn": "克萝耶·欧贝尔",
+                    "summary": "小说刚出场时十岁。利姆路的学生，喜欢利姆路。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "克萝耶·欧贝尔",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "https://www.ten-sura.com/character/chloe",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 66398,
+                    "name": "神楽坂優樹",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/a2/bb/66398_crt_yV3YF.jpg",
+                    "actor_ids": [
+                        7772
+                    ],
+                    "name_cn": "神乐坂优树",
+                    "summary": "来自异世界的人类，为创建“自由组合”公会的创办者，将冒险者互助组合更名为自由组合，建立起了与国家间的互助关系。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "神乐坂优树",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 66399,
+                    "name": "カガリ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/d3/15/66399_crt_ECp0Y.jpg",
+                    "actor_ids": [
+                        5727
+                    ],
+                    "name_cn": "卡嘉莉",
+                    "summary": "自由组合的副总帅，长耳族，是以探索为专长的冒险者，创下有完全探索了古代遗迹“索玛”的壮举。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "卡嘉莉",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女→男→女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 66530,
+                    "name": "本城正幸",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/09/78/66530_crt_BqVH7.jpg",
+                    "actor_ids": [
+                        5764
+                    ],
+                    "name_cn": "本城正幸",
+                    "summary": "年齢は16歳の高校生。勇者マサユキまたは閃光のマサユキと呼ばれる勇者。イングラシア王国で特に人気が高く、西側諸国最強と言われている。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "本城正幸",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 66902,
+                    "name": "ラプラス",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/38/46/66902_crt_JO1kO.jpg",
+                    "actor_ids": [
+                        4424
+                    ],
+                    "name_cn": "拉普拉斯",
+                    "summary": "中庸道化連の副会長。魔王クレイマンとともに何かを企んでいるようである。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "拉普拉斯",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 91047,
+                    "name": "フットマン",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/2c/4f/91047_crt_PrhFc.jpg",
+                    "actor_ids": [
+                        4246
+                    ],
+                    "name_cn": "福特曼",
+                    "summary": "中庸道化連で唯一太めの体を持つ、フットマン。怒った道化にふさわしく、フットマンの映る場面では激しい怒った感情をあらわにするシーンも。ラプラス、ティア、フットマンともにクレイマンとの仲も良かったようで、クレイマンを殺されたことに怒るシーンもあります。魔王レオンにももちろん憎しみをいただいている様子。魔王レオンと対峙した際は、いの一番に魔王レオンに口上を述べていました。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "福特曼",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 91048,
+                    "name": "ティア",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/bb/30/91048_crt_w7Hhh.jpg",
+                    "actor_ids": [
+                        19560
+                    ],
+                    "name_cn": "提亚",
+                    "summary": "自分のことをアタイと呼ぶ涙目の道化ティア。可愛らしい仮面と、少女を思わす喋り方に似合わず鎌を振り回す彼女は、生死を司る死神のよう。好物は懇願の涙。慈悲を請うものの涙が一番好きとされています。また楽天家というスキルをもち、命令を指示された時点で、それを遂行されるために、能力が向上するという限定的なスキルを持っています。戦闘力はラプラスやカザリームには劣るようですね。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "提亚",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 99626,
+                    "name": "智慧之王(ラファエル)",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/83/f8/99626_crt_2H2Oa.jpg?r=1629035923",
+                    "actor_ids": [
+                        3866
+                    ],
+                    "name_cn": "智慧之王拉斐尔",
+                    "summary": "独特技能「大贤者」进化的究极技能。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "智慧之王拉斐尔",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "https://www.ten-sura.com/character/raphael",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 152722,
+                    "name": "グランベル・ロッゾ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/75/ee/152722_crt_7ZlIX.jpg",
+                    "actor_ids": [
+                        4456
+                    ],
+                    "name_cn": "格兰贝尔·罗素",
+                    "summary": "暗中操控西方诸国跟评议会的罗素一族的统领。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "格兰贝尔·罗素",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "https://www.ten-sura.com/character/granville",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 152723,
+                    "name": "マリアベル・ロッゾ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/4a/f9/152723_crt_1zX4C.jpg",
+                    "actor_ids": [
+                        10868
+                    ],
+                    "name_cn": "玛莉安贝尔·罗素",
+                    "summary": "格兰贝尔的孙女，外表看似十岁左右的少女，希尔特罗斯王国的公主。转生者，拥有异世界的知识与稀有的力量，是罗素一族的希望。自称“贪婪”的玛莉安贝尔。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "玛莉安贝尔·罗素",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "https://www.ten-sura.com/character/maribel",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                }
+            ],
             "relations": [
                 {
                     "id": 124785,
@@ -201409,7 +202229,7 @@
                     "name": "新しい日々",
                     "name_cn": "",
                     "air_date": "2026-04-03",
-                    "desc": "開国祭が終わってからも、さらなる活気を見せる魔国連邦。街には冒険者が集まり、地下迷宮も大盛況！ ……のはずが、その地下迷宮に思わぬ問題があるようで――。",
+                    "desc": "開国祭も大成功に終わり、人魔共栄圏の実現に向けて新たな一歩を踏み出す魔国連邦。リムルが町を視察していると、ベニマルたち警備隊と揉める地下迷宮攻略を目指す冒険者の姿があった。地下迷宮の難易度についてクレームを受けたリムルは、ヴェルドラたちを集めて運営会議を行うことに。挑戦者のレベルの低さに頭を抱えるリムルは、会議に加わっていたマサユキからゲーム的な解決策を提案されるのだった。",
                     "duration_seconds": 0,
                     "ep": 1,
                     "sort": 73,
@@ -201421,7 +202241,7 @@
                     "name": "進化する迷宮",
                     "name_cn": "",
                     "air_date": "2026-04-10",
-                    "desc": "",
+                    "desc": "休憩区域を解放するマサユキのアイデアや高額賞金による宣伝効果で地下迷宮のテコ入れは大成功！ 運営も起動に乗って一安心するリムルだったが、今度は100人規模で地下迷宮を攻略するチーム緑乱というパーティが現れてしまう。加えて、地下迷宮で訓練していたヒナタのせいで６０階層以降の階層守護者が機能していないという。この緊急事態にリムルは地下迷宮の強化に乗り出す。",
                     "duration_seconds": 0,
                     "ep": 2,
                     "sort": 74,
@@ -201430,10 +202250,10 @@
                 },
                 {
                     "id": 1624221,
-                    "name": "",
+                    "name": "仮魔体チーム結成",
                     "name_cn": "",
                     "air_date": "2026-04-17",
-                    "desc": "",
+                    "desc": "地下迷宮用の仮魔体を手にしたリムルたち。しかしレベルの低い仮魔体と連携の取れない戦い方ではチーム緑乱に太刀打ちできない。そこでリムルは仲間と特訓を始める。",
                     "duration_seconds": 0,
                     "ep": 3,
                     "sort": 75,
@@ -201697,8 +202517,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 1,
-            "last_update": "2026-04-06T19:20:35+08:00",
+            "watched_eps": 2,
+            "last_update": "2026-04-14T13:05:38+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
@@ -206933,6 +207753,1418 @@
             "watch_status": 3,
             "watched_eps": 0,
             "last_update": "2026-04-05T20:25:36+08:00",
+            "comment": null,
+            "tags": [],
+            "__dataclass__": "UserStatus"
+        },
+        "__dataclass__": "ANiMeRecord"
+    },
+    {
+        "anime_data": {
+            "id": 378862,
+            "name": "お兄ちゃんはおしまい！",
+            "name_cn": "别当欧尼酱了！",
+            "short_summary": "某天，家里蹲的啃老族绪山真寻一觉醒来发现自己变成了“女孩子”！？正当真寻不知道镜子里的美少女是自己而陷入混乱的时候，跳级进入大学的科学家妹妹绪山美波里出现了。她透露在饮料里加了一种奇怪的药物！\r\n真寻最近2年一直疯狂宅家玩小黄游，偶尔不得已",
+            "score": 7.6,
+            "image_url": "https://lain.bgm.tv/pic/cover/l/7e/ca/378862_24TnR.jpg",
+            "eps": 12,
+            "date": "2023-01-05",
+            "summary": "某天，家里蹲的啃老族绪山真寻一觉醒来发现自己变成了“女孩子”！？正当真寻不知道镜子里的美少女是自己而陷入混乱的时候，跳级进入大学的科学家妹妹绪山美波里出现了。她透露在饮料里加了一种奇怪的药物！\r\n真寻最近2年一直疯狂宅家玩小黄游，偶尔不得已才会工作！突然成为女孩子开始生活的真寻，对于厕所、浴室、裙子、胸罩等女人的生活完全不懂…并且他和美波里中学时期的同学穗月枫和其妹妹穗月椛认识。\r\n真寻的日常生活逐渐热闹起来。在持续的苦难中，到底“前”哥哥的命运会如何...！",
+            "total_episodes": 16,
+            "characters": [
+                {
+                    "id": 28115,
+                    "name": "アナウンス",
+                    "relation": "旁白",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/70/d8/28115_crt_vL10O.jpg",
+                    "actor_ids": [
+                        7546,
+                        41929
+                    ],
+                    "name_cn": "广播",
+                    "summary": "各作品通用广播/播音员。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "广播",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 58444,
+                    "name": "緒山まひろ",
+                    "relation": "主角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/7d/97/58444_crt_YE77B.jpg?r=1672572354",
+                    "actor_ids": [
+                        16031,
+                        32531
+                    ],
+                    "name_cn": "绪山真寻",
+                    "summary": "被妹妹下了奇怪的药，变成了女孩子的孤高自宅警备员。\r\n深爱的黄油和黄书被夺走后，苦命地过活。\r\n被妹妹当妹妹养，已经慢慢习惯了。\r\n外表大概初中左右。",
+                    "birth_year": null,
+                    "birth_month": 3,
+                    "birth_day": 6,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "绪山真寻",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "生物学上的女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "3月6日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "O型",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "144cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "38kg",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 58445,
+                    "name": "緒山みはり",
+                    "relation": "主角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/8e/01/58445_crt_AaAK3.jpg?r=1673433150",
+                    "actor_ids": [
+                        6455,
+                        20696
+                    ],
+                    "name_cn": "绪山哨",
+                    "summary": "文武双全的能干妹妹。\r\n跳级进了大学，正在从事奇怪的研究。\r\n表面上为了进行试验，给亲哥下了药，\r\n然而她的本意是…？\r\n就结果而言对欧尼酱很娇惯。",
+                    "birth_year": null,
+                    "birth_month": 4,
+                    "birth_day": 22,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "绪山哨",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "4月22日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "AB型",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "154cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "47kg",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 114878,
+                    "name": "穂月かえで",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/6e/05/114878_crt_dHdkJ.jpg?r=1674595269",
+                    "actor_ids": [
+                        5941
+                    ],
+                    "name_cn": "穗月枫",
+                    "summary": "美波里中学时代的同学，现役女子高中生。\r\n有着辣妹的外表，是个性格开朗的姐姐。\r\n擅长料理，喜欢时尚和化妆。",
+                    "birth_year": null,
+                    "birth_month": 9,
+                    "birth_day": 12,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "穗月枫",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "9月12日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "A型",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "157cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "52kg",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 114879,
+                    "name": "穂月もみじ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/21/83/114879_crt_MTmgm.jpg?r=1674595305",
+                    "actor_ids": [
+                        5736
+                    ],
+                    "name_cn": "穗月椛",
+                    "summary": "穗月枫的妹妹。\r\n不习惯穿裙子，相比之下更喜欢男装的女孩子。跑腿的时候偶然遇到了困扰中的真寻，以帮助她为契机成为了朋友。",
+                    "birth_year": null,
+                    "birth_month": 10,
+                    "birth_day": 20,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "穗月椛",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "10月20日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "A型",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "149cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "42kg",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 121468,
+                    "name": "桜花あさひ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/e9/3b/121468_crt_WR4Zn.jpg?r=1674595323",
+                    "actor_ids": [
+                        14971
+                    ],
+                    "name_cn": "樱花朝日",
+                    "summary": "穗月红叶的同学。\r\n非常亲近人的，活泼开朗的女孩子。\r\n有着把想到的事情直接说出来的性格，喜欢用绰号称呼别人。\r\n一方面擅长运动，一方面又很不擅长学习，在考试前经常萎靡不振。",
+                    "birth_year": null,
+                    "birth_month": 5,
+                    "birth_day": 5,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "樱花朝日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "5月5日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "B型",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "151cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "43kg",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 121469,
+                    "name": "室崎みよ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/c6/64/121469_crt_ScSOb.jpg?r=1675345314",
+                    "actor_ids": [
+                        13582
+                    ],
+                    "name_cn": "室崎美夜",
+                    "summary": "穗月红叶的同学。\r\n有点害羞老实的女孩子。\r\n虽然本人打算隐瞒，但也有因看到关系很好的真寻、红叶、朝日的样子而感到高兴的一面……\r\n料理非常差劲，但是本人没有自觉。",
+                    "birth_year": null,
+                    "birth_month": 6,
+                    "birth_day": 19,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "室崎美夜",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "6月19日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "O型",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "148cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "45kg",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 123504,
+                    "name": "エロゲ音声",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/d5/87/123504_crt_lCGft.jpg",
+                    "actor_ids": [
+                        20696
+                    ],
+                    "name_cn": "",
+                    "summary": "广播剧CV：河津玲奈",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 123815,
+                    "name": "番台",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/4b/53/123815_crt_12LXf.jpg",
+                    "actor_ids": [
+                        14155
+                    ],
+                    "name_cn": "浴场前台",
+                    "summary": "登场于动画第2集。接待真寻一行的前台。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "浴场前台",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 124184,
+                    "name": "陽咲日和",
+                    "relation": "客串",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/f0/bc/124184_crt_XSp1P.jpg?r=1674595357",
+                    "actor_ids": [
+                        31457
+                    ],
+                    "name_cn": "阳咲日和",
+                    "summary": "元々10年以上前に企画してお蔵入りになったオリジナルアイドル漫画の登場人物であると言う事が作者のTwitterで明かされている。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "阳咲日和",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "dic.pixiv.net/a/お兄ちゃんはおしまい%21の登場キャラクター一覧",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 124185,
+                    "name": "セメ",
+                    "relation": "客串",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/05/fb/124185_crt_696yc.jpg",
+                    "actor_ids": [
+                        4304
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 124186,
+                    "name": "ウケ",
+                    "relation": "客串",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/97/e1/124186_crt_Qaqqh.jpg",
+                    "actor_ids": [
+                        4416
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 125509,
+                    "name": "富士見ねむ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/a5/89/125509_crt_1WSwI.jpg",
+                    "actor_ids": [
+                        51894
+                    ],
+                    "name_cn": "富士见音梦",
+                    "summary": "绪山真寻前面一个座位的同班同学。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "富士见音梦",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 125510,
+                    "name": "伏見のどか",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/9d/f4/125510_crt_W3sq7.jpg",
+                    "actor_ids": [
+                        51760
+                    ],
+                    "name_cn": "伏见和香",
+                    "summary": "绪山真寻的同班同学。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "伏见和香",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 125511,
+                    "name": "椎名みのり",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/2f/3a/125511_crt_qTtts.jpg",
+                    "actor_ids": [
+                        23760
+                    ],
+                    "name_cn": "椎名未祈",
+                    "summary": "绪山真寻的中学同学，“厌男二人组”的一员，经常迫害樱田悠太和千川凑，和高田纱月很要好，对千川凑有在默默关注。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "椎名未祈",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "https://zh.moegirl.org.cn/椎名未祈",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 125512,
+                    "name": "高田さつき",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/93/53/125512_crt_mgVvZ.jpg",
+                    "actor_ids": [
+                        51762
+                    ],
+                    "name_cn": "高田纱月",
+                    "summary": "绪山真寻的中学同学，“厌男二人组”的一员，经常迫害樱田悠太和千川凑，和椎名未祈很要好，和樱田悠太正处于交往中。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "高田纱月",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "https://zh.moegirl.org.cn/高田纱月",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 125513,
+                    "name": "八坂まい",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/23/32/125513_crt_V8CDQ.jpg?r=1678433637",
+                    "actor_ids": [
+                        34714
+                    ],
+                    "name_cn": "八坂舞",
+                    "summary": "绪山真寻的中学同学，“花哨二人组”的一员，擅长于社交，和长濑都子很要好。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "八坂舞",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "https://zh.moegirl.org.cn/八坂舞",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 125514,
+                    "name": "桜田ゆうた",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/a7/39/125514_crt_mO8QM.jpg?r=1676643541",
+                    "actor_ids": [
+                        51759
+                    ],
+                    "name_cn": "樱田悠太",
+                    "summary": "和千川凑很要好，对绪山真寻有好感。经常因看向不该看的地方或者说错话而被高田纱月和椎名未祈围攻。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "樱田悠太",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "https://zh.moegirl.org.cn/樱田悠太",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 125515,
+                    "name": "千川みなと",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/e8/d1/125515_crt_ZPpR3.jpg?r=1676643512",
+                    "actor_ids": [
+                        15303
+                    ],
+                    "name_cn": "千川凑",
+                    "summary": "绪山真寻的中学同学，和樱田悠太很要好，对绪山真寻有好感，经常因看向不该看的地方或者说错话而被高田纱月和椎名未祈围攻。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "千川凑",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "https://zh.moegirl.org.cn/千川凑",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 125516,
+                    "name": "西宮まり",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/40/7b/125516_crt_ANvSp.jpg",
+                    "actor_ids": [
+                        51763
+                    ],
+                    "name_cn": "西宫茉莉",
+                    "summary": "绪山真寻的中学古文教师和班主任，对外表的要求相当严格。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "西宫茉莉",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "https://zh.moegirl.org.cn/西宫茉莉",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 125517,
+                    "name": "南方りん",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/9a/ba/125517_crt_ls17s.jpg",
+                    "actor_ids": [
+                        51764
+                    ],
+                    "name_cn": "南方凛",
+                    "summary": "绪山真寻的中学体育教师，外表看起来比较严厉，实际上内心非常关心学生们。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "南方凛",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "https://zh.moegirl.org.cn/别当欧尼酱了！/角色列表#次要角色",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 125854,
+                    "name": "北原ゆりこ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/d4/76/125854_crt_D20gd.jpg",
+                    "actor_ids": [
+                        28045
+                    ],
+                    "name_cn": "北原百合子",
+                    "summary": "绪山真寻家政课的老师。初登場於第26話，對真尋等人進行了烘焙教學。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "北原百合子",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 126521,
+                    "name": "長瀬みやこ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/bf/0e/126521_crt_zPsdL.jpg?r=1678433600",
+                    "actor_ids": [
+                        48579
+                    ],
+                    "name_cn": "长濑都子",
+                    "summary": "“花哨二人组”的一员，和八坂舞很要好。初登场于漫画33话。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "长濑都子",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "https://zh.moegirl.org.cn/长濑都子",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 126522,
+                    "name": "拝島たけし",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/bd/ef/126522_crt_187X8.jpg?r=1678434532",
+                    "actor_ids": [
+                        13227
+                    ],
+                    "name_cn": "拜岛武",
+                    "summary": "运动部成员。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "拜岛武",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "https://zh.moegirl.org.cn/别当欧尼酱了！/角色列表",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 126523,
+                    "name": "木場ともや",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/d2/02/126523_crt_MUbw7.jpg?r=1678434211",
+                    "actor_ids": [
+                        20696
+                    ],
+                    "name_cn": "木场智也",
+                    "summary": "动画初登场于第10集。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "木场智也",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 126524,
+                    "name": "小平まこと",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/8b/db/126524_crt_ttxs2.jpg",
+                    "actor_ids": [
+                        35386
+                    ],
+                    "name_cn": "小平诚",
+                    "summary": "动画初登场于第10集。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "小平诚",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 127025,
+                    "name": "子供・兄",
+                    "relation": "客串",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/96/8a/127025_crt_o2Jr1.jpg",
+                    "actor_ids": [
+                        32531
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 127026,
+                    "name": "子供・妹",
+                    "relation": "客串",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/f7/d1/127026_crt_z7Z7i.jpg",
+                    "actor_ids": [
+                        20696
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 127030,
+                    "name": "レオナルド",
+                    "relation": "客串",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/99/1a/127030_crt_Z8794.jpg?r=1679743182",
+                    "actor_ids": [
+                        4977
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 127031,
+                    "name": "ニコララ",
+                    "relation": "客串",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/56/3c/127031_crt_gzH2c.jpg",
+                    "actor_ids": [
+                        29120
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 127032,
+                    "name": "スパボーン",
+                    "relation": "客串",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/a1/32/127032_crt_YVQo1.jpg",
+                    "actor_ids": [
+                        31507
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 127034,
+                    "name": "七海來夏",
+                    "relation": "客串",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/da/6c/127034_crt_gBdRn.jpg",
+                    "actor_ids": [
+                        40346
+                    ],
+                    "name_cn": "",
+                    "summary": "水色髪で美容師をしていた女性。 \r\n元々10年以上前に企画してお蔵入りになったオリジナルアイドル漫画の登場人物であると言う事が作者のTwitterで明かされている。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "dic.pixiv.net/a/お兄ちゃんはおしまい%21の登場キャラクター一覧",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 127035,
+                    "name": "補導員",
+                    "relation": "客串",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/c5/bf/127035_crt_BIJAh.jpg",
+                    "actor_ids": [
+                        41929
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 127124,
+                    "name": "神渡つらら",
+                    "relation": "客串",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/98/34/127124_crt_nljHZ.jpg",
+                    "actor_ids": [
+                        40794
+                    ],
+                    "name_cn": "神渡冰丽",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "神渡冰丽",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 127362,
+                    "name": "レポーター",
+                    "relation": "客串",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/68/13/127362_crt_8wCH8.jpg",
+                    "actor_ids": [
+                        20696
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 127364,
+                    "name": "女将",
+                    "relation": "客串",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/e4/7b/127364_crt_og6PO.jpg",
+                    "actor_ids": [
+                        23853
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 127366,
+                    "name": "仲居",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/d3/2a/127366_crt_5ox8q.jpg",
+                    "actor_ids": [
+                        14155
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 167591,
+                    "name": "四葉大学付属中学校",
+                    "relation": "客串",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/57/57/167591_crt_LRl12.jpg",
+                    "actor_ids": [],
+                    "name_cn": "四叶大学附属中学校",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "四叶大学附属中学校",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                }
+            ],
+            "relations": [
+                {
+                    "id": 218102,
+                    "name": "お兄ちゃんはおしまい！",
+                    "name_cn": "别当欧尼酱了！",
+                    "relation": "书籍",
+                    "type": 1,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/62/df/218102_1ACAI.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 404649,
+                    "name": "アイデン貞貞メルトダウン",
+                    "name_cn": "",
+                    "relation": "片头曲",
+                    "type": 3,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/be/98/404649_OUomP.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 404650,
+                    "name": "ひめごと*クライシスターズ",
+                    "name_cn": "",
+                    "relation": "片尾曲",
+                    "type": 3,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/9c/18/404650_B88tr.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 414431,
+                    "name": "TVアニメ『お兄ちゃんはおしまい！』オリジナルサウンドトラック",
+                    "name_cn": "",
+                    "relation": "原声集",
+                    "type": 3,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/cb/f0/414431_QMgHt.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 509029,
+                    "name": "お兄ちゃんはおしまい！設定資料集",
+                    "name_cn": "",
+                    "relation": "其他",
+                    "type": 1,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/48/31/509029_1mYgi.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 509032,
+                    "name": "TVアニメ「お兄ちやんはおしまい!」原画集 上",
+                    "name_cn": "",
+                    "relation": "画集",
+                    "type": 1,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/dc/db/509032_2Ey0s.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 509033,
+                    "name": "TVアニメ「お兄ちやんはおしまい!」原画集 下",
+                    "name_cn": "",
+                    "relation": "画集",
+                    "type": 1,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/03/55/509033_cyRa5.jpg",
+                    "__dataclass__": "Relation"
+                }
+            ],
+            "episodes": [
+                {
+                    "id": 1156096,
+                    "name": "まひろとイケないカラダ",
+                    "name_cn": "真寻与不得了的身体",
+                    "air_date": "2023-01-05",
+                    "desc": "2年も外に出ないで、いかがわしいゲーム三昧の“引きこもりでダメニート男”な緒山まひろ。昼時に目を覚ますと、どうも身体の様子がおかしい…。\r\n不思議がりつつもタブレットを手に取ると…、\r\nそこには見ず知らずの“可愛い女の子”が画面に映っていた！？\r\n突如始まる女の子の生活に、“元”お兄ちゃんであるまひろの運命はどうなる…！？\r\n\r\n脚本：横手美智子\r\n絵コンテ・演出：藤井慎吾\r\n作画監督：今村 亮",
+                    "duration_seconds": 1420,
+                    "ep": 1,
+                    "sort": 1,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1156097,
+                    "name": "まひろと女の子の日",
+                    "name_cn": "真寻与女孩子之日",
+                    "air_date": "2023-01-12",
+                    "desc": "突如始まった女の子の生活に戸惑いながら、少しずつ楽しさも分かり始めてきたとある日、男らしさを取り戻すと意気込むまひろは筋トレをしてみる。しかし全く体が持ち上がらず、お腹が痛くなるはめに…。みるみる体調が悪くなるまひろを心配するみはりは、ある事に気が付くのであった。それは、まひろが女の子になってから1ヵ月経過したことに関係あるようで…。\r\n\r\n脚本：横手美智子\r\n絵コンテ・演出：伊礼えり\r\n作画監督：山崎匠馬",
+                    "duration_seconds": 1420,
+                    "ep": 2,
+                    "sort": 2,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1156098,
+                    "name": "まひろと未知との遭遇",
+                    "name_cn": "真寻与未知的遭遇",
+                    "air_date": "2023-01-19",
+                    "desc": "自宅のトイレに駆け込むまひろ。そこには見知らぬ女子高生が座っていた。派手な見た目の彼女は、みはりの中学時代の同級生・かえで。初対面かつ元男であるまひろは緊張していたが、親しみやすいかえでにすぐ打ち解けていくのであった。すると突然かえでは、「まひろちゃんってさぁ、まだシたことないでしょ…」とまひろに迫っていく…！パーになりそうなまひろに、かえでが教えてくれたのは…！？\r\n\r\n脚本：平見瞠\r\n絵コンテ・演出：秋山泰彦\r\n作画監督：西原大樹",
+                    "duration_seconds": 1420,
+                    "ep": 3,
+                    "sort": 3,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1156099,
+                    "name": "まひろとあたらしい友達",
+                    "name_cn": "真寻与新朋友",
+                    "air_date": "2023-01-26",
+                    "desc": "みはりにゲームで負けたまひろは、一人でおつかいに行くことに。引きこもりでダメニートなため怯えながらも勇気を出してスーパーへ向かうが、人の多さに足が進まず、入り口で怖じ気づいてしまった。するとそこへ、キャップをかぶった同い年くらいの男の子？が現れ、おつかいを手伝ってくれることに。おかげで無事買い物を終えたまひろが帰ろうとしたとき、偶然そこにかえでがやって来て…。\r\n\r\n脚本：横手美智子\r\n絵コンテ・演出：柿木田隼人\r\n作画監督：西谷衆平・新海良佑・佐藤利幸",
+                    "duration_seconds": 1420,
+                    "ep": 4,
+                    "sort": 4,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1156100,
+                    "name": "まひろと補導とお誘いと",
+                    "name_cn": "真寻与辅导与邀约",
+                    "air_date": "2023-02-02",
+                    "desc": "ある朝みはりがリビングへ向かうと、なんと、まひろの方が早く起きていた。今日からコンビニで好きなアニメのクリアファイルが配布されるらしく、いち早く手に入れるために早起きしたとのこと。自主的に出掛けようとする姿に、みはりは感動するのだった。目当てのものをゲットしたまひろは、帰り際にゲーセンへ立ち寄る。その懐かしさに思わず音楽ゲームで遊んでいると、背後に男の人の気配が…。肩を叩かれ振り向くと…\r\n\r\n脚本：横手美智子\r\n絵コンテ：望月智充\r\n演出：幸博コマヲ\r\n作画監督：みやち",
+                    "duration_seconds": 1420,
+                    "ep": 5,
+                    "sort": 5,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1156101,
+                    "name": "まひろと二度目の中学生",
+                    "name_cn": "真寻与再次成为国中生",
+                    "air_date": "2023-02-09",
+                    "desc": "突然もみじと一緒に緒山家へやって来のは、もみじの同級生である、桜花あさひと室崎みよ。パフェを食べに行こうと、まひろを誘いに来たのだ。初めは緊張していたまひろだったが、明るくフレンドリーな二人とすぐに仲良くなるのだった。楽しく女子会を終えたその夜、お風呂から上がったまひろに用意されていたのは、みはりが着ていたお古の学生服。そしてみはりの口から衝撃の一言が…！\r\n\r\n脚本：平見瞠\r\n絵コンテ・演出：新井宣圭\r\n作画監督：向川原憲、りお、くまがぱんいち、李嘉、内田百香",
+                    "duration_seconds": 1420,
+                    "ep": 6,
+                    "sort": 6,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1156102,
+                    "name": "まひろとロールプレイ",
+                    "name_cn": "真寻与角色扮演",
+                    "air_date": "2023-02-16",
+                    "desc": "様々なハプニングはありつつも、徐々に学校生活が楽しくなってきたまひろ。そんな中、期末テストの時期がやって来た。試験とはいえども、中学一年生の問題。余裕の表情のまひろは、さらさらと答案を書き込んでいくが、差し込む日差しに、だんだんとまぶたが重くなっていく…。ハッと目覚めると、8割空白の答案用紙が回収されてしまうのだった…。\r\n\r\n脚本：平見瞠\r\n絵コンテ・演出：宇和野歩\r\n作画監督：田口愛梨",
+                    "duration_seconds": 1420,
+                    "ep": 7,
+                    "sort": 7,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1156103,
+                    "name": "まひろとはじめての女子会",
+                    "name_cn": "真寻与初次女孩聚会",
+                    "air_date": "2023-02-23",
+                    "desc": "臥薪嘗胆、艱難辛苦を乗り越え、ようやくたどり着いた長期休暇という名の桃源郷に「思う存分、休み尽くすぞ～～！」と意気込むまひろだが、折角更生中のまひろを再びダメニートに戻さないよう、みはりはかえでに連絡しある企みを巡らす。その結果、急遽もみじ、あさひ、みよが緒山家にやってきてお泊り会が開催される！みんなと一緒のお風呂やガールズトークをまひろは無事乗り越えられるのか…！？\r\n\r\n脚本：横手美智子\r\n絵コンテ・演出：田中宏紀\r\n作画監督：佐藤利幸",
+                    "duration_seconds": 1420,
+                    "ep": 8,
+                    "sort": 8,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1156104,
+                    "name": "まひろと年末年始",
+                    "name_cn": "真寻与新年旧岁",
+                    "air_date": "2023-03-02",
+                    "desc": "クリスマスにデートの約束があると出掛けるみはりに動揺を隠せないまひろは、もみじを連れ出してこっそり後を追いかけることに。まひろからのお誘いに喜ぶもみじとは裏腹に、みはりのデート相手を緊張しながら見張るまひろだが、そこに現れたのは…！？そして、新年の初詣に出掛けるまひろとみはりはかえでともみじと会う。その後、あさひとみよにも会い、みんなで穂月家に行くことになるが…！？\r\n\r\n脚本：横手美智子\r\n絵コンテ：黒沢守\r\n演出：秋山泰彦\r\n作画監督：青木駿介・くまがぱんいち・内田百香",
+                    "duration_seconds": 1420,
+                    "ep": 9,
+                    "sort": 9,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1156105,
+                    "name": "まひろとおっぱいとアイデンティティ",
+                    "name_cn": "真寻与胸部与自我认知",
+                    "air_date": "2023-03-09",
+                    "desc": "1月の新学期が始まり、みんなで冬の制服の着こなしを話すまひろ。うっかり自分でスカートを捲り、男子に見られたことで可愛い悲鳴を出してしまう。男の心を取り戻すべく気持ちを引き締めるまひろだが、家でかえでにマッサージされることになり…！？バレンタインの日に、みはりからチョコを渡されるまひろ。その場で食べ始めるまひろに慌てて「今年はあげる側なんだから」と止められ…！？\r\n\r\n脚本：平見瞠\r\n絵コンテ・演出：坂口蒼星\r\n作画監督：西野佳佑・向川原憲・澁谷健太郎",
+                    "duration_seconds": 1420,
+                    "ep": 10,
+                    "sort": 10,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1156106,
+                    "name": "まひろと女子のたしなみ",
+                    "name_cn": "真寻与女生的嗜好",
+                    "air_date": "2023-03-16",
+                    "desc": "最近クラスで流行っている“占い”。試しに占ってみた結果は「記念日は忘れずに！サプライズで運気アップ」。この結果にニヤリとするみはりだが、占い遊びの最中に自身の誕生日を思い出すまひろ。結果みはりのサプライズは失敗するが、後日もみじ達の様子がおかしく、まひろは避けられてしまう…。あさひから完全拒絶されてしまいショックを受けるまひろだが…！？\r\n\r\n脚本：平見瞠\r\n絵コンテ：長田伸二\r\n演出：長田伸二・幸博コマヲ\r\n作画監督：大田和寛・川妻智美・永山歩実・TOMATO・けろりら・みやち",
+                    "duration_seconds": 1420,
+                    "ep": 11,
+                    "sort": 11,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1156107,
+                    "name": "まひろのおしまいとこれから",
+                    "name_cn": "真寻的结束与今后",
+                    "air_date": "2023-03-23",
+                    "desc": "春休み前、みんなで集まった際にあれよあれよと決まった一泊二日の温泉旅行計画！ダラダラするはずが、浴衣に着替えて外に遊びに行ったり、露天風呂に入ったりと旅行を楽しむみんなに振り回されるまひろ。流石に気恥ずかしくみんなと離れて温泉に入ったまひろの元に、もみじとあさひとみよが来る。お風呂の中でくすぐり合う最中、なんとまひろは股間に奇妙なショックを感じ…！？\r\n\r\n脚本：横手美智子\r\n絵コンテ・演出：藤井慎吾\r\n作画監督：今村亮・山﨑匠馬・新海良佑・みとん・みやち",
+                    "duration_seconds": 1420,
+                    "ep": 12,
+                    "sort": 12,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1157082,
+                    "name": "TVアニメ『お兄ちゃんはおしまい！』公開直前特番",
+                    "name_cn": "",
+                    "air_date": "2022-12-23",
+                    "desc": "◆配信日時：2022年12月23日(金)20:00～20:45\r\n◆配信プラットフォーム：YouTube“TOHO animationチャンネル”\r\n※後日、公式より配信リンクを公開致します。\r\n◆出演：高野麻里佳(緒山まひろ役)/石原夏織(緒山みはり役)/金元寿子(穂月かえで役)/津田美波(穂月もみじ役)/優木かな(桜花あさひ役)/日岡なつみ(室崎みよ役)\r\n※こちらは事前収録の特番配信となります。\r\n※出演者・内容・配信開始ならびに終了時間などは予告なく変更になる場合がございます。",
+                    "duration_seconds": 0,
+                    "ep": 0,
+                    "sort": 0,
+                    "type": 1,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1184359,
+                    "name": "TVアニメ『お兄ちゃんはおしまい！』おしまいの直前に！&quot;ONIMAI SISTERS&quot;が大集合SP",
+                    "name_cn": "",
+                    "air_date": "2023-03-23",
+                    "desc": "3月23日(木)22時30分より「ABEMAアニメチャンネル」にて、特別番組「TVアニメ『お兄ちゃんはおしまい！』おしまいの直前に！\"ONIMAI SISTERS\"が大集合SP」の独占放送が決定いたしました！\r\n本番組には、緒山まひろ役の高野麻里佳さん、緒山みはり役の石原夏織さん、穂月かえで役の金元寿子さん、穂月もみじ役の津田美波さんら、\"ONIMAI SISTERS\"が集結し、これまでのストーリーを振り返るなど皆で楽しくトークします！\r\n\r\nさらに、特別番組の放送に合わせ、『おにまい』第1話から最終話直前の第11話までを、3月23日(木)16時30分より一挙に放送！\r\n\r\n【特別番組「TVアニメ『お兄ちゃんはおしまい！』おしまいの直前に！\"ONIMAI SISTERS\"が大集合SP」　概要】\r\n◆放送日時：2023年3月23日(木)22時30分〜23時30分\r\n◆放送チャンネル：ABEMAアニメチャンネル\r\n◆番組URL：[url]https://abema.tv/channels/abema-anime/slots/B2fq46S1UYNZNf[/url]\r\n◆出演者（※敬称略）：高野麻里佳、石原夏織、金元寿子、津田美波",
+                    "duration_seconds": 0,
+                    "ep": 0,
+                    "sort": 11.5,
+                    "type": 1,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1225486,
+                    "name": "アイデン貞貞メルトダウン",
+                    "name_cn": "",
+                    "air_date": "2023-04-19",
+                    "desc": "ノンクレジットOP",
+                    "duration_seconds": 90,
+                    "ep": 0,
+                    "sort": 1,
+                    "type": 2,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1225487,
+                    "name": "ひめごと＊クライシスターズ",
+                    "name_cn": "",
+                    "air_date": "2023-04-19",
+                    "desc": "ノンクレジットED",
+                    "duration_seconds": 90,
+                    "ep": 0,
+                    "sort": 1,
+                    "type": 3,
+                    "__dataclass__": "Episode"
+                }
+            ],
+            "__dataclass__": "ANiMeData"
+        },
+        "user_status": {
+            "watch_status": 2,
+            "watched_eps": 14,
+            "last_update": "2026-04-14T13:05:42+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
