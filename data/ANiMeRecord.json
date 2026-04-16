@@ -202539,6 +202539,33 @@
             "total_episodes": 11,
             "characters": [
                 {
+                    "id": 17529,
+                    "name": "モブキャラクター",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/1d/85/17529_crt_0dRZE.jpg",
+                    "actor_ids": [
+                        36531
+                    ],
+                    "name_cn": "路人",
+                    "summary": "闲角，常称作路人，在电视剧、电影等作品中，指戏份薄弱的副角、不相关的小人物、串场的闲杂人等。可能用来表达地方民众的声音，或是充当背景。\r\nモブキャラクター（mob character）とは、漫画、アニメ、映画、コンピュータゲームなどに描かれる端役のこと。群衆（群集）、または主要キャラクター以外の、その他大勢のこと。群集キャラ、背景キャラともいう。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "路人",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "http://www.paradisearmy.com/doujin/pasok_mob.htm",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
                     "id": 35607,
                     "name": "ナツキ・スバル",
                     "relation": "主角",
@@ -203290,7 +203317,9 @@
                     "name": "パトラッシュ",
                     "relation": "配角",
                     "image_url": "https://lain.bgm.tv/pic/crt/l/66/b3/46445_crt_o5HGW.jpg?r=1503760559",
-                    "actor_ids": [],
+                    "actor_ids": [
+                        16267
+                    ],
                     "name_cn": "帕特拉修",
                     "summary": "白鯨討伐の際に、クルシュより送られた漆黒の地竜。ダイアナ種と呼ばれ優秀だが扱いにくい。気位が高いが、何故かスバルにだけは懐いており、その献身によって幾度となく窮地を救われている。性別は雌。スバルへの態度やオットーの通訳によると、クールで姉御肌な性格。",
                     "birth_year": null,
@@ -203687,6 +203716,44 @@
                         }
                     ],
                     "__dataclass__": "Character"
+                },
+                {
+                    "id": 208675,
+                    "name": "ヨーゼフ",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/85/bd/208675_crt_E71EI.jpg",
+                    "actor_ids": [
+                        23595
+                    ],
+                    "name_cn": "约瑟夫",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "约瑟夫",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 208677,
+                    "name": "花魁熊",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/16/2a/208677_crt_k39FT.jpg",
+                    "actor_ids": [
+                        17758
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [],
+                    "__dataclass__": "Character"
                 }
             ],
             "relations": [
@@ -203732,7 +203799,7 @@
                     "name_cn": "",
                     "relation": "片头曲",
                     "type": 3,
-                    "image_url": "",
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/0e/68/639067_k2RSS.jpg",
                     "__dataclass__": "Relation"
                 },
                 {
@@ -203751,7 +203818,7 @@
                     "name": "君を連れ出す理由／ゴージャス・タイガー・リローデッド",
                     "name_cn": "带妳出来的原因／华丽猛虎，重装上阵",
                     "air_date": "2026-04-08",
-                    "desc": "魔女教大罪司教の襲撃をなんとか退けたスバルたちだったが、『色欲』に姿を変えられた人々、『暴食』に名前や記憶を奪われた者たちなど、失った代償は大きかった。現状解決の糸口を探る中、アナスタシアの提案でルグニカ三英傑の一人、『賢者』シャウラの住まうプレアデス監視塔へ向かうことを決意する。一方、療養のためプリステラに残ったガーフィールはミミと一緒に、記憶を失った母リアラの家を訪れていた。\r\n\r\n脚本：横谷昌宏　\r\n絵コンテ：頂 真司　\r\n演出：篠原正寛\r\n総作画監督：佐川 遥　\r\n作画監督：三浦 瞳",
+                    "desc": "魔女教大罪司教の襲撃をなんとか退けたスバルたちだったが、『色欲』に姿を変えられた人々、『暴食』に名前や記憶を奪われた者たちなど、失った代償は大きかった。現状解決の糸口を探る中、アナスタシアの提案でルグニカ三英傑の一人、『賢者』シャウラの住まうプレアデス監視塔へ向かうことを決意する。一方、療養のためプリステラに残ったガーフィールはミミと一緒に、記憶を失った母リアラの家を訪れていた。\r\n\r\n脚本：横谷昌宏　\r\n絵コンテ：頂真司、篠原正寛\r\n演出：篠原正寛\r\n総作画監督：佐川 遥　\r\n作画監督：三浦 瞳",
                     "duration_seconds": 1420,
                     "ep": 1,
                     "sort": 67,
@@ -203760,11 +203827,11 @@
                 },
                 {
                     "id": 1656867,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "砂時間を越えろ",
+                    "name_cn": "穿越沙时间吧",
                     "air_date": "2026-04-15",
-                    "desc": "",
-                    "duration_seconds": 0,
+                    "desc": "ラムやレム、メィリィも加わって、プレアデス監視塔のある魔境・アウグリア砂丘への挑戦の旅が始まった。しかしミルーラの町で聞いた「監視塔には四百年間だれも辿り着けてはいない」という話の通り、メィリィの加護で魔獣をいなし、砂風吹き荒れる『砂時間』をやり過ごしながら進むものの、塔との距離は何故か一向に縮まらない。ラインハルトをも阻んだ砂丘のカラクリに対し、ラムが『千里眼』で突破口を探る。\r\n\r\n脚本：中村能子　\r\n絵コンテ：頂 真司　\r\n演出：正木陽南子\r\n総作画監督：三島千枝　\r\n作画監督：齊藤貴巳一、平松伸行",
+                    "duration_seconds": 1420,
                     "ep": 2,
                     "sort": 68,
                     "type": 0,
@@ -203883,8 +203950,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 1,
-            "last_update": "2026-04-09T13:40:25+08:00",
+            "watched_eps": 2,
+            "last_update": "2026-04-16T13:23:39+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
@@ -205543,6 +205610,41 @@
                     "__dataclass__": "Character"
                 },
                 {
+                    "id": 123650,
+                    "name": "西野武子",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/6c/86/123650_crt_8qjxv.jpg?r=1748510304",
+                    "actor_ids": [],
+                    "name_cn": "西野武子",
+                    "summary": "龙园班的学生。有这胆敢反抗龙园的一面。\r\n\r\n龍園クラスの生徒。女子の中では強面と思われていて、あまり群れて過ごすのは好きではない。石崎の単純細胞なところを呆れつつも、どこか憎めないでいる。",
+                    "birth_year": null,
+                    "birth_month": 6,
+                    "birth_day": 11,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "西野武子",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "6月11日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "wiki、https://youkosozitsuryoku-3rd.com/character/nishino.html",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
                     "id": 123656,
                     "name": "桐山生叶",
                     "relation": "配角",
@@ -206193,7 +206295,9 @@
                     "name": "南節也",
                     "relation": "闲角",
                     "image_url": "https://lain.bgm.tv/pic/crt/l/44/b6/207875_crt_m33Vc.jpg",
-                    "actor_ids": [],
+                    "actor_ids": [
+                        64292
+                    ],
                     "name_cn": "南节也",
                     "summary": "堀北班学生。\r\n\r\n·どちらかといえぱ勉強より運動が得意\r\n·やせ型",
                     "birth_year": null,
@@ -206470,10 +206574,10 @@
                 {
                     "id": 1650964,
                     "name": "２０００万の男",
-                    "name_cn": "",
+                    "name_cn": "价值两千万的男人",
                     "air_date": "2026-04-08",
                     "desc": "退学のかかった新1年生からの仕掛けを回避した綾小路。\r\nしかし綾小路の特別試験の結果に2年Dクラスは騒然となり、不正まで疑い始めてしまう。\r\n綾小路はクラスメイトから追及を受けることになり……。\r\n\r\n脚本：重信 康　\r\n絵コンテ：中島大輔　\r\n演出：竹ノ内広海\r\n総作画監督：山形孝二　\r\n作画監督：中野すが子/小野木三斉/福田梨生/所沢映画/米川",
-                    "duration_seconds": 0,
+                    "duration_seconds": 1420,
                     "ep": 5,
                     "sort": 5,
                     "type": 0,
@@ -206481,11 +206585,11 @@
                 },
                 {
                     "id": 1650965,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "波乱の争奪戦",
+                    "name_cn": "纷乱的争夺战",
                     "air_date": "2026-04-15",
-                    "desc": "",
-                    "duration_seconds": 0,
+                    "desc": "今年の無人島サバイバル試験の開催が告知された。\r\n期間は2週間で、さらに無人島は昨年よりも大きくなり、全学年で競い合うことになる。\r\nその前に4週間、グループ作りのための期間が与えられ、全クラスを巻き込んだ人材獲得合戦が始まる。\r\n\r\n脚本：勝冶京子　絵コンテ：佐々木憲世　演出：椎名真子/ノタロマリアルイーザ/津田悠華/野亦則行\r\n総作画監督：山形孝二/樋口博美/米本沙織/永田陽菜　作画監督：西位輝実/樋口博美/福田梨生/古村祐香里/大野勉/川本由記子/所沢映画/炎珏動画",
+                    "duration_seconds": 1420,
                     "ep": 6,
                     "sort": 6,
                     "type": 0,
@@ -206616,8 +206720,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 5,
-            "last_update": "2026-04-09T13:18:41+08:00",
+            "watched_eps": 6,
+            "last_update": "2026-04-16T13:17:15+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"

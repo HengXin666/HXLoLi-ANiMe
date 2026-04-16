@@ -9665,5 +9665,12 @@
         "short_summary": "日本の女性声優。ラクーンドッグ所属。島根県出身。プロ・フィット声優養成所卒。",
         "image_url": "https://lain.bgm.tv/pic/crt/l/1b/b2/23853_prsn_7NZfN.jpg",
         "__dataclass__": "Actor"
+    },
+    {
+        "id": 64292,
+        "name": "島倉凱隼",
+        "short_summary": "",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/da/8d/64292_prsn_qAi3C.jpg",
+        "__dataclass__": "Actor"
     }
 ]
