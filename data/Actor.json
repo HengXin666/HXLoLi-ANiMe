@@ -9672,5 +9672,12 @@
         "short_summary": "",
         "image_url": "https://lain.bgm.tv/pic/crt/l/da/8d/64292_prsn_qAi3C.jpg",
         "__dataclass__": "Actor"
+    },
+    {
+        "id": 22600,
+        "name": "狩野翔",
+        "short_summary": "東京俳優生活協同組合所属\r\n\r\n出身地：神奈川県\r\n声：テノール\r\n特技：バク転・スノーボード・ダジャレ\r\n免許・資格：普通自動車・珠算2級\r\n趣味・スポーツ：旅行・読書・棒高跳び・器械体操・男磨き",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/de/40/22600_prsn_lHsqh.jpg?r=1578626173",
+        "__dataclass__": "Actor"
     }
 ]

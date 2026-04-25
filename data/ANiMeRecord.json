@@ -203808,7 +203808,7 @@
                     "name_cn": "",
                     "relation": "片尾曲",
                     "type": 3,
-                    "image_url": "",
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/ef/09/639070_2A1FS.jpg",
                     "__dataclass__": "Relation"
                 }
             ],
@@ -203839,11 +203839,11 @@
                 },
                 {
                     "id": 1656868,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "監視塔の番人",
+                    "name_cn": "监视塔的守卫",
                     "air_date": "2026-04-22",
-                    "desc": "",
-                    "duration_seconds": 0,
+                    "desc": "陰魔法によって空間の歪みが生じ、砂丘の地下に飛ばされてしまったスバルはラムに叩き起こされる。襟ドナとパトラッシュと合流するものの、エミリアやレム、ベアトリスたちとは分断されてしまった。双子の共感覚によって動けないレムの命の無事は確認できたが、近くに出口も見つからない。みんなと合流するため、風もなく、気温も低く、砂を踏む足音だけが響く地下通路を、スバルたちは進み始める。\r\n\r\n脚本：中村能子　\r\n絵コンテ：原 英和　\r\n演出：原 英和\r\n総作画監督：佐川 遥　\r\n作画監督：WHITE FOX伊豆高原スタジオ、鳥之海恋子、岩田景子、佐川 遥、小橋陽介",
+                    "duration_seconds": 1420,
                     "ep": 3,
                     "sort": 69,
                     "type": 0,
@@ -203950,8 +203950,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 2,
-            "last_update": "2026-04-16T13:23:39+08:00",
+            "watched_eps": 3,
+            "last_update": "2026-04-25T20:25:30+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
@@ -205029,6 +205029,38 @@
                     "__dataclass__": "Character"
                 },
                 {
+                    "id": 56380,
+                    "name": "小宮叶吾",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/7d/70/56380_crt_ejEsN.jpg?r=1673406274",
+                    "actor_ids": [
+                        19780
+                    ],
+                    "name_cn": "小宫叶吾",
+                    "summary": "龙园班的学生。\r\n\r\n石崎的同伴兼死党之一，篮球社成员。\r\n[mask]曾与石崎一起挑衅过D班的须藤，刻意让须藤打他们从而触发退学风波。后来对D班的篠原皋月有好感，因此与池成为情敌。[/mask]",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "小宫叶吾",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "wiki",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
                     "id": 56381,
                     "name": "石崎大地",
                     "relation": "配角",
@@ -205610,11 +205642,43 @@
                     "__dataclass__": "Character"
                 },
                 {
+                    "id": 123647,
+                    "name": "鬼龍院楓花",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/a8/d4/123647_crt_PqLaD.jpg?r=1673407137",
+                    "actor_ids": [],
+                    "name_cn": "鬼龙院枫花",
+                    "summary": "B班的女学生，单论成绩堪称校内第一，全校中的唯一的学力与身体能力成绩都是A+。个性跟高圆寺一样随心所欲，不会为班级行动，因此被桐山视作导致原先的2年A班降至B班的主因。\r\n出身富裕的大小姐，虽然从小被祖父宠爱，但同样向往自由，决定离开家族走出一条属于自己的路。直觉非常准，在三年级时因绫小路解答出无人能解的数学难题，加上跟绫小路首次见面就察觉他非泛泛之辈，从而对绫小路产生极大的兴趣。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "鬼龙院枫花",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "wiki",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
                     "id": 123650,
                     "name": "西野武子",
                     "relation": "配角",
                     "image_url": "https://lain.bgm.tv/pic/crt/l/6c/86/123650_crt_8qjxv.jpg?r=1748510304",
-                    "actor_ids": [],
+                    "actor_ids": [
+                        44595
+                    ],
                     "name_cn": "西野武子",
                     "summary": "龙园班的学生。有这胆敢反抗龙园的一面。\r\n\r\n龍園クラスの生徒。女子の中では強面と思われていて、あまり群れて過ごすのは好きではない。石崎の単純細胞なところを呆れつつも、どこか憎めないでいる。",
                     "birth_year": null,
@@ -206482,6 +206546,43 @@
                         }
                     ],
                     "__dataclass__": "Character"
+                },
+                {
+                    "id": 209301,
+                    "name": "高橋修",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/a0/36/209301_crt_sPw88.jpg",
+                    "actor_ids": [
+                        22600
+                    ],
+                    "name_cn": "高桥修",
+                    "summary": "2年生編から登場した新1年生で、石上京・天沢一夏と同じAクラスの生徒。\r\n名前の読みは「おさむ」。\r\n学力はやや低めだが、誰とでも親しくなることに長けており、クラス間での話し合いの場においてはクラス代表として姿を見せることが多く、他クラス他学年にも多くの友人がいる。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "高桥修",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": [
+                                {
+                                    "k": "seesaawiki",
+                                    "v": "https://seesaawiki.jp/you-zitsu/d/%b9%e2%b6%b6%bd%a4"
+                                }
+                            ],
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
                 }
             ],
             "relations": [
@@ -206597,11 +206698,11 @@
                 },
                 {
                     "id": 1650966,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "暗躍",
+                    "name_cn": "暗中活动",
                     "air_date": "2026-04-22",
-                    "desc": "",
-                    "duration_seconds": 0,
+                    "desc": "2年生たちがクラス間で無人島サバイバル試験に向けたグループ作りを進める中、\r\n1年生たちも各クラスの代表者が話し合いのために集まっていた。\r\nグループ参加を拒み続け、ポイントでの取引にしか応じないと\r\n一点張りの宝泉に宇都宮が対抗し、その場が一触即発の状況になる。\r\n\r\n脚本：重信 康　\r\n絵コンテ：齋藤徳明　\r\n演出：椎名真子/ノタロマリアルイーザ/津田悠華/野亦則行\r\n総作画監督：山形孝二/市川美帆/樋口博美/米本沙織/樋上あや\r\n作画監督：北川知子/西位輝実/古村祐香里/米本 沙織/所沢映画/拾月動画/Reboot",
+                    "duration_seconds": 1420,
                     "ep": 7,
                     "sort": 7,
                     "type": 0,
@@ -206609,10 +206710,10 @@
                 },
                 {
                     "id": 1650967,
-                    "name": "",
+                    "name": "龍たちの見つめるもの",
                     "name_cn": "",
                     "air_date": "2026-04-29",
-                    "desc": "",
+                    "desc": "無人島サバイバル試験のグループ作りの期限まで、あと1週間となった。\r\n生徒会副会長の桐山に呼び出された綾小路は、次の特別試験で\r\n南雲に挑もうとしていること、その邪魔をしないでほしいことを言い渡される。\r\nそこへ、3年Bクラスの鬼龍院が声をかけてきて……。\r\n\r\n脚本：重信 康　\r\n絵コンテ：中島大輔　\r\n演出：髙津光一朗\r\n総作画監督：山形孝二/市川美帆/樋口博美/米本沙織/永田 陽菜\r\n作画監督：稲田 真樹/木村 拓馬/安形 佳己/廣瀬 智仁/拾月動画/所沢映画",
                     "duration_seconds": 0,
                     "ep": 8,
                     "sort": 8,
@@ -206720,8 +206821,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 6,
-            "last_update": "2026-04-16T13:17:15+08:00",
+            "watched_eps": 7,
+            "last_update": "2026-04-25T20:25:24+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
