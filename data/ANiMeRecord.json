@@ -202227,7 +202227,7 @@
                 {
                     "id": 1624219,
                     "name": "新しい日々",
-                    "name_cn": "",
+                    "name_cn": "崭新的日子",
                     "air_date": "2026-04-03",
                     "desc": "開国祭も大成功に終わり、人魔共栄圏の実現に向けて新たな一歩を踏み出す魔国連邦。リムルが町を視察していると、ベニマルたち警備隊と揉める地下迷宮攻略を目指す冒険者の姿があった。地下迷宮の難易度についてクレームを受けたリムルは、ヴェルドラたちを集めて運営会議を行うことに。挑戦者のレベルの低さに頭を抱えるリムルは、会議に加わっていたマサユキからゲーム的な解決策を提案されるのだった。",
                     "duration_seconds": 0,
@@ -202239,7 +202239,7 @@
                 {
                     "id": 1624220,
                     "name": "進化する迷宮",
-                    "name_cn": "",
+                    "name_cn": "不断进化的迷宫",
                     "air_date": "2026-04-10",
                     "desc": "休憩区域を解放するマサユキのアイデアや高額賞金による宣伝効果で地下迷宮のテコ入れは大成功！ 運営も起動に乗って一安心するリムルだったが、今度は100人規模で地下迷宮を攻略するチーム緑乱というパーティが現れてしまう。加えて、地下迷宮で訓練していたヒナタのせいで６０階層以降の階層守護者が機能していないという。この緊急事態にリムルは地下迷宮の強化に乗り出す。",
                     "duration_seconds": 0,
@@ -202251,9 +202251,9 @@
                 {
                     "id": 1624221,
                     "name": "仮魔体チーム結成",
-                    "name_cn": "",
+                    "name_cn": "伪魔体队结成",
                     "air_date": "2026-04-17",
-                    "desc": "地下迷宮用の仮魔体を手にしたリムルたち。しかしレベルの低い仮魔体と連携の取れない戦い方ではチーム緑乱に太刀打ちできない。そこでリムルは仲間と特訓を始める。",
+                    "desc": "チーム緑乱を倒すため、地下迷宮用の仮魔体を手にしたリムルたち。しかし連携がうまくとれず、低レベルの挑戦者にすら負ける始末。そこで一行は、装備の強化と連携の特訓を図る。そして地下迷宮４９階層を舞台にチーム緑乱との決戦が始まる。一方その頃、シルトロッゾ王国では魔王リムルの台頭を危険視するマリアベルがユウキと秘密の会談を行っていた。",
                     "duration_seconds": 0,
                     "ep": 3,
                     "sort": 75,
@@ -202265,7 +202265,7 @@
                     "name": "招待状",
                     "name_cn": "",
                     "air_date": "2026-04-24",
-                    "desc": "",
+                    "desc": "チーム緑乱を撃退してからも地下迷宮で特訓を続けていたリムルたち。その一方で、イングラシア王国の西方諸国評議会では魔国連邦に関するある議論が交わされていた。",
                     "duration_seconds": 0,
                     "ep": 4,
                     "sort": 76,
@@ -202274,7 +202274,7 @@
                 },
                 {
                     "id": 1624223,
-                    "name": "",
+                    "name": "最初の一歩",
                     "name_cn": "",
                     "air_date": "2026-05-01",
                     "desc": "",
@@ -202517,8 +202517,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 3,
-            "last_update": "2026-04-18T19:18:39+08:00",
+            "watched_eps": 4,
+            "last_update": "2026-04-27T13:27:32+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
@@ -209370,6 +209370,423 @@
             "watch_status": 2,
             "watched_eps": 14,
             "last_update": "2026-04-14T13:05:42+08:00",
+            "comment": null,
+            "tags": [],
+            "__dataclass__": "UserStatus"
+        },
+        "__dataclass__": "ANiMeRecord"
+    },
+    {
+        "anime_data": {
+            "id": 623854,
+            "name": "女神『異世界転生何になりたいですか』俺「勇者の肋骨で」",
+            "name_cn": "女神“异世界转生想成为什么”我“勇者的肋骨”",
+            "short_summary": "转生处是…「开后宫又有快乐结局的开挂勇者…的肋骨」！？\r\n颠覆动画常识的异世界转生动画诞生了！\r\n除了动画之外，还会用定格动画、人偶剧、真人拍摄等打破常规的手法呈现，为大家献上冷淡的异世界转生负责人「女神大人」与重复进行奇葩转生的主角「我」",
+            "score": 7,
+            "image_url": "https://lain.bgm.tv/pic/cover/l/c4/47/623854_02HSu.jpg",
+            "eps": 0,
+            "date": "2026-04-07",
+            "summary": "转生处是…「开后宫又有快乐结局的开挂勇者…的肋骨」！？\r\n颠覆动画常识的异世界转生动画诞生了！\r\n除了动画之外，还会用定格动画、人偶剧、真人拍摄等打破常规的手法呈现，为大家献上冷淡的异世界转生负责人「女神大人」与重复进行奇葩转生的主角「我」的痛快异世界转生记！\r\n\r\n\r\n\r\n[简介原文]\r\n転生先は…「ハーレムかつハッピーエンドなチート勇者、の肋骨」！？アニメーションの常識を覆す、異世界転生アニメが誕生！\r\n舞台は転生先を自由に選べる世界。――しかし近頃は転生希望者の数が増えすぎて「チート持ちハーレム勇者」は待ち時間が５万年！「魔王」への転生すら千年単位の待ち時間が当たり前。それなら、と主人公が選んだ転生先は「ハーレムかつハッピーエンドなチート勇者、の肋骨」だった！\r\nさらに、「ヤドカリ」や「野菜」に「リア充を爆発させる時に使う爆発物」まで、次々と転生を繰り返し！？\r\nアニメ映像に加えて、ストップモーション、人形劇、実写など型破りな映像手法でお届けする、塩対応な異世界転生担当の「女神さま」と、トンデモ転生を繰り返す主人公「俺」の痛快異世界転生記！\r\n",
+            "total_episodes": 12,
+            "characters": [
+                {
+                    "id": 10956,
+                    "name": "ナレーション",
+                    "relation": "旁白",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/01/01/10956_crt_5LR7z.jpg",
+                    "actor_ids": [
+                        4110
+                    ],
+                    "name_cn": "旁白",
+                    "summary": "戏剧角色背着台上其他剧中人对观众说的话。也指影视片中的解说词。说话者不出现在画面上，但直接以语言来介绍影片内容、交待剧情或发表议论，包括对白的使用。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "旁白",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 200848,
+                    "name": "俺",
+                    "relation": "主角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/a6/5a/200848_crt_KC0uT.jpg",
+                    "actor_ids": [
+                        5015
+                    ],
+                    "name_cn": "我",
+                    "summary": "ひょんなことから命を落としてしまい、「魂タイプ：イレギュラー」に選別された青年。\r\n人気転生先の膨大な待ち時間を回避するために、ハーレムなチート勇者の「肋骨」など、型破りな転生を繰り返す主人公。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "我",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 200849,
+                    "name": "女神",
+                    "relation": "主角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/a6/fd/200849_crt_zg7XX.jpg",
+                    "actor_ids": [
+                        10887
+                    ],
+                    "name_cn": "女神",
+                    "summary": "異世界転生の前舞台で「俺」を転生先に送り込む塩対応な案内役。\r\nいつも「俺」の異世界転生記に冷静にツッコんでいる。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "女神",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 200853,
+                    "name": "紅鮭師匠",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/03/eb/200853_crt_0KzZB.jpg",
+                    "actor_ids": [
+                        4254
+                    ],
+                    "name_cn": "红鲑师傅",
+                    "summary": "転生を繰り返す謎の紅鮭。超威力の必殺技を有する「俺」の師匠。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "红鲑师傅",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 200854,
+                    "name": "田中さん",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/ab/b7/200854_crt_6spUZ.jpg",
+                    "actor_ids": [
+                        3854
+                    ],
+                    "name_cn": "田中先生",
+                    "summary": "恋人を探してあらゆる異世界を転々としている紳士。\r\n痛いのが好き。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "田中先生",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 200855,
+                    "name": "創造神",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/a9/25/200855_crt_4t5RS.jpg",
+                    "actor_ids": [
+                        3898
+                    ],
+                    "name_cn": "创造神",
+                    "summary": "始まりの世界を作り出した唯一神。\r\n神々をも生み出し多元宇宙（マルチバース）を作った。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "创造神",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 208649,
+                    "name": "勇者",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/57/05/208649_crt_HU4Ec.jpg",
+                    "actor_ids": [
+                        4101
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 209241,
+                    "name": "魔王の孫",
+                    "relation": "配角",
+                    "image_url": "",
+                    "actor_ids": [
+                        5228
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 209242,
+                    "name": "発射台",
+                    "relation": "配角",
+                    "image_url": "",
+                    "actor_ids": [
+                        740
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 209243,
+                    "name": "勇者ミッシュ",
+                    "relation": "配角",
+                    "image_url": "",
+                    "actor_ids": [
+                        4950
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [],
+                    "__dataclass__": "Character"
+                }
+            ],
+            "relations": [
+                {
+                    "id": 547006,
+                    "name": "女神『異世界転生何になりたいですか』俺「勇者の肋骨で」",
+                    "name_cn": "",
+                    "relation": "书籍",
+                    "type": 1,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/1d/59/547006_mKZVq.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 636207,
+                    "name": "転生願望",
+                    "name_cn": "",
+                    "relation": "片头曲",
+                    "type": 3,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/7b/f4/636207_ADmcC.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 639025,
+                    "name": "何なんですか？",
+                    "name_cn": "",
+                    "relation": "片尾曲",
+                    "type": 3,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/f6/ad/639025_ssAX8.jpg",
+                    "__dataclass__": "Relation"
+                }
+            ],
+            "episodes": [
+                {
+                    "id": 1670640,
+                    "name": "勇者の肋⾻",
+                    "name_cn": "",
+                    "air_date": "2026-04-07",
+                    "desc": "主⼈公の「俺」は全⼒疾⾛でオタ活する⻘年。ある⽇、トラックにはねられ、さらに隕⽯が落ちてきて…⽬が覚めると⼤勢の神様に取り囲まれていた。「魂タイプ：イレギュラー」に選別され、美⼈だがそっけない転⽣の⼥神がいる部屋に送られる。そこは異世界転⽣の前舞台。⼈気のある転⽣先は何万年もの待ち時間があるという。⼈が思いつかない転⽣先は待ち時間が少ないと聞き、「俺」が選んだのはハーレムなチート勇者の「肋⾻」。待ち時間ゼロで転⽣された世界で様々な美⼥に撫でられる⽣活を始めるが、勇者本⼈に正体がバレてしまい──。",
+                    "duration_seconds": 0,
+                    "ep": 1,
+                    "sort": 1,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1670641,
+                    "name": "ヤドカリ / 魔王城の扉(右)",
+                    "name_cn": "",
+                    "air_date": "2026-04-14",
+                    "desc": "「ヤドカリ」に転生することになった俺。浜辺で勇者ライツンベルに拾われ、その力を引き継ぐことになる。海の女神ラクトーシャを解放し、紅鮭師匠と運命的な出会いを果たす。そしてついに、世界に仇なす煉獄の支配者グラスレイと決戦することになるが──。\r\n「魔王城の右扉」に転生することになった俺。玉座の間で扉を始めたが、くしゃみの度に魔王軍の幹部たちを挟み殺してしまう。そんな行為に、隣の扉が激怒、喧嘩になってしまう。魔王城に乗り込んできた勇者だったが、強大な力の魔王になす術がない。そんな姿を見て右扉は──。",
+                    "duration_seconds": 0,
+                    "ep": 2,
+                    "sort": 2,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1670642,
+                    "name": "時計台の秒針 / 勇者のレベルアップ通知をする頭の中の声の人",
+                    "name_cn": "",
+                    "air_date": "2026-04-21",
+                    "desc": "「時計台の秒針」に転生することになった俺。王国の広場の時計台で、同じ転生者の時針と分針と共に時間を狂わせカップルを混乱させていた。更には、特定の時間がやってくると魔法を発動させ、住民や王様にイタズラを仕掛けるのだった──。\r\n「勇者のレベルアップ通知をする頭の中の声の人」に転生することになった俺。ミッシュという子供の頭の中からスタート。彼は勇者へと成長していくが、あまりに酷い通知の仕方をするため、ついに、頭の中に直接勇者が現れ──。",
+                    "duration_seconds": 0,
+                    "ep": 3,
+                    "sort": 3,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1670643,
+                    "name": "野菜 / 宝箱に付いてる錠前",
+                    "name_cn": "",
+                    "air_date": "2026-04-28",
+                    "desc": "「野菜」に転生することになった俺。トマト勇者となって、きゅうり侍やキャベツ剣闘士と共に魔王を倒す旅に出る。仲間の野菜たちが次々と倒れ、やっとの思いで辿り着いた魔王城。禍々しいその城で待ち構えていた者は──。\r\n「宝箱に付いている錠前」に転生することになった俺。聖なる神殿の宝箱の錠前となるが、封じ込められている魔王と喧嘩になってしまう。さらには神殿を守る神官たちにもレモン汁を放つ始末。ついに現れた神様に対しても、レモン汁を放つが──。",
+                    "duration_seconds": 0,
+                    "ep": 4,
+                    "sort": 4,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1670644,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-05-05",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 5,
+                    "sort": 5,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1670645,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-05-12",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 6,
+                    "sort": 6,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1670646,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-05-19",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 7,
+                    "sort": 7,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1670647,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-05-26",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 8,
+                    "sort": 8,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1670648,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-06-02",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 9,
+                    "sort": 9,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1670649,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-06-09",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 10,
+                    "sort": 10,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1670650,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-06-16",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 11,
+                    "sort": 11,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1670651,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-06-23",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 12,
+                    "sort": 12,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                }
+            ],
+            "__dataclass__": "ANiMeData"
+        },
+        "user_status": {
+            "watch_status": 3,
+            "watched_eps": 3,
+            "last_update": "2026-04-27T13:27:02+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
