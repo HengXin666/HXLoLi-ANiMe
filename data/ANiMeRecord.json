@@ -209792,5 +209792,606 @@
             "__dataclass__": "UserStatus"
         },
         "__dataclass__": "ANiMeRecord"
+    },
+    {
+        "anime_data": {
+            "id": 194261,
+            "name": "天使の3P!",
+            "name_cn": "天使的3P!",
+            "short_summary": "由于过去的心理阴影而不去上学的贯井响，私下有着使用歌唱软件制作歌曲的兴趣。\r\n给这样的他寄来邮件的，是小学五年级的少女们——！？\r\n自幼就如同姐妹一般一起长大的三人，有着与响共通的烦恼。\r\n为了对自己曾度过的回忆之地、以及照顾过自己的人们表",
+            "score": 6.1,
+            "image_url": "https://lain.bgm.tv/pic/cover/l/c3/3f/194261_Z90c0.jpg",
+            "eps": 12,
+            "date": "2017-07-10",
+            "summary": "由于过去的心理阴影而不去上学的贯井响，私下有着使用歌唱软件制作歌曲的兴趣。\r\n给这样的他寄来邮件的，是小学五年级的少女们——！？\r\n自幼就如同姐妹一般一起长大的三人，有着与响共通的烦恼。\r\n为了对自己曾度过的回忆之地、以及照顾过自己的人们表达感谢，尽最大努力奏响LOLI&POP的交响曲！！",
+            "total_episodes": 12,
+            "characters": [
+                {
+                    "id": 47036,
+                    "name": "貫井響",
+                    "relation": "主角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/92/aa/47036_crt_I2sE9.jpg?r=1493875838",
+                    "actor_ids": [
+                        25271
+                    ],
+                    "name_cn": "贯井响",
+                    "summary": "本作の主人公。新井田西高校普通科1年A組。コミュ障気味で若干気弱だが、まじめで心優しい性格。小学生の時に国語の時間で発表した詩が気取っていると馬鹿にされ、「ポエマー」というあだ名で長らくからかわれ続けた結果、中学1年で引きこもりとなる。暇な時間を持て余してギターを始め、「ひびきP」というハンドルネームで自作の曲を動画サイトにアップしていた。",
+                    "birth_year": null,
+                    "birth_month": 11,
+                    "birth_day": 5,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "贯井响",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "11月5日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "A型",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "wiki",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 47037,
+                    "name": "五島潤",
+                    "relation": "主角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/19/ff/47037_crt_4I9A5.jpg?r=1493875821",
+                    "actor_ids": [
+                        25436
+                    ],
+                    "name_cn": "五岛润",
+                    "summary": "城見台小学校5年2組。ボーカル＆ギター担当。泣き虫で怖がりな性格だが、思い切った行動に出ることもある。耳が良く、響が匿名で投稿した即興曲とボーカロイドソフトを使って投稿した曲の作者が同一人物と気づいたことが、響と3人が出会うきっかけとなった。",
+                    "birth_year": null,
+                    "birth_month": 8,
+                    "birth_day": 8,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "五岛润",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "8月8日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "A型",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "wiki",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 47038,
+                    "name": "紅葉谷希美",
+                    "relation": "主角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/a4/ef/47038_crt_C8Xxj.jpg?r=1493875858",
+                    "actor_ids": [
+                        10100
+                    ],
+                    "name_cn": "红叶谷希美",
+                    "summary": "城見台小学校5年2組。ベース担当。勝気な性格だが、根は女の子らしく繊細。イギリス人とのハーフであるため、同世代に比べて体格が良い。",
+                    "birth_year": null,
+                    "birth_month": 10,
+                    "birth_day": 21,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "红叶谷希美",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "10月21日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "AB型",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "wiki",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 47039,
+                    "name": "金城そら",
+                    "relation": "主角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/ff/58/47039_crt_UuOXr.jpg?r=1493875879",
+                    "actor_ids": [
+                        19606
+                    ],
+                    "name_cn": "金城空",
+                    "summary": "城見台小学校5年2組。ドラム担当。常に眠たげな表情でマイペース。周囲の騒動を気にせず平然としているが、時折突拍子もない行動を取ることがある。ブレのない正確な演奏が特徴で、現在3人の中で一番うまい。",
+                    "birth_year": null,
+                    "birth_month": 12,
+                    "birth_day": 1,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "金城空",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "12月1日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "AB型",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "wiki",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 47040,
+                    "name": "貫井くるみ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/38/ea/47040_crt_NIt7r.jpg?r=1493875895",
+                    "actor_ids": [
+                        4962
+                    ],
+                    "name_cn": "贯井胡桃",
+                    "summary": "城見台小学校5年2組。響の妹。学校ではクラス委員長を務め、家では家事の5割以上をこなすしっかり者だが、お兄ちゃん子。響に対して憎まれ口を叩きながらも悩みの相談に乗るなど何かと世話を焼く。霧夢に挑発される形でDragon≒Nutsに加入する。",
+                    "birth_year": null,
+                    "birth_month": 11,
+                    "birth_day": 19,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "贯井胡桃",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "11月19日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "A型",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "wiki",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 47041,
+                    "name": "鳥海桜花",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/1a/6b/47041_crt_kfnbF.jpg?r=1502539722",
+                    "actor_ids": [
+                        4949
+                    ],
+                    "name_cn": "鸟海樱花",
+                    "summary": "新井田西高校普通科1年A組。響のクラスメイトで中学時代から面識がある。中学の頃に見せられた響の詩が好きで、不登校だった響にプリントを届けたりと気にかけていた。パン屋「Sanois（サオノア）」でアルバイトをしている。趣味は釣りで、３巻の最後では響に釣り竿をプレゼントしている。",
+                    "birth_year": null,
+                    "birth_month": 3,
+                    "birth_day": 8,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "鸟海樱花",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "3月8日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "O型",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "wiki",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 54787,
+                    "name": "尾城小梅",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/20/0c/54787_crt_lodOp.jpg",
+                    "actor_ids": [
+                        4765
+                    ],
+                    "name_cn": "尾城小梅",
+                    "summary": "就读城见台小学校5年2班的女孩子。[mask]以“雾梦”一名进行活动，很有人气的网络绘师，因为喜欢响的歌曲而认识响并且帮他作画。[/mask]\r\n\r\n　　本身是双龙岛上贵龙神社的“龙之女巫”，从出生开始就要被当作“御灵代”侍奉。[mask]后来在响等人的帮忙下解放了御灵代的使命，和柚叶一起搬到响居住的地方生活。[/mask]",
+                    "birth_year": null,
+                    "birth_month": 7,
+                    "birth_day": 7,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "尾城小梅",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "7月7日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "AB型",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 54788,
+                    "name": "相ヶ江柚葉",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/24/4a/54788_crt_8k1zY.jpg",
+                    "actor_ids": [
+                        4851
+                    ],
+                    "name_cn": "相之江柚叶",
+                    "summary": "高校1年生。\r\n中学時代に響のクラスに転校してきた女の子。端正な目鼻立ちでスタイルも良く、クラスでは目立つ存在。",
+                    "birth_year": null,
+                    "birth_month": 6,
+                    "birth_day": 10,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "相之江柚叶",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "6月10日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "AB型",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 54789,
+                    "name": "佐渡正義",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/62/01/54789_crt_rraPU.jpg",
+                    "actor_ids": [
+                        4131
+                    ],
+                    "name_cn": "佐渡正义",
+                    "summary": "潤たちが暮らす家の保護者。愛称は「マスター」。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "佐渡正义",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                }
+            ],
+            "relations": [
+                {
+                    "id": 81285,
+                    "name": "天使の3P!",
+                    "name_cn": "天使的3P!",
+                    "relation": "书籍",
+                    "type": 1,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/af/86/81285_x9yau.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 219095,
+                    "name": "羽ばたきのバースデイ",
+                    "name_cn": "",
+                    "relation": "片头曲",
+                    "type": 3,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/29/bb/219095_17712.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 221693,
+                    "name": "楔",
+                    "name_cn": "",
+                    "relation": "片尾曲",
+                    "type": 3,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/f6/d2/221693_rroX1.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 225199,
+                    "name": "Three Angels Complete Album♪",
+                    "name_cn": "",
+                    "relation": "插入歌",
+                    "type": 3,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/5d/1d/225199_Lkygb.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 228720,
+                    "name": "TVアニメ『天使の3P!』Sound Of Three Angels♪",
+                    "name_cn": "",
+                    "relation": "原声集",
+                    "type": 3,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/53/85/228720_hJ8xB.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 231337,
+                    "name": "天使の3P! スペシャルCD 1",
+                    "name_cn": "",
+                    "relation": "其他",
+                    "type": 3,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/85/39/231337_BKNzp.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 231338,
+                    "name": "天使の3P! スペシャルCD 2",
+                    "name_cn": "",
+                    "relation": "其他",
+                    "type": 3,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/06/f7/231338_1vfI4.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 231962,
+                    "name": "天使の3P! スペシャルCD 3",
+                    "name_cn": "",
+                    "relation": "其他",
+                    "type": 3,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/f0/04/231962_tv70t.jpg",
+                    "__dataclass__": "Relation"
+                }
+            ],
+            "episodes": [
+                {
+                    "id": 728169,
+                    "name": "小学生にドッキリ！",
+                    "name_cn": "被小学生震惊！",
+                    "air_date": "2017-07-10",
+                    "desc": "過去のトラウマからひきこもり気味の高校生、貫井響は、密かに歌唱ソフトで曲を制作し、動画サイトに投稿するのが趣味だった。そんな彼に会って話がしたいとメールしてきたのは、小学五年生の少女たち。子供の頃から姉妹のように一緒に育った三人からお願いされたことは、お世話になった人への感謝のために、彼女たちが過ごした思い出の場所でライブを成功させる事だった...\r\n脚本：雑破 業　絵コンテ：柳 伸亮　演出：篠崎康行　美術監督：田辺浩子",
+                    "duration_seconds": 1420,
+                    "ep": 1,
+                    "sort": 1,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 728170,
+                    "name": "いっしょにやりたい気持ち",
+                    "name_cn": "想要一起做到的心意",
+                    "air_date": "2017-07-17",
+                    "desc": "自分に自信が持てず戸惑いながらも、響は潤・希美・そらを手伝うことにする。練習を手伝う中で、どうやって客を呼ぶのかという話になり、駅前でライブのチラシを配るつもりだと答える三人。 しかし響は、チラシだけでは魅力が伝わりづらく、”インパクト”に欠けるのではと悩む。そんな中、そらがある変わったアイデアで”インパクト”を演出してみせようとするのだが・・・。\r\n脚本：雑破 業　絵コンテ：いわた かずや　演出：蔵本穂高　美術監督：田辺浩子",
+                    "duration_seconds": 1420,
+                    "ep": 2,
+                    "sort": 2,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 728171,
+                    "name": "停滞する少年の下降と逃走、そして教会から来た少女達",
+                    "name_cn": "原地踏步少年的堕落与逃亡，还有来自教堂的少女们",
+                    "air_date": "2017-07-24",
+                    "desc": "",
+                    "duration_seconds": 1420,
+                    "ep": 3,
+                    "sort": 3,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 728172,
+                    "name": "この世はすべてロックンロール",
+                    "name_cn": "人间尽是Rock'n'Roll",
+                    "air_date": "2017-07-31",
+                    "desc": "",
+                    "duration_seconds": 1420,
+                    "ep": 4,
+                    "sort": 4,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 728173,
+                    "name": "君の姿を撮るのが楽しいんだ。なぜなら君はとても可愛いのにそれに全く気がついていないから。",
+                    "name_cn": "给你拍照真开心。因为你这么可爱却全然不知。",
+                    "air_date": "2017-08-07",
+                    "desc": "　潤・希美・そらがライブを続けられる場所として、教会をイベントスペースとし て運営したいと考えた響は正義に相談し、とりあえずの了解を得る。なんとか成果を出そうとライブを重ねるが中々上手くいかない中、響は久しぶりに連絡をとった霧夢にそのことを相談する。バンドのプロモーションビデオを撮影して ネットにアップすればよいと言う霧夢の提案に対して響は…。\r\n\r\n脚本：雑破 業  絵コンテ：今泉賢一  演出：村田尚樹  作画監督：山村俊了、北原章雄",
+                    "duration_seconds": 1420,
+                    "ep": 5,
+                    "sort": 5,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 728174,
+                    "name": "ベーシストを連れてくな！",
+                    "name_cn": "不要带走贝斯手！",
+                    "air_date": "2017-08-14",
+                    "desc": "",
+                    "duration_seconds": 1420,
+                    "ep": 6,
+                    "sort": 6,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 728175,
+                    "name": "びっくり招待状",
+                    "name_cn": "惊人的请帖",
+                    "air_date": "2017-08-21",
+                    "desc": "",
+                    "duration_seconds": 1420,
+                    "ep": 7,
+                    "sort": 7,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 728176,
+                    "name": "壁画の美少女",
+                    "name_cn": "壁画的美少女",
+                    "air_date": "2017-08-28",
+                    "desc": "",
+                    "duration_seconds": 1420,
+                    "ep": 8,
+                    "sort": 8,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 728177,
+                    "name": "たどりつくのが遅かったら溺れる神様を救えなかったかもしれない小学生達",
+                    "name_cn": "要是晚到一点或许就无法拯救失心神明的小学生们",
+                    "air_date": "2017-09-04",
+                    "desc": "",
+                    "duration_seconds": 1420,
+                    "ep": 9,
+                    "sort": 9,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 728178,
+                    "name": "まるっきりデート",
+                    "name_cn": "完全就是约会",
+                    "air_date": "2017-09-11",
+                    "desc": "",
+                    "duration_seconds": 1420,
+                    "ep": 10,
+                    "sort": 10,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 728179,
+                    "name": "対バンと旋律",
+                    "name_cn": "竞演和旋律",
+                    "air_date": "2017-09-18",
+                    "desc": "",
+                    "duration_seconds": 1420,
+                    "ep": 11,
+                    "sort": 11,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 728180,
+                    "name": "音楽を好きにならずにいられない",
+                    "name_cn": "不得不爱上音乐",
+                    "air_date": "2017-09-25",
+                    "desc": "",
+                    "duration_seconds": 1420,
+                    "ep": 12,
+                    "sort": 12,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                }
+            ],
+            "__dataclass__": "ANiMeData"
+        },
+        "user_status": {
+            "watch_status": 2,
+            "watched_eps": 12,
+            "last_update": "2026-04-29T00:32:07+08:00",
+            "comment": null,
+            "tags": [
+                "萝莉"
+            ],
+            "__dataclass__": "UserStatus"
+        },
+        "__dataclass__": "ANiMeRecord"
     }
 ]
