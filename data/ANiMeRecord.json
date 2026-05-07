@@ -202544,7 +202544,13 @@
                     "relation": "闲角",
                     "image_url": "https://lain.bgm.tv/pic/crt/l/1d/85/17529_crt_0dRZE.jpg",
                     "actor_ids": [
-                        36531
+                        19118,
+                        33429,
+                        35847,
+                        36531,
+                        62349,
+                        93055,
+                        93056
                     ],
                     "name_cn": "路人",
                     "summary": "闲角，常称作路人，在电视剧、电影等作品中，指戏份薄弱的副角、不相关的小人物、串场的闲杂人等。可能用来表达地方民众的声音，或是充当背景。\r\nモブキャラクター（mob character）とは、漫画、アニメ、映画、コンピュータゲームなどに描かれる端役のこと。群衆（群集）、または主要キャラクター以外の、その他大勢のこと。群集キャラ、背景キャラともいう。",
@@ -203404,6 +203410,63 @@
                     "__dataclass__": "Character"
                 },
                 {
+                    "id": 82804,
+                    "name": "テュフォン",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/ec/3a/82804_crt_hTeF8.jpg",
+                    "actor_ids": [
+                        11523
+                    ],
+                    "name_cn": "缇丰",
+                    "summary": "『嫉妬の魔女』に滅ぼされた大罪の名を冠する六人の魔女の一人で、冠する大罪は『傲慢』。幼さ故の無邪気と無慈悲で咎人を裁き続けたと言われている。",
+                    "birth_year": null,
+                    "birth_month": 2,
+                    "birth_day": 5,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "缇丰",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "2月5日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "zh.moegirl.org.cn",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "别号",
+                            "value": "傲慢魔女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "发色",
+                            "value": "绿发",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "瞳色",
+                            "value": "红瞳",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "所属团体",
+                            "value": "大罪魔女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
                     "id": 85418,
                     "name": "レグルス・コルニアス",
                     "relation": "配角",
@@ -203843,6 +203906,33 @@
                     "birth_day": null,
                     "tags": [],
                     "__dataclass__": "Character"
+                },
+                {
+                    "id": 210408,
+                    "name": "テュフォンの父",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/f4/16/210408_crt_hQras.jpg",
+                    "actor_ids": [
+                        4985
+                    ],
+                    "name_cn": "缇丰的父亲",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "缇丰的父亲",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
                 }
             ],
             "relations": [
@@ -203952,11 +204042,11 @@
                 },
                 {
                     "id": 1656870,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "棒振り",
+                    "name_cn": "挥棒的",
                     "air_date": "2026-05-06",
-                    "desc": "",
-                    "duration_seconds": 0,
+                    "desc": "星座にまつわる『試験』を解いたことで、三層は白い空間から無数の書架が並んでいる巨大な書庫へと姿を変えた。一冊の蔵書に触れたスバルは、無邪気の残酷を具現化したような記憶を追体験する。膨大な蔵書の中から目当ての情報を探すのは困難だと判断し、一行は他の階層の攻略を優先することに。二層『エレクトラ』の白亜の領域に突き刺さる剣を引き抜き、次なる『試験』が始まる。\r\n\r\n脚本：中村能子　\r\n絵コンテ：藤井康晶　\r\n演出：永吉隆志\r\n総作画監督：佐川 遥　\r\n作画監督：永吉隆志",
+                    "duration_seconds": 1420,
                     "ep": 5,
                     "sort": 71,
                     "type": 0,
@@ -203968,7 +204058,7 @@
                     "name_cn": "",
                     "air_date": "2026-05-13",
                     "desc": "",
-                    "duration_seconds": 0,
+                    "duration_seconds": 1420,
                     "ep": 6,
                     "sort": 72,
                     "type": 0,
@@ -203980,7 +204070,7 @@
                     "name_cn": "",
                     "air_date": "2026-05-20",
                     "desc": "",
-                    "duration_seconds": 0,
+                    "duration_seconds": 1420,
                     "ep": 7,
                     "sort": 73,
                     "type": 0,
@@ -203992,7 +204082,7 @@
                     "name_cn": "",
                     "air_date": "2026-05-27",
                     "desc": "",
-                    "duration_seconds": 0,
+                    "duration_seconds": 1420,
                     "ep": 8,
                     "sort": 74,
                     "type": 0,
@@ -204004,7 +204094,7 @@
                     "name_cn": "",
                     "air_date": "2026-06-03",
                     "desc": "",
-                    "duration_seconds": 0,
+                    "duration_seconds": 1420,
                     "ep": 9,
                     "sort": 75,
                     "type": 0,
@@ -204016,7 +204106,7 @@
                     "name_cn": "",
                     "air_date": "2026-06-10",
                     "desc": "",
-                    "duration_seconds": 0,
+                    "duration_seconds": 1420,
                     "ep": 10,
                     "sort": 76,
                     "type": 0,
@@ -204028,7 +204118,7 @@
                     "name_cn": "",
                     "air_date": "2026-06-17",
                     "desc": "",
-                    "duration_seconds": 0,
+                    "duration_seconds": 1420,
                     "ep": 11,
                     "sort": 77,
                     "type": 0,
@@ -204039,8 +204129,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 4,
-            "last_update": "2026-05-03T18:49:34+08:00",
+            "watched_eps": 5,
+            "last_update": "2026-05-08T00:25:28+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
@@ -206814,10 +206904,10 @@
                 {
                     "id": 1650968,
                     "name": "不穏なる開幕",
-                    "name_cn": "",
+                    "name_cn": "动荡的开幕",
                     "air_date": "2026-05-06",
                     "desc": "全学年で得点を競い合う無人島サバイバル試験がついに始まった。\r\n生徒たちは常時モニタリングされる腕時計をつけ、島の基本移動か、無人島の各所に設置された課題をこなすことでグループごとに高得点を目指す。\r\n月城理事長代理は生徒同士の小競り合いについて、ある程度認める方針だというが……。\r\n\r\n脚本：勝冶京子　\r\n絵コンテ：齋藤徳明　\r\n演出：椎名真子/ノタロマリアルイーザ/津田悠華/芳野健/野亦則行\r\n総作画監督：市川美帆/樋口博美/米本沙織/樋上あや/永田 陽菜\r\n作画監督：北川知子/古村祐香里/小野木三斉/廣瀬 智仁/稲田 真樹/村松尚雄/水澤智可/二宮奈那子",
-                    "duration_seconds": 0,
+                    "duration_seconds": 1420,
                     "ep": 9,
                     "sort": 9,
                     "type": 0,
@@ -206912,8 +207002,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 8,
-            "last_update": "2026-05-03T18:49:31+08:00",
+            "watched_eps": 9,
+            "last_update": "2026-05-08T00:25:40+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
@@ -209778,7 +209868,7 @@
                 {
                     "id": 1670644,
                     "name": "秘伝の巻物のヒモ / カップルがキスしている後ろで一人寂しく座っている独身男性が感じる気まずい雰囲気",
-                    "name_cn": "",
+                    "name_cn": "秘传卷轴上的绳子 / 情侣接吻时在他们后面一个人寂寞地坐着的单身男性所感受到的尴尬气氛",
                     "air_date": "2026-05-05",
                     "desc": "「秘伝の巻物のヒモ」に転生することになった俺。伝説の忍者、霧ヶ峰空千代王の書いた巻物はどんな過酷な環境も快適な空間に変える忍術が書かれていた。その巻物を求めて忍者フェリックが忍者村に現れ、俺と対決することになるが──。\r\n「カップルがキスしているその後ろで一人寂しく座っている独身男性が感じる気まずい雰囲気」に転生することになった俺。街の独身男性が該当する状況になると現れる概念体となり、勇者ジヨークと共に、魔王ギャッグとお笑いバトルを繰り広げるが──。",
                     "duration_seconds": 0,
@@ -209789,10 +209879,10 @@
                 },
                 {
                     "id": 1670645,
-                    "name": "",
+                    "name": "リア充を爆発させる時に使う爆発物 / ビーバーと熾烈な生存競争を続ける世界の末裔",
                     "name_cn": "",
                     "air_date": "2026-05-12",
-                    "desc": "",
+                    "desc": "「リア充を爆発させる時に使う爆発物」に転生することになった俺。バナナの皮となり、次々とカップルを滑らせ爆破していく。そんな様子を見ていた魔王イーチュラはバナナの皮を手にし、カップルたちを襲い始めるが──。\r\n「ビーバーと熾烈な生存競争を続ける世界樹の末裔」に転生することになった俺。ある日突然、天高くそびえたつ俺の元に、近代兵器で武装したビーバー軍団が現れ、熾烈な争いが始まる。高度な軍事作戦を展開するビーバーたちに、世界樹の俺は自慢の喉を活かして反撃するが──。",
                     "duration_seconds": 0,
                     "ep": 6,
                     "sort": 6,
@@ -209876,8 +209966,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 4,
-            "last_update": "2026-05-03T18:49:26+08:00",
+            "watched_eps": 5,
+            "last_update": "2026-05-08T00:25:34+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
