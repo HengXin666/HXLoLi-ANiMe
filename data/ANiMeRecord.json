@@ -202275,7 +202275,7 @@
                 {
                     "id": 1624223,
                     "name": "最初の一歩",
-                    "name_cn": "",
+                    "name_cn": "第一步",
                     "air_date": "2026-05-08",
                     "desc": "西方諸国評議会からの招集を受けて、イングラシア王国へとやってきたリムルたち。評議会への参加を希望する魔国連邦に、議員たちは欲に塗れた条件を提示する。",
                     "duration_seconds": 0,
@@ -202286,7 +202286,7 @@
                 },
                 {
                     "id": 1624224,
-                    "name": "",
+                    "name": "西方諸国評議会",
                     "name_cn": "",
                     "air_date": "2026-05-15",
                     "desc": "",
@@ -202517,8 +202517,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 4,
-            "last_update": "2026-05-03T18:53:32+08:00",
+            "watched_eps": 5,
+            "last_update": "2026-05-10T21:40:18+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
