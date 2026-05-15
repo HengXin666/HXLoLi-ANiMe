@@ -9714,5 +9714,26 @@
         "short_summary": "方言\t大阪弁\r\n趣味・スポーツ\t御朱印集め\r\n特技\tキャベツの千切り、剣道\r\n資格\t普通自動二輪車免許、剣道二段\r\n芸歴\t日本ナレーション演技研究所",
         "image_url": "https://lain.bgm.tv/pic/crt/l/57/b5/93056_prsn_xenBJ.jpg",
         "__dataclass__": "Actor"
+    },
+    {
+        "id": 51635,
+        "name": "木暮晃石",
+        "short_summary": "木暮晃石是日本的男性声优。     \r\n    爱好·特长：读书、看电影、锻炼肌肉、运动唯心主义、声音打击乐、唱歌\r\n    方言：静冈弁",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/d0/4f/51635_prsn_HGT0S.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 33144,
+        "name": "多田啓太",
+        "short_summary": "",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/a3/c8/33144_prsn_69ei7.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 40100,
+        "name": "日向もか",
+        "short_summary": "ミュージックレイン3期生。\r\n\r\n出身：埼玉\r\n\r\n趣味、特技：剣道、バレエ",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/1f/13/40100_prsn_rH5kH.jpg",
+        "__dataclass__": "Actor"
     }
 ]

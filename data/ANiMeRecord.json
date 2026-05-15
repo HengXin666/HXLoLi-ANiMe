@@ -204054,10 +204054,10 @@
                 },
                 {
                     "id": 1656871,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "ユリウス・ユークリウス",
+                    "name_cn": "由里乌斯·尤克历乌斯",
                     "air_date": "2026-05-13",
-                    "desc": "",
+                    "desc": "二層の試験官として待ち構えていたのは、『棒振り』を自称する赤い男だった。先陣を切るユリウスに対し、『棒振り』が得物として取り出したのは木の枝のような箸。最高峰の剣技を容易くかわされ、圧倒的な力差が騎士を退屈に踏みにじっていく。なんとか四層へと逃げ帰ったスバルたちはその風貌やシャウラの情報を頼りに試験官の正体を推測するが、その最中、ユリウスが姿を消してしまい……。\r\n\r\n脚本：梅原英司　\r\n絵コンテ：岩畑剛一、篠原正寛　\r\n演出：江口大輔\r\n総作画監督：三島千枝　\r\n作画監督：三浦　瞳、丸山修二、イ・スンア、川森 昇",
                     "duration_seconds": 1420,
                     "ep": 6,
                     "sort": 72,
@@ -204129,8 +204129,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 5,
-            "last_update": "2026-05-08T00:25:28+08:00",
+            "watched_eps": 6,
+            "last_update": "2026-05-15T13:05:46+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
@@ -205376,6 +205376,43 @@
                     "__dataclass__": "Character"
                 },
                 {
+                    "id": 57453,
+                    "name": "真嶋智也",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/0e/0d/57453_crt_HRDcm.jpg",
+                    "actor_ids": [
+                        4877
+                    ],
+                    "name_cn": "真岛智也",
+                    "summary": "坂柳班的班导师，教授英文科目，过去似乎也教过其他科目。正直可信，以严谨出名，有着如摔角选手般的体格，同时脑筋非常好。虽然对于坂柳的做法不是很认同，但并没有多加干涉。\r\n在一年级学年时曾担任无人岛特别考试、以及绫小路所在的夏季小组考试说明。\r\n学生时代与茶柱和星之宫是同期生但不同班，与她们俩经常在一起喝酒叙旧，但对于她们俩之间存在的“冲突”只感到无言且保持中立。",
+                    "birth_year": null,
+                    "birth_month": 2,
+                    "birth_day": 16,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "真岛智也",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "2月16日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "wiki",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
                     "id": 64280,
                     "name": "朝比奈なずな",
                     "relation": "配角",
@@ -205981,6 +206018,41 @@
                     "__dataclass__": "Character"
                 },
                 {
+                    "id": 179918,
+                    "name": "島崎いっけい",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/d4/18/179918_crt_e4Qqe.jpg?r=1752837170",
+                    "actor_ids": [],
+                    "name_cn": "岛崎一庆",
+                    "summary": "坂柳班的学生。\r\n\r\n在一年级期末选拔考试时被坂柳选入“数学考试”项目中。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "岛崎一庆",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": [
+                                {
+                                    "k": "中文wiki",
+                                    "v": "https://zh.wikipedia.org/wiki/%E6%AD%A1%E8%BF%8E%E4%BE%86%E5%88%B0%E5%AF%A6%E5%8A%9B%E8%87%B3%E4%B8%8A%E4%B8%BB%E7%BE%A9%E7%9A%84%E6%95%99%E5%AE%A4%E8%A7%92%E8%89%B2%E5%88%97%E8%A1%A8"
+                                }
+                            ],
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
                     "id": 207299,
                     "name": "宮本蒼士",
                     "relation": "配角",
@@ -206397,9 +206469,11 @@
                 {
                     "id": 207871,
                     "name": "本堂遼太郎",
-                    "relation": "闲角",
+                    "relation": "配角",
                     "image_url": "https://lain.bgm.tv/pic/crt/l/a7/ec/207871_crt_Wn7n8.jpg",
-                    "actor_ids": [],
+                    "actor_ids": [
+                        51635
+                    ],
                     "name_cn": "本堂辽太郎",
                     "summary": "堀北班学生。\r\n\r\n爱好电子游戏与动漫的蘑菇头宅男，入学时与山内和池等人关系不错，在班上没什么存在感，开学1个月内挥霍完所有点数。",
                     "birth_year": null,
@@ -206764,6 +206838,147 @@
                         }
                     ],
                     "__dataclass__": "Character"
+                },
+                {
+                    "id": 210908,
+                    "name": "津辺仁美",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/27/24/210908_crt_COj3i.jpg",
+                    "actor_ids": [],
+                    "name_cn": "津边仁美",
+                    "summary": "一之濑班的学生。\r\n\r\n龍園クラスの石崎大地・西野武子が一之瀬帆波に頼み込んだことにより、石崎小グループを結成。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "津边仁美",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": [
+                                {
+                                    "k": "seesaawiki",
+                                    "v": "https://seesaawiki.jp/you-zitsu/d/%c4%c5%ca%d5%bf%ce%c8%fe"
+                                }
+                            ],
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 211575,
+                    "name": "福山しのぶ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/f5/21/211575_crt_Fuiwi.jpg",
+                    "actor_ids": [
+                        31783
+                    ],
+                    "name_cn": "",
+                    "summary": "坂柳クラス。\r\n\r\n同クラスの島崎いっけい、堀北クラスの軽井沢恵と小グループを組んだ\r\n3日目の17時以降にI4付近で綾小路清隆、須藤健・池寛治・本堂遼太郎グループに遭遇",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": [
+                                {
+                                    "k": "seesaawiki",
+                                    "v": "https://seesaawiki.jp/you-zitsu/d/%ca%a1%bb%b3%a4%b7%a4%ce%a4%d6"
+                                }
+                            ],
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 211576,
+                    "name": "益若",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/a2/b5/211576_crt_faiWY.jpg",
+                    "actor_ids": [
+                        33144
+                    ],
+                    "name_cn": "益若",
+                    "summary": "南雲雅と同じ学年の男子生徒。\r\nクラスは不明。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "益若",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": [
+                                {
+                                    "k": "seesaawiki",
+                                    "v": "https://seesaawiki.jp/you-zitsu/d/%b1%d7%bc%e3"
+                                }
+                            ],
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 211577,
+                    "name": "須知萌香",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/19/80/211577_crt_J282a.jpg",
+                    "actor_ids": [
+                        40100
+                    ],
+                    "name_cn": "须知萌香",
+                    "summary": "3年Cクラスに所属していた朝比奈なずなの友人。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "须知萌香",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": [
+                                {
+                                    "k": "seesaawiki",
+                                    "v": "https://seesaawiki.jp/you-zitsu/d/%bf%dc%c3%ce%cb%a8%b9%e1"
+                                }
+                            ],
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
                 }
             ],
             "relations": [
@@ -206915,11 +207130,11 @@
                 },
                 {
                     "id": 1650969,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "届かぬ想い",
+                    "name_cn": "无法传递的心意",
                     "air_date": "2026-05-13",
-                    "desc": "",
-                    "duration_seconds": 0,
+                    "desc": "無人島サバイバル試験2日目。\r\n七瀬からの同行の申し出を受けた綾小路は七瀬と共に試験に臨んでいた。\r\n七瀬があくまで綾小路の行動を最優先という中、\r\n次のキャンプ地に決めた場所が、須藤たちのグループの指定エリアだとわかる。\r\n綾小路たちは須藤から誘われて、彼らと合流することに。\r\n\r\n脚本：重信 康　\r\n絵コンテ：葉摘田緒　\r\n演出：椎名真子/ノタロマリアルイーザ/津田悠華/芳野健/野亦則行\r\n総作画監督：山形孝二/樋上あや/樋口博美/米本沙織/永田陽菜\r\n作画監督：上田彩朔/亀岡裕子/古村祐香里/外村奈々/安形 佳己/廣瀬 智仁/木村 拓馬/浅川春佳/稲田真樹/西位輝実/拾月動画",
+                    "duration_seconds": 1420,
                     "ep": 10,
                     "sort": 10,
                     "type": 0,
@@ -207002,8 +207217,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 9,
-            "last_update": "2026-05-08T00:25:40+08:00",
+            "watched_eps": 10,
+            "last_update": "2026-05-15T13:05:42+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
