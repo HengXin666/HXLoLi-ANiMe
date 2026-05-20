@@ -209865,7 +209865,7 @@
                     "id": 200853,
                     "name": "紅鮭師匠",
                     "relation": "配角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/03/eb/200853_crt_0KzZB.jpg",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/03/eb/200853_crt_0KzZB.jpg?r=1778958466",
                     "actor_ids": [
                         4254
                     ],
@@ -210000,6 +210000,71 @@
                     "birth_day": null,
                     "tags": [],
                     "__dataclass__": "Character"
+                },
+                {
+                    "id": 211457,
+                    "name": "勇者",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/36/46/211457_crt_nQFZ3.jpg",
+                    "actor_ids": [
+                        15390
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 211458,
+                    "name": "イーチェラ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/8b/f0/211458_crt_SUMnm.jpg",
+                    "actor_ids": [
+                        5119
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 211459,
+                    "name": "ピーバー",
+                    "relation": "配角",
+                    "image_url": "",
+                    "actor_ids": [
+                        4105,
+                        4382
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 211460,
+                    "name": "アレヌ・マカジャン",
+                    "relation": "配角",
+                    "image_url": "",
+                    "actor_ids": [
+                        4657
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [],
+                    "__dataclass__": "Character"
                 }
             ],
             "relations": [
@@ -210107,9 +210172,9 @@
                 {
                     "id": 1670646,
                     "name": "ダンジョンの壁に設置されている松明 / ダンジョン物の異世界の主人公の泊まる宿の枕カバー",
-                    "name_cn": "",
+                    "name_cn": "设置在迷宫墙上的火把 / 迷宫主题异世界的主角投宿的旅馆的枕头套",
                     "air_date": "2026-05-19",
-                    "desc": "",
+                    "desc": "「ダンジョンの壁に設置されている松明」に転生することになった俺。壁を自由にスライドしながら魔物を倒し、ついに勇者たちと合流するが自己矛盾の果てに「ダンジョン物の異世界の主人公が泊まる宿の枕カバー」に転生。女性冒険者レールアの枕カバーとなり、勇者の剣を手に、ダンジョンを攻略するが──。\r\n転生の神々のオンライン会議では、女神の行動が問題視されていた。転生による多次元世界の育成に反する彼女の行動には非難が殺到。しかし、「根絶の女神」と呼ばれた彼女の壮絶な過去が明かされ──。",
                     "duration_seconds": 0,
                     "ep": 7,
                     "sort": 7,
@@ -210118,7 +210183,7 @@
                 },
                 {
                     "id": 1670647,
-                    "name": "",
+                    "name": "勇者のカレー皿",
                     "name_cn": "",
                     "air_date": "2026-05-26",
                     "desc": "",
@@ -210181,8 +210246,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 6,
-            "last_update": "2026-05-13T13:12:17+08:00",
+            "watched_eps": 7,
+            "last_update": "2026-05-20T13:15:49+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
