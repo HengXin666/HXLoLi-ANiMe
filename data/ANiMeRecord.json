@@ -202147,6 +202147,38 @@
                         }
                     ],
                     "__dataclass__": "Character"
+                },
+                {
+                    "id": 152731,
+                    "name": "グレンダ・アトリー",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/1c/ae/152731_crt_NkuwU.jpg",
+                    "actor_ids": [
+                        16068
+                    ],
+                    "name_cn": "古莲妲·阿德利",
+                    "summary": "十大圣人之一，被称为“苍海的古莲妲”，是近卫师团最强战力“三武仙”中的一抹红。异世界人之一，在原世界是一名职业佣兵，使用着格斗技术、枪械技术、暗杀技术等异世界的技艺。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "古莲妲·阿德利",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "https://www.ten-sura.com/character/glenda",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
                 }
             ],
             "relations": [
@@ -202289,7 +202321,7 @@
                     "name": "西方諸国評議会",
                     "name_cn": "西方诸国评议会",
                     "air_date": "2026-05-15",
-                    "desc": "評議会からの理不尽な要望にリムルは激怒する。さらには魔王リムルを討伐せんとイングラシア王国のエルリック王子が現れ、議会は一触即発の事態に陥るのだった。",
+                    "desc": "ラファエルの言葉で何者かの思惑が事態に絡んでいることに気づいたリムルは、議員たちにかけられた精神干渉を解き、味方を作っていく。しかしそこへイングラシア王国のエルリック王子が現れると、魔王リムルの討伐を宣言し、部下のライナーと冒険者のガイをけしかける。一触即発の状況にリムルが思案していると、ヒナタとシュナが相手の暴挙に憤慨していて……。",
                     "duration_seconds": 0,
                     "ep": 6,
                     "sort": 78,
@@ -202299,9 +202331,9 @@
                 {
                     "id": 1624225,
                     "name": "黒幕の正体",
-                    "name_cn": "",
+                    "name_cn": "幕后黑手的真面目",
                     "air_date": "2026-05-22",
-                    "desc": "",
+                    "desc": "混乱に乗じたエルリック暗殺の阻止に成功し、魔国連邦の加盟をもって評議会は無事に終わる。魔国連邦へ戻ったリムルたちは、暗殺の実行犯であるグレンダの尋問を始める。",
                     "duration_seconds": 0,
                     "ep": 7,
                     "sort": 79,
@@ -202310,8 +202342,8 @@
                 },
                 {
                     "id": 1624226,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "強欲の布石",
+                    "name_cn": "贪婪的布局",
                     "air_date": "2026-05-29",
                     "desc": "",
                     "duration_seconds": 0,
@@ -202517,8 +202549,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 6,
-            "last_update": "2026-05-18T13:59:07+08:00",
+            "watched_eps": 7,
+            "last_update": "2026-05-23T19:21:52+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
