@@ -203965,6 +203965,48 @@
                         }
                     ],
                     "__dataclass__": "Character"
+                },
+                {
+                    "id": 212499,
+                    "name": "菜月菜穂子",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/ae/c2/212499_crt_pri1V.jpg",
+                    "actor_ids": [
+                        4007
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 212500,
+                    "name": "菜月賢一",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/66/b0/212500_crt_6d5dj.jpg",
+                    "actor_ids": [],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
                 }
             ],
             "relations": [
@@ -204110,11 +204152,11 @@
                 },
                 {
                     "id": 1656873,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "オマエハダレダ",
+                    "name_cn": "你是谁",
                     "air_date": "2026-05-27",
-                    "desc": "",
-                    "duration_seconds": 1420,
+                    "desc": "コンビニからの帰り道、突如として異世界へと召喚されてしまった少年、ナツキ・スバル。目の前に広がるファンタジーな異世界に目を輝かせるスバルだったが、どうやら召喚されてから今までの記憶を失ってしまったらしい。塔の『試験』に挑戦中だと教えてくれたが、異世界に招かれた人間が超常の力を発揮するといったお約束の展開もなく、待機を言い渡されるスバル。そんなスバルが塔内を散策していると……。\r\n\r\n脚本：中村能子　\r\n絵コンテ：頂　真司　\r\n演出：正木陽南子\r\n総作画監督：三島千枝、野田康行\r\n作画監督：鳥之海恋子、岩田景子、西川莉央、糸島雅彦、イ・スンア、持丸彰親、ユ・ミンジ、Christina、REC Animation Factory、高添響\r\n\r\nCAST\r\nナツキ・スバル　　　　　小林裕介\r\nエミリア　　　　　　　　高橋李依\r\nラム　　　　　　　　　　村川梨衣\r\nベアトリス　　　　　　　新井里美\r\nメィリィ　　　　　　　　鈴木絵理\r\nユリウス　　　　　　　　江口拓也\r\nアナスタシア／襟ドナ　　植田佳奈\r\nシャウラ　　　　　　　　ファイルーズ あい\r\nレイド　　　　　　　　　杉田智和\r\nパトラッシュ　　　　　　相馬康一\r\n菜月菜穂子　　　　　　　柚木涼香\r\n声　　　　　　　　　　　小原好美",
+                    "duration_seconds": 1440,
                     "ep": 8,
                     "sort": 74,
                     "type": 0,
@@ -204161,8 +204203,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 7,
-            "last_update": "2026-05-21T13:16:39+08:00",
+            "watched_eps": 8,
+            "last_update": "2026-05-28T22:44:56+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
@@ -205365,6 +205407,43 @@
                         {
                             "key": "CV",
                             "value": "Ricky",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 56848,
+                    "name": "坂上数馬",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/8f/6d/56848_crt_Gu22w.jpg",
+                    "actor_ids": [
+                        7559
+                    ],
+                    "name_cn": "坂上数马",
+                    "summary": "龙园班的班导师，面相尖锐，戴着眼镜。\r\n对于自己班上的学生有过分的关心与偏袒。\r\n对龙园的暴力统治放任自流，但也对龙园有欣赏的态度。",
+                    "birth_year": null,
+                    "birth_month": 12,
+                    "birth_day": 7,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "坂上数马",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "12月7日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "wiki",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -207011,6 +207090,41 @@
                         }
                     ],
                     "__dataclass__": "Character"
+                },
+                {
+                    "id": 212086,
+                    "name": "木下美野里",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/23/9b/212086_crt_BI5gV.jpg",
+                    "actor_ids": [],
+                    "name_cn": "木下美野里",
+                    "summary": "龍園クラス。\r\n\r\n体育祭\r\n矢島麻里子と並んで堀北鈴音と連続で同じ競技に出場した。\r\n[mask]龍園翔の指示を受けて、障害物競走で先を走る堀北の名前を呼び、振り返った堀北相手に意図的に接触事故を起こし、お互いが負傷した。[/mask]\r\n\r\n無人島サバイバル\r\n同クラスの小宮叶吾・堀北クラスの篠原さつきとともに小宮小グループを構成。\r\n4日目午前4時56分頃、I4付近で小宮が何者かに崖から突き落とされ、約7秒後に同じく突き落とされ負傷。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "木下美野里",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": [
+                                {
+                                    "k": "seesaawiki",
+                                    "v": "https://seesaawiki.jp/you-zitsu/d/%cc%da%b2%bc%c8%fe%cc%ee%ce%a4"
+                                }
+                            ],
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
                 }
             ],
             "relations": [
@@ -207186,11 +207300,11 @@
                 },
                 {
                     "id": 1650971,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "怨讐の果てに",
+                    "name_cn": "怨仇的尽头",
                     "air_date": "2026-05-27",
-                    "desc": "",
-                    "duration_seconds": 0,
+                    "desc": "無人島サバイバル試験7日目、綾小路たちの\r\n指定エリアの最短ルートは山越えだった。\r\n雨が降り出しそうなこともあり、危険を伴うため迂回を提案した綾小路だが、七瀬のたっての希望により山越えを試みる。\r\n山頂までたどり着いたところで、七瀬は綾小路にある話を打ち明ける。\r\n\r\n脚本：重信 康　\r\n絵コンテ：中島大輔　\r\n演出：金森勝/野亦則行\r\n作画監督：古村祐香里/廣瀬智仁/樋上あや/樋口博美/永田陽菜/森田三鈴/長谷川裕也/稲田真樹/西位輝実/拾月動画/所沢映画",
+                    "duration_seconds": 1420,
                     "ep": 12,
                     "sort": 12,
                     "type": 0,
@@ -207249,8 +207363,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 11,
-            "last_update": "2026-05-21T13:16:35+08:00",
+            "watched_eps": 12,
+            "last_update": "2026-05-28T22:44:59+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
@@ -210097,6 +210211,38 @@
                     "birth_day": null,
                     "tags": [],
                     "__dataclass__": "Character"
+                },
+                {
+                    "id": 212465,
+                    "name": "リアン",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/d4/bd/212465_crt_w8hF2.jpg",
+                    "actor_ids": [
+                        59342
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 212466,
+                    "name": "クミン",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/73/38/212466_crt_ig675.jpg",
+                    "actor_ids": [
+                        4022
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [],
+                    "__dataclass__": "Character"
                 }
             ],
             "relations": [
@@ -210216,9 +210362,9 @@
                 {
                     "id": 1670647,
                     "name": "勇者のカレー皿",
-                    "name_cn": "",
+                    "name_cn": "勇者的咖喱盘",
                     "air_date": "2026-05-26",
-                    "desc": "",
+                    "desc": "「勇者のカレー皿」に転生することになった俺。カレーが大好きな少女リアンと出会う。彼女は病弱な体質だったが、同時にチート級の力も持っていた。カレー皿の俺は、女神から授けられたオプションの効果で彼女の体質を改善し、ついには魔王クミンを倒すまでに成長させる。しかし、人生の虚しさに襲われたリアンは一念発起、カレー屋をオープン。果たして大行列の大繁盛店となるが、向かいに新規オープンしたハヤシライス店に客を奪われてしまう。しかも、そのハヤシライス店の店長は、倒したはずの魔王、クミンであった──。",
                     "duration_seconds": 0,
                     "ep": 8,
                     "sort": 8,
@@ -210227,10 +210373,10 @@
                 },
                 {
                     "id": 1670648,
-                    "name": "",
+                    "name": "ホラーゲームなどにおいて主人公が隠れるときに使用するロッカー / トラックの運転手",
                     "name_cn": "",
                     "air_date": "2026-06-02",
-                    "desc": "",
+                    "desc": "「ホラーゲームなどにおいて主人公が隠れるときに使用するロッカー」に転生することになった俺。ゾンビが徘徊する廃病院にやって来た女子大生ヒミナ。彼女を陰から応援することになり、こっそりと後をつけ始めるが──。\r\n神々の策略によって強制異世界転生トラックに転生し、次々と魔物たちを跳ね飛ばしていく俺。さらには「異世界に飛ばされた勇者が魔素を調べるため使った初めての魔法」にも転生。勇者リキョウの元で修行を開始するが、どんどん前世の記憶が失われていき──。",
                     "duration_seconds": 0,
                     "ep": 9,
                     "sort": 9,
@@ -210278,8 +210424,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 7,
-            "last_update": "2026-05-20T13:15:49+08:00",
+            "watched_eps": 8,
+            "last_update": "2026-05-28T22:45:03+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
