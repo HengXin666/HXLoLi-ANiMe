@@ -202762,6 +202762,43 @@
                     "__dataclass__": "Character"
                 },
                 {
+                    "id": 35612,
+                    "name": "エルザ・グランヒルテ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/8c/17/35612_crt_T2ZjT.jpg?r=1675138855",
+                    "actor_ids": [
+                        3827
+                    ],
+                    "name_cn": "艾尔莎·葛兰希尔黛",
+                    "summary": "「ああ、今のはとても、感じたわ」\r\n異世界では珍しい黒髪を長く伸ばした、艶めいた雰囲気をまとう美女。\r\nグラマラスな肢体を大胆な衣装に包み、惜しげもなく周囲に艶然とした態度を振りまいている。\r\nただ、おっとりとした顔つきと穏やかな口調と裏腹に、瞳の奥には商売女とは一線を画した闇を孕んでいる。\r\n何やら盗品蔵に用があり、そこでフェルトと落ち合う約束を交わしているらしい。",
+                    "birth_year": null,
+                    "birth_month": 4,
+                    "birth_day": 29,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "艾尔莎·葛兰希尔黛",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "4月29日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "168cm",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
                     "id": 35614,
                     "name": "ラム",
                     "relation": "配角",
@@ -203729,6 +203766,33 @@
                     "__dataclass__": "Character"
                 },
                 {
+                    "id": 163869,
+                    "name": "カペラ・エメラダ・ルグニカ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/9c/bb/163869_crt_29EFH.jpg",
+                    "actor_ids": [
+                        5076
+                    ],
+                    "name_cn": "卡珮菈·爱梅拉妲·露格尼卡",
+                    "summary": "魔女教の幹部である大罪司教の一人。\r\n『色欲』担当。金色の髪色、紅の瞳を持つ少女で、五十年以上前に実在したルグニカ王族の一人と同じ名前を名乗っている。\r\n残忍な性格と下品極まりない口調が特徴的で、人間の尊厳と価値観を踏みにじる怪物。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "卡珮菈·爱梅拉妲·露格尼卡",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
                     "id": 165235,
                     "name": "フレド・トンプソン",
                     "relation": "配角",
@@ -204168,10 +204232,10 @@
                 },
                 {
                     "id": 1656875,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "殺人は癖になる",
+                    "name_cn": "杀人会变成一种习惯",
                     "air_date": "2026-06-10",
-                    "desc": "",
+                    "desc": "意識が途切れたかと思うと、目の前にはメィリィの死体、そして腕には『ナツキスバル参上』の文字。激しく動揺するスバルはひとまず死体を隠してその場を去るも、書庫でベアトリスがメィリィ・ポートルートと書かれた『死者の書』を発見していた。代表して『死者の書』を読み、彼女の孤独な過去と、死の真相を追体験するスバル。深く潜り込みすぎたことで記憶が溶け合い、脳裏に『わたし』の声が甘く響き始める。\r\n\r\n脚本：横谷昌宏　\r\n絵コンテ：及川啓　\r\n演出：後藤真人\r\n総作画監督：野田康行、佐川遥\r\n作画監督：野田康行、三浦瞳、ジカビ、富永武志、春川彩子、村田大亮、杉浦圭一、花澤友梨",
                     "duration_seconds": 1420,
                     "ep": 10,
                     "sort": 76,
@@ -204195,8 +204259,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 9,
-            "last_update": "2026-06-04T12:39:39+08:00",
+            "watched_eps": 10,
+            "last_update": "2026-06-11T13:00:45+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
@@ -205205,6 +205269,38 @@
                     "__dataclass__": "Character"
                 },
                 {
+                    "id": 56181,
+                    "name": "白波千尋",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/46/f9/56181_crt_g5qB3.jpg?r=1501952032",
+                    "actor_ids": [
+                        26508
+                    ],
+                    "name_cn": "白波千寻",
+                    "summary": "一之濑班的学生。\r\n\r\n一之濑的好友，性格较为软弱，但言行举止沉稳大方，具有柔和的态度。\r\n[mask]是个百合倾向者，入学起便喜欢着一之濑，曾向她写情书告白过但被拒绝。[/mask]",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "白波千寻",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "wiki",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
                     "id": 56313,
                     "name": "橋本正義",
                     "relation": "配角",
@@ -205399,6 +205495,38 @@
                         {
                             "key": "CV",
                             "value": "Ricky",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 56708,
+                    "name": "小橋夢",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/7c/2e/56708_crt_zXxfi.jpg",
+                    "actor_ids": [
+                        28044
+                    ],
+                    "name_cn": "小桥梦",
+                    "summary": "一之濑班的学生。\r\n\r\n一之濑的好友，也是她的忠实维护者之一。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "小桥梦",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "wiki",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -207154,6 +207282,43 @@
                         }
                     ],
                     "__dataclass__": "Character"
+                },
+                {
+                    "id": 213285,
+                    "name": "竹本茂",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/f3/d7/213285_crt_zMn94.jpg",
+                    "actor_ids": [
+                        44207
+                    ],
+                    "name_cn": "竹本茂",
+                    "summary": "坂柳クラス。\r\n\r\n無人島サバイバル \r\n一之瀬クラスの小橋夢・白波千尋と小グループを結成。\r\n10日目の17時以降に白波千尋が迷子になり、連れてきた綾小路清隆と遭遇。\r\n連絡用トランシーバーを綾小路に貸し出した。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "竹本茂",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": [
+                                {
+                                    "k": "seesaawiki",
+                                    "v": "https://seesaawiki.jp/you-zitsu/d/%c3%dd%cb%dc%cc%d0"
+                                }
+                            ],
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
                 }
             ],
             "relations": [
@@ -207353,10 +207518,10 @@
                 },
                 {
                     "id": 1668932,
-                    "name": "",
+                    "name": "孤高の麒麟児",
                     "name_cn": "",
                     "air_date": "2026-06-10",
-                    "desc": "",
+                    "desc": "無人島サバイバル試験は10日目を迎え、総合得点で1位を走る南雲グループに2位の高円寺が僅差で詰め寄っていた。\r\n高円寺を潰したほうがいいと判断した桐山は、3年生の6グループを総動員して、高円寺を封じ込めようとする。\r\nしかし、高円寺は全く気にする素振りすら見せず――。\r\n\r\n脚本：重信 康　\r\n絵コンテ：佐藤高成　\r\n演出：金森勝/野亦則行\r\n作画監督：樋上あや/稲田真樹/長谷川裕也/外村奈々/古村祐香里/西位輝実/ANH THU/SON TUNG/所沢映画/拾月動画/山形孝二/福田梨生/阿部 由佳",
                     "duration_seconds": 0,
                     "ep": 14,
                     "sort": 14,
@@ -207392,8 +207557,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 13,
-            "last_update": "2026-06-04T12:39:41+08:00",
+            "watched_eps": 14,
+            "last_update": "2026-06-11T13:00:41+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
