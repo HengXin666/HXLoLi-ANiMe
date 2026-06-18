@@ -202580,6 +202580,8 @@
                         33429,
                         35847,
                         36531,
+                        43207,
+                        43248,
                         62349,
                         93055,
                         93056
@@ -203591,106 +203593,6 @@
                     "__dataclass__": "Character"
                 },
                 {
-                    "id": 85419,
-                    "name": "ルイ・アルネブ",
-                    "relation": "配角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/15/46/85419_crt_W9BZO.jpg?r=1607643041",
-                    "actor_ids": [],
-                    "name_cn": "路伊·阿尔尼普",
-                    "summary": "魔女教の幹部である大罪司教の一人。\r\n第三の『暴食』担当。\r\n子供っぽく奔放なライやロイとは異なり、達観した物言いと空虚な雰囲気を纏う。愛らしい天使のような風貌の少女だがその本質は悪辣で、ときに二人以上の邪悪さを感じさせる存在。",
-                    "birth_year": null,
-                    "birth_month": null,
-                    "birth_day": null,
-                    "tags": [
-                        {
-                            "key": "简体中文名",
-                            "value": "路伊·阿尔尼普",
-                            "__dataclass__": "KeyValue"
-                        },
-                        {
-                            "key": "别号",
-                            "value": "暴食司教/『飽食』",
-                            "__dataclass__": "KeyValue"
-                        },
-                        {
-                            "key": "发色",
-                            "value": "金髮",
-                            "__dataclass__": "KeyValue"
-                        },
-                        {
-                            "key": "瞳色",
-                            "value": "藍瞳",
-                            "__dataclass__": "KeyValue"
-                        },
-                        {
-                            "key": "活动范围",
-                            "value": "記憶的迴廊",
-                            "__dataclass__": "KeyValue"
-                        },
-                        {
-                            "key": "所属团体",
-                            "value": "魔女教",
-                            "__dataclass__": "KeyValue"
-                        }
-                    ],
-                    "__dataclass__": "Character"
-                },
-                {
-                    "id": 85420,
-                    "name": "ライ・バテンカイトス",
-                    "relation": "配角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/6f/2b/85420_crt_C0Dug.jpg",
-                    "actor_ids": [],
-                    "name_cn": "莱伊·巴登凯托斯",
-                    "summary": "魔女教の幹部である大罪司教の一人。『暴食』担当。見た目は無害な子供のように見えるが、その言動の全ては食への異常とも言える執着に支配されており、常にテンションが高い。\r\n他人をおちょくるような飄々とした態度が目立ち、どんな事態に陥っても自らのペースを崩すことはない。",
-                    "birth_year": null,
-                    "birth_month": null,
-                    "birth_day": null,
-                    "tags": [
-                        {
-                            "key": "简体中文名",
-                            "value": "莱伊·巴登凯托斯",
-                            "__dataclass__": "KeyValue"
-                        },
-                        {
-                            "key": "性别",
-                            "value": "男",
-                            "__dataclass__": "KeyValue"
-                        },
-                        {
-                            "key": "引用来源",
-                            "value": "zh.moegirl.org.cn",
-                            "__dataclass__": "KeyValue"
-                        },
-                        {
-                            "key": "别号",
-                            "value": "暴食担当、最强最弱",
-                            "__dataclass__": "KeyValue"
-                        },
-                        {
-                            "key": "发色",
-                            "value": "棕髮",
-                            "__dataclass__": "KeyValue"
-                        },
-                        {
-                            "key": "瞳色",
-                            "value": "綠瞳",
-                            "__dataclass__": "KeyValue"
-                        },
-                        {
-                            "key": "所属团体",
-                            "value": "魔女教",
-                            "__dataclass__": "KeyValue"
-                        },
-                        {
-                            "key": "个人状态",
-                            "value": "魔女教『暴食』·『美食家』",
-                            "__dataclass__": "KeyValue"
-                        }
-                    ],
-                    "__dataclass__": "Character"
-                },
-                {
                     "id": 85421,
                     "name": "シリウス・ロマネコンティ",
                     "relation": "配角",
@@ -203763,6 +203665,22 @@
                             "__dataclass__": "KeyValue"
                         }
                     ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 159313,
+                    "name": "ギルティラウ",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/ab/7a/159313_crt_uu26P.jpg",
+                    "actor_ids": [
+                        4877
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [],
                     "__dataclass__": "Character"
                 },
                 {
@@ -203928,36 +203846,6 @@
                     "__dataclass__": "Character"
                 },
                 {
-                    "id": 204467,
-                    "name": "ロイ・アルファルド",
-                    "relation": "配角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/70/cc/204467_crt_P6P6F.jpg",
-                    "actor_ids": [],
-                    "name_cn": "罗伊·爱尔法德",
-                    "summary": "魔女教の幹部である大罪司教の一人。\r\n『暴食』担当。ライ同様に名前と記憶を喰らう。笑顔の裏に異常な食欲と残酷さを秘め、全てを根こそぎ喰い尽くす満腹感優先の『悪食』を自称。\r\n自らの幸せのために他人の人生を躊躇いなく踏み躙る外道。",
-                    "birth_year": null,
-                    "birth_month": null,
-                    "birth_day": null,
-                    "tags": [
-                        {
-                            "key": "简体中文名",
-                            "value": "罗伊·爱尔法德",
-                            "__dataclass__": "KeyValue"
-                        },
-                        {
-                            "key": "性别",
-                            "value": "男",
-                            "__dataclass__": "KeyValue"
-                        },
-                        {
-                            "key": "身高",
-                            "value": "150cm",
-                            "__dataclass__": "KeyValue"
-                        }
-                    ],
-                    "__dataclass__": "Character"
-                },
-                {
                     "id": 208675,
                     "name": "ヨーゼフ",
                     "relation": "闲角",
@@ -204090,7 +203978,7 @@
                     "name_cn": "Re：从零开始的异世界生活 第四季 夺还篇",
                     "relation": "续集",
                     "type": 2,
-                    "image_url": "https://lain.bgm.tv/pic/cover/l/43/ca/633836_hVGc7.jpg",
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/43/ca/633836_ql0f3.jpg",
                     "__dataclass__": "Relation"
                 },
                 {
@@ -204118,6 +204006,15 @@
                     "relation": "片尾曲",
                     "type": 3,
                     "image_url": "https://lain.bgm.tv/pic/cover/l/ef/09/639070_2A1FS.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 661459,
+                    "name": "Stay Alive ～Regain～",
+                    "name_cn": "",
+                    "relation": "插入歌",
+                    "type": 3,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/de/ec/661459_qJI66.jpg",
                     "__dataclass__": "Relation"
                 }
             ],
@@ -204244,11 +204141,11 @@
                 },
                 {
                     "id": 1656876,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "Re:ゼロから始まる異世界生活",
+                    "name_cn": "Re:从零开始的异世界生活",
                     "air_date": "2026-06-17",
-                    "desc": "",
-                    "duration_seconds": 1420,
+                    "desc": "消えてしまったメィリィの死体を探す現場を抑えられ、氷の檻に囚われたスバル。記憶喪失だと必死に訴えるも、スバルを偽物だと疑うラムの誤解は解けず、風魔法で意識を失ってしまう。しかしその後、目覚めるとスバルは檻の外に出ていて、さらに周囲の壁一面に『ナツキ・スバル参上』の文字が刻まれていた。覚えのない事態の連続に混乱するスバルの背後で、四層にいるはずのないレイド・アストレアが待ち受ける。\r\n\r\n脚本：中村能子\r\n絵コンテ：おざわかずひろ\r\n演出：石川雄大\r\n総作画監督：佐川 遥\r\n作画監督：佐川 遥、西川莉央、永吉隆志、富永武志、三浦 瞳、村田大亮、鳥之海恋子、平松伸行、持丸彰親",
+                    "duration_seconds": 1470,
                     "ep": 11,
                     "sort": 77,
                     "type": 0,
@@ -204258,9 +204155,9 @@
             "__dataclass__": "ANiMeData"
         },
         "user_status": {
-            "watch_status": 3,
-            "watched_eps": 10,
-            "last_update": "2026-06-11T13:00:45+08:00",
+            "watch_status": 2,
+            "watched_eps": 11,
+            "last_update": "2026-06-18T13:24:59+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
