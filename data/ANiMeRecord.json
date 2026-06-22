@@ -202253,6 +202253,24 @@
                     "type": 3,
                     "image_url": "https://lain.bgm.tv/pic/cover/l/60/96/635058_yy421.jpg",
                     "__dataclass__": "Relation"
+                },
+                {
+                    "id": 662162,
+                    "name": "TACTIC",
+                    "name_cn": "",
+                    "relation": "片头曲",
+                    "type": 3,
+                    "image_url": "",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 662163,
+                    "name": "ヒムナル",
+                    "name_cn": "",
+                    "relation": "片尾曲",
+                    "type": 3,
+                    "image_url": "",
+                    "__dataclass__": "Relation"
                 }
             ],
             "episodes": [
@@ -202367,9 +202385,9 @@
                 {
                     "id": 1624228,
                     "name": "強欲の主人",
-                    "name_cn": "",
+                    "name_cn": "贪婪的主人",
                     "air_date": "2026-06-12",
-                    "desc": "『強欲者』のユニークスキルを持つマリアベルと魔王として覚醒したリムル。両者の力の差は明らかだった。リムルはマリアベルを倒そうとするが、そこへユウキが立ちはだかる。",
+                    "desc": "マリアベルの持つユニークスキル『強欲者』は魔王として覚醒したリムルには効かず、両者の力の差は明らかだった。マリアベルの攻撃を全て封じたリムルは彼女を倒そうとするが、そこへ『強欲者』の力を譲渡されたユウキが立ちはだかる。そして、マリアベルに操られて魔王と戦うユウキを見た自由組合の仲間たちは、自分たちのリーダーを信じて声をあげるのだった。",
                     "duration_seconds": 0,
                     "ep": 10,
                     "sort": 82,
@@ -202379,9 +202397,9 @@
                 {
                     "id": 1624229,
                     "name": "ミリムの友達",
-                    "name_cn": "",
+                    "name_cn": "蜜莉姆的朋友",
                     "air_date": "2026-06-19",
-                    "desc": "",
+                    "desc": "かつて自らが封印した混沌竜と対峙する魔王ミリム。友を倒すことができないというミリムのため、リムルは混沌竜の中に残った魂の保護を狙う。",
                     "duration_seconds": 0,
                     "ep": 11,
                     "sort": 83,
@@ -202390,7 +202408,7 @@
                 },
                 {
                     "id": 1624230,
-                    "name": "",
+                    "name": "進化する魔国連邦",
                     "name_cn": "",
                     "air_date": "2026-06-26",
                     "desc": "",
@@ -202549,8 +202567,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 10,
-            "last_update": "2026-06-14T15:39:11+08:00",
+            "watched_eps": 11,
+            "last_update": "2026-06-22T13:18:02+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
@@ -205831,7 +205849,9 @@
                     "name": "鬼頭隼",
                     "relation": "配角",
                     "image_url": "https://lain.bgm.tv/pic/crt/l/a7/97/104524_crt_XiN6z.jpg?r=1740516437",
-                    "actor_ids": [],
+                    "actor_ids": [
+                        31504
+                    ],
                     "name_cn": "鬼头隼",
                     "summary": "坂柳班的学生。\r\n\r\n所属坂柳派，常戴着白手套，面相可怕、冷酷少言、实力强悍。作为坂柳最忠诚的心腹兼保镖，只有坂柳下令或是必要时候才会动用武力。",
                     "birth_year": null,
@@ -205943,6 +205963,38 @@
                         {
                             "key": "简体中文名",
                             "value": "森宁宁",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "wiki",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 113732,
+                    "name": "諸藤リカ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/c1/17/113732_crt_QH9O9.jpg?r=1658261495",
+                    "actor_ids": [
+                        29413
+                    ],
+                    "name_cn": "诸藤梨花",
+                    "summary": "轻井泽事件的导火索，曾与D班的轻井泽惠发生纠纷的琐事。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "诸藤梨花",
                             "__dataclass__": "KeyValue"
                         },
                         {
@@ -207216,6 +207268,189 @@
                         }
                     ],
                     "__dataclass__": "Character"
+                },
+                {
+                    "id": 214453,
+                    "name": "三木谷",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/c2/b4/214453_crt_AMtUr.jpg",
+                    "actor_ids": [
+                        22634
+                    ],
+                    "name_cn": "三木谷",
+                    "summary": "桐山生叶と同じBクラスの男子生徒。\r\n\r\n無人島サバイバル\r\n3人組の小グループを結成して、最後まで3人組のままであった。\r\n桐山グループとともに高円寺六助を抑え込むための作戦を取っていたが、10日目の17時過ぎ時点で決着がついていなかった。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "三木谷",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": [
+                                {
+                                    "k": "seesaawiki",
+                                    "v": "https://seesaawiki.jp/you-zitsu/d/%bb%b0%cc%da%c3%ab"
+                                }
+                            ],
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 214454,
+                    "name": "諸岡",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/fb/19/214454_crt_P8l4h.jpg",
+                    "actor_ids": [
+                        44148
+                    ],
+                    "name_cn": "诸冈",
+                    "summary": "南雲雅と同じ学年の男子生徒。\r\nクラスはAクラス以外。\r\n身体能力はB以上。\r\n\r\n無人島サバイバル\r\nフリーグループを結成。\r\n\r\n桐山グループとともに高円寺六助を抑え込むための作戦を取っていたが、10日目の17時過ぎ時点で決着がついていなかった。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "诸冈",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": [
+                                {
+                                    "k": "seesaawiki",
+                                    "v": "https://seesaawiki.jp/you-zitsu/d/%bd%f4%b2%ac"
+                                }
+                            ],
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 214455,
+                    "name": "片桐",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/73/15/214455_crt_94pIG.jpg",
+                    "actor_ids": [
+                        70870
+                    ],
+                    "name_cn": "片桐",
+                    "summary": "2年生編から登場した新1年生で、宇都宮陸・椿桜子と同じCクラスの男子生徒。\r\n宝泉和臣にかなり怯えている。\r\n\r\n無人島サバイバル\r\n9日目の朝7時以降、宇都宮からの指示で宝泉と七瀬翼のいるテントにトランシーバーを届けた。\r\nその後、宝泉に脅され、トランシーバーを預けたまま逃げ去った。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "片桐",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": [
+                                {
+                                    "k": "seesaawiki",
+                                    "v": "https://seesaawiki.jp/you-zitsu/d/%ca%d2%b6%cd"
+                                }
+                            ],
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 214456,
+                    "name": "磯山渚沙",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/72/0a/214456_crt_791QF.jpg",
+                    "actor_ids": [],
+                    "name_cn": "矶山渚沙",
+                    "summary": "龍園クラス\r\n\r\n無人島サバイバル\r\n同じクラスの石崎大地・椎名ひより・諸藤リカと小グループを結成。\r\n11日目までにテーブルの違う石崎小グループ（津辺仁美・石崎大地・西野武子）と大グループを結成し、唯一違うクラスであった津辺もうまく溶け込んだ。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "矶山渚沙",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": [
+                                {
+                                    "k": "seesaawiki",
+                                    "v": "https://seesaawiki.jp/you-zitsu/d/%b0%eb%bb%b3%bd%ed%ba%bb"
+                                }
+                            ],
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 215199,
+                    "name": "司城大河",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/30/68/215199_crt_4Hq6N.jpg",
+                    "actor_ids": [
+                        32083
+                    ],
+                    "name_cn": "司城大河",
+                    "summary": "坂柳クラス\r\n\r\n1年目冬休みの少し前に部活の上級生と付き合い始めた。\r\n1年女子によるイケメンランキング3位か4位？\r\n\r\n無人島サバイバル\r\n13日目午前中に椿桜子が開始した綾小路清隆包囲作戦に当たって、坂柳有栖の指示に従い事情を知らされないまま北側の1年生3グループの足止めを行った。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "司城大河",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": [
+                                {
+                                    "k": "seesaawiki",
+                                    "v": "https://seesaawiki.jp/you-zitsu/d/%bb%ca%be%eb%c2%e7%b2%cf"
+                                }
+                            ],
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
                 }
             ],
             "relations": [
@@ -207416,10 +207651,10 @@
                 {
                     "id": 1668932,
                     "name": "孤高の麒麟児",
-                    "name_cn": "",
+                    "name_cn": "孤高的逆鳞儿",
                     "air_date": "2026-06-10",
                     "desc": "無人島サバイバル試験は10日目を迎え、総合得点で1位を走る南雲グループに2位の高円寺が僅差で詰め寄っていた。\r\n高円寺を潰したほうがいいと判断した桐山は、3年生の6グループを総動員して、高円寺を封じ込めようとする。\r\nしかし、高円寺は全く気にする素振りすら見せず――。\r\n\r\n脚本：重信 康　\r\n絵コンテ：佐藤高成　\r\n演出：金森勝/野亦則行\r\n作画監督：樋上あや/稲田真樹/長谷川裕也/外村奈々/古村祐香里/西位輝実/ANH THU/SON TUNG/所沢映画/拾月動画/山形孝二/福田梨生/阿部 由佳",
-                    "duration_seconds": 0,
+                    "duration_seconds": 1420,
                     "ep": 14,
                     "sort": 14,
                     "type": 0,
@@ -207427,11 +207662,11 @@
                 },
                 {
                     "id": 1668933,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "力と意志",
+                    "name_cn": "力量与意志",
                     "air_date": "2026-06-17",
-                    "desc": "",
-                    "duration_seconds": 0,
+                    "desc": "ついに動き出した1年生グループの綾小路包囲網。\r\n椿の指示の下、綾小路の想定以上の規模で迫っていた。\r\n綾小路に迂回をさせ続け、指定エリアを連続でスルーさせることで、ペナルティを発生させる作戦だ。\r\nしかし、突如1年生グループの動きが止まってしまう。\r\n\r\n脚本：勝冶 京子　\r\n絵コンテ：佐藤高成　\r\n演出：芳野健/野亦則行",
+                    "duration_seconds": 1420,
                     "ep": 15,
                     "sort": 15,
                     "type": 0,
@@ -207439,10 +207674,10 @@
                 },
                 {
                     "id": 1668934,
-                    "name": "",
+                    "name": "ある未来のために",
                     "name_cn": "",
                     "air_date": "2026-06-24",
-                    "desc": "",
+                    "desc": "一之瀬や南雲と別れた綾小路をI2で待っていたのは、月城理事長代理と司馬だった。\r\n学校を去るつもりがない綾小路に対し、月城は司馬と二人がかりで綾小路を制圧しようとする。\r\nその頃、綾小路退学を示唆するメモを手にした堀北は、記載のあったI2に向かうが……。\r\n\r\n脚本：重信 康　\r\n絵コンテ：辻初樹/葉摘田緒　\r\n演出：野亦則行行",
                     "duration_seconds": 0,
                     "ep": 16,
                     "sort": 16,
@@ -207454,8 +207689,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 14,
-            "last_update": "2026-06-11T13:00:41+08:00",
+            "watched_eps": 15,
+            "last_update": "2026-06-22T13:17:56+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
@@ -210045,6 +210280,33 @@
                     "__dataclass__": "Character"
                 },
                 {
+                    "id": 115255,
+                    "name": "萌",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/a5/4d/115255_crt_Bw98M.jpg",
+                    "actor_ids": [
+                        4868
+                    ],
+                    "name_cn": "萌",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "萌",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
                     "id": 200848,
                     "name": "俺",
                     "relation": "主角",
@@ -210187,19 +210449,25 @@
                     "birth_year": null,
                     "birth_month": null,
                     "birth_day": null,
-                    "tags": [],
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
                     "__dataclass__": "Character"
                 },
                 {
                     "id": 209241,
                     "name": "魔王の孫",
-                    "relation": "配角",
-                    "image_url": "",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/e9/54/209241_crt_0AnaQ.jpg",
                     "actor_ids": [
                         5228
                     ],
                     "name_cn": "",
-                    "summary": "",
+                    "summary": "ep03 「钟楼的秒针」中登场的闲角。",
                     "birth_year": null,
                     "birth_month": null,
                     "birth_day": null,
@@ -210226,16 +210494,22 @@
                     "id": 209243,
                     "name": "勇者ミッシュ",
                     "relation": "配角",
-                    "image_url": "",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/6b/8b/209243_crt_N0yXm.jpg",
                     "actor_ids": [
                         4950
                     ],
-                    "name_cn": "",
-                    "summary": "",
+                    "name_cn": "勇者米修",
+                    "summary": "ep03 「负责通知勇者升等的脑中的人」中登场的勇者。",
                     "birth_year": null,
                     "birth_month": null,
                     "birth_day": null,
-                    "tags": [],
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "勇者米修",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
                     "__dataclass__": "Character"
                 },
                 {
@@ -210334,6 +210608,591 @@
                     "birth_day": null,
                     "tags": [],
                     "__dataclass__": "Character"
+                },
+                {
+                    "id": 214783,
+                    "name": "百合ハーレム勇者が3番目におとした、王道属性はメインとサブの二人に取られ、インパクトは後発優勢で、中盤辺りでは名前ぐらいしか描写されず、終盤では名前すら出てこなくなる美少女ヒロイン",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/ab/32/214783_crt_3Waup.jpg",
+                    "actor_ids": [
+                        4851
+                    ],
+                    "name_cn": "百合后宫勇者第三个攻略的王道属性被前两个人用掉越后面登场的人越有爆点到剧情中段除了名字都没什么描写靠近结尾时甚至连名字都没出现的美少女角色",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "百合后宫勇者第三个攻略的王道属性被前两个人用掉越后面登场的人越有爆点到剧情中段除了名字都没什么描写靠近结尾时甚至连名字都没出现的美少女角色",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 214784,
+                    "name": "ナンテ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/cf/36/214784_crt_Rq5GG.jpg",
+                    "actor_ids": [
+                        4054
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 214909,
+                    "name": "転生神",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/f7/5f/214909_crt_izIfe.jpg",
+                    "actor_ids": [
+                        740,
+                        4101,
+                        4105,
+                        4657
+                    ],
+                    "name_cn": "转生神",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "转生神",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 214910,
+                    "name": "熊",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/fd/35/214910_crt_mCiCA.jpg",
+                    "actor_ids": [
+                        4657
+                    ],
+                    "name_cn": "熊",
+                    "summary": "ep1 登场的闲角",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "熊",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 214911,
+                    "name": "女神の従者",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/8b/63/214911_crt_JQHdh.jpg",
+                    "actor_ids": [
+                        3886
+                    ],
+                    "name_cn": "女神的从者",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "女神的从者",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 214912,
+                    "name": "ニュースキャスター",
+                    "relation": "闲角",
+                    "image_url": "",
+                    "actor_ids": [
+                        4382
+                    ],
+                    "name_cn": "新闻播报员",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "新闻播报员",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 214913,
+                    "name": "ライツンベル",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/f6/35/214913_crt_POml8.jpg",
+                    "actor_ids": [
+                        4657
+                    ],
+                    "name_cn": "莱琛贝尔",
+                    "summary": "ep02 中登场的勇者。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "莱琛贝尔",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 214914,
+                    "name": "ラクトーシャ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/3f/7c/214914_crt_6GH10.jpg",
+                    "actor_ids": [
+                        4382
+                    ],
+                    "name_cn": "拉克塔夏",
+                    "summary": "ep2 登场的海洋女神。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "拉克塔夏",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 214915,
+                    "name": "左扉",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/2d/26/214915_crt_LHSFM.jpg",
+                    "actor_ids": [
+                        4101
+                    ],
+                    "name_cn": "左门",
+                    "summary": "ep2 中登场，魔王城的左门。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "左门",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 214916,
+                    "name": "魔王",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/6c/74/214916_crt_Zfr6H.jpg",
+                    "actor_ids": [
+                        4105
+                    ],
+                    "name_cn": "魔王",
+                    "summary": "ep2 「魔王城的右门」中登场的魔王。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "魔王",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 214917,
+                    "name": "勇者ユーラレクトフルレト",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/8d/2e/214917_crt_Z1aAA.jpg",
+                    "actor_ids": [
+                        8253
+                    ],
+                    "name_cn": "勇者尤拉雷克多弗尔雷德",
+                    "summary": "ep02 「魔王城的右门」中登场的勇者",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "勇者尤拉雷克多弗尔雷德",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 214918,
+                    "name": "猫耳系ヒロイン",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/c7/5e/214918_crt_1KiK8.jpg",
+                    "actor_ids": [
+                        4868
+                    ],
+                    "name_cn": "猫耳系女主角",
+                    "summary": "ep02 「魔王城的右门」中登场的闲角。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "猫耳系女主角",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 214919,
+                    "name": "グラスレイ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/9d/38/214919_crt_Oz9Yw.jpg",
+                    "actor_ids": [
+                        4110
+                    ],
+                    "name_cn": "古拉斯雷",
+                    "summary": "ep02 「寄居蟹」中登场的炼狱支配者古拉斯雷。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "古拉斯雷",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 214920,
+                    "name": "女性",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/94/27/214920_crt_aNmMr.jpg",
+                    "actor_ids": [
+                        4868
+                    ],
+                    "name_cn": "",
+                    "summary": "ep03 「钟楼的秒针」中登场的闲角。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 214921,
+                    "name": "サトル",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/3f/19/214921_crt_4NXCw.jpg",
+                    "actor_ids": [
+                        94692
+                    ],
+                    "name_cn": "阿悟",
+                    "summary": "ep04 女神观看的电视剧中的男主角。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "阿悟",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 214922,
+                    "name": "ナミエ",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/9e/be/214922_crt_A3Jsb.jpg",
+                    "actor_ids": [
+                        94693
+                    ],
+                    "name_cn": "浪江",
+                    "summary": "ep04 女神观看的电视剧中的女主角。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "浪江",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女主角",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 214923,
+                    "name": "玉ねぎ戦士",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/e6/3b/214923_crt_93RHB.jpg",
+                    "actor_ids": [
+                        4424,
+                        94694
+                    ],
+                    "name_cn": "洋葱战士",
+                    "summary": "ep04 「蔬菜」中登场的闲角。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "洋葱战士",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 214924,
+                    "name": "ナスビ騎士",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/6f/d4/214924_crt_1i9Si.jpg",
+                    "actor_ids": [
+                        4105,
+                        94695
+                    ],
+                    "name_cn": "茄子骑士",
+                    "summary": "ep04 「蔬菜」中登场的闲角。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "茄子骑士",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 214925,
+                    "name": "魔王ジャガイモーティア",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/02/06/214925_crt_zfIa7.jpg",
+                    "actor_ids": [
+                        4110,
+                        94692
+                    ],
+                    "name_cn": "魔王土豆提亚",
+                    "summary": "ep04 「蔬菜」中登场的魔王。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "魔王土豆提亚",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 214926,
+                    "name": "魔王スペイシャス",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/d5/5c/214926_crt_zs0TA.jpg",
+                    "actor_ids": [
+                        4254
+                    ],
+                    "name_cn": "魔王斯佩霞斯",
+                    "summary": "ep04 中首次登场的魔王。\r\n[mask]后转生为红鲑。[/mask]",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "魔王斯佩霞斯",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 214927,
+                    "name": "パクチー剣士",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/bc/84/214927_crt_S8r55.jpg",
+                    "actor_ids": [
+                        5228
+                    ],
+                    "name_cn": "香菜剑士",
+                    "summary": "ep04 「蔬菜」中登场的闲角。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "香菜剑士",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 214928,
+                    "name": "きゅうり侍",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/32/10/214928_crt_fZ1CA.jpg",
+                    "actor_ids": [
+                        4657
+                    ],
+                    "name_cn": "黄瓜武士",
+                    "summary": "ep04 「蔬菜」中登场的闲角。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "黄瓜武士",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 214929,
+                    "name": "空千代王",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/e2/8d/214929_crt_x292Y.jpg",
+                    "actor_ids": [
+                        4657
+                    ],
+                    "name_cn": "空千代王",
+                    "summary": "ep05「秘传卷轴上的绳子」中登场的忍者。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "空千代王",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 214930,
+                    "name": "フェリック",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/e2/52/214930_crt_k1DVK.jpg",
+                    "actor_ids": [
+                        23373
+                    ],
+                    "name_cn": "飞利古",
+                    "summary": "ep05「秘传卷轴上的绳子」中登场的忍者。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "飞利古",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 214931,
+                    "name": "女媧",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/f7/83/214931_crt_3zLIr.jpg",
+                    "actor_ids": [
+                        5228
+                    ],
+                    "name_cn": "女娲",
+                    "summary": "ep05「秘传卷轴上的绳子」中登场的闲角。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "女娲",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
                 }
             ],
             "relations": [
@@ -210362,6 +211221,15 @@
                     "relation": "片尾曲",
                     "type": 3,
                     "image_url": "https://lain.bgm.tv/pic/cover/l/f6/ad/639025_ssAX8.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 660219,
+                    "name": "TVアニメ『女神「異世界転生何になりたいですか」俺「勇者の肋骨で」』オリジナル・サウンドトラック",
+                    "name_cn": "",
+                    "relation": "原声集",
+                    "type": 3,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/d6/fb/660219_Vt42i.jpg",
                     "__dataclass__": "Relation"
                 }
             ],
@@ -210489,7 +211357,7 @@
                 {
                     "id": 1670650,
                     "name": "百合ハーレム勇者が3番目におとした、王道属性はメインとサブの二人に取られ、インパクトは後発優勢で、中盤辺りでは名前ぐらいしか描写されず、終盤では名前すら出てこな",
-                    "name_cn": "",
+                    "name_cn": "百合后宫勇者第三个攻略的王道属性被前两个人用掉越后面登场的人越有爆点到剧情中段除了名字都没什么描写靠近结尾时甚至连名字都没出现的美少女角色",
                     "air_date": "2026-06-16",
                     "desc": "「百合ハーレム勇者が3番目におとした、王道属性はメインとサブの二人に取られ、インパクトは後発優勢で、中盤辺りでは名前ぐらいしか描写されず、終盤では名前すら出てこなくなる美少女ヒロイン」に転生することになった俺。宇宙より現れた異星人ヒロインとして勇者ナンテの仲間となって旅に出る。続々とヒロインたちが集まり、メインヒロインの座をかけて、ついに決戦が始まろうとするが、女神はあくびをして興味がなさそう。俺は女神を喜ばせるべく、とある奇策を思いつくが──。",
                     "duration_seconds": 0,
@@ -210500,10 +211368,10 @@
                 },
                 {
                     "id": 1670651,
-                    "name": "",
+                    "name": "世界を救う勇者",
                     "name_cn": "",
                     "air_date": "2026-06-23",
-                    "desc": "",
+                    "desc": "やりたい放題の俺の所業に業を煮やした神々。女神の元に押しかけ、特例として、全てがお膳立てされ、精巧に作られたファンタジー世界に送り、世界を救う勇者へと転生させるよう圧力をかける。神々に捕縛された俺は転生され、一人、女神だけが部屋に残された。女神はお土産置き場に隠されたビデオテープを見つける。再生された画面に映し出されたのは、これまでの転生先での俺のやらかしの記録。さらには俺が語る俺自身の生前の記録。女神はそこで、驚くべき真実を知ることになる──。",
                     "duration_seconds": 0,
                     "ep": 12,
                     "sort": 12,
@@ -210515,8 +211383,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 10,
-            "last_update": "2026-06-10T13:56:23+08:00",
+            "watched_eps": 11,
+            "last_update": "2026-06-22T13:18:04+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"

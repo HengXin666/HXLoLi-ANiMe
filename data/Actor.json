@@ -9756,5 +9756,68 @@
         "short_summary": "",
         "image_url": "https://lain.bgm.tv/pic/crt/l/87/53/44207_prsn_p3f26.jpg",
         "__dataclass__": "Actor"
+    },
+    {
+        "id": 94692,
+        "name": "益山寛司",
+        "short_summary": "85年大阪生まれ。俳優、ダンサー、画家。\r\n子供鉅人の旗揚げより参加。代表の益山貴司の実弟。柔軟な体から繰り出されるダンサブルな動きを得意とし、女形をさせれば関西随一を誇る。シリアスからコミカルなキャラクターを演じ分けつつも、実は、一番得意な役は「おばはん」。野田秀樹や白井晃の舞台、CM、映画、モデル、ファッションショー、絵画個展など、活動の幅はすこぶるボーダレス。子供鉅人の美白担当。CoRich舞台芸術！フェスティバル２０１２年俳優賞受賞。",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/48/05/94692_prsn_j1ogi.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 94693,
+        "name": "高田静流",
+        "short_summary": "1995年1月30日生まれ、埼玉県出身。\r\nOnline Vintage Clothing Shop「Daughter by SOKKYOU」主宰。\r\n主な出演作は、舞台『ジャズ大名』『野外劇「テンペスト」』、映画『とおぼえ』など、他多数。\r\n特技はモダンダンス。",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/1a/ea/94693_prsn_3uE85.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 94694,
+        "name": "トムキラン",
+        "short_summary": "",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/af/b1/94694_prsn_5Fguf.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 94695,
+        "name": "八木光太郎",
+        "short_summary": "",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/b7/b6/94695_prsn_w9BuT.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 23373,
+        "name": "J. Maxwell Powers",
+        "short_summary": "日米両語ナレーション、声優、MC、翻訳/通訳、英語監修や発音指導\r\n関わって来た多くのCM,映画、番組や教材ナレーションで印象的な深い声に加え、イベント、表彰式などのMCでひと味違う司会としても好評。\r\nゲーム、アニメやダビング等で本人とは異なる幅広いキャラクターボイスも持つ。\r\n特徴は日本語と英語、または日英ミックスでインターナショナルかつ魅力的な表現。",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/c6/2c/23373_prsn_fNFNN.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 31504,
+        "name": "野津山幸宏",
+        "short_summary": "芸歴\r\n2017年　Rush Style\r\n2022年　ステイラック\r\n\r\n趣味\r\n料理、漫才、砂時計収集、即興ソング",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/4a/44/31504_prsn_cjN41.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 44148,
+        "name": "大川隼汰",
+        "short_summary": "",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/2e/ec/44148_prsn_atv52.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 70870,
+        "name": "三浦魁",
+        "short_summary": "",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/b1/12/70870_prsn_Hi8Ho.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 32083,
+        "name": "下鶴直幸",
+        "short_summary": "趣味：携帯アプリ/将棋/ダーツ/ボウリング\r\n特技：キャベツの千切り/煮込み料理\r\n資格：全商簿記1級/日商簿記3級/電卓1級\r\n　　　商品流通マーケティング1級/普通自動車免許\r\n経歴：プロ・フィット声優養成所　卒",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/c8/e2/32083_prsn_PXxRS.jpg",
+        "__dataclass__": "Actor"
     }
 ]
