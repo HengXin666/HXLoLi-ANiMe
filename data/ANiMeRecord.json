@@ -29862,7 +29862,7 @@
                     "id": 46462,
                     "name": "ルーデウス・グレイラット",
                     "relation": "主角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/2b/a4/46462_crt_bwGOt.jpg?r=1711026790",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/2b/a4/46462_crt_ScSry.jpg",
                     "actor_ids": [
                         6560
                     ],
@@ -29894,7 +29894,7 @@
                     "id": 46463,
                     "name": "シルフィエット・グレイラット",
                     "relation": "主角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/68/c3/46463_crt_VG4MW.jpg?r=1720856667",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/68/c3/46463_crt_K3N55.jpg",
                     "actor_ids": [
                         5847
                     ],
@@ -29953,7 +29953,7 @@
                     "id": 46465,
                     "name": "ロキシー・ミグルディア・グレイラット",
                     "relation": "主角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/fe/d5/46465_crt_RNQeO.jpg?r=1613151588",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/fe/d5/46465_crt_EByBv.jpg",
                     "actor_ids": [
                         27194
                     ],
@@ -29976,6 +29976,60 @@
                         {
                             "key": "生日",
                             "value": "甲龙历373年",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 75894,
+                    "name": "ゼニス・グレイラット",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/b4/0a/75894_crt_Sx9iU.jpg",
+                    "actor_ids": [
+                        5941
+                    ],
+                    "name_cn": "塞妮丝·格雷拉特",
+                    "summary": "ルーデウスの母親。ジャム作りの名手。治療魔術と解毒魔術を中級まで使える治癒術師で村の診療所に務めている。\r\nミリス神聖国貴族のラトレイア伯爵家の次女で「ミリス令嬢の鑑」と呼ばれて特別視されていたが、成人した日に両親と喧嘩し家を出て詐欺に遭いそうなところをパウロに助けられて強引にパーティに加えられた。\r\n明朗快活な性格で誰とでも気兼ねなく接し、お祝い事では率先してはしゃいでいる。魔族排斥派の教えを受けているはずだが、魔族に対する差別意識はなく冒険者時代にギースから料理を教わったり、ルーデウスの家庭教師に雇ったロキシーも家族のように扱い料理を教えたりしていた。\r\n一夫一妻を教えとするミリス教徒なので、パウロとリーリャが浮気をした際は激怒するが、ルーデウスの説得により2人を許した。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "塞妮丝·格雷拉特",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 78059,
+                    "name": "リーリャ・グレイラット",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/74/e0/78059_crt_muLJM.jpg",
+                    "actor_ids": [
+                        15497
+                    ],
+                    "name_cn": "莉莉娅·格雷拉特",
+                    "summary": "グレイラット家のメイド。元々は王宮に仕える近衛侍女だったが、暗殺者との戦いで足に後遺症が残り引退し、旧知のパウロに雇ってもらう",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "莉莉娅·格雷拉特",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -30014,10 +30068,42 @@
                     "__dataclass__": "Character"
                 },
                 {
+                    "id": 89285,
+                    "name": "サイレント・セブンスター",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/07/fa/89285_crt_T291P.jpg?r=1691045386",
+                    "actor_ids": [
+                        34866
+                    ],
+                    "name_cn": "塞伦特·赛文斯塔",
+                    "summary": "ラノア魔法大学特別生で、常に白い仮面を付けている少女。かつて龍神オルステッドと共にルーデウスに遭遇した。その正体は、ルーデウスの前世の男と同じ世界から“転移”してきた日本人。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "塞伦特·赛文斯塔",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "https://mushokutensei.jp/character/",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
                     "id": 90584,
                     "name": "ギレーヌ・デドルディア",
                     "relation": "配角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/9f/5d/90584_crt_uwV5Z.jpg?r=1611858633",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/9f/5d/90584_crt_JvnzV.jpg",
                     "actor_ids": [
                         3866
                     ],
@@ -30056,6 +30142,326 @@
                     "__dataclass__": "Character"
                 },
                 {
+                    "id": 90748,
+                    "name": "アイシャ・グレイラット",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/61/9f/90748_crt_W6W36.jpg",
+                    "actor_ids": [
+                        18087
+                    ],
+                    "name_cn": "爱莎·格雷拉特",
+                    "summary": "パウロとリーリャの娘。\r\nルーデウスの6歳年下の異母妹で侍女。ノルンとは同じ日に生まれた。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "爱莎·格雷拉特",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 90749,
+                    "name": "ノルン・グレイラット",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/26/36/90749_crt_YyuGA.jpg",
+                    "actor_ids": [
+                        30881
+                    ],
+                    "name_cn": "诺伦·格雷拉特",
+                    "summary": "パウロとゼニスの娘。\r\nルーデウスの6歳年下の妹。アイシャとは同じ日に生まれた。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "诺伦·格雷拉特",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 91728,
+                    "name": "オルステッド",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/88/f6/91728_crt_LpYvA.jpg?r=1755050571",
+                    "actor_ids": [
+                        3977
+                    ],
+                    "name_cn": "奥尔斯蒂德",
+                    "summary": "七大列强第二位 “龙神”",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "奥尔斯蒂德",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "种族",
+                            "value": "龍族",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 91730,
+                    "name": "ペルギウス・ドーラ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/43/76/91730_crt_m5z8M.jpg?r=1614458964",
+                    "actor_ids": [
+                        4130
+                    ],
+                    "name_cn": "佩尔基乌斯・朵拉",
+                    "summary": "击杀魔神3英雄之一",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "佩尔基乌斯・朵拉",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "种族",
+                            "value": "龍族",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 92790,
+                    "name": "エリナリーゼ・ドラゴンロード",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/d4/29/92790_crt_WNg5z.jpg",
+                    "actor_ids": [
+                        3862
+                    ],
+                    "name_cn": "艾莉娜丽洁·杜拉冈罗德",
+                    "summary": "冒险者队伍“黑狼之牙”的原成员，长耳族的战士。为了寻找因转移事件而失踪的过去同伴保罗他们，而与洛琪希、塔尔韩德一同行动。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "艾莉娜丽洁·杜拉冈罗德",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "https://mushokutensei.jp/character/",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "种族",
+                            "value": "長耳族",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 103371,
+                    "name": "ザノバ・シーローン",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/a5/65/103371_crt_04i84.jpg",
+                    "actor_ids": [
+                        4935
+                    ],
+                    "name_cn": "扎诺巴·西隆",
+                    "summary": "シーローン王国の第三王子。生まれつき凄まじい怪力を持つ神子。ルーデウスを人形(フィギュア)作りの師匠と慕う。王国から追放同然に留学したラノア魔法大学でルーデウスと再会する。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "扎诺巴·西隆",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "https://mushokutensei.jp/character/",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 108092,
+                    "name": "クリフ・グリモル",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/b9/25/108092_crt_05eQ3.jpg",
+                    "actor_ids": [
+                        7385
+                    ],
+                    "name_cn": "克里夫・格利摩尔",
+                    "summary": "ミリス神聖国出身で、自らを天才魔術師と自称する。かつてエリスと出会い、彼女の強さと美しさに憧れを抱いている。ラノア魔法大学特別生としてルーデウスと級友に。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "克里夫・格利摩尔",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "https://mushokutensei.jp/character/",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 131145,
+                    "name": "アリエル・アネモイ・アスラ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/df/80/131145_crt_CQQq6.jpg",
+                    "actor_ids": [
+                        13164
+                    ],
+                    "name_cn": "爱丽儿·阿涅摩伊·阿斯拉",
+                    "summary": "アスラ王国第二王女で、ラノア魔法大学の生徒会長。王宮での権力争いによる身の危険から逃れるため、フィッツとルークと共にラノア魔法大学に留学した。高いカリスマ性で生徒たちを束ねる。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "爱丽儿·阿涅摩伊·阿斯拉",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "https://mushokutensei.jp/character/",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 131147,
+                    "name": "ルーク・ノトス・グレイラット",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/d4/10/131147_crt_JC9i7.jpg",
+                    "actor_ids": [
+                        5007
+                    ],
+                    "name_cn": "路克·诺托斯·格雷拉特",
+                    "summary": "アスラ王国第二王女アリエルと幼少期から行動を共にし、現在は護衛を務める青年。ルーデウスの従兄弟にあたる。フィッツと共にアリエルの護衛としてラノア魔法大学に留学する。イケメンで女好き。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "路克·诺托斯·格雷拉特",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "https://mushokutensei.jp/character/",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 135342,
+                    "name": "ジュリエット",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/5f/08/135342_crt_jT221.jpg",
+                    "actor_ids": [
+                        5107
+                    ],
+                    "name_cn": "茱丽叶特",
+                    "summary": "炭鉱族の奴隷少女。奴隷市場で売りに出されていたところ、ルーデウスとザノバと出会う。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "茱丽叶特",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "年龄",
+                            "value": "6岁（甲龙历422年）",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "种族",
+                            "value": "炭鉱族",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
                     "id": 136547,
                     "name": "ニナ・ファリオン",
                     "relation": "配角",
@@ -30086,7 +30492,7 @@
                     "id": 206747,
                     "name": "ガル・ファリオン",
                     "relation": "配角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/b2/df/206747_crt_2BAIN.jpg",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/b2/df/206747_crt_T5Kpa.jpg",
                     "actor_ids": [
                         4373
                     ],
@@ -30104,6 +30510,97 @@
                         {
                             "key": "性别",
                             "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 213216,
+                    "name": "ルーシー・グレイラット",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/69/f6/213216_crt_0rfMt.jpg",
+                    "actor_ids": [],
+                    "name_cn": "露西·格雷拉特",
+                    "summary": "ルーデウスとシルフィエットの間に生まれた娘。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "露西·格雷拉特",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 215116,
+                    "name": "オーベール・コルベット",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/e6/0f/215116_crt_o2wHR.jpg",
+                    "actor_ids": [
+                        3861
+                    ],
+                    "name_cn": "",
+                    "summary": "奇抜な風貌ながら、剣術「北神流」の使い手で、“北帝”の称号を持つ実力者。エリスが修行する剣の聖地に現れる。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 215117,
+                    "name": "イゾルテ・クルーエル",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/6d/80/215117_crt_G1I6i.jpg",
+                    "actor_ids": [
+                        5119
+                    ],
+                    "name_cn": "",
+                    "summary": "剣術「水神流」の使い手で、“水神”レイダ・リィアの弟子であり孫。エリスが修行する剣の聖地にレイダと共に現れる。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 215118,
+                    "name": "レイダ・リィア",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/58/dc/215118_crt_u0F03.jpg",
+                    "actor_ids": [
+                        4340
+                    ],
+                    "name_cn": "",
+                    "summary": "剣術「水神流」の達人で“水神”の称号を持つ。イゾルテの師匠であり祖母。エリスが修行する剣の聖地にイゾルテを連れて現れる。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "女",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -30128,15 +30625,178 @@
                     "type": 2,
                     "image_url": "https://lain.bgm.tv/pic/cover/l/ad/25/444557_e4hPO.jpg",
                     "__dataclass__": "Relation"
+                },
+                {
+                    "id": 662225,
+                    "name": "祈り、終われば",
+                    "name_cn": "",
+                    "relation": "片尾曲",
+                    "type": 3,
+                    "image_url": "",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 664481,
+                    "name": "無職転生 〜異世界行ったら本気だす〜 クロニクル・オブ・エコーズ",
+                    "name_cn": "",
+                    "relation": "游戏",
+                    "type": 4,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/ad/9c/664481_4EczZ.jpg",
+                    "__dataclass__": "Relation"
                 }
             ],
-            "episodes": [],
+            "episodes": [
+                {
+                    "id": 1704816,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-07-04",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 1,
+                    "sort": 1,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1704817,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-07-04",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 2,
+                    "sort": 2,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1704818,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-07-12",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 3,
+                    "sort": 3,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1704819,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-07-19",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 4,
+                    "sort": 4,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1704820,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-07-26",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 5,
+                    "sort": 5,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1704821,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-08-02",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 6,
+                    "sort": 6,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1704822,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-08-09",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 7,
+                    "sort": 7,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1704823,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-08-16",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 8,
+                    "sort": 8,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1704824,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-08-23",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 9,
+                    "sort": 9,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1704825,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-08-30",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 10,
+                    "sort": 10,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1704826,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-09-06",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 11,
+                    "sort": 11,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1704827,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-09-13",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 12,
+                    "sort": 12,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                }
+            ],
             "__dataclass__": "ANiMeData"
         },
         "user_status": {
-            "watch_status": 1,
+            "watch_status": 3,
             "watched_eps": 0,
-            "last_update": "2025-12-21T01:34:45+08:00",
+            "last_update": "2026-06-30T13:17:52+08:00",
             "comment": null,
             "tags": [
                 "异世界"
@@ -202271,6 +202931,15 @@
                     "type": 3,
                     "image_url": "",
                     "__dataclass__": "Relation"
+                },
+                {
+                    "id": 664213,
+                    "name": "Walk on your way",
+                    "name_cn": "",
+                    "relation": "插入歌",
+                    "type": 3,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/e0/38/664213_z1u8a.jpg",
+                    "__dataclass__": "Relation"
                 }
             ],
             "episodes": [
@@ -202399,7 +203068,7 @@
                     "name": "ミリムの友達",
                     "name_cn": "蜜莉姆的朋友",
                     "air_date": "2026-06-19",
-                    "desc": "かつて自らが封印した混沌竜と対峙する魔王ミリム。友を倒すことができないというミリムのため、リムルは混沌竜の中に残った魂の保護を狙う。",
+                    "desc": "かつて自ら封印した友、混沌竜を前に、ミリムは戦うことができずにいた。大切な友達を再び倒す――そんな悲しい事をさせないためにも、リムルは混沌竜の中に残された精霊竜の魂を保護する作戦に出る。ユウキがマリアベルを倒したことで、無事に作戦を成功させるリムルたち。そして、封印された友の魂が収められた疑似魂を手にしたミリムは、かつて付けることができなかった名前を呼ぶ。",
                     "duration_seconds": 0,
                     "ep": 11,
                     "sort": 83,
@@ -202409,9 +203078,9 @@
                 {
                     "id": 1624230,
                     "name": "進化する魔国連邦",
-                    "name_cn": "",
+                    "name_cn": "不断进化的魔国联邦",
                     "air_date": "2026-06-26",
-                    "desc": "",
+                    "desc": "マリアベルの支配が解け、西方諸国評議会の最大派閥となった魔国連邦。リムルはこれからの人間社会との付き合いのために、魔国連邦を法治国家に変えていくことを宣言する。そして、各地を視察したリムルは、魔国連邦を中心に皆が繋がり、育っていくことを願う。そんな折、リムルにラミリスから緊急招集がかかる。呼ばれて向かった先では、人魔共栄圏実現に向けたひとつの成果があがろうとしていた。",
                     "duration_seconds": 0,
                     "ep": 12,
                     "sort": 84,
@@ -202420,10 +203089,10 @@
                 },
                 {
                     "id": 1654616,
-                    "name": "",
+                    "name": "新しい仲間達",
                     "name_cn": "",
                     "air_date": "2026-07-03",
-                    "desc": "",
+                    "desc": "ディアブロから頼まれた依代の作成に本腰を入れるリムル。しかし、あまりの数の多さに、研究室の人手不足が深刻となっていた。そんなリムルの元に、ある魔王がやってくる。",
                     "duration_seconds": 0,
                     "ep": 13,
                     "sort": 85,
@@ -202567,8 +203236,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 11,
-            "last_update": "2026-06-22T13:18:02+08:00",
+            "watched_eps": 12,
+            "last_update": "2026-06-30T13:17:46+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
@@ -205448,6 +206117,41 @@
                     "__dataclass__": "Character"
                 },
                 {
+                    "id": 56709,
+                    "name": "網倉麻子",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/43/ba/56709_crt_92sFf.jpg?r=1740516366",
+                    "actor_ids": [],
+                    "name_cn": "网仓麻子",
+                    "summary": "一之濑班的学生。\r\n\r\n一之濑的挚友，态度真诚、为人直爽的蓝发马尾少女。团队合作能力是她的强项，能在艰难的时候支持着朋友，偶尔又被朋友支持而日渐成长，是一之濑最不可或缺的重要同伴。",
+                    "birth_year": null,
+                    "birth_month": 10,
+                    "birth_day": 2,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "网仓麻子",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "10月2日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "wiki",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
                     "id": 56848,
                     "name": "坂上数馬",
                     "relation": "配角",
@@ -207489,6 +208193,15 @@
                     "type": 3,
                     "image_url": "https://lain.bgm.tv/pic/cover/l/a2/99/630999_4e0B3.jpg",
                     "__dataclass__": "Relation"
+                },
+                {
+                    "id": 663369,
+                    "name": "ようこそ実力至上主義の教室へ 5th Season",
+                    "name_cn": "欢迎来到实力至上主义的教室 第五季",
+                    "relation": "续集",
+                    "type": 2,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/f7/c5/663370_KJQ3Z.jpg",
+                    "__dataclass__": "Relation"
                 }
             ],
             "episodes": [
@@ -207675,10 +208388,10 @@
                 {
                     "id": 1668934,
                     "name": "ある未来のために",
-                    "name_cn": "",
+                    "name_cn": "为了某个未来",
                     "air_date": "2026-06-24",
                     "desc": "一之瀬や南雲と別れた綾小路をI2で待っていたのは、月城理事長代理と司馬だった。\r\n学校を去るつもりがない綾小路に対し、月城は司馬と二人がかりで綾小路を制圧しようとする。\r\nその頃、綾小路退学を示唆するメモを手にした堀北は、記載のあったI2に向かうが……。\r\n\r\n脚本：重信 康　\r\n絵コンテ：辻初樹/葉摘田緒　\r\n演出：野亦則行行",
-                    "duration_seconds": 0,
+                    "duration_seconds": 1430,
                     "ep": 16,
                     "sort": 16,
                     "type": 0,
@@ -207688,9 +208401,9 @@
             "__dataclass__": "ANiMeData"
         },
         "user_status": {
-            "watch_status": 3,
-            "watched_eps": 15,
-            "last_update": "2026-06-22T13:17:56+08:00",
+            "watch_status": 2,
+            "watched_eps": 16,
+            "last_update": "2026-06-30T13:17:40+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
@@ -211369,7 +212082,7 @@
                 {
                     "id": 1670651,
                     "name": "世界を救う勇者",
-                    "name_cn": "",
+                    "name_cn": "拯救世界的勇者",
                     "air_date": "2026-06-23",
                     "desc": "やりたい放題の俺の所業に業を煮やした神々。女神の元に押しかけ、特例として、全てがお膳立てされ、精巧に作られたファンタジー世界に送り、世界を救う勇者へと転生させるよう圧力をかける。神々に捕縛された俺は転生され、一人、女神だけが部屋に残された。女神はお土産置き場に隠されたビデオテープを見つける。再生された画面に映し出されたのは、これまでの転生先での俺のやらかしの記録。さらには俺が語る俺自身の生前の記録。女神はそこで、驚くべき真実を知ることになる──。",
                     "duration_seconds": 0,
@@ -211382,9 +212095,9 @@
             "__dataclass__": "ANiMeData"
         },
         "user_status": {
-            "watch_status": 3,
-            "watched_eps": 11,
-            "last_update": "2026-06-22T13:18:04+08:00",
+            "watch_status": 2,
+            "watched_eps": 12,
+            "last_update": "2026-06-30T13:17:42+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
