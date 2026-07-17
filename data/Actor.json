@@ -9826,5 +9826,40 @@
         "short_summary": "横尾 まりは、日本の女性声優・ナレーター。シグマ・セブン所属。かつてはぷろだくしょんバオバブに在籍していた（1997年4月からシグマ・セブン）。東京都出身。\r\n\r\n劇団テアトル・エコーの養成所卒業後、外国映画の吹き替えやアニメ作品に多数出演。2005年に一新されるまで『ドラえもん』のスネ夫のママ役（2代目）を13年間担当した。語りでは鎌田弥恵に師事。槇大輔主宰の語座に2002年から2011年まで参加。シグマ・セブン声優養成所、読売日本テレビ文化センター大森、新浦安カルチャーセンターで講師として後進の指導をしている。「小説の読み語り」をライフワークとして取り組み、読み語りの公演を続けている。",
         "image_url": "https://lain.bgm.tv/pic/crt/l/ef/d4/4340_prsn_nWs7s.jpg",
         "__dataclass__": "Actor"
+    },
+    {
+        "id": 98197,
+        "name": "大和田昇平",
+        "short_summary": "",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/7f/ec/98197_prsn_1VnOo.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 30913,
+        "name": "青山玲菜",
+        "short_summary": "趣味・特技：\r\nお茶、ボルダリング/バレーボール、抹茶を点てる事",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/b6/a5/30913_prsn_dTE9d.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 44660,
+        "name": "古屋亜南",
+        "short_summary": "",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/3f/88/44660_prsn_kyO3s.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 97683,
+        "name": "福本剛優",
+        "short_summary": "",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/c1/c9/97683_prsn_t8ZjM.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 49252,
+        "name": "嶋野花",
+        "short_summary": "日本の声優，アクセルワン所属。\r\n出身地：千葉県。資格：簿記3級、情報処理検定2級。趣味：食べること、神社仏閣巡り、柴犬グッズ集め。特技：トロンボーン。",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/7a/fc/49252_prsn_gKgto.jpg?r=1745164141",
+        "__dataclass__": "Actor"
     }
 ]

@@ -29921,15 +29921,15 @@
                     "id": 46464,
                     "name": "エリス・グレイラット",
                     "relation": "主角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/38/47/46464_crt_8p2O8.jpg?r=1618566413",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/38/47/46464_crt_ppcTO.jpg",
                     "actor_ids": [
                         10806
                     ],
                     "name_cn": "艾莉丝·格雷拉特",
                     "summary": "アスラ王国の上級貴族ボレアス・グレイラット家の令嬢。ウェーブのかかった真紅の髪が特徴。\r\n狂犬と称されるほどの凶暴な性格で、剣術の高い才能がある。",
                     "birth_year": null,
-                    "birth_month": null,
-                    "birth_day": null,
+                    "birth_month": 4,
+                    "birth_day": 5,
                     "tags": [
                         {
                             "key": "简体中文名",
@@ -29942,8 +29942,8 @@
                             "__dataclass__": "KeyValue"
                         },
                         {
-                            "key": "引用来源",
-                            "value": "wiki",
+                            "key": "生日",
+                            "value": "甲龙历405年",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -30425,6 +30425,107 @@
                     "__dataclass__": "Character"
                 },
                 {
+                    "id": 134364,
+                    "name": "リニアーナ・デドルディア",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/d9/c3/134364_crt_9Yqe4.jpg?r=1690982670",
+                    "actor_ids": [
+                        34397
+                    ],
+                    "name_cn": "莉妮亚娜·泰德路迪亚",
+                    "summary": "獣族“ドルディア族”王家の血筋の少女で、ギレーヌの姪にあたる。\r\n衝動的で喧嘩が強く、ラノア魔法大学で幅を利かせている。\r\n幼馴染のプルセナと一緒に行動する。\r\n語尾は「ニャ」。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "莉妮亚娜·泰德路迪亚",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "https://mushokutensei.jp/character/",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 134365,
+                    "name": "プルセナ・アドルディア",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/c8/12/134365_crt_AqrTL.jpg?r=1690982764",
+                    "actor_ids": [
+                        13683
+                    ],
+                    "name_cn": "普尔塞娜·亚德路迪亚",
+                    "summary": "獣族“ドルディア族”王家の血筋の少女。\r\nだいたい骨付き肉を食べていて、穏やかそうに見えるが喧嘩が強く、\r\n幼馴染のリニアと共にラノア魔法大学で幅を利かせている。\r\n語尾は「なの」。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "普尔塞娜·亚德路迪亚",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "https://mushokutensei.jp/character/",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 134403,
+                    "name": "バーディガーディ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/d8/a0/134403_crt_T2stp.jpg?r=1693150746",
+                    "actor_ids": [
+                        4985
+                    ],
+                    "name_cn": "巴迪冈迪",
+                    "summary": "魔大陸のビエゴヤ地方を統べる魔王で、凄まじい治癒能力と戦闘力を備える不死魔族。魔界大帝・キシリカの婚約者でもある。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "巴迪冈迪",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "https://mushokutensei.jp/character/",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "种族",
+                            "value": "不死魔族",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
                     "id": 135342,
                     "name": "ジュリエット",
                     "relation": "配角",
@@ -30465,7 +30566,7 @@
                     "id": 136547,
                     "name": "ニナ・ファリオン",
                     "relation": "配角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/04/8c/136547_crt_fC8BF.jpg?r=1693155267",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/04/8c/136547_crt_pkLZK.jpg",
                     "actor_ids": [
                         4856
                     ],
@@ -30544,16 +30645,21 @@
                     "id": 215116,
                     "name": "オーベール・コルベット",
                     "relation": "配角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/e6/0f/215116_crt_o2wHR.jpg",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/e6/0f/215116_crt_NQBzQ.jpg",
                     "actor_ids": [
                         3861
                     ],
-                    "name_cn": "",
+                    "name_cn": "奥贝尔·柯尔贝特",
                     "summary": "奇抜な風貌ながら、剣術「北神流」の使い手で、“北帝”の称号を持つ実力者。エリスが修行する剣の聖地に現れる。",
                     "birth_year": null,
                     "birth_month": null,
                     "birth_day": null,
                     "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "奥贝尔·柯尔贝特",
+                            "__dataclass__": "KeyValue"
+                        },
                         {
                             "key": "性别",
                             "value": "男",
@@ -30566,16 +30672,21 @@
                     "id": 215117,
                     "name": "イゾルテ・クルーエル",
                     "relation": "配角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/6d/80/215117_crt_G1I6i.jpg",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/6d/80/215117_crt_eXxSc.jpg",
                     "actor_ids": [
                         5119
                     ],
-                    "name_cn": "",
+                    "name_cn": "伊佐露缇·克尔埃尔",
                     "summary": "剣術「水神流」の使い手で、“水神”レイダ・リィアの弟子であり孫。エリスが修行する剣の聖地にレイダと共に現れる。",
                     "birth_year": null,
                     "birth_month": null,
                     "birth_day": null,
                     "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "伊佐露缇·克尔埃尔",
+                            "__dataclass__": "KeyValue"
+                        },
                         {
                             "key": "性别",
                             "value": "女",
@@ -30592,15 +30703,210 @@
                     "actor_ids": [
                         4340
                     ],
-                    "name_cn": "",
+                    "name_cn": "列妲·莉亚",
                     "summary": "剣術「水神流」の達人で“水神”の称号を持つ。イゾルテの師匠であり祖母。エリスが修行する剣の聖地にイゾルテを連れて現れる。",
                     "birth_year": null,
                     "birth_month": null,
                     "birth_day": null,
                     "tags": [
                         {
+                            "key": "简体中文名",
+                            "value": "列妲·莉亚",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
                             "key": "性别",
                             "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 216062,
+                    "name": "ジノ・ブリッツ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/bd/6d/216062_crt_7yFI0.jpg",
+                    "actor_ids": [
+                        39386
+                    ],
+                    "name_cn": "奇诺·布里兹",
+                    "summary": "剑圣，妮娜的表弟。年纪比妮娜小四岁，在同龄中最受周围认为最有天分的孩子，但被剑神看穿心中没有梦想与目标，故晋升速度是艾莉丝、妮娜同期三剑圣之中最慢升到剑王的。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "奇诺·布里兹",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 216063,
+                    "name": "ティモシー・ブリッツ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/b2/0c/216063_crt_WOixS.jpg",
+                    "actor_ids": [
+                        4855
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 216064,
+                    "name": "ジャメル・ヒート",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/8f/2e/216064_crt_iP2WP.jpg",
+                    "actor_ids": [
+                        5171
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 216065,
+                    "name": "ブルク",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/2e/a0/216065_crt_alH7H.jpg",
+                    "actor_ids": [
+                        44997
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 216595,
+                    "name": "ジンジャー・ヨーク",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/51/38/216595_crt_DG2Do.jpg",
+                    "actor_ids": [],
+                    "name_cn": "金洁·约克",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "金洁·约克",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 216596,
+                    "name": "エルモア",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/26/4b/216596_crt_v1w3s.jpg",
+                    "actor_ids": [],
+                    "name_cn": "艾尔莫亚",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "艾尔莫亚",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 216597,
+                    "name": "クリーネ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/49/6b/216597_crt_FpsSm.jpg",
+                    "actor_ids": [],
+                    "name_cn": "克里涅",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "克里涅",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 216603,
+                    "name": "ジーナス・ハルファス",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/d1/f6/216603_crt_VOV9n.jpg",
+                    "actor_ids": [
+                        5467
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "男",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -30614,7 +30920,7 @@
                     "name_cn": "无职转生 ～到了异世界就拿出真本事～",
                     "relation": "书籍",
                     "type": 1,
-                    "image_url": "https://lain.bgm.tv/pic/cover/l/b7/db/101114_7Z7p1.jpg",
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/b7/db/101114_00g8V.jpg",
                     "__dataclass__": "Relation"
                 },
                 {
@@ -30632,7 +30938,7 @@
                     "name_cn": "",
                     "relation": "片尾曲",
                     "type": 3,
-                    "image_url": "",
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/b8/70/662225_64JU9.jpg",
                     "__dataclass__": "Relation"
                 },
                 {
@@ -30643,16 +30949,34 @@
                     "type": 4,
                     "image_url": "https://lain.bgm.tv/pic/cover/l/ad/9c/664481_4EczZ.jpg",
                     "__dataclass__": "Relation"
+                },
+                {
+                    "id": 665977,
+                    "name": "決意の唄",
+                    "name_cn": "",
+                    "relation": "片头曲",
+                    "type": 3,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/c6/1b/665977_B8Mz8.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 665980,
+                    "name": "『無職転生Ⅲ ～異世界行ったら本気だす～』オリジナル・サウンドトラック",
+                    "name_cn": "",
+                    "relation": "原声集",
+                    "type": 3,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/df/9d/665980_a2Hh8.jpg",
+                    "__dataclass__": "Relation"
                 }
             ],
             "episodes": [
                 {
                     "id": 1704816,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "燃えよ狂犬",
+                    "name_cn": "燃烧吧，狂犬",
                     "air_date": "2026-07-04",
-                    "desc": "",
-                    "duration_seconds": 0,
+                    "desc": "ルーデウスと結ばれたものの、己の未熟さを痛感したエリスは彼のもとを去った。ギレーヌと共に剣の聖地にたどり着いたエリスは、打倒・龍神オルステッドを宣言し、剣神ガル・ファリオンのもとで修業する。そこには剣聖として同じく修行に励む少女・ニナの姿もあり…。",
+                    "duration_seconds": 1420,
                     "ep": 1,
                     "sort": 1,
                     "type": 0,
@@ -30660,11 +30984,11 @@
                 },
                 {
                     "id": 1704817,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "吠えよ狂犬",
+                    "name_cn": "咆哮吧，狂犬",
                     "air_date": "2026-07-04",
-                    "desc": "",
-                    "duration_seconds": 0,
+                    "desc": "ルーデウスに相応しい存在となるためにエリスが剣の聖地に来てから2年が経過。エリスからルーデウスの名を聞いたニナは、その実在を確かめようと街に向かう。一方、剣の聖地には水神レイダと弟子のイゾルテが来訪。エリス、ニナ、イゾルテの3人は合同で稽古を行うことになる。",
+                    "duration_seconds": 1420,
                     "ep": 2,
                     "sort": 2,
                     "type": 0,
@@ -30672,11 +30996,11 @@
                 },
                 {
                     "id": 1704818,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "帰ってきた日常",
+                    "name_cn": "回归熟悉的日常",
                     "air_date": "2026-07-12",
-                    "desc": "",
-                    "duration_seconds": 0,
+                    "desc": "ロキシーを第二の妻として迎え、シルフィエットと娘のルーシー、妹のノルン、アイシャたち家族と穏やかな日常を過ごし始め、ラノア魔法大学にも復帰したルーデウス。同大学でロキシーが教壇に立つことにもなり、妻として彼女を皆に紹介をする中、クリフは信教上それを許せず…。",
+                    "duration_seconds": 1420,
                     "ep": 3,
                     "sort": 3,
                     "type": 0,
@@ -30684,10 +31008,10 @@
                 },
                 {
                     "id": 1704819,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "水王級魔術師",
+                    "name_cn": "水王级魔术师",
                     "air_date": "2026-07-19",
-                    "desc": "",
+                    "desc": "ルーデウスはザノバとクリフの協力で新たな左手となる「ザリフの義手」を手に入れた。しかし、いつかまた迫るかもしれない家族への危険。「もう誰も失いたくない」という想いのもと研究を進めるルーデウスは、ついにロキシーへ水王級魔術を教えてほしいと頼み込む。",
                     "duration_seconds": 0,
                     "ep": 4,
                     "sort": 4,
@@ -30789,14 +31113,38 @@
                     "sort": 12,
                     "type": 0,
                     "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1717533,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-09-20",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 13,
+                    "sort": 13,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1717534,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-09-27",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 14,
+                    "sort": 14,
+                    "type": 0,
+                    "__dataclass__": "Episode"
                 }
             ],
             "__dataclass__": "ANiMeData"
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 0,
-            "last_update": "2026-06-30T13:17:52+08:00",
+            "watched_eps": 3,
+            "last_update": "2026-07-17T13:20:16+08:00",
             "comment": null,
             "tags": [
                 "异世界"
@@ -202315,6 +202663,84 @@
                     "__dataclass__": "Character"
                 },
                 {
+                    "id": 66220,
+                    "name": "テスタロッサ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/03/4e/66220_crt_r7B2F.jpg?r=1699291042",
+                    "actor_ids": [
+                        6560
+                    ],
+                    "name_cn": "戴丝特萝莎",
+                    "summary": "迪亚布罗找来加入利姆路的恶魔之一。\r\n原初之白，“白”色阵营恶魔的领袖。\r\n性格残忍好战，与其对战就连迪亚波罗也不能保证胜利。\r\n过去在东之帝国几乎受肉时，被对方赌上其国家威信的情况下全力阻止而失败，该事件日后被称为“血染湖事变”。\r\n获得名字与身体后，被利姆路任命为朱拉・坦派斯特联邦国的外交部长。并以国际法作护盾，兵不血刃的情况下挫败罗佐一族的阴谋，成功收服西方诸国评议会。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "戴丝特萝莎",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "无",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "https://www.ten-sura.com/news/anime/coleus/news/post/9153",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "称号",
+                            "value": [
+                                {
+                                    "v": "虐殺王（キラーロード），虐杀王，Killer Lord"
+                                }
+                            ],
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 66222,
+                    "name": "カレラ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/bf/f3/66222_crt_tsWyS.jpg?r=1699291006",
+                    "actor_ids": [
+                        30858
+                    ],
+                    "name_cn": "卡蕾菈",
+                    "summary": "迪亚布罗找来加入利姆鲁的恶魔之一。原初之黄，“黄”色阵营恶魔的领袖。获得名字与身体后，被利姆鲁任命为朱拉·坦派斯特联邦国的首席大法官。个性有话直说，喜欢四处破坏，雷昂与达格里尔均是她的受害者。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "卡蕾菈",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "无",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "https://www.ten-sura.com/news/anime/coleus/news/post/9153",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "称号",
+                            "value": "破滅王（メナスロード），破灭王，Menace Lord",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
                     "id": 66226,
                     "name": "ラミリス",
                     "relation": "配角",
@@ -202745,6 +203171,79 @@
                     "__dataclass__": "Character"
                 },
                 {
+                    "id": 127002,
+                    "name": "ウルティマ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/9d/d4/127002_crt_5sMsS.jpg?r=1695823145",
+                    "actor_ids": [
+                        20701
+                    ],
+                    "name_cn": "乌蒂玛",
+                    "summary": "迪亚布罗找来加入利姆鲁的恶魔之一。原初之紫，“紫”色阵营恶魔的领袖。个性阴暗残忍，有虐待下级恶魔的嗜好；但在利姆鲁面前表现得活泼开朗。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "乌蒂玛",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "无",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "https://www.ten-sura.com/anime/coleus/character/violet",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "称号",
+                            "value": [
+                                {
+                                    "v": "残虐王（残虐王ペインロード），残虐王，Pain Lord"
+                                }
+                            ],
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 142569,
+                    "name": "エスプリ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/fc/c6/142569_crt_e4lXi.jpg",
+                    "actor_ids": [
+                        9270
+                    ],
+                    "name_cn": "耶斯普利",
+                    "summary": "跟随卡蕾拉，目前是五百年来都没有战败、拥有子爵级实力的恶魔。转生过好几次。是有着可爱容貌的少女，但性格差劲到极点，每次卡蕾拉失控都顺着她，没有劝谏的意思。吃力不讨好的工作都推给阿格拉，自己则彻底吹捧卡蕾拉。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "耶斯普利",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "无",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "称号",
+                            "value": "暴君のズッ友，暴君的挚友",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
                     "id": 152722,
                     "name": "グランベル・ロッゾ",
                     "relation": "配角",
@@ -202920,7 +203419,7 @@
                     "name_cn": "",
                     "relation": "片头曲",
                     "type": 3,
-                    "image_url": "",
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/36/82/662162_net70.jpg",
                     "__dataclass__": "Relation"
                 },
                 {
@@ -202929,7 +203428,7 @@
                     "name_cn": "",
                     "relation": "片尾曲",
                     "type": 3,
-                    "image_url": "",
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/62/2b/662163_zT376.jpg",
                     "__dataclass__": "Relation"
                 },
                 {
@@ -203090,9 +203589,9 @@
                 {
                     "id": 1654616,
                     "name": "新しい仲間達",
-                    "name_cn": "",
+                    "name_cn": "新的伙伴们",
                     "air_date": "2026-07-03",
-                    "desc": "ディアブロから頼まれた依代の作成に本腰を入れるリムル。しかし、あまりの数の多さに、研究室の人手不足が深刻となっていた。そんなリムルの元に、ある魔王がやってくる。",
+                    "desc": "ディアブロから頼まれた依代の作成に本腰を入れるリムル。しかし、あまりの数の多さに、研究室の人手不足が深刻となっていた。そんな時、魔王ギィから魔王ディーノの面倒を押し付けられることに。ディーノを研究室に雇い、依代の作成を続ける一行。すると、ヴェルドラが自分も助手が欲しいと言い出して……。",
                     "duration_seconds": 0,
                     "ep": 13,
                     "sort": 85,
@@ -203101,10 +203600,10 @@
                 },
                 {
                     "id": 1654617,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "黒色軍団（ブラックナンバーズ）",
+                    "name_cn": "黑色军团",
                     "air_date": "2026-07-10",
-                    "desc": "",
+                    "desc": "リムルのもとを離れ、悪魔界へとやってきていたディアブロ。彼が向かったのは悪魔の中でも最上位となる原初の悪魔、原初の黄、原初の紫、原初の白のところだった。言葉と実力で３人をスカウトしたディアブロは魔国連邦に帰還。そしてリムルによって悪魔たちに名付けが行われる。",
                     "duration_seconds": 0,
                     "ep": 14,
                     "sort": 86,
@@ -203113,10 +203612,10 @@
                 },
                 {
                     "id": 1654618,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "不穏な気配",
+                    "name_cn": "不祥的气息",
                     "air_date": "2026-07-17",
-                    "desc": "",
+                    "desc": "新たな仲間が加わり魔国連邦は法治国家として歩み始める。そんなリムルたちの一方で、黄金郷エルドラドでは「東の商人」に扮したラプラスたちが魔王レオンと接触していた。",
                     "duration_seconds": 0,
                     "ep": 15,
                     "sort": 87,
@@ -203236,8 +203735,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 12,
-            "last_update": "2026-06-30T13:17:46+08:00",
+            "watched_eps": 13,
+            "last_update": "2026-07-17T13:20:20+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
@@ -212701,6 +213200,1724 @@
             "tags": [
                 "萝莉"
             ],
+            "__dataclass__": "UserStatus"
+        },
+        "__dataclass__": "ANiMeRecord"
+    },
+    {
+        "anime_data": {
+            "id": 569116,
+            "name": "ぐらんぶる Season 3",
+            "name_cn": "碧蓝之海 第三季",
+            "short_summary": "这次将在帕劳「碧蓝一夏」！\r\n北原伊织来到伊豆开始大学生活后已经过了几个月——。\r\n他寄住于潜水商店「Grand Blue」，和可爱的表妹古手川千纱住在同一个屋檐下。再加上表姐古手川奈奈华、充满成熟魅力的滨冈梓、同年级的同学吉原爱菜，伊织过",
+            "score": 7.2,
+            "image_url": "https://lain.bgm.tv/pic/cover/l/f1/bf/569116_n6dPq.jpg",
+            "eps": 0,
+            "date": "2026-07-06",
+            "summary": "这次将在帕劳「碧蓝一夏」！\r\n北原伊织来到伊豆开始大学生活后已经过了几个月——。\r\n他寄住于潜水商店「Grand Blue」，和可爱的表妹古手川千纱住在同一个屋檐下。再加上表姐古手川奈奈华、充满成熟魅力的滨冈梓、同年级的同学吉原爱菜，伊织过着一帆风顺的青春校园生活！\r\n……然而这只是其中一个面向，其实他大学生活的大半都是和全裸的臭男人们的疯狂闹剧！\r\n说起来也是因为伊织加入的潜水社团「Peek a Boo」是个潜水频率普普，却天天和群壮汉脱光衣服饮酒作乐，过着喧闹的日常生活的社团。而在这其中，伊织和是个帅哥、但其实是货真价实的御宅族的今村耕平一起生活，如今的他已经被社团彻底同化了。\r\n某天，奈奈华告诉伊织潜水商店「Dolphin」在帕劳新开了分店，但现在人手不足，所以希望他能去帮忙。然而，伊织却想到耕平曾表示因为海外无法在第一时间看到动画，所以不愿出国……。\r\n在这个夏天，首次以海外的帕劳为舞台的「碧蓝生活」即将揭开序幕！\r\n\r\n\r\n\r\n[简介原文]\r\n今度はパラオで、ぐらんぶる！\r\n北原伊織が伊豆で大学生活を始めて数か月ー\r\n居候しているダイビングショップ「グランブルー」ではかわいい従妹の古手川千紗と一つ屋根の下。そこに従姉の古手川奈々華、オトナの色気がたまらない浜岡梓、同級生の吉原愛菜も加わって、順風満帆な青春のキャンパスライフを過ごしていた！\r\n……というのは一面で、大学生活の大半は全裸野郎どもとの狂乱騒ぎ！\r\nというのも、伊織が入ったダイビングサークル「Peek a Boo（ピーカブー）」は、ダイビングはそこそこに屈強な男達が全裸になって酒を酌み交わすバカ騒ぎを日常としており、伊織はイケメンだが真性オタクの今村耕平と共に、すっかりサークルに染まっていたのだ。\r\nそんな中、ダイビングショップ“ドルフィン”がパラオに支店を作ったが人手が足りないので手伝いに来てくれないかと奈々華から頼まれる伊織。しかし耕平はアニメがリアルタイムで見られないので海外には行きたくないと言っていた事を思い出し…\r\n今夏、初の海外パラオで“ぐらんぶる”ライフが幕を開ける！",
+            "total_episodes": 12,
+            "characters": [
+                {
+                    "id": 43535,
+                    "name": "北原伊織",
+                    "relation": "主角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/9e/90/43535_crt_6zk26.jpg?r=1534513132",
+                    "actor_ids": [
+                        15390
+                    ],
+                    "name_cn": "北原伊织",
+                    "summary": "伊豆大学一年级生。以入学为契机造访即将寄住的古手川家时，在叔叔经营的潜水用品店「Grand Blue」遇见了「Peek a Boo」的成员并被邀请加入。很怕水，不会游泳。\r\n\r\n[简介原文]\r\n　　本作における主人公。伊豆大学機械工作科に入学した1年生。\r\n　　男子校のノリに辟易し、薔薇色のキャンパスライフを夢見て男女共学の伊豆大学に進学する。ダイビング未経験の上泳ぐこともままならず「水が怖い」と表現する位苦手。しかし時田と寿により男ばかりのダイビングサークル「PaB」に強制的に入会させられてしまう。経験や交流を積んでいくうちにダイビングの魅力に惹かれ、水への恐怖感も徐々にではあるが克服していく。水泳以外のスポーツは全般的に得意。\r\n　　アルコール類に対して免疫は無かったが、「PaB」の豪快かつ無茶な飲み会に参加するうちに耐性を身に付けるようになった。それと同時に、パンツ姿で学内をうろつくことにも抵抗を覚えなくなった。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "北原伊织",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "170cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "wiki",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 43536,
+                    "name": "古手川千紗",
+                    "relation": "主角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/70/22/43536_crt_Nm15Z.jpg?r=1783402138",
+                    "actor_ids": [
+                        11485
+                    ],
+                    "name_cn": "古手川千纱",
+                    "summary": "伊豆大学一年级，伊织的表妹。老家经营潜水用品店，热爱大海，将来的梦想是成为潜水指导员。\r\n\r\n[简介原文]\r\n　　本作におけるヒロイン。伊織の同い年の従姉妹。同じく伊豆大学機械工作科の1年生。\r\n　　ダイビング経験者。将来の夢はインストラクターで、水族館でたまに手伝いをしていたりする。男女比率140:3である学科での人気は高く、「伊豆春祭」でミスコンを獲ったことで学内での知名度も高くなってしまい、男除けのために伊織が彼氏だと偽ることで平穏を得た。伊織とバディになった際には、水の苦手な伊織に楽しんでもらえるよう真剣だった。\r\n　　伊織に対してはダイビングの魅力を伝えようと自分なりに画策する面倒見のいい一面を見せているが、伊織の下衆な言動に度々虫けらを見るような冷たい視線を送ることもある。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "古手川千纱",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "152cm",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 43537,
+                    "name": "古手川奈々華",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/93/e5/43537_crt_9tQ9R.jpg?r=1535338243",
+                    "actor_ids": [
+                        6724
+                    ],
+                    "name_cn": "古手川奈奈华",
+                    "summary": "千纱的姐姐，「Grand Blue」的看板女孩与潜水指导员。长相漂亮、身材姣好，性格也很温柔，但是对妹妹过度溺爱。\r\n\r\n[简介原文]\r\n　　伊織の従姉妹で、千紗の姉。「グランブルー」の看板娘兼インストラクターとして働いている。\r\n　　美人でスタイルが良く性格も優しいが、実は極度のシスコン。対象である千紗にはばれていないが、それ以外の人物には周知されている。瞬く間に「Pab」に染まってしまったせいで乱れがちな伊織の生活態度を度々気にかけている。梓とは仲が良く、電話で色々と相談に乗ってもらうことが多い。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "古手川奈奈华",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "160cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "wiki",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 43538,
+                    "name": "浜岡梓",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/9a/21/43538_crt_vPT6A.jpg?r=1535338279",
+                    "actor_ids": [
+                        8808
+                    ],
+                    "name_cn": "滨冈梓",
+                    "summary": "青海女子大学三年级生。虽然是他校的学生，却也是「Peek a Boo」的一员。对伊织与耕平的关系有所误会，并不时会为伊织加油打气。\r\n\r\n[简介原文]\r\n　　青海女子大の3年生。インカレサークルである「PaB」のメンバーの1人。\r\n　　作中最強の酒豪。美人でナイスバディだが、「PaB」のノリに完全に適応しており全裸の男たち(伊織ら)が雑魚寝する部屋で平気で眠ったり、野球拳に混ざったりする上に、彼らの前で下着姿になることにも抵抗がない。奈々華とは仲が良く、電話で色々と相談に乗ることが多い。奈々華の電話相談のせいで伊織をバイ仲間と誤解し、奈々華にすら秘密にしている自身の性向を伊織にカミングアウトしてしまった。好きなタイプは男なら時田、女なら奈々華。伊織の好きなタイプの「男」を執拗に聞き出し、耕平（伊織の嘘）と伊織をくっつけようと画策したりする一方で、伊織と千紗の仲を取り持つようなことをして面白がるなど、どこまで本気なのか分からない行動を取る。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "滨冈梓",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "165cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "wiki",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 43539,
+                    "name": "吉原愛菜",
+                    "relation": "主角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/fb/d9/43539_crt_yLkro.jpg?r=1535338323",
+                    "actor_ids": [
+                        4868
+                    ],
+                    "name_cn": "吉原爱菜",
+                    "summary": "青海女子大学一年级。为了在上大学后改变形象重新再出发而加入了网球社团「Tinker Bell」，最后却徒劳无功地失败了。而她就在这时遇见了伊织和耕平……。\r\n\r\n[简介原文]\r\n　　青海女子大の1年生。特に登場当初は金髪のウィッグにケバい化粧をしていたため伊織と耕平からは「ケバ子」という不名誉なあだ名で呼ばれているが、素顔は素朴で愛らしい黒髪のショートヘアである。地方出身者故か酔ったり動揺すると地元訛りが出る。運動能力は耕平よりはマシだが得意ではない方。\r\n　　「華やかな大学デビュー」のためにテニスサークル「ティンカーベル（以降、ティンベル）」に入ったが、見た目のケバさとテニスが上手くできなかったことからサークル内では練習から外されるなど迫害されていたが、学祭で伊織が耕平と一緒に逆に部長の工藤へ逆襲をしてくれたことをきっかけに「ティンベル」を辞め、「PaB」に入会した。このことをきっかけに、伊織のことが気になっている様子だが想いは打ち明けられずにいる。\r\n　　普段は大人しく作中数少ない常識人なため、平気で脱ぎまくる男連中にツッコミを入れている。一方化粧をしていた時もかなり性格が変貌するが、酔ったときはより性格が豹変して「PaB」のノリに完全に適合するようになる。のけ者扱いだったティンベル時代と違いPaBでは公平に扱われており、メンバーとは仲を深めつつダイビングの楽しさを覚えていく。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "吉原爱菜",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "158cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "wiki",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 43540,
+                    "name": "今村耕平",
+                    "relation": "主角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/86/ee/43540_crt_abUTV.jpg?r=1535337966",
+                    "actor_ids": [
+                        4994
+                    ],
+                    "name_cn": "今村耕平",
+                    "summary": "伊豆大学一年级生。外表是个金发帅哥，实际是重度御宅族。在伊织的半拐半骗下加入了「Peek a Boo」。\r\n\r\n[简介原文]\r\n　　伊織の同級生。見た目は金髪のイケメンだが、妄想癖のある真性のアニメオタクで常日頃キャラクターが描かれたTシャツなどの衣類を愛用しているため、周囲の人物をドン引きさせることが多い。いわゆる三次元には興味が薄いもののまったく興味が無いタイプではなく、「お兄ちゃん」と呼んでもらうなど典型的な「オタクの願望」には目がない。\r\n　　ダイビング未経験者で、伊織に騙されるかたちで「PaB」に入会させられる。以降、伊織とは常に共に行動しつつ、危機に際しては躊躇なく互いを身代わりにしようとする、悪友とも呼べる関係を築いている。その一方、ここぞというときは伊織とは協力しあい、息の合ったところを見せる。運動は苦手だが、ダイビングについては飲み込みが早く目立った失態を犯すことはなかった。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "今村耕平",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "175cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "wiki",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 43541,
+                    "name": "時田信治",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/3d/7b/43541_crt_eceAE.jpg?r=1535338004",
+                    "actor_ids": [
+                        4483
+                    ],
+                    "name_cn": "时田信治",
+                    "summary": "伊豆大学三年级生。潜水社团「Peek a Boo」的会长。偶然遇见一年级新生伊织并邀他加入社团。\r\n\r\n[简介原文]\r\n　　寿と同じく3年生。「PaB」の会長。「グランブルー」でよく手伝いをしている。\r\n　　角刈りに筋骨隆々の巨体をもった男性。酒が入ると度を越えた暴走を見せることがあるが、ダイビングに関しては真面目そのもので後輩の面倒見もよい。伊織を片腕で抱えるほどの怪力を誇り、また運動能力が桁違いに高い。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "时田信治",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "190cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "wiki",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 43542,
+                    "name": "寿竜次郎",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/46/6f/43542_crt_gUZYg.jpg?r=1535338045",
+                    "actor_ids": [
+                        3861
+                    ],
+                    "name_cn": "寿龙次郎",
+                    "summary": "伊豆大学三年级，「Peek a Boo」成员。对潜水方面非常认真且知识丰富，激起了不会游泳的伊织对潜水的兴趣。\r\n\r\n[简介原文]\r\n　　伊織と同じ学科の先輩で3年生。「PaB」のメンバーでサークルの幹部的立ち位置。「グランブルー」でよく手伝いをしている。\r\n　　鉄のように固い筋肉を纏った金髪の男性。時田と同様飲み会でははっちゃけるが、ダイビングに関しては非常に真面目で博識。時田と並んで運動能力が並外れて高い。バイトでバーテンダーをしており、お客からは人気がある。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "寿龙次郎",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "188cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "wiki",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 44563,
+                    "name": "カリーナ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/9a/82/44563_crt_22z9K.jpg",
+                    "actor_ids": [
+                        10887
+                    ],
+                    "name_cn": "凯莉娜",
+                    "summary": "伊織が実家へ帰省をする際に出会ったドイツ人女性。オタクサークルのメンバーで、日本のある文化に強いあこがれを持っている。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "凯莉娜",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 64702,
+                    "name": "北原栞",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/8e/3a/64702_crt_5P2h9.jpg?r=1783504011",
+                    "actor_ids": [
+                        5107
+                    ],
+                    "name_cn": "北原栞",
+                    "summary": "伊织的妹妹，气质端庄且乖巧老实，非常适合穿和服的初中三年级生。仰慕哥哥并称呼他为「兄长」，看起来似乎颇为他的大学生活担心，但实际上似乎另有目的……。\r\n\r\n[简介原文]\r\n伊織の妹。淑やかで大人しい、和装が似合う中学三年生。伊織のことを「兄様」と慕い、大学生活を心配しているようだが、実際には裏の目的があるようで…",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "北原栞",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "3月~4月之间（白羊座）",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "AB型",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 64703,
+                    "name": "毒島桜子",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/d4/f9/64703_crt_NnAKY.jpg?r=1783402943",
+                    "actor_ids": [
+                        35912
+                    ],
+                    "name_cn": "毒岛樱子",
+                    "summary": "青海女子大一年级，常与好友有纪和菜摘一起行动。因为某件事而开始与伊织产生因缘。自尊心高，但其实个性非常努力。\r\n\r\n[简介原文]\r\n青海女子大の一年生。仲の良いユキと菜摘と行動していることが多い。ある一件で伊織とは因縁が生まれてしまう。プライドが高いが、実は努力家。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "毒岛樱子",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 65747,
+                    "name": "野島元",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/45/ee/65747_crt_8F62D.jpg?r=1768319426",
+                    "actor_ids": [
+                        5872
+                    ],
+                    "name_cn": "野岛元",
+                    "summary": "伊豆大学一年级生。留着一头黑色长发、戴着眼镜的文青风自恋男。穿着增高鞋垫高自己的身高。\r\n\r\n[简介原文]\r\n伊織と耕平の同級生。黒縁眼鏡をかけたロン毛のインテリ風バカ。伊織のセッティングした合コンに参加した。定期テストの際に、腕の間にカンペを仕込んだ結果、汗で文字がにじんで読めなかったことがある。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "野岛元",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "172cm",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 65748,
+                    "name": "山本真一郎",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/67/06/65748_crt_P9Y8Z.jpg?r=1783402208",
+                    "actor_ids": [
+                        16353
+                    ],
+                    "name_cn": "山本真一郎",
+                    "summary": "伊豆大学一年级生。处男，在交女朋友方面展现出非比寻常的饥渴精神。以前曾和爱菜等人进行过联谊，并留下了心灵阴影。\r\n\r\n[简介原文]\r\n伊織と耕平の同級生。女に見境のないクズだが、童貞の鑑。伊織のセッティングした合コンに参加した。テスト中は飲食禁止であることを知らず、ペットボトルのラベルの裏にカンペを仕込んで失敗したことがある。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "山本真一郎",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "162cm",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 65749,
+                    "name": "御手洗優",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/c0/5a/65749_crt_KIkK9.jpg?r=1783402280",
+                    "actor_ids": [
+                        7772
+                    ],
+                    "name_cn": "御手洗优",
+                    "summary": "伊豆大学一年级生。长相帅气，轻浮的言行举止十分醒目，但其实有个青梅竹马的女友，时常被她被怀疑外遇。说话技巧高超，但常在最后关头出错。\r\n\r\n[简介原文]\r\n伊織と耕平の同級生。見た目は割とイケメンだが、やはり女に見境のないクズ。青女に通う幼馴染みの女子と付き合っていたが、伊織たちによって架空の浮気をでっち上げられてフラれる。その後もギリギリ関係は保っていたが、またしても伊織に今度はナンパをでっち上げられ、大勢の前で公開処刑される羽目になった。テスト中は筆箱を出せないということを知らず、筆箱にカンペを仕込んで失敗したことがある。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "御手洗优",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "165cm",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 65750,
+                    "name": "藤原健太",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/0b/f0/65750_crt_U9BPD.jpg?r=1768319460",
+                    "actor_ids": [
+                        33218
+                    ],
+                    "name_cn": "藤原健太",
+                    "summary": "伊豆大学一年级生。眉毛全部剃光，外表凶狠但存在感稀薄，常会被人遗忘。\r\n\r\n[简介原文]\r\n伊織と耕平の同級生。特徴がなく、存在感が薄い。そのため、その場にいないような扱いをされることもしばしば。定期テストの際に、周りの数人でカンペの回し読みを示し合わせたものの自身のところでばれてしまい、全員に罪をなすりつけられて「不可」の判定を受けてしまった。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "藤原健太",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "178cm",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 65751,
+                    "name": "古手川登志夫",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/7e/11/65751_crt_rBLRD.jpg?r=1783504083",
+                    "actor_ids": [
+                        4246
+                    ],
+                    "name_cn": "古手川登志夫",
+                    "summary": "潜水用品店「Grand Blue」的店长，伊织的叔叔，千纱和奈奈华的父亲。对「PaB」成员们的胡闹早已习以为常。\r\n\r\n[简介原文]\r\n伊織の義理の叔父で、千紗と奈々華の父。「グランブルー」の店長であり、甥である伊織を自宅でもある「グランブルー」の離れに住まわせている。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "古手川登志夫",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "170cm",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 65752,
+                    "name": "工藤会長",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/60/8d/65752_crt_tgqR9.jpg?r=1783402249",
+                    "actor_ids": [
+                        3818
+                    ],
+                    "name_cn": "工藤会长",
+                    "summary": "テニスサークル「ティンカーベル」の会長。色黒のイケメンではあるが、他人を笑いものにする性根の腐った人物。「伊豆春祭」の男コンでは余裕で1位を獲るつもりでいたが、伊織に屈辱的な負け方をしてしまい根に持っている。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "工藤会长",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 65753,
+                    "name": "水樹カヤ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/3c/de/65753_crt_qaYa5.jpg?r=1535337135",
+                    "actor_ids": [
+                        1
+                    ],
+                    "name_cn": "水树夏夜",
+                    "summary": "声優。本名は摩耶（まや）。かなこの姉で、梓の友人。青女の学園祭でライブを行った。デビュー作は『溶解！魔法少女ららこ』。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "水树夏夜",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 139820,
+                    "name": "大橋りえ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/ce/9f/139820_crt_9fnv4.jpg",
+                    "actor_ids": [
+                        26086
+                    ],
+                    "name_cn": "大桥理惠",
+                    "summary": "大橋りえは、青海女子大学に通う1年生。見た目は上品でおしとやかそうだが、実はスゴい怪力の持ち主。幼なじみで恋人の御手洗優とは、再会をきっかけに付き合い始めたが、波乱だらけの関係が続いている。普段は優しいけど、怒るとものすごく怖くなり、空手黒帯の力で御手洗を吹っ飛ばすことも。ちょっとヤンデレぎみな一面もあり、彼を「優おにいちゃん」と呼んだりしている。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "大桥理惠",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "165cm",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 165505,
+                    "name": "東幹也",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/07/ef/165505_crt_UYpR1.jpg?r=1728539282",
+                    "actor_ids": [
+                        46373
+                    ],
+                    "name_cn": "东干也",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "东干也",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 165506,
+                    "name": "横手武雄",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/96/2a/165506_crt_ZwLPJ.jpg?r=1728539289",
+                    "actor_ids": [
+                        23514
+                    ],
+                    "name_cn": "横手武雄",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "横手武雄",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 165507,
+                    "name": "安西久司",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/14/e7/165507_crt_Ywyyw.jpg?r=1728539294",
+                    "actor_ids": [
+                        22634
+                    ],
+                    "name_cn": "安西久司",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "安西久司",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 170366,
+                    "name": "乙矢尚海",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/7d/88/170366_crt_PZ6Z6.jpg?r=1738502524",
+                    "actor_ids": [
+                        13684
+                    ],
+                    "name_cn": "乙矢尚海",
+                    "summary": "在伊织的打工地点负责掌厨的高中生。是个俊美到让人感到耀眼的美少年，性格也十分温和。在高中是潜水社社长。似乎对伊织怀抱着憧憬……？\r\n\r\n[简介原文]\r\n伊織のバイト先でキッチン担当をしている高校生。眩しいほどの美少年で、性格も穏やか。高校ではダイビング部の部長をしている。どうやら伊織に憧れを抱いているようで…？",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "乙矢尚海",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 205925,
+                    "name": "古手川紗耶華",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/66/01/205925_crt_6I6tC.jpg",
+                    "actor_ids": [
+                        3890
+                    ],
+                    "name_cn": "古手川纱耶华",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "古手川纱耶华",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 205926,
+                    "name": "チーフ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/23/0b/205926_crt_4Cnt9.jpg",
+                    "actor_ids": [
+                        5766
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 205927,
+                    "name": "マキ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/ae/24/205927_crt_48yyp.jpg",
+                    "actor_ids": [
+                        8403
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 217112,
+                    "name": "北原父",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/2b/8b/217112_crt_mpx7p.jpg",
+                    "actor_ids": [
+                        3888
+                    ],
+                    "name_cn": "北原的爸爸",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "北原的爸爸",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 217113,
+                    "name": "北原母",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/94/80/217113_crt_UU114.jpg",
+                    "actor_ids": [
+                        6724
+                    ],
+                    "name_cn": "北原的妈妈",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "北原的妈妈",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 217114,
+                    "name": "シュトロハイム",
+                    "relation": "闲角",
+                    "image_url": "",
+                    "actor_ids": [
+                        24755
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 217115,
+                    "name": "クーゲルシュライバー",
+                    "relation": "闲角",
+                    "image_url": "",
+                    "actor_ids": [
+                        98197
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                }
+            ],
+            "relations": [
+                {
+                    "id": 118165,
+                    "name": "ぐらんぶる",
+                    "name_cn": "GRANDBLUE 碧蓝之海",
+                    "relation": "书籍",
+                    "type": 1,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/0f/2f/118165_f0m8c.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 515880,
+                    "name": "ぐらんぶる Season 2",
+                    "name_cn": "碧蓝之海 第二季",
+                    "relation": "前传",
+                    "type": 2,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/d6/29/515880_96Oxr.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 648041,
+                    "name": "裸のマーメード",
+                    "name_cn": "",
+                    "relation": "片尾曲",
+                    "type": 3,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/bf/90/648041_wPaI6.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 658880,
+                    "name": "夏子",
+                    "name_cn": "",
+                    "relation": "片头曲",
+                    "type": 3,
+                    "image_url": "",
+                    "__dataclass__": "Relation"
+                }
+            ],
+            "episodes": [
+                {
+                    "id": 1704888,
+                    "name": "やり残し",
+                    "name_cn": "还没做的事",
+                    "air_date": "2026-07-06",
+                    "desc": "夏も残り僅か。Pabの3年生たちはもうすぐ引退の季節。そんな折、夏にやりのこしたことをみんなでやろう！と案を出し合うことになった。みんなの浴衣姿が見たい…たこ焼きを作りたい…記憶に残る飲み会をやりたい。そんな大学生活の青春を彩るイベントは、平和に終わるはずがなかった。メモの端っこに書かれた【※全てPab式で】の文字。普通じゃいられないPab式納涼祭は、まず脱ぐところから始まる!!\r\n\r\n脚本:高松信司\r\n絵コンテ:さとうふみかず\r\n演出: 中野敬太、深澤匠 \r\n総作画監督:阿部智之\r\n作画監督: 河野しおり、鈴木美音織",
+                    "duration_seconds": 1440,
+                    "ep": 1,
+                    "sort": 1,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1704889,
+                    "name": "帰省",
+                    "name_cn": "回家",
+                    "air_date": "2026-07-13",
+                    "desc": "パラオ行きが決まったはいいものの、伊織のパスポートは実家に置いてある。妹の栞に送ってほしいと頼んだが、なぜが断固拒否されてしまった。仕方がないので、伊織は千紗と耕平を引き連れて、実家へ束の間の帰省をしにいくことになった。しかし、対面しても栞は「絶対イヤ」と拒絶。ならば仕方ないと栞の部屋に侵入する計画を立てるが、旅館には行きの電車内で出会った怪しいドイツ人たちの姿があった…\r\n\r\n脚本:高松信司\r\n絵コンテ:西嶋克彦\r\n演出:浅見隆司\r\n総作画監督:阿部智之\r\n作画監督: 河野しおり",
+                    "duration_seconds": 1440,
+                    "ep": 2,
+                    "sort": 2,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1704890,
+                    "name": "パスポート奪還作戦",
+                    "name_cn": "",
+                    "air_date": "2026-07-20",
+                    "desc": "旅館で居合わせた厄介オタクのドイツ人2人と、謎のストーカーの影。伊織は妹のピンチを救い、大きく恩を売ってパスポート奪還をたくらむ。様々な思惑が渦巻く旅館で、伊織と耕平は変態ドイツ人と改めて酒飲み対決に挑む。その最中、千紗と栞と話をすることになったカリーナは、日本の文化に興味津々の様子で…？\r\n\r\n脚本:高松信司\r\n絵コンテ:ロマのフ比嘉\r\n演出:中野敬太\r\n総作画監督:阿部智之\r\n作画監督: 河野しおり",
+                    "duration_seconds": 0,
+                    "ep": 3,
+                    "sort": 3,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1704891,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-07-27",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 4,
+                    "sort": 4,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1704892,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-08-03",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 5,
+                    "sort": 5,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1704893,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-08-10",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 6,
+                    "sort": 6,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1704894,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-08-17",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 7,
+                    "sort": 7,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1704895,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-08-24",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 8,
+                    "sort": 8,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1704896,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-08-31",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 9,
+                    "sort": 9,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1704897,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-09-07",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 10,
+                    "sort": 10,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1704898,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-09-14",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 11,
+                    "sort": 11,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1704899,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-09-21",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 12,
+                    "sort": 12,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                }
+            ],
+            "__dataclass__": "ANiMeData"
+        },
+        "user_status": {
+            "watch_status": 3,
+            "watched_eps": 0,
+            "last_update": "2026-07-17T13:20:42+08:00",
+            "comment": null,
+            "tags": [],
+            "__dataclass__": "UserStatus"
+        },
+        "__dataclass__": "ANiMeRecord"
+    },
+    {
+        "anime_data": {
+            "id": 541285,
+            "name": "きみが死ぬまで恋をしたい",
+            "name_cn": "与你相恋到生命尽头",
+            "short_summary": "这所秘密孤儿院收容孤儿少女，培养成战争用的武器，死亡对她们来说是家常便饭。14岁的席娜对这样的宿命感到迷茫，直到遇见全身浴血却意志坚定的神秘少女美美。两人在试图抹杀人类情感的残酷世界中，相互扶持并紧紧抓住了生存的希望。\r\n\r\n\r\n\r\n[简介",
+            "score": 7.2,
+            "image_url": "https://lain.bgm.tv/pic/cover/l/b3/26/541285_CYBZc.jpg",
+            "eps": 13,
+            "date": "2026-07-07",
+            "summary": "这所秘密孤儿院收容孤儿少女，培养成战争用的武器，死亡对她们来说是家常便饭。14岁的席娜对这样的宿命感到迷茫，直到遇见全身浴血却意志坚定的神秘少女美美。两人在试图抹杀人类情感的残酷世界中，相互扶持并紧紧抓住了生存的希望。\r\n\r\n\r\n\r\n[简介原文]\r\n身寄りのない子供を戦争用の兵器として育てる学校に通う少女たち。人を殺すための授業、誰が死んでも悲しむことさえままならない日常。ここは不条理で、常に死と隣り合わせの日々が、「当たり前」な世界。\r\n「どうしてみんな平気なの？」\r\n自分の境遇を受け入れられずにいる14才のシーナはある夜、血まみれの小さな女の子・ミミと出会う――\r\nどんな現実が訪れようとも、生きていく。これはそんな少女たちが見つける、あどけない願いの物語。",
+            "total_episodes": 12,
+            "characters": [
+                {
+                    "id": 28115,
+                    "name": "アナウンス",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/70/d8/28115_crt_vL10O.jpg",
+                    "actor_ids": [
+                        46365
+                    ],
+                    "name_cn": "广播",
+                    "summary": "各作品通用广播/播音员。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "广播",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 86958,
+                    "name": "トツキ・シーナ",
+                    "relation": "主角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/8d/f9/86958_crt_PKPgB.jpg",
+                    "actor_ids": [
+                        17491
+                    ],
+                    "name_cn": "都筑·椎名",
+                    "summary": "孤児院兼国戦用魔術兵器育成機関の14クラスに在籍する女子。出席番号は8番で、寮のルームメイトはカガリ・ミミ。前髪を目が隠れるほど伸ばして、右寄りの位置で斜めに分けてヘアピンで留め、亜麻色の顎の高さまで伸ばした癖のある前下がりボブヘアにしている。穏やかで心優しい性格だが、クラスではあまり目立つ存在ではない。また魔力も低めで、本を一冊宙に浮かして動かす程度の魔法しか使えない。そのため戦闘は得意ではなく、模擬戦でもいい成績を残せていない。さらに戦争自体に消極的で、孤児院兼国戦用魔術兵器育成機関に来てからもずっと親しい人間を作らず、わざと周囲になじまないようにしていた。そんなある日、ルームメイトが西地区第三ポイント周辺への襲撃に失敗して死亡したことで、ペアを組む生徒を失う。しかし翌日、新入生としてやって来たミミが出席番号7番として補塡されたことで、ミミのペアとして彼女の世話をするようになる。当初はミミに苦手意識を抱いていたが、いっしょに暮らすうちに、彼女を大切に思うようになっていく。好きな食べ物はお米で、特技はお菓子作りと掃除。非常にきれい好きなこともあり、特に掃除には積極的で生徒たちが校内を掃除して回る「返礼の日」には気合が入る。",
+                    "birth_year": null,
+                    "birth_month": 11,
+                    "birth_day": 14,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "都筑·椎名",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "11月14日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "155cm",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 86959,
+                    "name": "カガリ・ミミ",
+                    "relation": "主角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/80/8d/86959_crt_pCrx6.jpg",
+                    "actor_ids": [
+                        4962
+                    ],
+                    "name_cn": "加贺里·美美",
+                    "summary": "孤児院兼国戦用魔術兵器育成機関の14クラスに在籍する女子。出席番号は7番で、寮のルームメイトはトツキ・シーナ。前髪を目の上で切り、腰まで伸ばした桃色の癖のあるロングヘアにしている。一度死亡しているが、その際に母親の用いた最高禁止魔法「蘇生魔法」で蘇生し、不老不死となった。そのため非常に長い時間を生きており、さらにカガリ・ミミ自身も自分が何歳なのか忘れているため、正確な年齢は不明。10歳の時に孤児院兼国戦用魔術兵器育成機関に入学するが、ほかの生徒とは隔離され、ずっとどこのクラスにも所属していなかった。そのためほかの生徒たちからは、ミミとは先生が秘密の特訓で育てた怪物のように強い生徒で複数存在し、死んでも生き返るなどさまざまな噂を立てられている。明るく人懐っこい性格で、ほかの生徒よりも長い時間を生きているにもかかわらず、精神的に幼い。また、親しい友人がいたことはなかったが、14クラスでシーナとペアを組むようになってからは、シーナの優しさに触れて彼女に懐くようになる。養護教諭のフランとは親しいが、彼女に対しては反抗的。身だしなみには無頓着で、食べ物の好き嫌いはなくなんでも食べる。得意な教科は歴史で、苦手な教科は数学。",
+                    "birth_year": null,
+                    "birth_month": 12,
+                    "birth_day": 3,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "加贺里·美美",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "12月3日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "145cm",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 86960,
+                    "name": "リジィ・セイラン",
+                    "relation": "主角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/5c/58/86960_crt_H2Y9z.jpg",
+                    "actor_ids": [
+                        5766
+                    ],
+                    "name_cn": "青兰",
+                    "summary": "孤児院兼国戦用魔術兵器育成機関の14クラスに在籍する女子。アリの恋人でもある。前髪を眉の上で切りそろえ、胸の下まで伸ばした黒のストレートロングヘアを姫カットにして、頭の高い位置でポニーテールにしている。長身の釣り目で両耳にピアスをつけている。きまじめな性格で、自分にも他人にも厳しい。そのため、浮ついた態度を取るクラスメートがいるとつい叱りつけてしまう。しかし、そのたびにアリになだめられており、彼女には頭が上がらない。トツキ・シーナとはそこまで親しいわけではなかったが、カガリ・ミミが14クラスに在籍してからは、よくミミとアリも交えた四人で過ごすようになる。",
+                    "birth_year": null,
+                    "birth_month": 4,
+                    "birth_day": 7,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "青兰",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "4月7日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "160cm",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 86961,
+                    "name": "モード・アリ",
+                    "relation": "主角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/5e/10/86961_crt_7999D.jpg",
+                    "actor_ids": [
+                        5727
+                    ],
+                    "name_cn": "亚里",
+                    "summary": "孤児院兼国戦用魔術兵器育成機関の14クラスに在籍する女子。セイランの恋人でもある。前髪の目の上で切り、右側の方が少し長い、白のアシンメトリーなウエーブボブヘアにしている。褐色の肌の持ち主。落ち着いた性格で、いつも笑顔を絶やさず、ほかの生徒よりも大人びている。しかし、カガリ・ミミに関する噂やトツキ・シーナがミミをどう思っているかなど、聞きにくいことも本人に直接尋ねてしまう大胆なところがある。そのためセイランには心配されているが、アリ自身は、セイランさえ自分のことを好きでいてくれれば、ほかの人間には嫌われても構わないと考えている。神話や伝承が大好き。",
+                    "birth_year": null,
+                    "birth_month": 5,
+                    "birth_day": 1,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "亚里",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "5月1日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "152cm",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 126025,
+                    "name": "アンハルト・ハルフレズ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/8d/00/126025_crt_LS0L4.jpg?r=1677249561",
+                    "actor_ids": [
+                        32253
+                    ],
+                    "name_cn": "",
+                    "summary": "美美等人的同班同学。身体虚弱。\r\n校服和便服都选穿男装，实际上是女生。\r\n[mask]小时候不喜欢穿姐姐的旧裙子，想要哥哥的旧裤子却被长辈训斥“没点女孩样”。目前仍在摸索自己的个性和人际关系。[/mask]\r\n\r\n喜欢的食物：方便带回房间的食品（比如三明治）\r\n讨厌的食物：牛奶、蔬菜（特别是番茄）※以前会剩菜，最近受美美影响，会努力吃干净。\r\n                       不方便食用的食物（不好嚼的肉和刺很多的鱼等）\r\n喜欢的花：不太认得种类\r\n成绩：勤奋学习有了成果，最近笔试成绩在不断提高。实技大多时候是旁观学习。\r\n早起指数：因当天的身体状况而异。若室友没看到她起床就会担心地来看情况。\r\n\r\n印象动物是刺猬。",
+                    "birth_year": null,
+                    "birth_month": 2,
+                    "birth_day": 13,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "2月13日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "星座",
+                            "value": "水瓶座",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "148cm",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 126027,
+                    "name": "フラン",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/b0/19/126027_crt_1k1cJ.jpg",
+                    "actor_ids": [
+                        6560
+                    ],
+                    "name_cn": "芙兰",
+                    "summary": "シーナたちが通う学校の保健医。\r\n修復魔法に長けていて、学校にとっては欠かせない存在。\r\n何かとミミの世話を焼いている。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "芙兰",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 130335,
+                    "name": "オミ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/4b/6e/130335_crt_OgDIf.jpg",
+                    "actor_ids": [
+                        5847
+                    ],
+                    "name_cn": "",
+                    "summary": "シーナたちが所属する14クラスの担任教師。\r\n淡々とした態度とは裏腹に、生徒たちのことを気にかけている。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 209140,
+                    "name": "メル・ラウラ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/43/bb/209140_crt_134n4.jpg",
+                    "actor_ids": [
+                        12568
+                    ],
+                    "name_cn": "",
+                    "summary": "シーナの元ルームメイト。\r\n彼女に花かんむりの作り方を教えてくれた。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 216282,
+                    "name": "老婆先生",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/2e/4a/216282_crt_19vqH.jpg",
+                    "actor_ids": [
+                        26376
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 216283,
+                    "name": "男子",
+                    "relation": "闲角",
+                    "image_url": "",
+                    "actor_ids": [
+                        19805,
+                        23092,
+                        30764,
+                        30913,
+                        35605,
+                        42293,
+                        44660,
+                        52204,
+                        97683
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 216284,
+                    "name": "女子",
+                    "relation": "闲角",
+                    "image_url": "",
+                    "actor_ids": [
+                        17172,
+                        26994,
+                        30881,
+                        49252,
+                        52711,
+                        67773
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 217161,
+                    "name": "敵兵",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/82/04/217161_crt_SYL1Z.jpg",
+                    "actor_ids": [
+                        41113
+                    ],
+                    "name_cn": "敌兵",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "敌兵",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                }
+            ],
+            "relations": [
+                {
+                    "id": 254437,
+                    "name": "きみが死ぬまで恋をしたい",
+                    "name_cn": "与你相恋到生命尽头",
+                    "relation": "书籍",
+                    "type": 1,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/49/28/254437_V0nL4.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 633260,
+                    "name": "「きみが死ぬまで恋をしたい」パイロットフィルム",
+                    "name_cn": "「与你相恋到生命尽头」样片",
+                    "relation": "其他",
+                    "type": 2,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/d9/38/633260_p4g4p.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 660542,
+                    "name": "Amore",
+                    "name_cn": "",
+                    "relation": "片头曲",
+                    "type": 3,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/c9/f2/660542_flz1f.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 665725,
+                    "name": "エテルネル",
+                    "name_cn": "",
+                    "relation": "片尾曲",
+                    "type": 3,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/4a/c3/665725_26hu5.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 668601,
+                    "name": "「きみが死ぬまで恋をしたい」ラジオの時間",
+                    "name_cn": "",
+                    "relation": "衍生",
+                    "type": 6,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/ff/c0/668601_2O1d2.jpg",
+                    "__dataclass__": "Relation"
+                }
+            ],
+            "episodes": [
+                {
+                    "id": 1702275,
+                    "name": "キス",
+                    "name_cn": "接吻",
+                    "air_date": "2026-07-07",
+                    "desc": "身寄りのない子どもたちを受け入れ、教育し、戦争に駆り出す孤児院兼国戦用魔術兵器育成機関で暮らしている少女、トツキ・シーナは、ルームメイトが戦いで命を落としたことを、先生からあっさりと聞かされる。日常の一コマとして処理されることに戸惑いを隠せない彼女だったが、不意に現れた血まみれの少女・ミミと出会い――。",
+                    "duration_seconds": 1420,
+                    "ep": 1,
+                    "sort": 1,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1702276,
+                    "name": "ちゃんと痛いよ",
+                    "name_cn": "",
+                    "air_date": "2026-07-14",
+                    "desc": "",
+                    "duration_seconds": 1420,
+                    "ep": 2,
+                    "sort": 2,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1702277,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-07-21",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 3,
+                    "sort": 3,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1702278,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-07-28",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 4,
+                    "sort": 4,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1702279,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-08-04",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 5,
+                    "sort": 5,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1702280,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-08-11",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 6,
+                    "sort": 6,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1702281,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-08-18",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 7,
+                    "sort": 7,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1702282,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-08-25",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 8,
+                    "sort": 8,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1702283,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-09-01",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 9,
+                    "sort": 9,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1702284,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-09-08",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 10,
+                    "sort": 10,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1702285,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-09-15",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 11,
+                    "sort": 11,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1702286,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-09-22",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 12,
+                    "sort": 12,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                }
+            ],
+            "__dataclass__": "ANiMeData"
+        },
+        "user_status": {
+            "watch_status": 3,
+            "watched_eps": 1,
+            "last_update": "2026-07-17T13:20:36+08:00",
+            "comment": null,
+            "tags": [],
             "__dataclass__": "UserStatus"
         },
         "__dataclass__": "ANiMeRecord"
