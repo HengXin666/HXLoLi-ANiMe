@@ -29982,6 +29982,33 @@
                     "__dataclass__": "Character"
                 },
                 {
+                    "id": 75893,
+                    "name": "パウロ・グレイラット",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/a5/e0/75893_crt_662g9.jpg",
+                    "actor_ids": [
+                        3822
+                    ],
+                    "name_cn": "保罗·格雷拉特",
+                    "summary": "ルーデウスの父親。ブエナ村の取りまとめ役の下級騎士。\r\nアスラ王国の上流貴族ノトス・グレイラット家の生まれだが、厳格な父親と折り合いがつかず12歳で家を飛び出し冒険者として生活していた。しかし同じパーティだったゼニスを妊娠させたことで、安定した生活を求めて冒険者を引退。従兄弟のフィリップを頼ってフィットア領ブエナ村駐在騎士の職に就いた。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "保罗·格雷拉特",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
                     "id": 75894,
                     "name": "ゼニス・グレイラット",
                     "relation": "配角",
@@ -30297,6 +30324,70 @@
                     "__dataclass__": "Character"
                 },
                 {
+                    "id": 92791,
+                    "name": "タルハンド",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/c3/a3/92791_crt_s5imp.jpg?r=1616187493",
+                    "actor_ids": [
+                        3879
+                    ],
+                    "name_cn": "塔尔韩德",
+                    "summary": "冒险者队伍“黑狼之牙”的原成员。行动缓慢而缺乏敏捷性，因此穿上坚固的铠甲，承受敌人攻击的同时一边使用魔术。与洛琪希和艾莉娜丽洁一同行动。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "塔尔韩德",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "种族",
+                            "value": "炭鉱族",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 102199,
+                    "name": "ギース・ヌーカディア",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/1c/b4/102199_crt_X8ZER.jpg",
+                    "actor_ids": [
+                        4920
+                    ],
+                    "name_cn": "基斯·努卡迪亚",
+                    "summary": "原黑狼之牙成员之一，担当斥候。\r\n虽是魔族但毫无战斗能力，擅长除战斗外的一切事务",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "基斯·努卡迪亚",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "种族",
+                            "value": "魔族",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
                     "id": 103371,
                     "name": "ザノバ・シーローン",
                     "relation": "配角",
@@ -30428,7 +30519,7 @@
                     "id": 134364,
                     "name": "リニアーナ・デドルディア",
                     "relation": "配角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/d9/c3/134364_crt_9Yqe4.jpg?r=1690982670",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/d9/c3/134364_crt_6R0rR.jpg",
                     "actor_ids": [
                         34397
                     ],
@@ -30819,10 +30910,10 @@
                     "id": 216595,
                     "name": "ジンジャー・ヨーク",
                     "relation": "配角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/51/38/216595_crt_DG2Do.jpg",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/51/38/216595_crt_hPOpn.jpg",
                     "actor_ids": [],
                     "name_cn": "金洁·约克",
-                    "summary": "",
+                    "summary": "シーローン王国第三王子親衛隊の騎士。\r\nザノバに強い忠誠心を持つ水神流の中級剣士で、治癒魔術も扱える。",
                     "birth_year": null,
                     "birth_month": null,
                     "birth_day": null,
@@ -30898,12 +30989,17 @@
                     "actor_ids": [
                         5467
                     ],
-                    "name_cn": "",
+                    "name_cn": "吉纳斯·哈尔法斯",
                     "summary": "",
                     "birth_year": null,
                     "birth_month": null,
                     "birth_day": null,
                     "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "吉纳斯·哈尔法斯",
+                            "__dataclass__": "KeyValue"
+                        },
                         {
                             "key": "性别",
                             "value": "男",
@@ -30938,7 +31034,7 @@
                     "name_cn": "",
                     "relation": "片尾曲",
                     "type": 3,
-                    "image_url": "https://lain.bgm.tv/pic/cover/l/b8/70/662225_64JU9.jpg",
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/b8/70/662225_MphLQ.jpg",
                     "__dataclass__": "Relation"
                 },
                 {
@@ -30951,6 +31047,24 @@
                     "__dataclass__": "Relation"
                 },
                 {
+                    "id": 665980,
+                    "name": "『無職転生Ⅲ ～異世界行ったら本気だす～』オリジナル・サウンドトラック",
+                    "name_cn": "",
+                    "relation": "原声集",
+                    "type": 3,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/df/9d/665980_a2Hh8.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 683342,
+                    "name": "ひかり",
+                    "name_cn": "",
+                    "relation": "插入歌",
+                    "type": 3,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/72/e0/683342_j0U16.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
                     "id": 665977,
                     "name": "決意の唄",
                     "name_cn": "",
@@ -30960,12 +31074,12 @@
                     "__dataclass__": "Relation"
                 },
                 {
-                    "id": 665980,
-                    "name": "『無職転生Ⅲ ～異世界行ったら本気だす～』オリジナル・サウンドトラック",
+                    "id": 671396,
+                    "name": "芽吹の唄",
                     "name_cn": "",
-                    "relation": "原声集",
+                    "relation": "片头曲",
                     "type": 3,
-                    "image_url": "https://lain.bgm.tv/pic/cover/l/df/9d/665980_a2Hh8.jpg",
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/9f/20/671396_ickhb.jpg",
                     "__dataclass__": "Relation"
                 }
             ],
@@ -31012,7 +31126,7 @@
                     "name_cn": "水王级魔术师",
                     "air_date": "2026-07-19",
                     "desc": "ルーデウスはザノバとクリフの協力で新たな左手となる「ザリフの義手」を手に入れた。しかし、いつかまた迫るかもしれない家族への危険。「もう誰も失いたくない」という想いのもと研究を進めるルーデウスは、ついにロキシーへ水王級魔術を教えてほしいと頼み込む。",
-                    "duration_seconds": 0,
+                    "duration_seconds": 1420,
                     "ep": 4,
                     "sort": 4,
                     "type": 0,
@@ -31020,11 +31134,11 @@
                 },
                 {
                     "id": 1704820,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "お祝い",
+                    "name_cn": "庆祝",
                     "air_date": "2026-07-26",
-                    "desc": "",
-                    "duration_seconds": 0,
+                    "desc": "クリフとエリナリーゼの結婚式が聖ミリス教会で執り行われ、ルーデウスたちは二人を祝福する。そんな中、ノルンとアイシャの十歳のお祝いをしていないことに気づいたルーデウスは、二人へのプレゼントを買うためにシルフィエット、ロキシーと共に街に繰り出す。そして、ついにルーデウスの念願が……。",
+                    "duration_seconds": 1420,
                     "ep": 5,
                     "sort": 5,
                     "type": 0,
@@ -31032,10 +31146,10 @@
                 },
                 {
                     "id": 1704821,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "修羅場再び？",
+                    "name_cn": "再度面临修罗场？",
                     "air_date": "2026-08-02",
-                    "desc": "",
+                    "desc": "ラノア王女の護衛を依頼されたロキシーに、ルーデウスも同行することに。そして共に護衛を担当することになった冒険者パーティ「アマゾネスエース」に意外な人物の姿が。それは、かつてルーデウスが行動をともにしていた冒険者パーティー・カウンターアローのサラだった…！ルーデウスは彼女と言葉を交わすが…。",
                     "duration_seconds": 0,
                     "ep": 6,
                     "sort": 6,
@@ -31143,8 +31257,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 3,
-            "last_update": "2026-07-17T13:20:16+08:00",
+            "watched_eps": 5,
+            "last_update": "2026-08-01T13:22:52+08:00",
             "comment": null,
             "tags": [
                 "异世界"
@@ -202666,7 +202780,7 @@
                     "id": 66220,
                     "name": "テスタロッサ",
                     "relation": "配角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/03/4e/66220_crt_r7B2F.jpg?r=1699291042",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/03/4e/66220_crt_3eBNe.jpg",
                     "actor_ids": [
                         6560
                     ],
@@ -202707,7 +202821,7 @@
                     "id": 66222,
                     "name": "カレラ",
                     "relation": "配角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/bf/f3/66222_crt_tsWyS.jpg?r=1699291006",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/bf/f3/66222_crt_ttTa6.jpg",
                     "actor_ids": [
                         30858
                     ],
@@ -203039,7 +203153,7 @@
                     "id": 66530,
                     "name": "本城正幸",
                     "relation": "配角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/09/78/66530_crt_BqVH7.jpg",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/09/78/66530_crt_szJCr.jpg",
                     "actor_ids": [
                         5764
                     ],
@@ -203212,10 +203326,74 @@
                     "__dataclass__": "Character"
                 },
                 {
+                    "id": 142564,
+                    "name": "モス",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/1c/a7/142564_crt_FOUoo.jpg",
+                    "actor_ids": [
+                        35731
+                    ],
+                    "name_cn": "摩斯",
+                    "summary": "戴丝特萝莎的心腹，要永远服侍她，概括承受所有杂务的大恶魔。看起来像十一二岁的少年，数万年来从来没有战败过。是仅次于原初的高手。拥有让许多分离出来的小分身飞往世界各地，同时收集情报分析的特殊能力。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "摩斯",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "无",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "称号",
+                            "value": "女帝の腹心，女帝的心腹",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 142565,
+                    "name": "シエン",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/7a/19/142565_crt_pvEm5.jpg",
+                    "actor_ids": [
+                        34406
+                    ],
+                    "name_cn": "席恩",
+                    "summary": "在戴丝特萝莎底下做事，担任副官的男爵级恶魔。三百年来没有战败过，重复转生好几次。在行政方面的能力很优秀，工作是辅佐去西方评议会当外交武官的戴丝特萝莎。当她不在评议会时，似乎也会变成她的代理人。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "席恩",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "无",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "称号",
+                            "value": "女帝の書記官，女帝的书记官",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
                     "id": 142569,
                     "name": "エスプリ",
                     "relation": "配角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/fc/c6/142569_crt_e4lXi.jpg",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/fc/c6/142569_crt_AIOMf.jpg",
                     "actor_ids": [
                         9270
                     ],
@@ -203615,7 +203793,7 @@
                     "name": "不穏な気配",
                     "name_cn": "不祥的气息",
                     "air_date": "2026-07-17",
-                    "desc": "新たな仲間が加わり魔国連邦は法治国家として歩み始める。そんなリムルたちの一方で、黄金郷エルドラドでは「東の商人」に扮したラプラスたちが魔王レオンと接触していた。",
+                    "desc": "新たな仲間たちが加わり、魔国連邦は法治国家としての道を歩み始める。リムルが新しく建設した学校を視察していると、そこには魔物の子供たちと一緒に過ごすクロエたちの姿があった。一方その頃、黄金郷エルドラドでは「東の商人」に扮したラプラスたちが魔王レオンと接触していた。召喚された異世界人の子供を求めるレオンに、ラプラスは魔国連邦にいる子供たちのことを教えていて……。",
                     "duration_seconds": 0,
                     "ep": 15,
                     "sort": 87,
@@ -203624,10 +203802,10 @@
                 },
                 {
                     "id": 1654619,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "夜明けの勇者グラン",
+                    "name_cn": "黎明勇者格兰",
                     "air_date": "2026-07-24",
-                    "desc": "",
+                    "desc": "魔王ルミナス考案の音楽交流祭のために、ルベリオスへとやってきたリムルたち。一行が歓待を受けたその夜、リムルはルミナスから話に誘われる。ルミナスはグランベルが「勇者の卵」が孵った真の勇者であることと、ルベリオスで何かを企んでいることを語る。そしてグランベル、ユウキ、レオン、それぞれが思惑を胸に、ルベリオスに向けて動こうとしていた。",
                     "duration_seconds": 0,
                     "ep": 16,
                     "sort": 88,
@@ -203636,10 +203814,10 @@
                 },
                 {
                     "id": 1654620,
-                    "name": "",
-                    "name_cn": "",
-                    "air_date": "2026-07-31",
-                    "desc": "",
+                    "name": "集束の地ルベリオス",
+                    "name_cn": "集结之地鲁贝利欧斯",
+                    "air_date": "2026-08-07",
+                    "desc": "クロエを探し求めていた魔王レオンは、魔導王朝サリオンのエルメシアに協力を頼み、ルベリオスへと向かう。しかしそこでは、既にグランベルの軍勢が攻め入ろうとしていた。",
                     "duration_seconds": 0,
                     "ep": 17,
                     "sort": 89,
@@ -203650,7 +203828,7 @@
                     "id": 1654621,
                     "name": "",
                     "name_cn": "",
-                    "air_date": "2026-08-07",
+                    "air_date": "2026-08-14",
                     "desc": "",
                     "duration_seconds": 0,
                     "ep": 18,
@@ -203662,7 +203840,7 @@
                     "id": 1654622,
                     "name": "",
                     "name_cn": "",
-                    "air_date": "2026-08-14",
+                    "air_date": "2026-08-21",
                     "desc": "",
                     "duration_seconds": 0,
                     "ep": 19,
@@ -203674,7 +203852,7 @@
                     "id": 1654623,
                     "name": "",
                     "name_cn": "",
-                    "air_date": "2026-08-21",
+                    "air_date": "2026-08-28",
                     "desc": "",
                     "duration_seconds": 0,
                     "ep": 20,
@@ -203686,7 +203864,7 @@
                     "id": 1654624,
                     "name": "",
                     "name_cn": "",
-                    "air_date": "2026-08-28",
+                    "air_date": "2026-09-04",
                     "desc": "",
                     "duration_seconds": 0,
                     "ep": 21,
@@ -203698,7 +203876,7 @@
                     "id": 1654625,
                     "name": "",
                     "name_cn": "",
-                    "air_date": "2026-09-04",
+                    "air_date": "2026-09-11",
                     "desc": "",
                     "duration_seconds": 0,
                     "ep": 22,
@@ -203710,7 +203888,7 @@
                     "id": 1654626,
                     "name": "",
                     "name_cn": "",
-                    "air_date": "2026-09-11",
+                    "air_date": "2026-09-18",
                     "desc": "",
                     "duration_seconds": 0,
                     "ep": 23,
@@ -203722,7 +203900,7 @@
                     "id": 1654627,
                     "name": "",
                     "name_cn": "",
-                    "air_date": "2026-09-18",
+                    "air_date": "2026-09-25",
                     "desc": "",
                     "duration_seconds": 0,
                     "ep": 24,
@@ -203735,8 +203913,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 13,
-            "last_update": "2026-07-17T13:20:20+08:00",
+            "watched_eps": 17,
+            "last_update": "2026-08-01T13:22:46+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
@@ -213512,7 +213690,7 @@
                     "id": 44563,
                     "name": "カリーナ",
                     "relation": "配角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/9a/82/44563_crt_22z9K.jpg",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/9a/82/44563_crt_2N2aN.jpg",
                     "actor_ids": [
                         10887
                     ],
@@ -213962,7 +214140,7 @@
                         3890
                     ],
                     "name_cn": "古手川纱耶华",
-                    "summary": "",
+                    "summary": "千紗の母。「ドルフィン」パラオ店のオーナー。ドライな性格かつぶっきらぼうな物言いをする。千紗に対しては一際厳しい。",
                     "birth_year": null,
                     "birth_month": null,
                     "birth_day": null,
@@ -213988,12 +214166,17 @@
                     "actor_ids": [
                         5766
                     ],
-                    "name_cn": "",
-                    "summary": "",
+                    "name_cn": "主任",
+                    "summary": "「ドルフィン」パラオ店のチーフ。落ち着きのある女性で、お客様にダイビングの楽しい時間を提供することを第一に考えている。",
                     "birth_year": null,
                     "birth_month": null,
                     "birth_day": null,
                     "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "主任",
+                            "__dataclass__": "KeyValue"
+                        },
                         {
                             "key": "性别",
                             "value": "女",
@@ -214010,12 +214193,17 @@
                     "actor_ids": [
                         8403
                     ],
-                    "name_cn": "",
-                    "summary": "",
+                    "name_cn": "真纪",
+                    "summary": "「ドルフィン」パラオ店の新米イントラ。まだまだ仕事に慣れていないこともあり、Pabメンバーの奇行に笑わされている。",
                     "birth_year": null,
                     "birth_month": null,
                     "birth_day": null,
                     "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "真纪",
+                            "__dataclass__": "KeyValue"
+                        },
                         {
                             "key": "性别",
                             "value": "女",
@@ -214082,7 +214270,7 @@
                     "id": 217114,
                     "name": "シュトロハイム",
                     "relation": "闲角",
-                    "image_url": "",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/68/fa/217114_crt_1co9m.jpg",
                     "actor_ids": [
                         24755
                     ],
@@ -214104,7 +214292,7 @@
                     "id": 217115,
                     "name": "クーゲルシュライバー",
                     "relation": "闲角",
-                    "image_url": "",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/fb/ce/217115_crt_v1Uv1.jpg",
                     "actor_ids": [
                         98197
                     ],
@@ -214114,6 +214302,60 @@
                     "birth_month": null,
                     "birth_day": null,
                     "tags": [
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 218131,
+                    "name": "愛菜の祖父",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/09/ed/218131_crt_WbrqG.jpg",
+                    "actor_ids": [
+                        4090
+                    ],
+                    "name_cn": "爱菜的爷爷",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "爱菜的爷爷",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 218132,
+                    "name": "ジョン",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/d7/89/218132_crt_tHHLT.jpg",
+                    "actor_ids": [
+                        56664
+                    ],
+                    "name_cn": "约翰",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "约翰",
+                            "__dataclass__": "KeyValue"
+                        },
                         {
                             "key": "性别",
                             "value": "男",
@@ -214189,10 +214431,10 @@
                 {
                     "id": 1704890,
                     "name": "パスポート奪還作戦",
-                    "name_cn": "",
+                    "name_cn": "护照夺还作战",
                     "air_date": "2026-07-20",
                     "desc": "旅館で居合わせた厄介オタクのドイツ人2人と、謎のストーカーの影。伊織は妹のピンチを救い、大きく恩を売ってパスポート奪還をたくらむ。様々な思惑が渦巻く旅館で、伊織と耕平は変態ドイツ人と改めて酒飲み対決に挑む。その最中、千紗と栞と話をすることになったカリーナは、日本の文化に興味津々の様子で…？\r\n\r\n脚本:高松信司\r\n絵コンテ:ロマのフ比嘉\r\n演出:中野敬太\r\n総作画監督:阿部智之\r\n作画監督: 河野しおり",
-                    "duration_seconds": 0,
+                    "duration_seconds": 1440,
                     "ep": 3,
                     "sort": 3,
                     "type": 0,
@@ -214200,11 +214442,11 @@
                 },
                 {
                     "id": 1704891,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "パラオの海",
+                    "name_cn": "帛琉的大海",
                     "air_date": "2026-07-27",
-                    "desc": "",
-                    "duration_seconds": 0,
+                    "desc": "ついにパラオへ行くことになった伊織たち。「ドルフィン」のパラオ店でアルバイトをして、残りの夏休みを過ごすのだが、空港で待ち受けていたのは、なんとケバ子…愛菜だった！　実家の手伝いで離脱していた彼女がなぜここに!?　予想外の再会を経て、彼らはパラオの寮で生活しながらのアルバイトが始まる。いつものように酒を飲んで南国の夜を楽しんだ彼らの前に現れたのは、千紗の母、紗耶華だった。\r\n\r\n脚本:高松信司\r\n絵コンテ:ハチゴウミ\r\n演出:前園文夫\r\n総作画監督:阿部智之\r\n作画監督: 岩崎 亮、鵜池一馬、杉本幸子、北條直明",
+                    "duration_seconds": 1440,
                     "ep": 4,
                     "sort": 4,
                     "type": 0,
@@ -214212,10 +214454,10 @@
                 },
                 {
                     "id": 1704892,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "TV取材",
+                    "name_cn": "电视採访",
                     "air_date": "2026-08-03",
-                    "desc": "",
+                    "desc": "「ドルフィン」に日本のテレビの取材が入ることになった！　イケメンアイドルの池越勇一が撮影を始めるのだが、顔に怪我を負ってしまう。そんなとき、池越にそっくりな耕平に白羽の矢が立つ。実は「キャラが立っていないこと」に悩んでいた池越は、この替え玉作戦で自分のイメージを変えようとしていた。しかし、よりにもよって常識外れの耕平。下半身丸出しは当たり前。この撮影、どうなる!?\r\n\r\n脚本:高松信司\r\n絵コンテ:ワタナベ シンイチ\r\n演出:中原陽道\r\n総作画監督: 阿部智之、DI MEDIA、ユン·スビン\r\n作画監督: DI MEDIA、キム·ジナ、キム·ハンジュ、キム·ヒョンス、パク·ギウォン、ソン·ジヨン、シン·ヘウォン、ユン·スビン、イ·イェリン、イン·ジヨン、チェ·ジョンウン、ファン·スビン",
                     "duration_seconds": 0,
                     "ep": 5,
                     "sort": 5,
@@ -214311,8 +214553,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 0,
-            "last_update": "2026-07-17T13:20:42+08:00",
+            "watched_eps": 4,
+            "last_update": "2026-08-01T13:22:27+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
@@ -214506,7 +214748,7 @@
                     "id": 126025,
                     "name": "アンハルト・ハルフレズ",
                     "relation": "配角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/8d/00/126025_crt_LS0L4.jpg?r=1677249561",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/8d/00/126025_crt_FNQZT.jpg",
                     "actor_ids": [
                         32253
                     ],
@@ -214592,7 +214834,7 @@
                     "id": 209140,
                     "name": "メル・ラウラ",
                     "relation": "配角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/43/bb/209140_crt_134n4.jpg",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/43/bb/209140_crt_T18u4.jpg",
                     "actor_ids": [
                         12568
                     ],
@@ -214614,16 +214856,21 @@
                     "id": 216282,
                     "name": "老婆先生",
                     "relation": "闲角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/2e/4a/216282_crt_19vqH.jpg",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/2e/4a/216282_crt_6mIR7.jpg",
                     "actor_ids": [
                         26376
                     ],
-                    "name_cn": "",
+                    "name_cn": "老太太老师",
                     "summary": "",
                     "birth_year": null,
                     "birth_month": null,
                     "birth_day": null,
                     "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "老太太老师",
+                            "__dataclass__": "KeyValue"
+                        },
                         {
                             "key": "性别",
                             "value": "女",
@@ -214715,6 +214962,51 @@
                         }
                     ],
                     "__dataclass__": "Character"
+                },
+                {
+                    "id": 218139,
+                    "name": "男先生",
+                    "relation": "闲角",
+                    "image_url": "",
+                    "actor_ids": [
+                        46810
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 218146,
+                    "name": "女先生",
+                    "relation": "闲角",
+                    "image_url": "",
+                    "actor_ids": [
+                        23092,
+                        30913
+                    ],
+                    "name_cn": "女老师",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "女老师",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
                 }
             ],
             "relations": [
@@ -214780,9 +215072,9 @@
                 {
                     "id": 1702276,
                     "name": "ちゃんと痛いよ",
-                    "name_cn": "",
+                    "name_cn": "真的很痛喔",
                     "air_date": "2026-07-14",
-                    "desc": "",
+                    "desc": "お腹の痛みを癒すために、ミミがしてくれたキス。初めての経験が頭からずっと離れないシーナは、一睡もできないまま模擬戦へ参加することに。一人あたり三体の仮想敵の撃破が目標となっているが、ミミは持ち前の力によって余裕でクリア。しかし、シーナは背後に迫っていた敵によって、左腕を切り落とされてしまう。急いで保健室に搬送されたものの、手練れのフラン先生も腕の再生には時間がかかる様子。しびれを切らしたミミは、自分が治すと意気込んで——。",
                     "duration_seconds": 1420,
                     "ep": 2,
                     "sort": 2,
@@ -214791,11 +215083,11 @@
                 },
                 {
                     "id": 1702277,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "ともだち",
+                    "name_cn": "朋友",
                     "air_date": "2026-07-21",
-                    "desc": "",
-                    "duration_seconds": 0,
+                    "desc": "ルームメイトになってから一ヶ月が経ち、シーナはミミを理解し始めていた。しかし、彼女がたくさん人を殺しているはずなのに、ニコニコと笑いながら戦争へ向かうことに、シーナはまだ戸惑いを感じていて……。ただ、そんな彼女はいつもひとりぼっち。心の奥底では怖いと感じていた彼女も、孤独に戦うただの少女だったことを知る。そう彼女のことを理解したシーナは、帰還したミミに友達になろうと提案するのだった。それからも戦いに向かうミミのことをシーナは心配し続けていくが、フラン先生から「心配しなくてもミミが死ぬことはない」と告げられて――。",
+                    "duration_seconds": 1420,
                     "ep": 3,
                     "sort": 3,
                     "type": 0,
@@ -214803,11 +215095,11 @@
                 },
                 {
                     "id": 1702278,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "共犯",
+                    "name_cn": "共犯",
                     "air_date": "2026-07-28",
-                    "desc": "",
-                    "duration_seconds": 0,
+                    "desc": "ミミから打ち明けられた、既に死んでいるから死なないという秘密。しかし、蘇生魔法はとうの昔に禁止となっているものだった。その秘密を知ってしまったシーナは、フラン先生から保健室へと呼び出され、ミミを可哀想だと思っていても、彼女によって最小限の犠牲で済んでいる事実を突きつけられてしまう。ミミがいるから、自分たちは生きていけることを反芻することとなり……。そんな中、学校中を整理整頓して回る「返礼の日」がやってくる。",
+                    "duration_seconds": 1420,
                     "ep": 4,
                     "sort": 4,
                     "type": 0,
@@ -214914,8 +215206,975 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 1,
-            "last_update": "2026-07-17T13:20:36+08:00",
+            "watched_eps": 3,
+            "last_update": "2026-08-01T13:22:35+08:00",
+            "comment": null,
+            "tags": [],
+            "__dataclass__": "UserStatus"
+        },
+        "__dataclass__": "ANiMeRecord"
+    },
+    {
+        "anime_data": {
+            "id": 339515,
+            "name": "幼女戦記Ⅱ",
+            "name_cn": "幼女战记 第二季",
+            "short_summary": "谭雅·冯·提古雷查夫中校被任命为新编成的沙罗曼达战斗群指挥官，再次投身于惨烈的战线之中。这支因应时局而临时编成的战斗群，表面上看起来精锐强悍，但实际上不过是群东拼西凑的乌合之众。雪上加霜的是联邦那来得太早的寒冬。帝国此时正陷于泥潭中挣扎。各",
+            "score": 7.2,
+            "image_url": "https://lain.bgm.tv/pic/cover/l/45/a6/339515_OTG2O.jpg",
+            "eps": 12,
+            "date": "2026-07-08",
+            "summary": "谭雅·冯·提古雷查夫中校被任命为新编成的沙罗曼达战斗群指挥官，再次投身于惨烈的战线之中。这支因应时局而临时编成的战斗群，表面上看起来精锐强悍，但实际上不过是群东拼西凑的乌合之众。雪上加霜的是联邦那来得太早的寒冬。帝国此时正陷于泥潭中挣扎。各国所追求的，是足以结束这一切的压倒性胜利。然而，却没有人知到自己真正渴望的究竟是什么，以及其真实意义为何。避无可避之下，谭雅只能继续伫立于动荡的最前线。\r\n\r\n\r\n\r\n[简介原文]\r\n統一暦1926年、秋。\r\nターニャ・フォン・デグレチャフ中佐は、新編されるサラマンダー戦闘団の指揮官に任じられ、再び苛烈な戦線へと身を投じる。\r\n臨機応変に編成される戦闘団は見た目こそは精強だが、その実は寄せ集めに過ぎなかった。\r\nこれで戦争を戦えるのか？不条理な現実に吠えるターニャ。\r\n追い打ちをかけたのは早すぎる連邦の冬だ。帝国は出口のない泥沼でもがいていた。\r\n各国が求めるのは、すべてを終わらせるための圧倒的勝利。しかし、誰も知らない。自分達が何を望んで、それが本当は何を意味するのかを。\r\n抗いようもなく、ターニャは激動の最前線に立ち続ける――。",
+            "total_episodes": 12,
+            "characters": [
+                {
+                    "id": 38492,
+                    "name": "ターニャ・デグレチャフ",
+                    "relation": "主角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/a3/de/38492_crt_vUtzV.jpg?r=1774698378",
+                    "actor_ids": [
+                        5076
+                    ],
+                    "name_cn": "谭雅·提古雷查夫",
+                    "summary": "生日：9月24日。在转生前是日本菁英上班族，就职于一间企业的人事部课长，遭到解雇的部员推下列车月台，遭火车辗毙前遇见“神”，但因和神进行论辩，称眼前的神为“存在X”并拒绝信仰（动画则是态度过于高高在上。），使得神相当愤怒，认为他因“生在科学的世界，身为一名男性。不知战争为何物，人生一帆风顺”而失去信仰的心，故以“在魔法的世界，做为一名女性。为了熟知战争。最好是走投无路”将他转生到异世界。\r\n于异世界的统一历一九一四年七月十八日，作为一名名为谭雅·提古雷查夫的弃婴诞生，在孤儿院度过了七年的童年时光，后来被检验出了魔导的资质，进入了帝都柏卢魔导军官学校就学，文书上的生日为九月二十四日。日后作为准尉被分发到诺登地区进行实习课程，结束后升为少尉并被编入国境警备班就战斗配置，期间爆发大战，因作战功勋被授予“银翼突击勋章”，以军官学校第二名的成绩毕业。之后进入帝国中央的教导队和技术厂的试验团队，进行新型宝珠实验，并以评价成果的名目被派往莱茵战场，晋升中尉后受推荐进入帝都夏尔洛堡（日语：シャルロブルク）军大学就读，以第十二名的成绩毕业，名列军大学十二骑士之末席，并获得仅限一代使用的贵族冠名“冯”。\r\n重视资源最大效率的运用及人才的筛选，主张要为帝国除去名为“无能”的疫病，在成为二〇三航空魔导大队的大队长后，（本来想靠激烈手段让训练兵全部放弃自己回家但失败了）开始注重培养及投资人力资源的品质，认为战争是种浪费人力及物质等宝贵资源的无效率行为，排斥联邦的共产政府，在帝国的官僚组织中建立了许多人脉。希望能平常地生活，但总是不如他所愿。不喜欢失去花费长时间栽培的部下，因此部下有危险都会去救，部下对她的信赖很深。\r\n拥有四核心演算宝珠“艾连穆姆九五式”，该宝珠由阿德海特·冯·修格鲁研发（实际上是在神的帮助下被赋予奇迹的缺陷品），使用时产生的威力远超其他演算宝珠，但发动术式时都会进入无意识赞颂神的状态，并发精神恍惚甚而丧失记忆，故本人极度避免使用，一般使用同为修格鲁教授开发，但不具有精神污染的双核演算宝珠“艾连穆姆九七式”。\r\n帝国军二〇三航空魔导大队的大队长暨第一中队长，本身即为击坠数突破五十的Ace of Aces，大队亦为所有队员皆配备艾连穆姆九七式演算宝珠，并直属于参谋本部、参与过所有方面的战场、执行过多种特殊作战并拥有多名Ace的精锐部队，于小说第4卷受命编制并指挥参谋本部直属试验战斗群，完成实验目的后解编，并在日后作为战斗群长指挥沙罗曼达战斗群，活跃于东部战场。\r\n被敌军登录为代号“莱茵的恶魔”，由于获颁银翼突击勋章而被帝国政治宣传为“白银”的别名，不过亦被部分帝国军官及共和国敌军私下称为“锈银”（讽刺杀死敌人的战功数量多到连银都会生锈，以及表达对谭雅的畏惧）。持有银翼突击章、野战航空战技章、榭叶银翼突击章、白翼大十字勋章、野战突击章、战伤勋章、壕沟一级功劳奖章、近战特级突击章、一级铁十字勋章等多种战功勋章。曾在莱茵战场获得黄金剑白金十字章的受勋推荐，后因一起严重抗命未遂事件而取消。漫画74话，战后数十年的篇章中提及代号“白银”的魔导师为全帝国军击坠数排名第二。\r\n军衔：准尉（军官学校）→少尉（联合实习修习完毕）→中尉（成为Ace of Aces(莱茵战争有功)）→上尉（军大学前十二名毕业）→少校（编制601编制部队功绩）→中校（发表论文《本次大战的部队运用与作战机动》）",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "谭雅·提古雷查夫",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 38493,
+                    "name": "ヴィーシャ",
+                    "relation": "主角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/0d/f9/38493_crt_szYE8.jpg?r=1774698526",
+                    "actor_ids": [
+                        4895
+                    ],
+                    "name_cn": "维夏",
+                    "summary": "帝国军二〇三航空魔导大队的魔导师，曾作为小队员和谭雅在莱茵战场作战，在修完初期的速成将校课程后晋升为少尉，并成为谭雅的副官。由于有联邦出身的背景，察觉了帝国军的野战宪兵与俘虏之间的沟通隔阂，并警醒了谭雅。自身具有高于平均水准的魔力量。\r\n出身于卢斯联邦，家族来自久远以前为求安稳自帝国搬迁至莫斯科的一个族系。年幼时联邦爆发共产革命，由于家族时常诞生魔导师而遭到迫害，其中一次家宅被纵火导致妹妹死亡，而后跟随双亲逃难至帝国的亲戚家。流亡过程中双亲于帝国与周边国家的边境战争中遭到流弹波及身亡，之后便由居住于帝国偏远农村地区的亲戚扶养。在13岁时于征兵检查中检测出魔导资质而半强制转入伊达尔-施泰因（日语：イーダル＝シュタイン）幼年军校，在接受3年教育后毕业。\r\n大战爆发后被授予下士军衔并受征召投入莱茵战场，因而在此时结识谭雅。\r\n军衔：下士（幼年学校）→少尉（速成将校课程）→中尉（南方大陆作战功勋）",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "维夏",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 48468,
+                    "name": "エーリッヒ・フォン・レルゲン",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/06/c5/48468_crt_3buuz.jpg?r=1774698454",
+                    "actor_ids": [
+                        4101
+                    ],
+                    "name_cn": "埃里希·冯·雷鲁根",
+                    "summary": "帝国軍参謀本部の参謀将校。作戦局のルーデルドルフの元で、軍令全般に従事するほか、戦場情報の提供なども担当する。参謀本部の人事局から作戦局に配属され、軍政・軍令の双方に幅広い知識を持つゼネラリストであり、キャリアコースを進むエリート。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "埃里希·冯·雷鲁根",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 48469,
+                    "name": "ハンス・フォン・ゼートゥーア",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/a0/ae/48469_crt_Tgslw.jpg?r=1774698623",
+                    "actor_ids": [
+                        3879
+                    ],
+                    "name_cn": "汉斯·冯·杰图亚",
+                    "summary": "帝国軍参謀本部の戦務参謀次長。軍人らしからぬ寡黙さ故に学究肌が過ぎるとの批判もあるが、物動や兵站の調整に長けたリアリストとして実力は参謀本部でも一目を置かれている。元々は作戦畑出身であり、作戦担当のルーデルドルフとペアを組む。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "汉斯·冯·杰图亚",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 48470,
+                    "name": "クルト・フォン・ルーデルドルフ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/26/63/48470_crt_iZcoz.jpg?r=1774698575",
+                    "actor_ids": [
+                        3855
+                    ],
+                    "name_cn": "库尔特·冯·卢提鲁德夫",
+                    "summary": "帝国軍参謀本部の作戦参謀次長。豪快かつ活動的な軍人であり、軍令の大半に携わる。大戦略に基いた作戦次元での指導を担当するだけでなく、細かな戦術面での検証も精力的に行う柔軟性も持ち合わせている。戦務担当のゼートゥーアとは同期の友人であり、連携して軍務に当たる。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "库尔特·冯·卢提鲁德夫",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 51281,
+                    "name": "マテウス・ヨハン・ヴァイス",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/a1/bd/51281_crt_45D3E.jpg?r=1774698742",
+                    "actor_ids": [
+                        19515
+                    ],
+                    "name_cn": "马特乌斯·约翰·拜斯",
+                    "summary": "出身于东部方面军的帝国军魔导中尉，于601大队编制完成后成为二〇三航空魔导大队的副队长暨第二中队长。\r\n军阶：中尉（东部方面军魔导师出身）→上尉（南方大陆作战功勳）→少校（继任二〇三航空魔导大队指挥官）",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "马特乌斯·约翰·拜斯",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 51291,
+                    "name": "ウィリアム・ドレイク",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/78/0f/51291_crt_U4m66.jpg?r=1774699115",
+                    "actor_ids": [
+                        3822
+                    ],
+                    "name_cn": "威廉·道格拉斯·德雷克",
+                    "summary": "所属国家：連合王国\r\n階級：中佐\r\nドレイク一門期待の俊英。\r\n潮気を纏った海兵魔導中佐。\r\n『若くて、そこそこ報道映えする』という一点でもって、プロパガンダ部隊の統率を命じられている。\r\n当人は政治を理解するが、好きかと言われると\r\n別問題なタイプ。なお、上層部のお気に入り。\r\n紅茶にミルクは先に入れるべきと信じる\r\n一派に属している。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "威廉·道格拉斯·德雷克",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 51779,
+                    "name": "ヴォーレン・グランツ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/b3/f6/51779_crt_r69Re.jpg?r=1774698893",
+                    "actor_ids": [
+                        13825
+                    ],
+                    "name_cn": "沃伦·格兰兹",
+                    "summary": "帝国军官学校出身的魔导师，作为其中一员接受培训的新兵魔导师编入二〇三航空魔导大队，并成为中队长之一，曾在莱茵战场领授过铁十字勋章。\r\n动画版改为601编制大队的一员，并顺利编入二〇三航空魔导大队中。\r\n军衔：少尉（军官学校毕业）→中尉（南方大陆作战功勋）",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "沃伦·格兰兹",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 53204,
+                    "name": "ヴィバルト・ケーニッヒ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/38/96/53204_crt_R1n4R.jpg?r=1774698962",
+                    "actor_ids": [
+                        24754
+                    ],
+                    "name_cn": "威利巴尔德·凯尼希",
+                    "summary": "帝国軍の航空魔導師。ターニャの率いる二〇三大隊に配属される。第三中隊長。戦場においても冷静沈着で、部隊の規律を正し、各員を陰で支える。一見すると冷淡にも見えるが、内面は部下想いの熱い性格であり、共同撃墜数の多さに見られるように、連携を重視する将校。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "威利巴尔德·凯尼希",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 53205,
+                    "name": "ライナー・ノイマン",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/5f/e7/53205_crt_76T0I.jpg?r=1774699008",
+                    "actor_ids": [
+                        20366
+                    ],
+                    "name_cn": "莱纳·诺伊曼",
+                    "summary": "帝国軍の航空魔導師。ターニャの率いる二〇三大隊に配属される。第四中隊長。その見た目通り明るく朗らかな性格で、部隊内の緊張を解すと共に、各員の士気を高める。戦場で軽口を叩くことも多いが、戦闘能力は高く、堅実な撃墜数を誇る。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "莱纳·诺伊曼",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 53206,
+                    "name": "メアリー・スー",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/f5/6f/53206_crt_c6Dzs.jpg",
+                    "actor_ids": [
+                        4856
+                    ],
+                    "name_cn": "玛丽·苏",
+                    "summary": "アンソンの娘。母と暮らす一般市民で、軍人の父を敬愛している。信心深い愛国者でもあり、父と自国のため、自分に出来ることを常に模索中。一方、内面には少女としての幼さも残っており、父と一緒に暮らせない生活を悲しんでいる。\r\n【剧场版】\r\n所属国家：合州国義勇兵\r\n階級：准尉\r\n主人公。\r\nもとい、主人公のようなもの。\r\n父の敵、邪悪な帝国軍に、正義の鉄槌を。\r\n公正世界を乱す悪漢に、裁きの鉄槌を。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "玛丽·苏",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 71625,
+                    "name": "ロリヤ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/be/52/71625_crt_0vKH0.jpg",
+                    "actor_ids": [
+                        3828
+                    ],
+                    "name_cn": "罗利亚",
+                    "summary": "ルーシー連邦内務人民委員部長官。\r\n重度のロリコン嗜好。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "罗利亚",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 71626,
+                    "name": "ヨセフ・ジュガシヴィリ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/36/d9/71626_crt_rJ7j1.jpg",
+                    "actor_ids": [],
+                    "name_cn": "约瑟夫·朱加什维利",
+                    "summary": "ルーシー連邦の最高指導者。人民委員会議議長を務める書記長。\r\n冷酷非情かつ自己中心的な人物で、自分以外の人間を敵か道具としか思っていない。もっぱら粛清は彼の右腕たるロリヤが執行する。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "约瑟夫·朱加什维利",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 153182,
+                    "name": "帝国",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/e7/73/153182_crt_IPPpI.jpg",
+                    "actor_ids": [],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 153196,
+                    "name": "ルーシー連邦",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/10/a4/153196_crt_woGYm.jpg",
+                    "actor_ids": [],
+                    "name_cn": "卢斯联邦",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "卢斯联邦",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 153206,
+                    "name": "アルビオン連合王国",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/7b/bc/153206_crt_v7488.jpg",
+                    "actor_ids": [],
+                    "name_cn": "阿尔比恩联合王国",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "阿尔比恩联合王国",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 153276,
+                    "name": "合州国",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/8f/60/153276_crt_C2m7Z.jpg",
+                    "actor_ids": [],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 206781,
+                    "name": "ミケル",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/6e/7b/206781_crt_dD8V3.jpg",
+                    "actor_ids": [
+                        4513
+                    ],
+                    "name_cn": "米克尔",
+                    "summary": "連邦軍の魔導師。\r\n連邦にて魔導師は迫害の対象であったが、帝国との戦争でその必要性が認識されたことでラーゲリから現役へと復帰。多国籍義勇軍に派兵された。\r\n前線では高い戦闘能力を発揮し、実力派の指揮官として存在感を示す。\r\n祖国の為に、そして、生き延びるために、彼は、戦う。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "米克尔",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 206782,
+                    "name": "リリーヤ・イヴァノヴァ・タネーチカ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/86/b6/206782_crt_JO4fj.jpg",
+                    "actor_ids": [
+                        5119
+                    ],
+                    "name_cn": "莉莉亚·伊万诺娃·塔涅契卡",
+                    "summary": "連邦軍中尉を兼ねる下級政治委員。\r\n多国籍義勇軍付政治将校として党より派遣された模範的理想主義者。\r\n愛想よく柔らかな物腰だが、党の指示は断固として遂行する。\r\n軍生活の相談を受けたことで、メアリーと友人になる。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "莉莉亚·伊万诺娃·塔涅契卡",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 206822,
+                    "name": "マクシミリアン・ヨハン・フォン・ウーガ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/22/1e/206822_crt_wuxXx.jpg",
+                    "actor_ids": [
+                        4253
+                    ],
+                    "name_cn": "马克西米利安·约翰·冯·乌卡",
+                    "summary": "军衔：上尉",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "马克西米利安·约翰·冯·乌卡",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 215925,
+                    "name": "ヴィルジニオ・カランドロ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/8e/a6/215925_crt_vXbk9.jpg",
+                    "actor_ids": [
+                        4354
+                    ],
+                    "name_cn": "维尔吉尼奥·卡兰德罗",
+                    "summary": "イルドア王国山岳部隊 大佐。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "维尔吉尼奥·卡兰德罗",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 216349,
+                    "name": "チャーブル",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/a5/11/216349_crt_XBWkk.jpg",
+                    "actor_ids": [],
+                    "name_cn": "丘布尔",
+                    "summary": "連合王国 首相。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "丘布尔",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 216350,
+                    "name": "ドナルド・ハーバーグラム",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/6a/b9/216350_crt_yy3g1.jpg",
+                    "actor_ids": [
+                        4317
+                    ],
+                    "name_cn": "唐纳德·哈柏革兰",
+                    "summary": "連合王国海軍 少将。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "唐纳德·哈柏革兰",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 216351,
+                    "name": "テオパルト・ヴュステマン",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/1c/7f/216351_crt_KqwQk.jpg",
+                    "actor_ids": [
+                        46374
+                    ],
+                    "name_cn": "特奥巴登·维斯特曼",
+                    "summary": "中尉。帝国軍第二〇三航空魔導大隊第四中隊長。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "特奥巴登·维斯特曼",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 216352,
+                    "name": "エルマー・アーレンス",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/3e/a1/216352_crt_Y4Tee.jpg",
+                    "actor_ids": [
+                        4614
+                    ],
+                    "name_cn": "艾玛·阿伦斯",
+                    "summary": "大尉。帝国軍サラマンダー戦闘団機甲部隊指揮官。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "艾玛·阿伦斯",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 216353,
+                    "name": "ロルフ・メーベルト",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/fa/ce/216353_crt_VQzn4.jpg",
+                    "actor_ids": [
+                        4607
+                    ],
+                    "name_cn": "罗尔夫·梅贝特",
+                    "summary": "大尉。帝国軍サラマンダー戦闘団砲兵部隊指揮官。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "罗尔夫·梅贝特",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 216354,
+                    "name": "クラウス・トスパン",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/4e/aa/216354_crt_Rpurh.jpg",
+                    "actor_ids": [
+                        31655
+                    ],
+                    "name_cn": "克劳斯·托斯潘",
+                    "summary": "中尉。帝国軍サラマンダー戦闘団步兵次席。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "克劳斯·托斯潘",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 216355,
+                    "name": "リーンハルト・トーン",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/93/fa/216355_crt_6NnNX.jpg",
+                    "actor_ids": [
+                        4169
+                    ],
+                    "name_cn": "林哈德·汤恩",
+                    "summary": "大尉。帝国軍サラマンダー戦闘団步兵指揮官。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "林哈德·汤恩",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 217217,
+                    "name": "イゴール・ガスマン",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/96/35/217217_crt_ZyOj7.jpg",
+                    "actor_ids": [
+                        5347
+                    ],
+                    "name_cn": "伊格·加斯曼",
+                    "summary": "イルドア王国軍陸軍総司令部付 大将。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "伊格·加斯曼",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                }
+            ],
+            "relations": [
+                {
+                    "id": 128968,
+                    "name": "幼女戦記",
+                    "name_cn": "幼女战记",
+                    "relation": "书籍",
+                    "type": 1,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/11/07/128968_uC4m0.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 234771,
+                    "name": "劇場版 幼女戦記",
+                    "name_cn": "剧场版 幼女战记",
+                    "relation": "前传",
+                    "type": 2,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/e4/0d/234771_b2WaR.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 658254,
+                    "name": "ようじょしぇんき2",
+                    "name_cn": "",
+                    "relation": "衍生",
+                    "type": 2,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/6f/21/658254_D50aA.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 665194,
+                    "name": "Why? RED induction / Awake Anew",
+                    "name_cn": "",
+                    "relation": "片头曲",
+                    "type": 3,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/47/b1/665194_aGw8w.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 665195,
+                    "name": "Weiter! Weiter!",
+                    "name_cn": "",
+                    "relation": "片尾曲",
+                    "type": 3,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/2e/65/665195_5WZSs.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 667192,
+                    "name": "TVアニメ「幼女戦記II」ORIGINAL SOUNDTRACK",
+                    "name_cn": "",
+                    "relation": "原声集",
+                    "type": 3,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/1c/ab/667192_k3Ucs.jpg",
+                    "__dataclass__": "Relation"
+                }
+            ],
+            "episodes": [
+                {
+                    "id": 1699968,
+                    "name": "サラマンダー戦闘団",
+                    "name_cn": "沙罗曼达战斗群",
+                    "air_date": "2026-07-08",
+                    "desc": "統一暦1926年、秋。戦火は今なお世界を焼いている。\r\n帝国はいわば、四面楚歌。そして何より東部戦線。\r\nその東部戦線へターニャ・フォン・デグレチャフ中佐率いるサラマンダー戦闘団も投入されていた。",
+                    "duration_seconds": 1420,
+                    "ep": 1,
+                    "sort": 1,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1699969,
+                    "name": "奇妙な友情",
+                    "name_cn": "奇妙的友情",
+                    "air_date": "2026-07-15",
+                    "desc": "冬の到来により東部戦線の補給事情が更に悪化する。\r\n連日の防衛戦を戦うサラマンダー戦闘団も、\r\n補給線へのゲリラ的な襲撃によって大きく疲弊していた。",
+                    "duration_seconds": 1420,
+                    "ep": 2,
+                    "sort": 2,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1699970,
+                    "name": "善意の仲介人",
+                    "name_cn": "善意的仲介人",
+                    "air_date": "2026-07-22",
+                    "desc": "帝国は対反乱戦略を一新、東部の情勢安定化に成功。\r\nしかし連邦と連合王国は北方の旧協商連合領での共同作戦で対抗する。\r\nそんな中、『厳正中立』を謳うイルドア王国が蠢動する。",
+                    "duration_seconds": 1420,
+                    "ep": 3,
+                    "sort": 3,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1699971,
+                    "name": "鉄槌作戦",
+                    "name_cn": "铁鎚作战",
+                    "air_date": "2026-07-29",
+                    "desc": "イルドア王国を介した講和の機運が高まる中、\r\n帝国はより有利な条件を押し付けるため、\r\n大規模反攻作戦「鉄槌作戦」を発動する。",
+                    "duration_seconds": 1420,
+                    "ep": 4,
+                    "sort": 4,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1699972,
+                    "name": "貧乏籤",
+                    "name_cn": "下下签",
+                    "air_date": "2026-08-05",
+                    "desc": "イルドア王国経由の和平交渉は先送りとなり、\r\n帝国軍は更に有利な条件を得るべく、連邦の資源地帯制圧を\r\n目指す大規模攻勢「アンドロメダ計画」を発動する。",
+                    "duration_seconds": 0,
+                    "ep": 5,
+                    "sort": 5,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1699973,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-08-12",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 6,
+                    "sort": 6,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1699974,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-08-19",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 7,
+                    "sort": 7,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1699975,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-08-26",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 8,
+                    "sort": 8,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1699976,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-09-02",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 9,
+                    "sort": 9,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1699977,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-09-09",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 10,
+                    "sort": 10,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1699978,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-09-16",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 11,
+                    "sort": 11,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1699979,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-09-23",
+                    "desc": "",
+                    "duration_seconds": 0,
+                    "ep": 12,
+                    "sort": 12,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                }
+            ],
+            "__dataclass__": "ANiMeData"
+        },
+        "user_status": {
+            "watch_status": 3,
+            "watched_eps": 2,
+            "last_update": "2026-08-01T13:44:51+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"

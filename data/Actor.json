@@ -9861,5 +9861,40 @@
         "short_summary": "日本の声優，アクセルワン所属。\r\n出身地：千葉県。資格：簿記3級、情報処理検定2級。趣味：食べること、神社仏閣巡り、柴犬グッズ集め。特技：トロンボーン。",
         "image_url": "https://lain.bgm.tv/pic/crt/l/7a/fc/49252_prsn_gKgto.jpg?r=1745164141",
         "__dataclass__": "Actor"
+    },
+    {
+        "id": 4317,
+        "name": "高田裕司",
+        "short_summary": "",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/d2/90/4317_seiyu_anidb.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 4169,
+        "name": "沼田祐介",
+        "short_summary": "日本声优，生于神奈川县。在电视动画《勇者斗恶龙 勇者阿贝尔传说》中首次出演。在动画《超电动机器人 铁人28号FX》中首次担任主役。",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/21/92/4169_seiyu_anidb.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 5347,
+        "name": "水島裕",
+        "short_summary": "日本の声優、俳優、タレント、ナレーター、司会者。81ACTOR'S STUDIOキッズクラス代表講師。福岡県門司市（現在の北九州市門司区）出生、東京都杉並区出身。81プロデュース所属。",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/50/b0/5347_prsn_79L89.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 46810,
+        "name": "浅野良介",
+        "short_summary": "",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/b3/be/46810_prsn_0ynsy.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 56664,
+        "name": "西澤遼",
+        "short_summary": "出身地：神奈川県\r\n声質：中低音～低音\r\n資格：英語検定2級、普通自動車免許、スキューバダイビング（BSAC）\r\n趣味：ゴルフ、カラオケ、回文収集、俳句、写真＆ビデオ撮影\r\n特技：書籍・雑誌・ウェブ媒体の編集全般、語呂合わせ暗記、イラスト",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/1c/ea/56664_prsn_OyR2O.jpg",
+        "__dataclass__": "Actor"
     }
 ]
