@@ -30452,6 +30452,70 @@
                     "__dataclass__": "Character"
                 },
                 {
+                    "id": 128970,
+                    "name": "サラ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/e1/e7/128970_crt_2X1WI.jpg?r=1690993637",
+                    "actor_ids": [
+                        18600
+                    ],
+                    "name_cn": "萨拉",
+                    "summary": "アスラ王国ミルボッツ領の出身。Bランクの冒険者パーティ「カウンターアロー」のメンバー。弓の使い手でパーティで中衛を務める。他のパーティメンバーより年下だが、気の強い金髪美少女。\r\n [mask]スペシャルブック収録の外伝漫画では結婚して復興したロアの街で、夫と食堂を経営している。[/mask]",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "萨拉",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "https://mushokutensei.jp/character/",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 128971,
+                    "name": "スザンヌ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/b6/3d/128971_crt_cR04k.jpg",
+                    "actor_ids": [
+                        4398
+                    ],
+                    "name_cn": "苏珊娜",
+                    "summary": "冒険者パーティ「カウンターアロー」の副リーダー。パーティで前衛を務めるドレッドの女戦士。優しく面倒見のよい姉御肌で、サラに慕われている。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "苏珊娜",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "引用来源",
+                            "value": "https://mushokutensei.jp/character/",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
                     "id": 131145,
                     "name": "アリエル・アネモイ・アスラ",
                     "relation": "配角",
@@ -31007,6 +31071,141 @@
                         }
                     ],
                     "__dataclass__": "Character"
+                },
+                {
+                    "id": 218533,
+                    "name": "ローザ",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/2a/ef/218533_crt_3L5jV.jpg",
+                    "actor_ids": [
+                        18733
+                    ],
+                    "name_cn": "罗莎",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "罗莎",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 218534,
+                    "name": "ウルスラ",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/af/e3/218534_crt_j0KKU.jpg",
+                    "actor_ids": [
+                        30751
+                    ],
+                    "name_cn": "乌尔苏拉",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "乌尔苏拉",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 218535,
+                    "name": "アリサ",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/95/68/218535_crt_PZnXJ.jpg",
+                    "actor_ids": [
+                        41550
+                    ],
+                    "name_cn": "亚莉莎",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "亚莉莎",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 218536,
+                    "name": "ラノア王女",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/0e/6c/218536_crt_OYah0.jpg",
+                    "actor_ids": [
+                        59342
+                    ],
+                    "name_cn": "拉诺亚公主",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "拉诺亚公主",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 218537,
+                    "name": "グレイス",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/69/35/218537_crt_ddx72.jpg",
+                    "actor_ids": [
+                        35749
+                    ],
+                    "name_cn": "葛瑞丝",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "葛瑞丝",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
                 }
             ],
             "relations": [
@@ -31150,7 +31349,7 @@
                     "name_cn": "再度面临修罗场？",
                     "air_date": "2026-08-02",
                     "desc": "ラノア王女の護衛を依頼されたロキシーに、ルーデウスも同行することに。そして共に護衛を担当することになった冒険者パーティ「アマゾネスエース」に意外な人物の姿が。それは、かつてルーデウスが行動をともにしていた冒険者パーティー・カウンターアローのサラだった…！ルーデウスは彼女と言葉を交わすが…。",
-                    "duration_seconds": 0,
+                    "duration_seconds": 1420,
                     "ep": 6,
                     "sort": 6,
                     "type": 0,
@@ -31158,8 +31357,8 @@
                 },
                 {
                     "id": 1704822,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "第四段階",
+                    "name_cn": "第四阶段",
                     "air_date": "2026-08-09",
                     "desc": "",
                     "duration_seconds": 0,
@@ -31257,8 +31456,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 5,
-            "last_update": "2026-08-01T13:22:52+08:00",
+            "watched_eps": 6,
+            "last_update": "2026-08-06T00:12:08+08:00",
             "comment": null,
             "tags": [
                 "异世界"
@@ -42117,7 +42316,7 @@
                     "name_cn": "少女波子汽水",
                     "relation": "游戏",
                     "type": 4,
-                    "image_url": "https://lain.bgm.tv/pic/cover/l/81/b6/128742_ZYFF9.jpg",
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/raw/14/6f/128742_146f92d3-5b4c-436f-8c6c-9ab7a97d321a.jpeg",
                     "__dataclass__": "Relation"
                 },
                 {
@@ -42202,14 +42401,38 @@
                     "sort": 6,
                     "type": 0,
                     "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1668997,
+                    "name": "コマコとエッチなお約束",
+                    "name_cn": "",
+                    "air_date": "2026-07-03",
+                    "desc": "とっておきのプレゼント\r\n\r\n立川が営む駄菓子屋は繁盛しているとは言い難いが、3人の常連客（狭山千恵、足立甜花、コマコ・セメノビッチ）でいつもにぎやかである。\r\n3人は茶の間に上がり込んで我が家のように振る舞っているのであった。\r\n立川は彼女たちと少しエッチなゲームをして楽しんでいた。\r\n3人と充実した時間を過ごしていると夕方になり知恵と甜花は帰宅する。\r\nその後、立川は疲れて寝ている無防備なコマコの身体を楽しむことにする。\r\n立川はコマコの胸を堪能していたがやりすぎたため彼女を起こしてしまう。\r\n立川はごまかすためにコマコにプレゼントを用意しているというのであった。",
+                    "duration_seconds": 0,
+                    "ep": 7,
+                    "sort": 7,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1705864,
+                    "name": "リトルラバーズ",
+                    "name_cn": "",
+                    "air_date": "2026-09-04",
+                    "desc": "楽しい時間は永遠に\r\n\r\n立川が営む駄菓子屋は繁盛しているとは言い難いが、3人の常連客（狭山千恵、足立甜花、コマコ・セメノビッチ）でいつもにぎやかである。\r\n3人は茶の間に上がり込んで我が家のように振る舞っているのであった。\r\n今日、立川は不在であったが、3人はゲームをして遊ぶことにする。\r\n千恵と甜花は水着を着用してくすぐりゲームを始める。\r\n千恵は甜花の足の裏を責めたが動じず、甜花は千恵の脇の下をくすぐり勝負を決めるのであった。\r\n夕方、遊び疲れた3人は寝ているがコマコだけはむくりと起き上がり立川からもらったペニバンを付け千恵に忍び寄る。\r\nコマコは千恵とセックスするという夢を叶えるためにこの時をまっていたのであった。",
+                    "duration_seconds": 0,
+                    "ep": 8,
+                    "sort": 8,
+                    "type": 0,
+                    "__dataclass__": "Episode"
                 }
             ],
             "__dataclass__": "ANiMeData"
         },
         "user_status": {
             "watch_status": 2,
-            "watched_eps": 1,
-            "last_update": "2025-12-15T13:02:22+08:00",
+            "watched_eps": 6,
+            "last_update": "2026-08-06T00:17:25+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
@@ -214363,6 +214586,87 @@
                         }
                     ],
                     "__dataclass__": "Character"
+                },
+                {
+                    "id": 218696,
+                    "name": "池越勇一",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/06/86/218696_crt_29QG8.jpg",
+                    "actor_ids": [
+                        4994
+                    ],
+                    "name_cn": "池越勇一",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "池越勇一",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 218697,
+                    "name": "村中ゆりか",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/50/26/218697_crt_0Kum8.jpg",
+                    "actor_ids": [
+                        3965
+                    ],
+                    "name_cn": "村中百合香",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "村中百合香",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 218698,
+                    "name": "高橋藍",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/6d/9c/218698_crt_jVCRh.jpg",
+                    "actor_ids": [
+                        4382
+                    ],
+                    "name_cn": "高桥蓝",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "高桥蓝",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
                 }
             ],
             "relations": [
@@ -214399,7 +214703,7 @@
                     "name_cn": "",
                     "relation": "片头曲",
                     "type": 3,
-                    "image_url": "",
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/7d/0f/658880_OeXRA.jpg",
                     "__dataclass__": "Relation"
                 }
             ],
@@ -214458,7 +214762,7 @@
                     "name_cn": "电视採访",
                     "air_date": "2026-08-03",
                     "desc": "「ドルフィン」に日本のテレビの取材が入ることになった！　イケメンアイドルの池越勇一が撮影を始めるのだが、顔に怪我を負ってしまう。そんなとき、池越にそっくりな耕平に白羽の矢が立つ。実は「キャラが立っていないこと」に悩んでいた池越は、この替え玉作戦で自分のイメージを変えようとしていた。しかし、よりにもよって常識外れの耕平。下半身丸出しは当たり前。この撮影、どうなる!?\r\n\r\n脚本:高松信司\r\n絵コンテ:ワタナベ シンイチ\r\n演出:中原陽道\r\n総作画監督: 阿部智之、DI MEDIA、ユン·スビン\r\n作画監督: DI MEDIA、キム·ジナ、キム·ハンジュ、キム·ヒョンス、パク·ギウォン、ソン·ジヨン、シン·ヘウォン、ユン·スビン、イ·イェリン、イン·ジヨン、チェ·ジョンウン、ファン·スビン",
-                    "duration_seconds": 0,
+                    "duration_seconds": 1440,
                     "ep": 5,
                     "sort": 5,
                     "type": 0,
@@ -214466,10 +214770,10 @@
                 },
                 {
                     "id": 1704893,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "アシスト",
+                    "name_cn": "助攻",
                     "air_date": "2026-08-10",
-                    "desc": "",
+                    "desc": "愛菜が抱く伊織への想い。耕平はそれをどうにかアシストしてやりたい。自然な形で二人だけのシチュエーションを作ろうとしたり、会話を誘導しようとするのだが、うまくいかない。そんな不器用な恋愛模様が進んでいく中、愛菜は伊織と耕平が死の危機に瀕しているかもしれないという情報を得る。「股間が破裂して死ぬ」…！　エロに真剣な男たちの行動は、命に関わるからだった!?\r\n\r\n脚本:高松信司\r\n絵コンテ:ロマのフ比嘉\r\n演出:浅見隆司\r\n総作画監督: 阿部智之、WONWOO ANIMATION\r\n作画監督: KIM HYUN AH、RYU HYUN JIN、SIN YOO MI、WONWOO ANIMATION",
                     "duration_seconds": 0,
                     "ep": 6,
                     "sort": 6,
@@ -214553,8 +214857,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 4,
-            "last_update": "2026-08-01T13:22:27+08:00",
+            "watched_eps": 5,
+            "last_update": "2026-08-06T00:12:12+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
