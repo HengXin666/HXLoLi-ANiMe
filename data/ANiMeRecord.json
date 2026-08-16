@@ -30223,32 +30223,27 @@
                     "__dataclass__": "Character"
                 },
                 {
-                    "id": 91728,
-                    "name": "オルステッド",
+                    "id": 91472,
+                    "name": "光輝のアルマンフィ",
                     "relation": "配角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/88/f6/91728_crt_LpYvA.jpg?r=1755050571",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/9d/e1/91472_crt_nDYd8.jpg",
                     "actor_ids": [
-                        3977
+                        7548
                     ],
-                    "name_cn": "奥尔斯蒂德",
-                    "summary": "七大列强第二位 “龙神”",
+                    "name_cn": "光辉之阿鲁曼菲",
+                    "summary": "空中城塞ケイオスブレイカーに住まう甲龍王ペルギウスの12の使い魔のひとり。 光に変化して移動することができ、 偵察・奇襲に長ける。",
                     "birth_year": null,
                     "birth_month": null,
                     "birth_day": null,
                     "tags": [
                         {
                             "key": "简体中文名",
-                            "value": "奥尔斯蒂德",
+                            "value": "光辉之阿鲁曼菲",
                             "__dataclass__": "KeyValue"
                         },
                         {
                             "key": "性别",
                             "value": "男",
-                            "__dataclass__": "KeyValue"
-                        },
-                        {
-                            "key": "种族",
-                            "value": "龍族",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -30258,12 +30253,12 @@
                     "id": 91730,
                     "name": "ペルギウス・ドーラ",
                     "relation": "配角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/43/76/91730_crt_m5z8M.jpg?r=1614458964",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/43/76/91730_crt_6p6Uz.jpg",
                     "actor_ids": [
                         4130
                     ],
                     "name_cn": "佩尔基乌斯・朵拉",
-                    "summary": "击杀魔神3英雄之一",
+                    "summary": "かつて魔神ラプラスを封印した“魔神殺しの三英雄”のひとりであり、召喚魔法の権威でもある、“甲龍王”。 12の使い魔を従え、空中城塞ケイオスブレイカーからラプラスの復活を警戒し、監視している。",
                     "birth_year": null,
                     "birth_month": null,
                     "birth_day": null,
@@ -31075,7 +31070,7 @@
                 {
                     "id": 218533,
                     "name": "ローザ",
-                    "relation": "闲角",
+                    "relation": "配角",
                     "image_url": "https://lain.bgm.tv/pic/crt/l/2a/ef/218533_crt_3L5jV.jpg",
                     "actor_ids": [
                         18733
@@ -31102,7 +31097,7 @@
                 {
                     "id": 218534,
                     "name": "ウルスラ",
-                    "relation": "闲角",
+                    "relation": "配角",
                     "image_url": "https://lain.bgm.tv/pic/crt/l/af/e3/218534_crt_j0KKU.jpg",
                     "actor_ids": [
                         30751
@@ -31129,7 +31124,7 @@
                 {
                     "id": 218535,
                     "name": "アリサ",
-                    "relation": "闲角",
+                    "relation": "配角",
                     "image_url": "https://lain.bgm.tv/pic/crt/l/95/68/218535_crt_PZnXJ.jpg",
                     "actor_ids": [
                         41550
@@ -31156,7 +31151,7 @@
                 {
                     "id": 218536,
                     "name": "ラノア王女",
-                    "relation": "闲角",
+                    "relation": "配角",
                     "image_url": "https://lain.bgm.tv/pic/crt/l/0e/6c/218536_crt_OYah0.jpg",
                     "actor_ids": [
                         59342
@@ -31183,7 +31178,7 @@
                 {
                     "id": 218537,
                     "name": "グレイス",
-                    "relation": "闲角",
+                    "relation": "配角",
                     "image_url": "https://lain.bgm.tv/pic/crt/l/69/35/218537_crt_ddx72.jpg",
                     "actor_ids": [
                         35749
@@ -31202,6 +31197,87 @@
                         {
                             "key": "性别",
                             "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 219187,
+                    "name": "ゲオルグ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/30/de/219187_crt_0dLSP.jpg",
+                    "actor_ids": [
+                        4980
+                    ],
+                    "name_cn": "",
+                    "summary": "ラノア魔法大学の校長。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 219294,
+                    "name": "空虚のシルヴァリル",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/8b/05/219294_crt_ze3oF.jpg",
+                    "actor_ids": [
+                        4725
+                    ],
+                    "name_cn": "",
+                    "summary": "空中城塞ケイオスブレイカーに住まう甲龍王ペルギウスの12の使い魔の最初のひとり。かつてラプラス戦役でペルギウスに救われ、それを機に彼に仕える。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 219295,
+                    "name": "アトーフェラトーフェ・ライバック",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/7f/6a/219295_crt_i4CD8.jpg",
+                    "actor_ids": [
+                        14843
+                    ],
+                    "name_cn": "阿托菲拉托菲·雷白克",
+                    "summary": "魔大陸のガスロー地方を統治する、魔王バーディガーディの姉にあたる不死身の”不死魔王”。知能は低いが、他を圧倒する凄まじい戦闘力を持つ。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "阿托菲拉托菲·雷白克",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "种族",
+                            "value": "不死魔族",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "流派",
+                            "value": "不治瑕北神流",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -31369,10 +31445,10 @@
                 },
                 {
                     "id": 1704823,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "空中城塞",
+                    "name_cn": "空中要塞",
                     "air_date": "2026-08-16",
-                    "desc": "",
+                    "desc": "为了得知让塞妮丝康复的方法，鲁迪乌斯经由七星引荐，前去谒见居住在空中要塞Chaos Breaker的「杀死魔神的三英雄」之一──「甲龙王」佩尔基乌斯。散发着压倒性存在感的佩尔基乌斯听完塞妮丝的事，却说出了一个意想不到的人名。\r\n\r\nゼニスが回復する方法を知るために、ルーデウスはナナホシの紹介で空中城塞ケイオスブレイカーに住まう魔神殺しの三英雄のひとり、“甲龍王”ペルギウスに謁見することになった。圧倒的な存在感を放ち、ゼニスの話を聞いたペルギウスは意外な人物の名前を挙げる。",
                     "duration_seconds": 1420,
                     "ep": 8,
                     "sort": 8,
@@ -31456,8 +31532,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 7,
-            "last_update": "2026-08-09T12:54:53+08:00",
+            "watched_eps": 8,
+            "last_update": "2026-08-16T13:30:31+08:00",
             "comment": null,
             "tags": [
                 "异世界"
@@ -204040,7 +204116,7 @@
                     "name": "集束の地ルベリオス",
                     "name_cn": "集结之地鲁贝利欧斯",
                     "air_date": "2026-08-07",
-                    "desc": "クロエを探し求めていた魔王レオンは、魔導王朝サリオンのエルメシアに協力を頼み、ルベリオスへと向かう。しかしそこでは、既にグランベルの軍勢が攻め入ろうとしていた。",
+                    "desc": "かつて共に異世界へとやってきたはずの大切な存在――クロエを探していた魔王レオン。魔導王朝サリオンのエルメシアに協力を頼んだ彼は、ルベリオスへと向かう。しかし、既にルベリオスはグランベルの軍勢によって戦地となっていた。洗脳された異世界人を相手に不殺の戦いを強いられるリムルと、実力を隠していたグランベルに翻弄されるヒナタ。さらには魔王ギィの配下が現れ、ディアブロは対処に向かうことに。",
                     "duration_seconds": 0,
                     "ep": 17,
                     "sort": 89,
@@ -204049,10 +204125,10 @@
                 },
                 {
                     "id": 1654621,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "西方動乱",
+                    "name_cn": "西方动乱",
                     "air_date": "2026-08-14",
-                    "desc": "",
+                    "desc": "北方から進軍する悪魔の軍勢によって西側諸国は大混乱に陥る。軍勢はイングラシア王国へと迫るが、そこにはリムルの命を受け評議会に派遣されたテスタロッサの姿があった。",
                     "duration_seconds": 0,
                     "ep": 18,
                     "sort": 90,
@@ -204061,8 +204137,8 @@
                 },
                 {
                     "id": 1654622,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "死と消失",
+                    "name_cn": "死亡与消失",
                     "air_date": "2026-08-21",
                     "desc": "",
                     "duration_seconds": 0,
@@ -204136,8 +204212,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 17,
-            "last_update": "2026-08-01T13:22:46+08:00",
+            "watched_eps": 18,
+            "last_update": "2026-08-16T13:30:37+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
@@ -213974,33 +214050,6 @@
                     "__dataclass__": "Character"
                 },
                 {
-                    "id": 64703,
-                    "name": "毒島桜子",
-                    "relation": "配角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/d4/f9/64703_crt_NnAKY.jpg?r=1783402943",
-                    "actor_ids": [
-                        35912
-                    ],
-                    "name_cn": "毒岛樱子",
-                    "summary": "青海女子大一年级，常与好友有纪和菜摘一起行动。因为某件事而开始与伊织产生因缘。自尊心高，但其实个性非常努力。\r\n\r\n[简介原文]\r\n青海女子大の一年生。仲の良いユキと菜摘と行動していることが多い。ある一件で伊織とは因縁が生まれてしまう。プライドが高いが、実は努力家。",
-                    "birth_year": null,
-                    "birth_month": null,
-                    "birth_day": null,
-                    "tags": [
-                        {
-                            "key": "简体中文名",
-                            "value": "毒岛樱子",
-                            "__dataclass__": "KeyValue"
-                        },
-                        {
-                            "key": "性别",
-                            "value": "女",
-                            "__dataclass__": "KeyValue"
-                        }
-                    ],
-                    "__dataclass__": "Character"
-                },
-                {
                     "id": 65747,
                     "name": "野島元",
                     "relation": "配角",
@@ -214667,6 +214716,33 @@
                         }
                     ],
                     "__dataclass__": "Character"
+                },
+                {
+                    "id": 219340,
+                    "name": "杉田",
+                    "relation": "闲角",
+                    "image_url": "",
+                    "actor_ids": [
+                        4513
+                    ],
+                    "name_cn": "杉田",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "杉田",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
                 }
             ],
             "relations": [
@@ -214774,7 +214850,7 @@
                     "name_cn": "助攻",
                     "air_date": "2026-08-10",
                     "desc": "愛菜が抱く伊織への想い。耕平はそれをどうにかアシストしてやりたい。自然な形で二人だけのシチュエーションを作ろうとしたり、会話を誘導しようとするのだが、うまくいかない。そんな不器用な恋愛模様が進んでいく中、愛菜は伊織と耕平が死の危機に瀕しているかもしれないという情報を得る。「股間が破裂して死ぬ」…！　エロに真剣な男たちの行動は、命に関わるからだった!?\r\n\r\n脚本:高松信司\r\n絵コンテ:ロマのフ比嘉\r\n演出:浅見隆司\r\n総作画監督: 阿部智之、WONWOO ANIMATION\r\n作画監督: KIM HYUN AH、RYU HYUN JIN、SIN YOO MI、WONWOO ANIMATION",
-                    "duration_seconds": 0,
+                    "duration_seconds": 1440,
                     "ep": 6,
                     "sort": 6,
                     "type": 0,
@@ -214782,11 +214858,11 @@
                 },
                 {
                     "id": 1704894,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "お母さん",
+                    "name_cn": "妈妈",
                     "air_date": "2026-08-17",
-                    "desc": "",
-                    "duration_seconds": 0,
+                    "desc": "パラオでのバイトもいよいよ最終日。イントラを目指す千紗だが、率直な物言いのせいでお客様とのコミュニケーションがうまくいっていなかった。母の紗耶華からは「不器用で無愛想」と言われ、千紗は感情的に大声を出してしまう。そんなとき予約がキャンセルになり、全員でダイビングができることになった。そこで千紗は、自分の本音を母にも伝える決心をする。しかし、それに対して母は…\r\n\r\n脚本:高松信司\r\n絵コンテ:稲垣隆行\r\n演出: 中野敬太、小出雅実\r\n総作画監督:阿部智之\r\n作画監督: 河野しおり、鈴木美音織",
+                    "duration_seconds": 1440,
                     "ep": 7,
                     "sort": 7,
                     "type": 0,
@@ -214798,7 +214874,7 @@
                     "name_cn": "",
                     "air_date": "2026-08-24",
                     "desc": "",
-                    "duration_seconds": 0,
+                    "duration_seconds": 1440,
                     "ep": 8,
                     "sort": 8,
                     "type": 0,
@@ -214810,7 +214886,7 @@
                     "name_cn": "",
                     "air_date": "2026-08-31",
                     "desc": "",
-                    "duration_seconds": 0,
+                    "duration_seconds": 1440,
                     "ep": 9,
                     "sort": 9,
                     "type": 0,
@@ -214822,7 +214898,7 @@
                     "name_cn": "",
                     "air_date": "2026-09-07",
                     "desc": "",
-                    "duration_seconds": 0,
+                    "duration_seconds": 1440,
                     "ep": 10,
                     "sort": 10,
                     "type": 0,
@@ -214834,7 +214910,7 @@
                     "name_cn": "",
                     "air_date": "2026-09-14",
                     "desc": "",
-                    "duration_seconds": 0,
+                    "duration_seconds": 1440,
                     "ep": 11,
                     "sort": 11,
                     "type": 0,
@@ -214846,7 +214922,7 @@
                     "name_cn": "",
                     "air_date": "2026-09-21",
                     "desc": "",
-                    "duration_seconds": 0,
+                    "duration_seconds": 1440,
                     "ep": 12,
                     "sort": 12,
                     "type": 0,
@@ -214857,8 +214933,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 5,
-            "last_update": "2026-08-06T00:12:12+08:00",
+            "watched_eps": 6,
+            "last_update": "2026-08-16T13:30:34+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
@@ -215837,7 +215913,7 @@
                     "id": 71625,
                     "name": "ロリヤ",
                     "relation": "配角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/be/52/71625_crt_0vKH0.jpg",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/be/52/71625_crt_bvnlg.jpg",
                     "actor_ids": [
                         3828
                     ],
@@ -216301,6 +216377,33 @@
                         }
                     ],
                     "__dataclass__": "Character"
+                },
+                {
+                    "id": 219572,
+                    "name": "クラム",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/1f/03/219572_crt_9IKCS.jpg",
+                    "actor_ids": [
+                        23432
+                    ],
+                    "name_cn": "克兰姆",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "克兰姆",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
                 }
             ],
             "relations": [
@@ -216434,10 +216537,10 @@
                 },
                 {
                     "id": 1699974,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "煉獄",
+                    "name_cn": "炼狱",
                     "air_date": "2026-08-19",
-                    "desc": "",
+                    "desc": "ソルディムでターニャ達は持ちこたえた。\r\nところが、肝心のアンドロメダ計画が頓挫。\r\n休暇を兼ねて帝都に戻ったターニャは、\r\nそこで、後方がなお勝利に執着する実情に驚愕することになる。",
                     "duration_seconds": 1420,
                     "ep": 7,
                     "sort": 7,
@@ -216509,8 +216612,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 4,
-            "last_update": "2026-08-09T13:16:00+08:00",
+            "watched_eps": 5,
+            "last_update": "2026-08-16T13:52:41+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
