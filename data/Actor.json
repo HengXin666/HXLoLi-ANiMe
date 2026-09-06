@@ -9952,5 +9952,12 @@
         "short_summary": "日本男演员、声优。隶属于剧团青年座，栃木县出身。",
         "image_url": "https://lain.bgm.tv/pic/crt/l/d8/69/10122_prsn_BYhdl.jpg",
         "__dataclass__": "Actor"
+    },
+    {
+        "id": 42928,
+        "name": "窪田等",
+        "short_summary": "窪田 等（くぼた ひとし、1951年3月27日 - ）は、日本の男性ナレーター、声優。山梨県出身。シグマ・セブン所属。",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/b4/26/42928_prsn_8Q6QQ.jpg",
+        "__dataclass__": "Actor"
     }
 ]

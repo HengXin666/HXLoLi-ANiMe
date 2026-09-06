@@ -30250,6 +30250,38 @@
                     "__dataclass__": "Character"
                 },
                 {
+                    "id": 91729,
+                    "name": "キシリカ・キシリス",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/dc/d7/91729_crt_15n2k.jpg?r=1614457334",
+                    "actor_ids": [
+                        4851
+                    ],
+                    "name_cn": "奇希莉卡·奇希里斯",
+                    "summary": "现在魔大陆仅存三位魔帝其中之一",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "奇希莉卡·奇希里斯",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "种族",
+                            "value": "魔族（不死魔族）",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
                     "id": 91730,
                     "name": "ペルギウス・ドーラ",
                     "relation": "配角",
@@ -30770,7 +30802,7 @@
                     "id": 213216,
                     "name": "ルーシー・グレイラット",
                     "relation": "配角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/69/f6/213216_crt_0rfMt.jpg",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/69/f6/213216_crt_6RAY9.jpg",
                     "actor_ids": [],
                     "name_cn": "露西·格雷拉特",
                     "summary": "ルーデウスとシルフィエットの間に生まれた娘。",
@@ -30957,6 +30989,33 @@
                     "birth_month": null,
                     "birth_day": null,
                     "tags": [
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 216557,
+                    "name": "ノコパラ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/1a/37/216557_crt_wpLrq.jpg",
+                    "actor_ids": [
+                        9541
+                    ],
+                    "name_cn": "诺克巴拉",
+                    "summary": "C級冒険者。ロキシーの昔の仲間。\r\nギルドにたむろし規約違反者を強請って小金をせしめている。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "诺克巴拉",
+                            "__dataclass__": "KeyValue"
+                        },
                         {
                             "key": "性别",
                             "value": "男",
@@ -31287,6 +31346,82 @@
                         }
                     ],
                     "__dataclass__": "Character"
+                },
+                {
+                    "id": 220565,
+                    "name": "贖罪のユルズ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/d2/9c/220565_crt_hxJA3.jpg",
+                    "actor_ids": [
+                        30858
+                    ],
+                    "name_cn": "赎罪的尤尔兹",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "赎罪的尤尔兹",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 220566,
+                    "name": "洞察のカロワンテ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/1d/11/220566_crt_FMf0L.jpg",
+                    "actor_ids": [
+                        7548
+                    ],
+                    "name_cn": "洞察的卡罗旺特",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "洞察的卡罗旺特",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 221152,
+                    "name": "ムーア",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/d4/b3/221152_crt_Y66yq.jpg",
+                    "actor_ids": [
+                        5218
+                    ],
+                    "name_cn": "穆亚",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "穆亚",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
                 }
             ],
             "relations": [
@@ -31336,15 +31471,6 @@
                     "__dataclass__": "Relation"
                 },
                 {
-                    "id": 683342,
-                    "name": "ひかり",
-                    "name_cn": "",
-                    "relation": "插入歌",
-                    "type": 3,
-                    "image_url": "https://lain.bgm.tv/pic/cover/l/72/e0/683342_j0U16.jpg",
-                    "__dataclass__": "Relation"
-                },
-                {
                     "id": 665977,
                     "name": "決意の唄",
                     "name_cn": "",
@@ -31354,12 +31480,30 @@
                     "__dataclass__": "Relation"
                 },
                 {
+                    "id": 683342,
+                    "name": "ひかり",
+                    "name_cn": "",
+                    "relation": "插入歌",
+                    "type": 3,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/72/e0/683342_j0U16.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
                     "id": 671396,
                     "name": "芽吹の唄",
                     "name_cn": "",
                     "relation": "片头曲",
                     "type": 3,
                     "image_url": "https://lain.bgm.tv/pic/cover/l/9f/20/671396_ickhb.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 697265,
+                    "name": "終焉の炎",
+                    "name_cn": "",
+                    "relation": "插入歌",
+                    "type": 3,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/21/6f/697265_buSA6.jpg",
                     "__dataclass__": "Relation"
                 },
                 {
@@ -31474,7 +31618,7 @@
                     "name": "慟哭",
                     "name_cn": "恸哭",
                     "air_date": "2026-08-23",
-                    "desc": "ケイオスブレイカーで突如吐血し、倒れたナナホシ。原因は7000年前に根絶したはずの病「ドライン病」だった。絶望するナナホシ。ルーデウスは彼女の力になりたいとペルギウスに申し出る。そして「ドライン病」を知っている可能性のある人物を探すことに…。",
+                    "desc": "在 Chaos Breaker 突然吐血倒下的七星，其病因是七千年前理应早已根绝的疾病──「杜莱病」。七星陷入了绝望。鲁迪乌斯向佩尔基乌斯开口，表示想为她尽一份力。于是，众人开始寻找可能知道「杜莱病」的人物……。\r\n\r\nケイオスブレイカーで突如吐血し、倒れたナナホシ。原因は7000年前に根絶したはずの病「ドライン病」だった。絶望するナナホシ。ルーデウスは彼女の力になりたいとペルギウスに申し出る。そして「ドライン病」を知っている可能性のある人物を探すことに…。",
                     "duration_seconds": 1420,
                     "ep": 9,
                     "sort": 9,
@@ -31483,10 +31627,10 @@
                 },
                 {
                     "id": 1704825,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "不死魔王との謁見",
+                    "name_cn": "晋见不死魔王",
                     "air_date": "2026-08-30",
-                    "desc": "",
+                    "desc": "为了打听「杜莱病」的治疗方法，鲁迪乌斯一行人传送到了魔大陆，找到了奇希莉卡。然而，盯上奇希莉卡的不死魔王阿托菲拉托菲派出亲卫队，将她连同鲁迪乌斯等人一并带走。与阿托菲拉托菲正面对峙的鲁迪乌斯，竟被她试图招揽进亲卫队……。\r\n\r\n「ドライン病」の治療手段を知るべく魔大陸に飛んだルーデウスたちは、キシリカを見つけ出した。しかし、キシリカを狙う不死魔王アトーフェラトーフェの親衛隊にキシリカと共に連れて行かれてしまう。アトーフェラトーフェと対峙したルーデウスは彼女の親衛隊へと誘われるが…。",
                     "duration_seconds": 1420,
                     "ep": 10,
                     "sort": 10,
@@ -31495,10 +31639,10 @@
                 },
                 {
                     "id": 1704826,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "ターニングポイント4",
+                    "name_cn": "转折点4",
                     "air_date": "2026-09-06",
-                    "desc": "",
+                    "desc": "アトーフェラトーフェの追撃を振り切り、「ドライン病」に効果があるとされるソーカス草を手に入れたルーデウスたち。果たしてナナホシの病気を治せるのか…!? そしてルーデウスが久しぶりの我が家に帰宅した夜、ヒトガミが現れ助言を行う。ルーデウスがその助言に従おうとすると、謎の人物が現れる――。",
                     "duration_seconds": 1420,
                     "ep": 11,
                     "sort": 11,
@@ -31546,8 +31690,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 9,
-            "last_update": "2026-08-23T13:16:50+08:00",
+            "watched_eps": 11,
+            "last_update": "2026-09-06T14:14:17+08:00",
             "comment": null,
             "tags": [
                 "异世界"
@@ -203642,7 +203786,7 @@
                     "id": 142563,
                     "name": "クロノア",
                     "relation": "配角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/f1/79/142563_crt_fGZ4z.jpg",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/f1/79/142563_crt_qNqE9.jpg",
                     "actor_ids": [
                         10601
                     ],
@@ -204181,7 +204325,7 @@
                     "name": "死と消失",
                     "name_cn": "死亡与消失",
                     "air_date": "2026-08-21",
-                    "desc": "グランベルの目的を見定めるため、剣を交えるリムルとレオン。一方、マリアと戦っていたルミナスは夜想宮廷の聖櫃に封印されていたものがなくなっていることに気づき……。",
+                    "desc": "グランベルの目的を見定めるため、剣を交えるリムルとレオン。一方、グランベルの相手をしていたヒナタは、底知れない技量を持つグランベルを倒すために本気を見せる。さらには聖櫃に封印されていたものを盗まれ激怒したルミナスがマリアを倒し、グランベルの前に現れる。激化する戦いの中、ヒナタに〝勇者〟について語りかけるグランベル。そして彼の放った攻撃はクロエに向かい……。",
                     "duration_seconds": 0,
                     "ep": 19,
                     "sort": 91,
@@ -204193,7 +204337,7 @@
                     "name": "勇者クロノア・前編",
                     "name_cn": "勇者克罗诺亚・前篇",
                     "air_date": "2026-08-28",
-                    "desc": "",
+                    "desc": "クロエを庇って命を落としたはずのヒナタ。しかし彼女の魂はクロエのユニークスキル『時間旅行』によって、共に2000年前の過去へとタイムリープしていた。みんなで生き残る未来を目指すというクロエ。さらにクロエは、同じ歴史を辿るために友達に協力してもらうと話す。そしてクロエが向かった先は、2000年前のルミナスの居城、夜薔薇宮だった。",
                     "duration_seconds": 0,
                     "ep": 20,
                     "sort": 92,
@@ -204202,10 +204346,10 @@
                 },
                 {
                     "id": 1654624,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "勇者クロノア・後編",
+                    "name_cn": "勇者克罗诺亚・后篇",
                     "air_date": "2026-09-04",
-                    "desc": "",
+                    "desc": "ルミナスと出会い、勇者クロノアとしての旅を始めたクロエとヒナタ。長い旅路の中で、クロノアは暴風竜に戦いを挑むことに。",
                     "duration_seconds": 0,
                     "ep": 21,
                     "sort": 93,
@@ -204214,8 +204358,8 @@
                 },
                 {
                     "id": 1654625,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "魂の在処",
+                    "name_cn": "灵魂的所在",
                     "air_date": "2026-09-11",
                     "desc": "",
                     "duration_seconds": 0,
@@ -204253,8 +204397,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 19,
-            "last_update": "2026-08-23T13:16:46+08:00",
+            "watched_eps": 21,
+            "last_update": "2026-09-06T14:14:37+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
@@ -213736,6 +213880,28 @@
             "total_episodes": 12,
             "characters": [
                 {
+                    "id": 10956,
+                    "name": "ナレーション",
+                    "relation": "旁白",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/01/01/10956_crt_5LR7z.jpg",
+                    "actor_ids": [
+                        42928
+                    ],
+                    "name_cn": "旁白",
+                    "summary": "戏剧角色背着台上其他剧中人对观众说的话。也指影视片中的解说词。说话者不出现在画面上，但直接以语言来介绍影片内容、交待剧情或发表议论，包括对白的使用。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "旁白",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
                     "id": 43535,
                     "name": "北原伊織",
                     "relation": "主角",
@@ -214085,6 +214251,33 @@
                         {
                             "key": "血型",
                             "value": "AB型",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 64703,
+                    "name": "毒島桜子",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/d4/f9/64703_crt_NnAKY.jpg?r=1783402943",
+                    "actor_ids": [
+                        35912
+                    ],
+                    "name_cn": "毒岛樱子",
+                    "summary": "青海女子大一年级，常与好友有纪和菜摘一起行动。因为某件事而开始与伊织产生因缘。自尊心高，但其实个性非常努力。\r\n\r\n[简介原文]\r\n青海女子大の一年生。仲の良いユキと菜摘と行動していることが多い。ある一件で伊織とは因縁が生まれてしまう。プライドが高いが、実は努力家。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "毒岛樱子",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -214445,6 +214638,33 @@
                     "__dataclass__": "Character"
                 },
                 {
+                    "id": 179100,
+                    "name": "右代宮永世",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/d9/6f/179100_crt_bo6lZ.jpg?r=1751984836",
+                    "actor_ids": [
+                        1096
+                    ],
+                    "name_cn": "右代宫永世",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "右代宫永世",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
                     "id": 205925,
                     "name": "古手川紗耶華",
                     "relation": "配角",
@@ -214707,7 +214927,7 @@
                 {
                     "id": 218697,
                     "name": "村中ゆりか",
-                    "relation": "闲角",
+                    "relation": "配角",
                     "image_url": "https://lain.bgm.tv/pic/crt/l/50/26/218697_crt_0Kum8.jpg",
                     "actor_ids": [
                         3965
@@ -214780,6 +215000,33 @@
                         {
                             "key": "性别",
                             "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 221260,
+                    "name": "ヴァーチャルアイドル SAKUYA",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/2e/3d/221260_crt_XphPh.jpg",
+                    "actor_ids": [
+                        67776
+                    ],
+                    "name_cn": "虚拟偶像 SAKUYA",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "虚拟偶像 SAKUYA",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -214923,10 +215170,10 @@
                 },
                 {
                     "id": 1704896,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "受難",
+                    "name_cn": "受难",
                     "air_date": "2026-08-31",
-                    "desc": "",
+                    "desc": "就活を意識し始めた先輩たちの姿に、代替わりを考え始める伊織。同じように相談事がある男どもで集まることになった。しかし、いつものバカ野郎どもから持ち込まれる相談は相変わらずカオスだった！ YouTuberになってチヤホヤされたい野島、VTuberにガチ恋する山本、ヤンデレ彼女に顎骨を砕かれかけ咄嗟にプロポーズしてしまう御手洗…。クズどもに次々と襲い掛かる「受難」の結末やいかに！\r\n\r\n脚本:高松信司\r\n絵コンテ:ワタナベシンイチ\r\n演出:浅見隆司\r\n総作画監督:阿部智之\r\n作画監督: 北條直明、杉本幸子、鵜池一馬、岩崎 亮、園田大勢",
                     "duration_seconds": 1440,
                     "ep": 9,
                     "sort": 9,
@@ -214935,10 +215182,10 @@
                 },
                 {
                     "id": 1704897,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "宝くじ",
+                    "name_cn": "彩券",
                     "air_date": "2026-09-07",
-                    "desc": "",
+                    "desc": "栗ご飯が食べたいという伊織の叫びを聞いて、秋の味覚を求めて栗拾いにやってきたPaB一行。しかし温泉で猿に服を盗まれ、男たちは安定の全裸姿に！　そこへ偶然ロケに来ていたアイドル・池越が巻き込まれ、なぜか全裸の先輩たちからバラエティの極意を学ぶことになる。一方の耕平はまたも池越に勘違いされ、全裸栗拾いを撮影される。のどかな栗拾いなのに、普通では終わらないのがPaBなのだ。\r\n\r\n脚本:高松信司\r\n絵コンテ:高本宣弘\r\n演出:門田英彦\r\n総作画監督:植田羊一\r\n作画監督: 牛島勇二、越智博之、Triple A",
                     "duration_seconds": 1440,
                     "ep": 10,
                     "sort": 10,
@@ -214974,8 +215221,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 7,
-            "last_update": "2026-08-23T13:16:47+08:00",
+            "watched_eps": 9,
+            "last_update": "2026-09-06T14:14:34+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
@@ -215789,6 +216036,33 @@
                     "__dataclass__": "Character"
                 },
                 {
+                    "id": 50685,
+                    "name": "アーデルハイト・フォン・シューゲル",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/27/d2/50685_crt_r99FR.jpg?r=1774698678",
+                    "actor_ids": [
+                        4167
+                    ],
+                    "name_cn": "阿德海特·冯·修格鲁",
+                    "summary": "帝国における魔導工学・概念術理学の大家にして、新型演算宝珠開発を行う帝国軍技術開発部の主任技師。技術を人間に合わせるのではなく、人間を技術に合わせようとする技術優先主義者として名を轟かせている。同業者が評して曰く、倫理と常識を研究力に置換した天才。名前で呼ぶと少し怒る。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "阿德海特·冯·修格鲁",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
                     "id": 51281,
                     "name": "マテウス・ヨハン・ヴァイス",
                     "relation": "配角",
@@ -216467,6 +216741,87 @@
                         }
                     ],
                     "__dataclass__": "Character"
+                },
+                {
+                    "id": 220776,
+                    "name": "ロメール",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/82/ce/220776_crt_pbOZd.jpg",
+                    "actor_ids": [
+                        5467
+                    ],
+                    "name_cn": "隆美尔",
+                    "summary": "中将。南方大陸派遣軍指揮官。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "隆美尔",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 220777,
+                    "name": "エルム",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/ac/a9/220777_crt_P1G13.jpg",
+                    "actor_ids": [
+                        31361
+                    ],
+                    "name_cn": "奥图·冯·艾尔姆",
+                    "summary": "少校。U-091舰长。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "奥图·冯·艾尔姆",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 220821,
+                    "name": "バルヒェット",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/4b/7f/220821_crt_gZgH9.jpg",
+                    "actor_ids": [
+                        47177
+                    ],
+                    "name_cn": "巴尔赫特",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "巴尔赫特",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
                 }
             ],
             "relations": [
@@ -216491,7 +216846,7 @@
                 {
                     "id": 658254,
                     "name": "ようじょしぇんき2",
-                    "name_cn": "",
+                    "name_cn": "迷你幼女战记2",
                     "relation": "衍生",
                     "type": 2,
                     "image_url": "https://lain.bgm.tv/pic/cover/l/6f/21/658254_D50aA.jpg",
@@ -216624,10 +216979,10 @@
                 },
                 {
                     "id": 1699976,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "観光旅行",
+                    "name_cn": "观光旅行",
                     "air_date": "2026-09-02",
-                    "desc": "",
+                    "desc": "南方大陸派遣軍の撤退を成功させた帝国は、\r\n協力を拒んだ同盟国イルドア王国に対し、嫌がらせを\r\n兼ねた表敬訪問を実行する。\r\n『厳正中立』を謳うイルドアの対応は如何に。\r\n\r\n脚本：猪原健太　\r\n絵コンテ：三浦慧、山本貴之　\r\n演出：三浦慧 \r\n総作画監督：細越裕治 \r\n作画監督：南井尚子、緒方歩惟、三好和也、東亮太、スタジオカフカ（井嶋けい子）、\r\nWUXI HUAXIAN ANIMATION PRODUCTION（Hong In Soo）",
                     "duration_seconds": 1420,
                     "ep": 9,
                     "sort": 9,
@@ -216636,10 +216991,10 @@
                 },
                 {
                     "id": 1699977,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "活路",
+                    "name_cn": "活路",
                     "air_date": "2026-09-09",
-                    "desc": "",
+                    "desc": "終わりの見えない総力戦が続く中、\r\n帝国上層部では戦争指導そのものが迷走を極めていた。\r\n危機感を抱いたルーデルドルフは、\r\n戦争終結の出口を独自に模索し始める。\r\n\r\n脚本：猪原健太　\r\n絵コンテ：松原聡　\r\n演出：松原聡 \r\n総作画監督：細越裕治 \r\n作画監督：三島詠子、三好和也、中山見都美、倉員千晶、ANIMETIX（oz-art）",
                     "duration_seconds": 1420,
                     "ep": 10,
                     "sort": 10,
@@ -216675,8 +217030,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 6,
-            "last_update": "2026-08-23T13:37:01+08:00",
+            "watched_eps": 7,
+            "last_update": "2026-09-06T14:35:01+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
@@ -218409,6 +218764,805 @@
             "watch_status": 1,
             "watched_eps": 0,
             "last_update": "2026-08-08T23:47:01+08:00",
+            "comment": null,
+            "tags": [],
+            "__dataclass__": "UserStatus"
+        },
+        "__dataclass__": "ANiMeRecord"
+    },
+    {
+        "anime_data": {
+            "id": 633836,
+            "name": "Re:ゼロから始める異世界生活 4th season 奪還編",
+            "name_cn": "Re：从零开始的异世界生活 第四季 夺还篇",
+            "short_summary": "在水门都市朴利斯提拉的死战中，昴等人虽然勉强取得胜利，但付出的代价，却过于沉重。因「暴食」权能而陷入沉睡的雷姆，被夺走记忆的库珥修，以及，被夺去名字的由里乌斯。\r\n为了寻找拯救他们的线索，昴得知了一位据说能看透一切、拥有无尽知识的存在——「",
+            "score": 7.9,
+            "image_url": "https://lain.bgm.tv/pic/cover/l/43/ca/633836_ql0f3.jpg",
+            "eps": 8,
+            "date": "2026-08-12",
+            "summary": "在水门都市朴利斯提拉的死战中，昴等人虽然勉强取得胜利，但付出的代价，却过于沉重。因「暴食」权能而陷入沉睡的雷姆，被夺走记忆的库珥修，以及，被夺去名字的由里乌斯。\r\n为了寻找拯救他们的线索，昴得知了一位据说能看透一切、拥有无尽知识的存在——「贤者」夏乌拉。\r\n下一个目的地，是贤者所居住的「普莱迪斯监视塔」。那是一座矗立于大砂漠「奥吉拉沙丘」最深处的最果之塔，就连最强的「剑圣」莱因哈鲁特，也未曾成功攻略。\r\n狂暴的自然——\r\n未知的魔兽——\r\n以及，超越想象的威胁接连袭来。\r\n为了夺回一切——\r\n少年与伙伴们，赌上性命的旅程，就此展开。\r\n\r\n\r\n[简介原文]\r\n水門都市プリステラの死闘で辛くも勝利を収めたスバルたちだったが、その代償はあまりに大きかった。“暴食“の権能によって眠り続けるレム、記憶を奪われたクルシュ、そして名前を奪われてしまったユリウス。\r\n彼らを救う手がかりを求める中、スバルは全てを見通し、あらゆる知識を持つと言われる『賢者』シャウラの存在を知る。\r\n次の目的地は賢者の住まう「プレアデス監視塔」──そこは、最強の『剣聖』ラインハルトですら攻略できなかった大砂漠「アウグリア砂丘」にそびえ立つ最果ての塔。\r\n猛威を振るう自然、未知なる魔獣、そして想像を絶する脅威が立ちはだかる。仲間と共に、すべてを取り戻すため、命を懸けた少年の旅路が始まる──",
+            "total_episodes": 8,
+            "characters": [
+                {
+                    "id": 35607,
+                    "name": "ナツキ・スバル",
+                    "relation": "主角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/f3/e4/35607_crt_zL7e7.jpg?r=1587941914",
+                    "actor_ids": [
+                        13825
+                    ],
+                    "name_cn": "菜月昴",
+                    "summary": "无知又无能且无力又无谋，在各方面都有所欠缺的主角。突然被召唤到异世界，在莫名其妙的状况中备受折磨。凭藉无所畏惧的个性及天生的厚脸皮，虽然在逆境中会叫苦示弱，仍然挺身面对残酷的命运。\r\n\r\n無知無能にして無力無謀と四拍子欠けた主人公。突如として異世界に召喚され、訳の分からない状況に翻弄される。物怖じしない性質と持ち前の図々しさで、逆境に弱音を吐きつつも過酷な運命に立ち向かっていく。\r\n\r\n誕生日は四月一日。誕生花は「カスミソウ」で、花言葉は「清らかな心」です。",
+                    "birth_year": null,
+                    "birth_month": 4,
+                    "birth_day": 1,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "菜月昴",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "4月1日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "B型",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "173cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "70kg",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 35608,
+                    "name": "エミリア",
+                    "relation": "主角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/86/d4/35608_crt_nTNp7.jpg?r=1766251180",
+                    "actor_ids": [
+                        17491
+                    ],
+                    "name_cn": "艾米莉娅",
+                    "summary": "拥有与过去毁灭世界的「嫉妒魔女」相同的银发及紫眼，是位美丽的半精灵少女。虽然性格善良热心且很会照顾人，但不知为何本人却不愿坦率承认这一点。\r\n身边总是跟着外形像小猫的精灵帕克。是露格尼卡王国下一任国王的候选人之一。\r\n\r\nかつて世界を滅ぼしかけた『嫉妬の魔女』と同じ、銀髪に紫紺の瞳を持つ美しいハーフエルフの少女。お人好しで面倒見の良い性格だが、当人はなぜかそれを素直に認めようとしない。小さな猫の姿をした精霊のパックをお供に連れている。\r\nルグニカ王国の次代の王を決める王選の候補者の一人。",
+                    "birth_year": null,
+                    "birth_month": 9,
+                    "birth_day": 23,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "艾米莉娅",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "9月23日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "164cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "星座",
+                            "value": "天秤座",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 35612,
+                    "name": "エルザ・グランヒルテ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/8c/17/35612_crt_KvmO7.jpg",
+                    "actor_ids": [
+                        3827
+                    ],
+                    "name_cn": "艾尔莎·葛兰希尔黛",
+                    "summary": "「ああ、今のはとても、感じたわ」\r\n異世界では珍しい黒髪を長く伸ばした、艶めいた雰囲気をまとう美女。\r\nグラマラスな肢体を大胆な衣装に包み、惜しげもなく周囲に艶然とした態度を振りまいている。\r\nただ、おっとりとした顔つきと穏やかな口調と裏腹に、瞳の奥には商売女とは一線を画した闇を孕んでいる。\r\n何やら盗品蔵に用があり、そこでフェルトと落ち合う約束を交わしているらしい。",
+                    "birth_year": null,
+                    "birth_month": 4,
+                    "birth_day": 29,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "艾尔莎·葛兰希尔黛",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "4月29日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "168cm",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 35614,
+                    "name": "ラム",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/93/f9/35614_crt_no26z.jpg?r=1611899533",
+                    "actor_ids": [
+                        9096
+                    ],
+                    "name_cn": "拉姆",
+                    "summary": "雷姆的双胞胎姐姐，虽然与雷姆一样在罗兹瓦尔宅邸担任女仆，却无论煮饭、洗衣、裁缝、打扫，所有能力值都比妹妹还要低。虽然过去身为鬼族的神童，拥有无人能比的力量，如今失去了角，也一并失去了那份力量。\r\n\r\nレムの双子の姉で、レムと同じくロズワールの屋敷でメイドを務めているが、炊事・洗濯・裁縫・掃除、全てにおいて妹に劣るステータスの持ち主。かつては鬼族の神童として比類なき力を有していたが、角を失った現在、その力は失われている。",
+                    "birth_year": null,
+                    "birth_month": 2,
+                    "birth_day": 2,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "拉姆",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "2月2日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "154cm",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 35615,
+                    "name": "レム",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/b4/42/35615_crt_O7WVP.jpg",
+                    "actor_ids": [
+                        10868
+                    ],
+                    "name_cn": "蕾姆",
+                    "summary": "在罗兹瓦尔宅邸一手包办所有杂事的女仆少女。\r\n宅邸能够好好维持机能，可以说全都是拜她所赐。\r\n身为在亚人中力量特别强的鬼族的幸存者，十分敬爱双胞胎姐姐拉姆。\r\n\r\nロズワールの屋敷で雑務全般を一手に担うメイドの少女。\r\n屋敷の機能が維持されているのは、彼女の有能さが全てといっていい。亜人の中でも特に強い力を持つ鬼族の生き残りで、双子の姉であるラムを敬愛している。",
+                    "birth_year": null,
+                    "birth_month": 2,
+                    "birth_day": 2,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "蕾姆",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "2月2日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "154cm",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 35616,
+                    "name": "ベアトリス",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/48/15/35616_crt_ypn8V.jpg?r=1611899402",
+                    "actor_ids": [
+                        4625
+                    ],
+                    "name_cn": "碧翠丝",
+                    "summary": "凭着隐藏门口的能力在罗兹瓦尔府邸充当禁书库的管理员，给人十分仙气和少女的印象。\r\n 是强欲魔女制造的精灵，称强欲魔女为母亲。\r\n\r\n名字取自主小行星带的小行星“Beatrix”，名源为但丁《神曲》与《新生》中的角色。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "碧翠丝",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "140cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "広辞苑よりは重い",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "口癖",
+                            "value": "かしら、なのよ",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 35620,
+                    "name": "アナスタシア・ホーシン",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/06/6d/35620_crt_hlTnw.jpg?r=1607417237",
+                    "actor_ids": [
+                        4263
+                    ],
+                    "name_cn": "安娜塔西亚·合辛",
+                    "summary": "「安心して、ウチのものになってくれてええよ？」\r\n薄紫の柔らかな髪と、顔立ちに幼さを残した白いドレスが可憐な少女。\r\n隣国カララギの大商会を率いる若き商人であり、ルグニカ王国王位候補者の一人。\r\n果てなき強欲と向上心の持ち主であり、王国を手中に収めるために王選に参加した。\r\n『最優』とされる騎士ユリウスを連れ、己の才覚だけで王位に上り詰めることを狙う。\r\n私兵として傭兵団を保有しているが、傭兵団の人選には彼女の趣味が反映されている。",
+                    "birth_year": null,
+                    "birth_month": 3,
+                    "birth_day": 10,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "安娜塔西亚·合辛",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "3月10日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "155cm",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 35621,
+                    "name": "ユリウス・ユークリウス",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/b3/63/35621_crt_DOoUl.jpg?r=1607417158",
+                    "actor_ids": [
+                        5872
+                    ],
+                    "name_cn": "由里乌斯·尤克历乌斯",
+                    "summary": "「君はあの方に、相応しくない」\r\n整った顔立ちに優雅な振舞い、高貴な生まれに確かな地位を持つ優れた騎士。\r\n近衛騎士団に所属し、数ある騎士の中でも『最優の騎士』とされる優秀な人物。\r\n剣技・魔法の技量に優れ、他の騎士たちの信頼も厚い、王国に忠節を誓う美丈夫。\r\nアナスタシアの騎士となり、王選へ臨む主や相争う他の候補者に敬意を払っている。\r\nただし、王国の剣を自任する彼の意思は、立場を弁えない身の程知らずに容赦しない。\r\n\r\n誕生日７月７日、誕生花は「睡蓮」で、花言葉は「清らかな心」です。",
+                    "birth_year": null,
+                    "birth_month": 7,
+                    "birth_day": 7,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "由里乌斯·尤克历乌斯",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "7月7日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "179cm",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 41153,
+                    "name": "メィリィ・ポートルート",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/e1/ba/41153_crt_FF8JZ.jpg?r=1607640956",
+                    "actor_ids": [
+                        14259
+                    ],
+                    "name_cn": "梅莉·波特鲁特",
+                    "summary": "曾在阿拉姆村操控魔兽沃尔加姆，以诅咒引起骚动的少女。\r\n其真实身份是与艾尔莎情同姐妹的暗杀者，拥有“魔兽使者”的称号。\r\n\r\nアーラム村で魔獣・ウルガルムを操り、呪いによる騒動を引き起こした少女。\r\nその正体はエルザと姉妹のように親しい、『魔獣使い』の異名を持つ暗殺者。",
+                    "birth_year": null,
+                    "birth_month": 10,
+                    "birth_day": 4,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "梅莉·波特鲁特",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "10月4日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "145cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "加护",
+                            "value": "魔操の加護",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "喜欢的东西",
+                            "value": "ぬいぐるみ",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "讨厌的东西",
+                            "value": "ピーマル、予定が崩れること、髪が乱れること",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 46445,
+                    "name": "パトラッシュ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/66/b3/46445_crt_o5HGW.jpg?r=1503760559",
+                    "actor_ids": [],
+                    "name_cn": "帕特拉修",
+                    "summary": "白鯨討伐の際に、クルシュより送られた漆黒の地竜。ダイアナ種と呼ばれ優秀だが扱いにくい。気位が高いが、何故かスバルにだけは懐いており、その献身によって幾度となく窮地を救われている。性別は雌。スバルへの態度やオットーの通訳によると、クールで姉御肌な性格。",
+                    "birth_year": null,
+                    "birth_month": 4,
+                    "birth_day": 15,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "帕特拉修",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "4月15日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身长",
+                            "value": "200公分",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "种族",
+                            "value": "ダイアナ種",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 85419,
+                    "name": "ルイ・アルネブ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/15/46/85419_crt_W9BZO.jpg?r=1607643041",
+                    "actor_ids": [
+                        27194
+                    ],
+                    "name_cn": "路伊·阿尔尼普",
+                    "summary": "魔女教の幹部である大罪司教の一人。\r\n第三の『暴食』担当。\r\n子供っぽく奔放なライやロイとは異なり、達観した物言いと空虚な雰囲気を纏う。愛らしい天使のような風貌の少女だがその本質は悪辣で、ときに二人以上の邪悪さを感じさせる存在。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "路伊·阿尔尼普",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "别号",
+                            "value": "暴食司教/『飽食』",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "发色",
+                            "value": "金髮",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "瞳色",
+                            "value": "藍瞳",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "活动范围",
+                            "value": "記憶的迴廊",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "所属团体",
+                            "value": "魔女教",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 85420,
+                    "name": "ライ・バテンカイトス",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/6f/2b/85420_crt_C0Dug.jpg",
+                    "actor_ids": [
+                        7548
+                    ],
+                    "name_cn": "莱伊·巴登凯托斯",
+                    "summary": "魔女教の幹部である大罪司教の一人。『暴食』担当。見た目は無害な子供のように見えるが、その言動の全ては食への異常とも言える執着に支配されており、常にテンションが高い。\r\n他人をおちょくるような飄々とした態度が目立ち、どんな事態に陥っても自らのペースを崩すことはない。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "莱伊·巴登凯托斯",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "别号",
+                            "value": "暴食担当、最强最弱",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "发色",
+                            "value": "棕髮",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "瞳色",
+                            "value": "綠瞳",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "所属团体",
+                            "value": "魔女教",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "个人状态",
+                            "value": "魔女教『暴食』·『美食家』",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 163869,
+                    "name": "カペラ・エメラダ・ルグニカ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/9c/bb/163869_crt_29EFH.jpg",
+                    "actor_ids": [
+                        5076
+                    ],
+                    "name_cn": "卡珮菈·爱梅拉妲·露格尼卡",
+                    "summary": "魔女教の幹部である大罪司教の一人。\r\n『色欲』担当。金色の髪色、紅の瞳を持つ少女で、五十年以上前に実在したルグニカ王族の一人と同じ名前を名乗っている。\r\n残忍な性格と下品極まりない口調が特徴的で、人間の尊厳と価値観を踏みにじる怪物。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "卡珮菈·爱梅拉妲·露格尼卡",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 176486,
+                    "name": "シャウラ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/3f/38/176486_crt_pBbsm.jpg?r=1751771655",
+                    "actor_ids": [
+                        34397
+                    ],
+                    "name_cn": "夏乌拉",
+                    "summary": "位于无人踏足的大沙漠——奥吉拉沙丘最深处，普莱迪斯监视塔的星星守卫。\r\n拥有如蝎子般的外貌特征，言行举止充满谜团。\r\n身为拯救世界的三英杰之一——「贤者」夏乌拉，传说中本应是名青年。而她的真面目，究竟是……\r\n\r\n前人未到の大砂漠・アウグリア砂丘の最奥にあると言われるプレアデス監視塔の星番。\r\n蠍のような特徴を持つ奇抜な外見をしており、その言動は謎に包まれている。\r\n世界を救った三英傑の一人『賢者』シャウラは青年として伝えられているのだが、彼女の正体は果たして......。\r\n“シャウラ”という名前の由来は蠍座の二等星、シャウラ。星名の意味は「針」。",
+                    "birth_year": null,
+                    "birth_month": 12,
+                    "birth_day": 20,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "夏乌拉",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "12月20日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "170cm",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 190904,
+                    "name": "レイド・アストレア",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/30/b4/190904_crt_gVc6W.jpg",
+                    "actor_ids": [
+                        4513
+                    ],
+                    "name_cn": "雷伊德·阿斯特雷亚",
+                    "summary": "约在400年前活跃的初代「剑圣」，同时也是阿斯特雷亚家的始祖。\r\n被历史传颂为拥有无与伦比的剑术天赋的最强剑士。\r\n身为拯救世界的三英杰之一，其名号在露格尼卡王国广为人知，更是无数剑士向往的目标。\r\n据传个性豪迈，作风不羁。\r\n\r\n約400年前に活躍した初代『剣聖』にして、アストレア家の始祖。\r\n歴史上、比類なき剣才を誇った最強の剣士と語り継がれる。\r\nその名はルグニカ王国において世界を救った三英傑の一人として知られ、多くの剣士たちの目標となっている。\r\n豪放で規格外な人物だったとも伝えられる。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "雷伊德·阿斯特雷亚",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 204467,
+                    "name": "ロイ・アルファルド",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/70/cc/204467_crt_P6P6F.jpg",
+                    "actor_ids": [
+                        7548
+                    ],
+                    "name_cn": "罗伊·爱尔法德",
+                    "summary": "魔女教の幹部である大罪司教の一人。\r\n『暴食』担当。ライ同様に名前と記憶を喰らう。笑顔の裏に異常な食欲と残酷さを秘め、全てを根こそぎ喰い尽くす満腹感優先の『悪食』を自称。\r\n自らの幸せのために他人の人生を躊躇いなく踏み躙る外道。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "罗伊·爱尔法德",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "150cm",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 208677,
+                    "name": "花魁熊",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/16/2a/208677_crt_k39FT.jpg",
+                    "actor_ids": [
+                        17758
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [],
+                    "__dataclass__": "Character"
+                }
+            ],
+            "relations": [
+                {
+                    "id": 121927,
+                    "name": "Re:ゼロから始める異世界生活",
+                    "name_cn": "Re：从零开始的异世界生活",
+                    "relation": "书籍",
+                    "type": 1,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/1e/0e/121927_2bGf8.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 547888,
+                    "name": "Re:ゼロから始める異世界生活 4th season 喪失編",
+                    "name_cn": "Re：从零开始的异世界生活 第四季 丧失篇",
+                    "relation": "前传",
+                    "type": 2,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/8e/70/547888_46dnk.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 638494,
+                    "name": "Re:ゼロから始める休憩時間 4th season",
+                    "name_cn": "Re：从零开始的休息时间4",
+                    "relation": "衍生",
+                    "type": 2,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/66/a4/638494_E7Ieh.jpg",
+                    "__dataclass__": "Relation"
+                }
+            ],
+            "episodes": [
+                {
+                    "id": 1656858,
+                    "name": "これからの話",
+                    "name_cn": "接下来的事",
+                    "air_date": "2026-08-12",
+                    "desc": "被托付、受到信任、被原谅，也承载期盼。昴接下了爱蜜莉雅等人的心意，决心以「菜月昴」的身份战斗。从「死亡回归」中醒来后，他第一时间便坦承自己失去了记忆，并宣言要救回雷姆和自己的记忆，与所有人一起平安回去。在取得拉姆的协助后，昴动身前往塔内的螺旋楼梯。那里正是他两度被人从背后推落摔死的命案现场。\r\n\r\n託され、信じて、赦して、願われた。エミリアたちの想いを受け取り『ナツキ・スバル』として戦う決意をしたスバルは、『死に戻り』から目覚めると真っ先に記憶喪失になったと打ち明ける。レムのことも自分の記憶も取り戻し、全員で無事に帰還する。その宣言でラムからの協力も取り付けると、塔内の螺旋階段へと向かうスバル。そこは二度、背中を押されて落下死した殺人現場に他ならなかった。\r\n\r\n脚本：梅原英司　\r\n絵コンテ：頂 真司、篠原正寛　\r\n演出：中津 環\r\n総作画監督：三島千枝\r\n作画監督：三浦 瞳、杉浦圭一、滝吾郎",
+                    "duration_seconds": 1420,
+                    "ep": 1,
+                    "sort": 78,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1656859,
+                    "name": "立ちなさい",
+                    "name_cn": "站起来",
+                    "air_date": "2026-08-19",
+                    "desc": "昴等人接纳梅莉成为伙伴后，他们假设昴会失忆也是监视塔造成的，因此决定优先攻略「试验」。在前往书库寻找雷伊德本人的《死者之书》作为攻略雷伊德的秘笈的途中，昴眼见朱利斯迟迟无法恢复状态，于是和他交谈。之后，当昴阅读找到的《死者之书》时——出现在眼前的，是灵魂的最终归所、欧德‧拉格纳的摇篮。在记忆回廊中，一名少女现身迎接昴。\r\n\r\nメィリィを仲間として迎え入れたスバルたちは、スバルの記憶喪失も監視塔が原因だと仮定し、『試験』のクリア優先へと方針を定める。レイド攻略の極意書としてレイド本人の『死者の書』を探しに書庫へ行く途中、調子を取り戻せずにいるユリウスと言葉を交わすスバル。その後、発見された『死者の書』を読むと――目の前に広がったのは、魂の終着地点、オド・ラグナの揺り籠。記憶の回廊で、少女がスバルを出迎える。\r\n\r\n脚本：横谷昌宏　\r\n絵コンテ：篠原正寛　\r\n演出：正木陽南子\r\n総作画監督：佐川 遥\r\n作画監督：永吉隆志、富永武志、佐川遥、鳥之海恋子、平松伸行、西川莉央、宮部唯、Seo Jeong-ha",
+                    "duration_seconds": 1739,
+                    "ep": 2,
+                    "sort": 79,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1656860,
+                    "name": "五つの障害",
+                    "name_cn": "五个障碍",
+                    "air_date": "2026-08-26",
+                    "desc": "从记忆回廊回来后，昴得知了塔内出现异状的消息。奥吉拉沙丘的魔兽大军正在围攻监视塔。昴把防卫的工作交给夏乌拉和梅莉，接着和拉姆会合，从拉姆口中得知她们遇到了「暴食」大罪司教，并且有个「不认识的银发女子」正在和他战斗──关于爱蜜莉雅记忆的缺损，以及莱伊‧巴登凯托斯的出现。与露伊诀别之后，「暴食」的攻势猛烈袭来。\r\n\r\n記憶の回廊から帰還したスバルに届いたのは、塔内での異変の報せ。アウグリア砂丘の魔獣の軍勢が一斉に監視塔へと押し寄せていた。防衛をシャウラとメィリィに託してラムと合流したスバルたちだが、ラムより『暴食』の大罪司教と出くわしたが「銀髪の知らない女」が応戦していると告げられる。――エミリアの記憶の欠落、そしてライ・バテンカイトスの出現。ルイとの決別を発端とした『暴食』の猛威が襲い来る。\r\n\r\n脚本：中村能子　\r\n絵コンテ：頂 真司　\r\n演出：川部真也\r\n総作画監督：野田康行、三島千枝\r\n作画監督：Christina、三浦 瞳、山内大輔、村田大亮、杉浦圭一",
+                    "duration_seconds": 1420,
+                    "ep": 3,
+                    "sort": 80,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1656861,
+                    "name": "一途な星",
+                    "name_cn": "专一之星",
+                    "air_date": "2026-09-02",
+                    "desc": "雷伊德没有留在第二层的试验会场，而是在塔内自由阔步。原来是因为雷伊德的灵魂占据了剩下的「暴食」罗伊・爱尔法德的肉体。魔兽大进击、两个大罪司教、突然出现的大蝎子、以及猛然窜出的漆黑身影。为了跨越这五个障碍，昴在「死亡回归」后追问夏乌拉隐瞒的「试验」规则──接着，昴展开了攻略普莱迪斯监视塔的尝「死」错误。\r\n\r\n二層の試験会場に留まらず、塔内を自由に闊歩するレイド。それは残る『暴食』のロイ・アルファルドの肉体をレイドの魂が乗っ取ったせいだった。魔獣のスタンピード。二人の大罪司教。突如出現した大サソリ。そして突きのぼる漆黒の影。五つの障害を超えるため、『死に戻り』したスバルはシャウラが秘める『試験』のルールを問い詰める。――そして、プレアデス監視塔を攻略するための『死』行錯誤が始まる。\r\n\r\n脚本：梅原英司　絵コンテ：原英和、小島正幸　演出：原英和\r\n総作画監督：佐川遥、野田康行\r\n作画監督：宮部唯、永吉隆志、持丸彰親、富永武志、佐川遥、村田大亮、三浦瞳、平松伸行、菊池隼也、Seo Jeong-ha、\r\n（RACRAFT Light Nest Studio）Mooseky、（RACRAFT）GrandGuerrilla",
+                    "duration_seconds": 1420,
+                    "ep": 4,
+                    "sort": 81,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1656862,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-09-09",
+                    "desc": "",
+                    "duration_seconds": 1420,
+                    "ep": 5,
+                    "sort": 82,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1656863,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-09-16",
+                    "desc": "",
+                    "duration_seconds": 1420,
+                    "ep": 6,
+                    "sort": 83,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1656864,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-09-23",
+                    "desc": "",
+                    "duration_seconds": 1420,
+                    "ep": 7,
+                    "sort": 84,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                },
+                {
+                    "id": 1656865,
+                    "name": "",
+                    "name_cn": "",
+                    "air_date": "2026-09-30",
+                    "desc": "",
+                    "duration_seconds": 1420,
+                    "ep": 8,
+                    "sort": 85,
+                    "type": 0,
+                    "__dataclass__": "Episode"
+                }
+            ],
+            "__dataclass__": "ANiMeData"
+        },
+        "user_status": {
+            "watch_status": 3,
+            "watched_eps": 4,
+            "last_update": "2026-09-06T14:14:58+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
