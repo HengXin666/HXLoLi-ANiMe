@@ -386,8 +386,12 @@ class Api:
             print("响应内容:", response.text)
 
 
+# Agent Notes: HXLoLi-ANiMe 接入 Agent Notes v2
+# 
 def load_from_json() -> Api:
-    """从 json 文件中加载数据
+    """
+    .agents/notes/implemented/process/2026-10-08-repository-agent-notes-v2-adoption.md
+从 json 文件中加载数据
     运行路径, 应该在 py/anime 下
     如果文件不存在, 则返回一个空的 Api 对象
     """
