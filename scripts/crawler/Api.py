@@ -45,6 +45,13 @@ HEADERS = {
 # 带请求频率限制的 api 请求
 apiReq = ApiReqRateLimiter(119)
 
+# 未完结的收藏状态: 这些番每次运行都完整刷新
+UNFINISHED_WATCH_STATUS = (
+    WatchStatus.WANT_TO_WATCH,
+    WatchStatus.WATCHING,
+    WatchStatus.ON_HOLD,
+)
+
 
 class Api:
     def __init__(
@@ -89,13 +96,18 @@ class Api:
         self._get_user_watching_anime(username, _task)
 
     def _refresh_anime_full(self, idx: int) -> None:
+        """完整刷新一条记录: 先把各接口拉到临时列表, 成功才替换, 失败保留旧数据"""
         record = self._anime_record[idx]
-        record.anime_data.characters.clear()
-        record.anime_data.relations.clear()
-        record.anime_data.episodes.clear()
-        self._get_anime_characters(idx)
-        self._get_relations(idx)
-        self._get_episodes(idx)
+        self._get_subjects_info(record.anime_data.id, record)
+        characters = self._get_anime_characters(idx)
+        if characters is not None:
+            record.anime_data.characters = characters
+        relations = self._get_relations(idx)
+        if relations is not None:
+            record.anime_data.relations = relations
+        episodes = self._get_episodes(idx)
+        if episodes is not None:
+            record.anime_data.episodes = episodes
 
     def download_all_img(self) -> None:
         def _download_img_thread(queue: Queue[Tuple[str, int, str]]) -> None:
@@ -133,25 +145,83 @@ class Api:
 
     def _get_subjects_info(self, id: int, record_ref: ANiMeRecord) -> None:
         url = f"{BASE_URL}/v0/subjects/{id}"
+        response = None
         try:
             response = apiReq.get(url, headers=HEADERS)
             response.raise_for_status()
-            # 补充更新
+            # 补充更新: 全部解析成功后再写回, 避免半截覆盖
             data = response.json()
-            record_ref.anime_data.name = data["name"]
-            record_ref.anime_data.name_cn = data["name_cn"]
-            record_ref.anime_data.summary = data["summary"]
-            record_ref.anime_data.eps = data["eps"]
-            record_ref.anime_data.total_episodes = data["total_episodes"]
-            record_ref.anime_data.date = data["date"]
+            fields = {
+                "name": data["name"],
+                "name_cn": data["name_cn"],
+                "summary": data["summary"],
+                "eps": data["eps"],
+                "total_episodes": data["total_episodes"],
+                "date": data["date"],
+            }
+            score = (data.get("rating") or {}).get("score")
+            if score is not None:
+                fields["score"] = score
+            image_url = (data.get("images") or {}).get("large")
+            if image_url:
+                fields["image_url"] = image_url
+            for attr, value in fields.items():
+                if value is not None:
+                    setattr(record_ref.anime_data, attr, value)
         except requests.exceptions.RequestException as e:
-            description: str = response.json().get("description", "")
+            try:
+                description: str = response.json().get("description", "")
+            except Exception:
+                description = ""
             if description.startswith("offset"):
                 return
             print(f"获取番剧信息失败: {e}")
+        except KeyError as e:
+            print(f"番剧 {id} 信息缺少字段: {e}")
         except json.JSONDecodeError:
             print("解析番剧信息响应失败, 内容可能不是有效的JSON。")
             print("响应内容:", response.text)
+
+    @staticmethod
+    def _sync_subject_brief(record: ANiMeRecord, subject: dict) -> None:
+        """用收藏列表自带的 subject 摘要同步已有记录的轻量字段 (零额外请求)"""
+        data = record.anime_data
+        for attr, key in (
+            ("name", "name"),
+            ("name_cn", "name_cn"),
+            ("short_summary", "short_summary"),
+            ("score", "score"),
+            ("eps", "eps"),
+            ("date", "date"),
+        ):
+            value = subject.get(key)
+            if value is not None:
+                setattr(data, attr, value)
+        image_url = (subject.get("images") or {}).get("large")
+        if image_url:
+            data.image_url = image_url
+
+    # Agent Notes: 已有番剧的条目级数据按闸门刷新, 先拉后换
+    # .agents/notes/implemented/bug-fix/2026-11-01-anime-subject-refresh.md
+    @staticmethod
+    def _needs_full_refresh(record: ANiMeRecord, subject: dict) -> bool:
+        """已有记录是否需要完整刷新 (条目信息 + 角色 + 关联 + 剧集)
+        用户收藏 updated_at 变化由调用方单独判定, 这里只看番剧侧:
+        - 未完结状态: 想看 / 在看 / 搁置
+        - 数据不全: eps 或 total_episodes 为 0, 剧集数少于 eps, 或本地 eps 与线上不一致
+        """
+        data = record.anime_data
+        status = record.user_status.watch_status
+        if not isinstance(status, WatchStatus):
+            status = WatchStatus(status)
+        if status in UNFINISHED_WATCH_STATUS:
+            return True
+        if not data.eps or not data.total_episodes:
+            return True
+        if len(data.episodes) < data.eps:
+            return True
+        subject_eps = subject.get("eps")
+        return subject_eps is not None and subject_eps != data.eps
 
     def _get_user_watching_anime(self, username: str, lambda_func: Callable) -> None:
         url = f"{BASE_URL}/v0/users/{username}/collections"
@@ -172,6 +242,7 @@ class Api:
                 for it in data:
                     if int(it["subject_id"]) in self._record_map:
                         ref = self._record_map[int(it["subject_id"])]
+                        user_changed = ref.user_status.last_update != it["updated_at"]
                         if ref.user_status.watch_status != WatchStatus(it["type"]):
                             ref.user_status.watch_status = WatchStatus(it["type"])
 
@@ -184,9 +255,17 @@ class Api:
                         if ref.user_status.tags != it["tags"]:
                             ref.user_status.tags = it["tags"]
 
-                        if ref.user_status.last_update != it["updated_at"]:
+                        # 闸门在同步轻量字段之前判定, 才能看出 eps 是否与线上不一致
+                        need_full = user_changed or self._needs_full_refresh(
+                            ref, it["subject"]
+                        )
+                        self._sync_subject_brief(ref, it["subject"])
+
+                        if user_changed:
                             ref.user_status.last_update = it["updated_at"]
                             print(f"更新: {ref.anime_data.name_cn} 的用户数据")
+                        if need_full:
+                            print(f"刷新: {ref.anime_data.name_cn} 的番剧数据")
                             idx = -1
                             for i in range(len(self._anime_record)):
                                 if (
@@ -223,7 +302,7 @@ class Api:
                             tags=it["tags"],
                         ),
                     )
-                    self._get_subjects_info(record.anime_data.id, record)
+                    # 条目详情由 lambda_func -> _refresh_anime_full 统一拉取
                     self._record_map[record.anime_data.id] = record
                     self._anime_record.append(record)
                     lambda_func(len(self._anime_record) - 1)
@@ -244,8 +323,8 @@ class Api:
                 print("响应内容:", response.text)
                 return  # 解析失败也退出, 避免死循环
 
-    def _get_anime_kyara_data(self, kyara_ref: Character) -> None:
-        """获取角色详细信息"""
+    def _get_anime_kyara_data(self, kyara_ref: Character) -> bool:
+        """获取角色详细信息, 返回是否成功"""
         url = f"{BASE_URL}/v0/characters/{kyara_ref.id}"
         try:
             response = apiReq.get(url, headers=HEADERS)
@@ -261,20 +340,26 @@ class Api:
                 elif kv["key"] == "别名":
                     continue
                 kyara_ref.tags.append(KeyValue(key=kv["key"], value=kv["value"]))
+            return True
         except requests.exceptions.RequestException as e:
             print(f"获取角色信息失败: {e}")
         except json.JSONDecodeError:
             print("解析角色信息响应失败, 内容可能不是有效的JSON。")
             print("响应内容:", response.text)
+        return False
 
-    def _get_anime_characters(self, data_idx: int) -> None:
+    def _get_anime_characters(self, data_idx: int) -> List[Character] | None:
         """获取番剧角色声优信息
         Args:
             data_idx (int): _anime_record 中的索引
         Returns:
-            List[ANiMeRecord]: _description_
+            List[Character] | None: 拉取成功返回新列表, 失败返回 None (调用方保留旧数据)
         """
         url = f"{BASE_URL}/v0/subjects/{self._anime_record[data_idx].anime_data.id}/characters"
+        old_map: Dict[int, Character] = {
+            c.id: c for c in self._anime_record[data_idx].anime_data.characters
+        }
+        characters: List[Character] = []
         try:
             response = apiReq.get(url, headers=HEADERS)
             response.raise_for_status()
@@ -286,8 +371,16 @@ class Api:
                     image_url=it["images"]["large"],
                     actor_ids=[actor["id"] for actor in it["actors"]],
                 )
-                self._get_anime_kyara_data(character)
-                self._anime_record[data_idx].anime_data.characters.append(character)
+                if not self._get_anime_kyara_data(character) and character.id in old_map:
+                    # 角色详情拉取失败: 沿用旧详情, 不用空值覆盖
+                    old = old_map[character.id]
+                    character.name_cn = old.name_cn
+                    character.summary = old.summary
+                    character.birth_year = old.birth_year
+                    character.birth_month = old.birth_month
+                    character.birth_day = old.birth_day
+                    character.tags = old.tags
+                characters.append(character)
 
                 # 记录角色的声优
                 for actor in it["actors"]:
@@ -299,6 +392,7 @@ class Api:
                             image_url=actor["images"]["large"],
                         )
                         self._actor_map[actor_data.id] = actor_data
+            return characters
         except requests.exceptions.RequestException as e:
             print(
                 f"获取番剧 {self._anime_record[data_idx].anime_data.id} 角色失败: {e}"
@@ -308,10 +402,12 @@ class Api:
                 f"解析番剧 {self._anime_record[data_idx].anime_data.id} 角色响应失败。"
             )
             print("响应内容:", response.text)
+        return None
 
-    def _get_relations(self, data_idx: int) -> None:
-        """获取番剧关联信息"""
+    def _get_relations(self, data_idx: int) -> List[Relation] | None:
+        """获取番剧关联信息, 失败返回 None"""
         url = f"{BASE_URL}/v0/subjects/{self._anime_record[data_idx].anime_data.id}/subjects"
+        relations: List[Relation] = []
         try:
             response = apiReq.get(url, headers=HEADERS)
             response.raise_for_status()
@@ -324,7 +420,8 @@ class Api:
                     type=SubjectType(it["type"]),
                     image_url=it["images"]["large"],
                 )
-                self._anime_record[data_idx].anime_data.relations.append(relation)
+                relations.append(relation)
+            return relations
         except requests.exceptions.RequestException as e:
             print(
                 f"获取番剧 {self._anime_record[data_idx].anime_data.id} 关联失败: {e}"
@@ -334,12 +431,15 @@ class Api:
                 f"解析番剧 {self._anime_record[data_idx].anime_data.id} 关联响应失败。"
             )
             print("响应内容:", response.text)
+        return None
 
-    def _get_episodes(self, data_idx: int) -> None:
-        """获取番剧剧集信息"""
+    def _get_episodes(self, data_idx: int) -> List[Episode] | None:
+        """获取番剧剧集信息, 全部分页成功才返回列表, 失败返回 None"""
         url = f"{BASE_URL}/v0/episodes"
         limit = 100
         offset = 0
+        episodes: List[Episode] = []
+        response = None
         try:
             while True:
                 params = {
@@ -352,7 +452,7 @@ class Api:
                 data = response.json()["data"]
 
                 if not data:
-                    return
+                    return episodes
 
                 for it in data:
                     episode = Episode(
@@ -366,7 +466,7 @@ class Api:
                         air_date=it["airdate"],
                         desc=it["desc"],
                     )
-                    self._anime_record[data_idx].anime_data.episodes.append(episode)
+                    episodes.append(episode)
 
                 offset += limit
         except requests.exceptions.RequestException as e:
@@ -375,7 +475,7 @@ class Api:
             except Exception:
                 description = ""
             if description.startswith("offset"):
-                return
+                return episodes  # 越过最后一页, 已拉到的就是全部
             print(
                 f"获取番剧 {self._anime_record[data_idx].anime_data.id} 剧集失败: {e}"
             )
@@ -384,14 +484,11 @@ class Api:
                 f"解析番剧 {self._anime_record[data_idx].anime_data.id} 剧集响应失败。"
             )
             print("响应内容:", response.text)
+        return None
 
 
-# Agent Notes: HXLoLi-ANiMe 接入 Agent Notes v2
-# 
 def load_from_json() -> Api:
-    """
-    .agents/notes/implemented/process/2026-10-08-repository-agent-notes-v2-adoption.md
-从 json 文件中加载数据
+    """从 json 文件中加载数据
     运行路径, 应该在 py/anime 下
     如果文件不存在, 则返回一个空的 Api 对象
     """

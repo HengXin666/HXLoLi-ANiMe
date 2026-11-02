@@ -7,7 +7,6 @@ Decision-ID: repository-agent-notes-v2-adoption
 ## Code
 
 - `scripts/redlines/agent_notes.py`
-- `scripts/crawler/Api.py`
 
 ## Problem
 

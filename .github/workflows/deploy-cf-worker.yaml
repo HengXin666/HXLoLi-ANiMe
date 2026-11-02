@@ -6,12 +6,21 @@ on:
     paths:
       - 'data/**'
   workflow_dispatch:
+  # 爬取流水线结束后重新部署: Bot 用 GITHUB_TOKEN push 不会触发上面的 push 事件
+  # Tag 清理失败时数据已经 push, 所以 failure 也部署; 资源按哈希上传, 无变化时开销很小
+  workflow_run:
+    workflows: ["[LoLi-ANiMe]: 爬取番剧数据 & CDN Tag"]
+    types: [completed]
 
 permissions:
   contents: read
 
 jobs:
   deploy-worker:
+    if: >-
+      github.event_name != 'workflow_run' ||
+      github.event.workflow_run.conclusion == 'success' ||
+      github.event.workflow_run.conclusion == 'failure'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

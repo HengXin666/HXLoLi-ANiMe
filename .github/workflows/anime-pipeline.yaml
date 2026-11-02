@@ -8,6 +8,8 @@ name: "[LoLi-ANiMe]: 爬取番剧数据 & CDN Tag"
 #
 # 唯一流水线:
 #   初始化 → 爬取 → push → 打 Tag → 向 HXLoLi 发 PR
+#   结束后 deploy-cf-worker.yaml 经 workflow_run 重新部署 CF Worker
+#   (Bot 用 GITHUB_TOKEN push 不会触发其他工作流的 push 事件)
 # ─────────────────────────────────────────────────────
 
 on:
@@ -120,18 +122,36 @@ jobs:
           echo "tag=${NEW_TAG}" >> "$GITHUB_OUTPUT"
           echo "✅ CDN tag: ${NEW_TAG}"
 
-      - name: 🗑️ 清理旧 Tag
+      - name: 🗑️ 清理旧 Tag (保留最新 5 个, 博客钉住的 Tag 不在其中则失败)
         if: steps.changes.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.HXLOLI_PR_TOKEN }}
+          KEEP_TAGS: 5
         run: |
-          BOT_TAGS=$(git tag -l 'HX-*' --sort=-creatordate)
-          TAG_COUNT=$(echo "${BOT_TAGS}" | grep -c '^HX-' || true)
-
-          if [ "${TAG_COUNT}" -gt 2 ]; then
-            echo "${BOT_TAGS}" | tail -n +3 | while IFS= read -r tag; do
-              [ -n "${tag}" ] && git push origin --delete "${tag}" 2>/dev/null || true
-              [ -n "${tag}" ] && git tag -d "${tag}" 2>/dev/null || true
-            done
+          # 先读 HXLoLi main 上博客当前钉的 Tag, 读不到就不删任何 Tag
+          PINNED_TAG=$(gh api repos/HengXin666/HXLoLi/contents/data/animeCdnVersion.ts \
+            -H "Accept: application/vnd.github.raw" 2>/dev/null \
+            | sed -n "s/^export const ANIME_CDN_TAG = '\(.*\)';.*/\1/p" || true)
+          echo "📌 博客当前钉的 Tag: ${PINNED_TAG:-<读取失败>}"
+          if [ -z "${PINNED_TAG}" ]; then
+            echo "::error::无法读取 HXLoLi main 的 data/animeCdnVersion.ts, 不清理任何 Tag"
+            exit 1
           fi
+
+          BOT_TAGS=$(git tag -l 'HX-*' --sort=-creatordate)
+          KEPT_TAGS=$(echo "${BOT_TAGS}" | head -n "${KEEP_TAGS}")
+          echo "保留的 Tag:"
+          echo "${KEPT_TAGS}"
+
+          if ! echo "${KEPT_TAGS}" | grep -qxF "${PINNED_TAG}"; then
+            echo "::error::博客钉住的 ${PINNED_TAG} 不在最新 ${KEEP_TAGS} 个 Tag 中, 停止清理, 请先合并 HXLoLi 的同步 PR"
+            exit 1
+          fi
+
+          echo "${BOT_TAGS}" | tail -n +$((KEEP_TAGS + 1)) | while IFS= read -r tag; do
+            [ -n "${tag}" ] && git push origin --delete "${tag}" 2>/dev/null || true
+            [ -n "${tag}" ] && git tag -d "${tag}" 2>/dev/null || true
+          done
 
       # ══════════════════════════════════════
       # 阶段 5: 分析更新内容 & 向 HXLoLi 发 PR
