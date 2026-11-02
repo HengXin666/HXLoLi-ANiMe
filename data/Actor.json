@@ -10652,5 +10652,82 @@
         "short_summary": "趣味・特技：歌唱、ダンス、ゲーム、写真撮影、謎解き、麻雀、ポーカー、ラーメン巡り、カフェ巡り\r\n経歴：第16回声優アワード新人発掘オーディション最多(7社)合格、第20回声優アワード 新人声優賞",
         "image_url": "https://lain.bgm.tv/pic/crt/l/0b/e1/104992_prsn_7mD8g.jpg",
         "__dataclass__": "Actor"
+    },
+    {
+        "id": 11940,
+        "name": "栗林美月",
+        "short_summary": "",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/1e/78/11940_prsn_JOp78.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 29680,
+        "name": "京花優希",
+        "short_summary": "京花 優希（きょうか ゆうき、5月15日 - ）は、日本の女性声優。山口県下関市出身。ケンユウオフィス預かり。",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/5b/65/29680_prsn_7NZMX.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 42498,
+        "name": "内田修一",
+        "short_summary": "",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/9e/21/42498_prsn_6z93x.jpg?r=1628318642",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 65241,
+        "name": "村上麻衣",
+        "short_summary": "出身地：福岡県\r\n使える方言：筑豊弁\r\n趣味：絵を描く、ものまね、ゲーム、ホラー映画鑑賞、Live2Dモデリング\r\n特技：絵を描く、そろばん(初段)\r\n卒業養成機関：福岡スクールオブミュージック専門学校\r\nAIR AGENCY声優養成所",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/b1/5a/65241_prsn_8mPas.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 66239,
+        "name": "堀金蒼平",
+        "short_summary": "日本の男性声優。ラクーンドッグ所属。高知県出身。",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/dd/26/66239_prsn_44AZD.jpg?r=1752478419",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 91249,
+        "name": "大城昂輝",
+        "short_summary": "",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/94/51/91249_prsn_PAp93.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 99016,
+        "name": "森勇人",
+        "short_summary": "",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/64/e2/99016_prsn_9Ro38.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 100029,
+        "name": "越川瑞樹",
+        "short_summary": "",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/31/d1/100029_prsn_EeTph.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 22601,
+        "name": "竹尾歩美",
+        "short_summary": "日本の元女性声優。三重県出身。\r\n趣味は、映画鑑賞、東京散策。特技は、バスケットボール。\r\nシグマ・セブン養成所19期生。同期に千葉翔也、森永千才がいる。\r\n2016年7月より放送されたテレビアニメ『NEW GAME!』では、声の出演と共に、共演する高田憂希、山口愛、戸田めぐみとの4人組「fourfolium」として、番組の主題歌を歌う。 竹尾にとってこれが初の楽曲の録音だった。\r\n2021年10月1日、自身のインスタグラムにて9月末をもって所属事務所のシグマ・セブンを退所し、声優活動から引退したことを発表した。",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/6e/67/22601_prsn_pk53h.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 29115,
+        "name": "鈴木亜理沙",
+        "short_summary": "",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/35/63/29115_prsn_SsOxO.jpg?r=1495450559",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 38774,
+        "name": "三好翼",
+        "short_summary": "日本の男性声優。広島県出身。プロダクション・エース所属。\r\n日本ナレーション演技研究所、AIR AGENCY声優養成所出身。2020年12月にAIR AGENCYを離れフリーになることを発表した。2021年2月よりプロダクション・エース所属となった。\r\n資格：普通自動車免許、第三級アマチュア無線技士免許、弓道弐段\r\n趣味：ゲーム、カラオケ、美術鑑賞\r\n特技：弓道",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/06/c1/38774_prsn_hPbnu.jpg",
+        "__dataclass__": "Actor"
     }
 ]
