@@ -10729,5 +10729,19 @@
         "short_summary": "日本の男性声優。広島県出身。プロダクション・エース所属。\r\n日本ナレーション演技研究所、AIR AGENCY声優養成所出身。2020年12月にAIR AGENCYを離れフリーになることを発表した。2021年2月よりプロダクション・エース所属となった。\r\n資格：普通自動車免許、第三級アマチュア無線技士免許、弓道弐段\r\n趣味：ゲーム、カラオケ、美術鑑賞\r\n特技：弓道",
         "image_url": "https://lain.bgm.tv/pic/crt/l/06/c1/38774_prsn_hPbnu.jpg",
         "__dataclass__": "Actor"
+    },
+    {
+        "id": 44970,
+        "name": "大下菜摘",
+        "short_summary": "株式会社 オフィスアネモネ所属 声優、役者をしております。",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/55/3f/44970_prsn_iic5z.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 91352,
+        "name": "南波遥海",
+        "short_summary": "BLACK SHIP所属。",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/c5/5b/91352_prsn_h1rWJ.jpg",
+        "__dataclass__": "Actor"
     }
 ]
