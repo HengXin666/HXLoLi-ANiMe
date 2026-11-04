@@ -1,10 +1,14 @@
 {
   "id": 13485,
-  "tags": [],
+  "tags": [
+    "ロリ",
+    "日常"
+  ],
   "rate": null,
   "review": "",
   "mode": "new",
-  "by": "",
-  "labeledAt": "",
-  "bgmSynced": false
+  "by": "pr#1",
+  "labeledAt": "2026-11-05T01:51:58+08:00",
+  "bgmSynced": false,
+  "sync_bgm": true
 }
