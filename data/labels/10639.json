@@ -1,10 +1,13 @@
 {
   "id": 10639,
-  "tags": [],
+  "tags": [
+    "战斗"
+  ],
   "rate": null,
   "review": "",
   "mode": "new",
-  "by": "",
-  "labeledAt": "",
-  "bgmSynced": false
+  "by": "pr#1",
+  "labeledAt": "2026-11-05T01:51:57+08:00",
+  "bgmSynced": false,
+  "sync_bgm": true
 }
