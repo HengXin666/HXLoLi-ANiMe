@@ -121,6 +121,19 @@ def bgm_name(vocab_all: List[dict], display: str) -> str:
     return display
 
 
+def create_labeled_pr(payload: dict, labels: List[str]) -> dict:
+    """开 PR 并打 label. GitHub 的 POST /pulls 不接受 labels 字段 (会静默忽略),
+    必须创建后用 POST /issues/{n}/labels 单独加, 否则 PR 没有 tag 区分.
+    """
+    clean = {k: v for k, v in payload.items() if k != "labels"}
+    pr = api("POST", f"/repos/{REPO}/pulls", clean)
+    num = pr.get("number")
+    if num and labels:
+        label_for(labels)
+        api("POST", f"/repos/{REPO}/issues/{num}/labels", {"labels": labels})
+    return pr
+
+
 def load_records() -> Dict[int, dict]:
     """id -> 番剧记录 (取名字 / 封面用). 文件很大, 只读一次建索引."""
     try:
@@ -280,9 +293,9 @@ def open_batch(ids: List[int], records: dict, vocab: Tuple[List[dict], List[dict
                  f"[标注] 批量初始化 {sid} 草稿")
     body = build_batch_body(ids, records, vocab)
     labels = [LABEL_FLOW, STATE_WAIT, MODE_NEW]
-    pr = api("POST", f"/repos/{REPO}/pulls",
-             {"title": f"[批量标注] {len(ids)} 部新增番剧", "head": branch, "base": BASE_BRANCH,
-              "body": body, "labels": labels, "maintainer_can_modify": True})
+    pr = create_labeled_pr(
+        {"title": f"[批量标注] {len(ids)} 部新增番剧", "head": branch, "base": BASE_BRANCH,
+         "body": body, "labels": labels, "maintainer_can_modify": True}, labels)
     return {"ids": ids, "pr": pr.get("number"), "action": "opened-batch"}
 
 
@@ -390,9 +403,9 @@ def cmd_open(args: argparse.Namespace) -> None:
         body = build_body(sid, records.get(sid, {}), m, vocab)
         title = ("[观后感]" if m == "review" else "[标注]") + f" 《{title_of(records.get(sid, {}), sid)}》"
         labels = [LABEL_FLOW, STATE_WAIT, MODE_REVIEW if m == "review" else MODE_NEW]
-        pr = api("POST", f"/repos/{REPO}/pulls",
-                 {"title": title, "head": branch, "base": BASE_BRANCH,
-                  "body": body, "labels": labels, "maintainer_can_modify": True})
+        pr = create_labeled_pr(
+            {"title": title, "head": branch, "base": BASE_BRANCH,
+             "body": body, "labels": labels, "maintainer_can_modify": True}, labels)
         opened.append({"id": sid, "pr": pr.get("number"), "action": "opened"})
     report({"opened": opened})
     print(f"open: {len(opened)} PR (events: new={len(new_ids)} review={len(review_by_id)})")
@@ -700,10 +713,10 @@ def cmd_issue(args: argparse.Namespace) -> None:
              f"[标注] issue #{args.issue} 代开草稿 {sid}")
     pr_body = build_body(sid, records.get(sid, {}), mode, vocab) + f"\n\nCloses #{args.issue}\n"
     labels = [LABEL_FLOW, STATE_WAIT, MODE_REVIEW if mode == "review" else MODE_NEW]
-    pr = api("POST", f"/repos/{REPO}/pulls",
-             {"title": ("[观后感]" if mode == "review" else "[标注]") + f" 《{title_of(records.get(sid, {}), sid)}》",
-              "head": f"label/{sid}", "base": BASE_BRANCH, "body": pr_body,
-              "labels": labels, "maintainer_can_modify": True})
+    pr = create_labeled_pr(
+        {"title": ("[观后感]" if mode == "review" else "[标注]") + f" 《{title_of(records.get(sid, {}), sid)}》",
+         "head": f"label/{sid}", "base": BASE_BRANCH, "body": pr_body,
+         "labels": labels, "maintainer_can_modify": True}, labels)
     api("POST", f"/repos/{REPO}/issues/{args.issue}/comments",
         {"body": f"已代开标注 PR #{pr.get('number')}, 请去 PR 里勾选. 合入时本 issue 自动关闭."})
     report({"issue": args.issue, "action": "pr-opened", "pr": pr.get("number"), "id": sid})
