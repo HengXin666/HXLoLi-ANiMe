@@ -1,10 +1,13 @@
 {
   "id": 43951,
-  "tags": [],
+  "tags": [
+    "ロリ"
+  ],
   "rate": null,
   "review": "",
   "mode": "new",
-  "by": "",
-  "labeledAt": "",
-  "bgmSynced": false
+  "by": "pr#1",
+  "labeledAt": "2026-11-05T01:53:32+08:00",
+  "bgmSynced": false,
+  "sync_bgm": true
 }
