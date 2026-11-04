@@ -1,0 +1,317 @@
+name: "[LoLi-ANiMe]: 标注流 (标注 PR / 勾选解析 / bgm 同步 / 一个月自动关闭)"
+
+# ─────────────────────────────────────────────────────
+# 依据 hx-anime-tag-refactor-design.md 第 5.2, 6, 7, 8, 9 节 (路4).
+#
+# 触发:
+#   1. workflow_run   data 流 (爬虫) 合入成功后 → 读取 events.json → 每个事件开/更新一个标注 PR
+#                     (分支 label/<id>, 草稿 data/labels/<id>.json, tags 为空; 正文带封面 CDN 图)
+#   2. pull_request_target edited  用户在 PR 正文点勾选 → 写回草稿 (每次一个 commit)
+#      issue_comment created        /tag /untag /rate /review /done /skip /nobgm (/resync /reopen)
+#   3. 勾【标注完成】或 /done → 自动 squash 合入 → 同一 job 内跑 label-sync-bgm (bgm api + BGM_TOKEN)
+#      pull_request_target closed(merged) 兜底: 人工直接点 Merge 时补齐并同步
+#   4. schedule 每日扫描 flow:label + state:等待标注, 满一个月关闭并打 state:expired, 第 25 天提醒一次
+#
+# 安全: pull_request_target / issue_comment 只 checkout 默认分支上的脚本, 绝不执行 PR 分支代码;
+#       只有仓库写权限用户的勾选/指令生效.
+# 防回环: 全部写操作用 GITHUB_TOKEN (GitHub 不会因此再触发工作流); data 流不碰 data/labels/,
+#         本流只写 data/labels/, 主站只读 data/labels/.
+# 前置: 仓库 Settings → Actions → 允许 GitHub Actions 创建 PR; secrets.BGM_TOKEN (收藏写权限);
+#       data/labelVocab.json (唯一词表) 已在 main 上.
+# ─────────────────────────────────────────────────────
+
+on:
+  workflow_run:
+    workflows: ["[LoLi-ANiMe]: 爬取番剧数据 & CDN Tag"]
+    types: [completed]
+  pull_request_target:
+    types: [edited, closed]
+  issue_comment:
+    types: [created]
+  issues:
+    types: [opened]
+  schedule:
+    # 北京时间每天 09:30 (UTC 01:30) 扫描过期标注 PR
+    - cron: '30 1 * * *'
+  workflow_dispatch:
+    inputs:
+      action:
+        description: 'open = 手动开标注 PR, backfill = 全量回填所有未标注番剧, expire = 扫描过期, resync = 重新同步 bgm'
+        type: choice
+        options: [open, backfill, expire, resync]
+        default: open
+      ids:
+        description: 'open 用: bgm subject id, 空格分隔'
+        required: false
+      chunk:
+        description: 'backfill 用: 每个批量 PR 最多列几部 (默认 20)'
+        required: false
+        default: '20'
+      mode:
+        description: 'open 用: new = 标注, review = 观后感'
+        type: choice
+        options: [new, review]
+        default: new
+      pr:
+        description: 'resync 用: 标注 PR 号'
+        required: false
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+  actions: read
+
+concurrency:
+  # 同一个标注 PR 的勾选/评论串行处理, 避免草稿互相覆盖
+  group: anime-label-${{ github.event.pull_request.number || github.event.issue.number || github.event_name }}
+  cancel-in-progress: false
+
+env:
+  ANIME_DIR: .
+  LABEL_BASE_BRANCH: main
+  LABEL_EXPIRE_DAYS: '30'
+  LABEL_REMIND_DAYS: '25'
+  ANIME_CDN_BASE: https://cdn.jsdmirror.com/gh
+
+jobs:
+  # ══════════════════════════════════════
+  # -1) 全量回填: 清空旧 tag 后, 手动把所有未标注番剧摊成批量标注 PR 供人工逐部勾选
+  # ══════════════════════════════════════
+  backfill:
+    name: 全量回填 (所有未标注番剧)
+    if: github.event_name == 'workflow_dispatch' && inputs.action == 'backfill'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: false
+      - name: 📋 列出并摊开所有未标注番剧
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          LABEL_REPORT: label-backfill-report.json
+        run: python3 scripts/label-flow.py backfill --chunk "${{ inputs.chunk || '20' }}"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        continue-on-error: true
+        with:
+          name: label-backfill-report
+          path: label-backfill-report.json
+          if-no-files-found: warn
+          retention-days: 7
+
+  # ══════════════════════════════════════
+  # 0) issue 表单备用入口: 用户主动提交"标注番剧" issue, bot 代开标注 PR 并 Closes #n
+  # ══════════════════════════════════════
+  issue:
+    name: issue 代开标注 PR
+    if: >-
+      github.event_name == 'issues' &&
+      contains(github.event.issue.labels.*.name, 'flow:label')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: false
+      - name: 🏷️ 由 issue 开标注 PR
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          LABEL_REPORT: label-issue-report.json
+        run: python3 scripts/label-flow.py issue --issue "${{ github.event.issue.number }}"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        continue-on-error: true
+        with:
+          name: label-issue-report
+          path: label-issue-report.json
+          if-no-files-found: warn
+          retention-days: 7
+
+  # ══════════════════════════════════════
+  # A) data 流合入后: 每个事件开 (或更新/升级) 一个标注 PR
+  # ══════════════════════════════════════
+  open:
+    name: 开标注 PR
+    if: >-
+      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success') ||
+      (github.event_name == 'workflow_dispatch' && inputs.action == 'open')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: 📥 下载 data 流的 events.json (artifact anime-events)
+        if: github.event_name == 'workflow_run'
+        continue-on-error: true
+        uses: actions/download-artifact@v4
+        with:
+          name: anime-events
+          path: .label-events
+          run-id: ${{ github.event.workflow_run.id }}
+          github-token: ${{ github.token }}
+
+      - name: 🏷️ 取最新 CDN Tag (封面走 CDN tag 地址)
+        id: cdn
+        run: |
+          TAG=$(git tag -l 'HX-*' --sort=-creatordate | head -n 1)
+          echo "tag=${TAG}" >> "$GITHUB_OUTPUT"
+          echo "📌 CDN tag: ${TAG:-<无, 退回 main>}"
+
+      - name: 🏷️ 开 / 更新标注 PR
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          ANIME_CDN_TAG: ${{ steps.cdn.outputs.tag }}
+          LABEL_REPORT: label-open-report.json
+          IDS: ${{ inputs.ids }}
+          MODE: ${{ inputs.mode || 'new' }}
+        run: |
+          python3 scripts/label-flow.py open \
+            --events .label-events/events.json \
+            --events data/events.json \
+            --ids "${IDS}" --mode "${MODE}"
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        continue-on-error: true
+        with:
+          name: label-open-report
+          path: label-open-report.json
+          if-no-files-found: warn
+          retention-days: 7
+
+  # ══════════════════════════════════════
+  # B) 勾选 / 评论指令 → 写回草稿 → 置顶"当前结果"评论 → 完成即合入 → C) bgm 同步
+  # ══════════════════════════════════════
+  handle:
+    name: 解析勾选 / 指令
+    if: >-
+      (github.event_name == 'pull_request_target' && github.event.action == 'edited' &&
+       contains(github.event.pull_request.labels.*.name, 'flow:label') &&
+       github.event.sender.type != 'Bot') ||
+      (github.event_name == 'issue_comment' && github.event.issue.pull_request &&
+       contains(github.event.issue.labels.*.name, 'flow:label') &&
+       github.event.comment.user.type != 'Bot')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: false
+
+      - id: cdn
+        run: echo "tag=$(git tag -l 'HX-*' --sort=-creatordate | head -n 1)" >> "$GITHUB_OUTPUT"
+
+      - name: ✍️ 写回标注草稿
+        id: handle
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          ANIME_CDN_TAG: ${{ steps.cdn.outputs.tag }}
+          LABEL_REPORT: label-handle-report.json
+          PR_NUMBER: ${{ github.event.pull_request.number || github.event.issue.number }}
+        run: python3 scripts/label-flow.py handle --pr "${PR_NUMBER}"
+
+      - name: 🔄 同步到 bgm (label-sync-bgm)
+        if: steps.handle.outputs.merged == 'true' || steps.handle.outputs.resync == 'true'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          BGM_TOKEN: ${{ secrets.BGM_TOKEN }}
+          BGM_USERNAME: ${{ secrets.BGM_USERNAME }}
+          LABEL_REPORT: label-sync-bgm-report.json
+        run: python3 scripts/label-sync-bgm.py --pr "${{ steps.handle.outputs.pr }}"
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        continue-on-error: true
+        with:
+          name: label-handle-report
+          path: |
+            label-handle-report.json
+            label-sync-bgm-report.json
+          if-no-files-found: warn
+          retention-days: 7
+
+  # ══════════════════════════════════════
+  # C) 兜底: 人工直接 Merge 的标注 PR / 手动 resync → bgm 同步
+  #    (bot 用 GITHUB_TOKEN 合入不会触发 closed 事件, 不会与 handle 重复同步)
+  # ══════════════════════════════════════
+  label-sync-bgm:
+    name: 合入后同步 bgm
+    if: >-
+      (github.event_name == 'pull_request_target' && github.event.action == 'closed' &&
+       github.event.pull_request.merged &&
+       contains(github.event.pull_request.labels.*.name, 'flow:label')) ||
+      (github.event_name == 'workflow_dispatch' && inputs.action == 'resync')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+
+      - name: 🧾 补齐 by / labeledAt / label
+        id: post
+        if: github.event_name == 'pull_request_target'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          LABEL_REPORT: label-post-merge-report.json
+        run: python3 scripts/label-flow.py post-merge --pr "${{ github.event.pull_request.number }}"
+
+      - name: 🔄 同步到 bgm
+        if: steps.post.outputs.merged == 'true' || github.event_name == 'workflow_dispatch'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          BGM_TOKEN: ${{ secrets.BGM_TOKEN }}
+          BGM_USERNAME: ${{ secrets.BGM_USERNAME }}
+          LABEL_REPORT: label-sync-bgm-report.json
+          PR_NUMBER: ${{ github.event.pull_request.number || inputs.pr }}
+        run: python3 scripts/label-sync-bgm.py --pr "${PR_NUMBER}"
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        continue-on-error: true
+        with:
+          name: label-sync-bgm-report
+          path: |
+            label-post-merge-report.json
+            label-sync-bgm-report.json
+          if-no-files-found: warn
+          retention-days: 7
+
+  # ══════════════════════════════════════
+  # D) 一个月自动关闭: 创建时间 / 最后一次用户交互 较晚者起算
+  #    满 30 天: 评论 + 关闭 + 删分支 + state:expired, 不写标注文件; 第 25 天提醒一次
+  # ══════════════════════════════════════
+  expire:
+    name: 过期扫描
+    if: >-
+      github.event_name == 'schedule' ||
+      (github.event_name == 'workflow_dispatch' && inputs.action == 'expire')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+
+      - name: ⌛ 关闭满一个月未标注的 PR
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          LABEL_REPORT: label-expire-report.json
+        run: python3 scripts/label-flow.py expire
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        continue-on-error: true
+        with:
+          name: label-expire-report
+          path: label-expire-report.json
+          if-no-files-found: warn
+          retention-days: 7

@@ -1,0 +1,77 @@
+name: 标注番剧 (issue 备用入口)
+description: 主动给某部番剧发起人工标注. bot 会代开标注 PR, 合入后本 issue 自动关闭.
+title: "[标注] "
+labels: ["flow:label", "state:等待标注"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        标注最终落在标注 PR 里 (带封面与番剧名, 勾选即标注). 本表单只是入口, 提交后 bot 开对应 PR 并关联本 issue.
+        日常新增番剧 / 看完后的观后感不用填这里, 流水线会自动开标注 PR.
+  - type: input
+    id: subject_id
+    attributes:
+      label: bgm subject id
+      description: 番剧在 bgm.tv 的数字 id, 例如 517057. 与下面"番剧名"二选一.
+      placeholder: "517057"
+    validations:
+      required: false
+  - type: input
+    id: anime_name
+    attributes:
+      label: 番剧名 (中文或日文)
+      description: 不记得 id 时填名字, bot 按名字在 ANiMeRecord.json 里反查 id.
+      placeholder: "【我推的孩子】 第三季"
+    validations:
+      required: false
+  - type: dropdown
+    id: mode
+    attributes:
+      label: 标注模式
+      options:
+        - new (新增番剧 / 普通标注)
+        - review (观后感, 含评分与物凄い)
+      default: 0
+    validations:
+      required: true
+  - type: checkboxes
+    id: susume
+    attributes:
+      label: 推荐分类 (有专属页)
+      options:
+        - label: 物凄い (最强, 进 /anime/susume/monosugoi, 仅观后感模式)
+        - label: ロリ (/anime/susume/loli)
+        - label: シスコン (/anime/susume/imouto)
+  - type: checkboxes
+    id: genre
+    attributes:
+      label: 普通标注
+      options:
+        - label: 异世界
+        - label: 热血
+        - label: 战斗
+        - label: 推理
+        - label: 校园
+        - label: 日常
+        - label: 搞笑
+        - label: 恋爱
+        - label: 致郁
+  - type: input
+    id: rate
+    attributes:
+      label: 评分 (观后感模式, 1-10, 可留空)
+    validations:
+      required: false
+  - type: textarea
+    id: review
+    attributes:
+      label: 一句话观后感 (可选)
+    validations:
+      required: false
+  - type: checkboxes
+    id: sync
+    attributes:
+      label: 同步
+      options:
+        - label: 同步到 bgm (用 bgm api 写回, 默认勾上)
+          required: false

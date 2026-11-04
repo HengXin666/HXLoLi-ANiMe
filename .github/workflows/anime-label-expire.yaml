@@ -1,0 +1,42 @@
+name: "[LoLi-ANiMe]: 标注 PR 一个月自动关闭"
+
+# 依据 hx-anime-tag-refactor-design.md 第 8 节.
+# 与 anime-label-flow.yaml 的 expire job 对偶: 本文件给过期扫描一个显式独立入口,
+# 逻辑本体在 scripts/label-flow.py 的 expire 子命令, 两处调用同一段实现, 不重复判定口径.
+# 扫描 flow:label + state:等待标注 的 PR, 以创建时间或最后一次用户交互较晚者起算,
+# 满一个月未完成: 评论并关闭, 删分支, 打 state:expired, 不写任何标注文件; 第 25 天可选提醒一次.
+
+on:
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  expire:
+    name: 关闭满一个月未标注的 PR
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+
+      - name: ⌛ 过期扫描
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          LABEL_REPORT: label-expire-report.json
+        run: python3 scripts/label-flow.py expire
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        continue-on-error: true
+        with:
+          name: label-expire-report
+          path: label-expire-report.json
+          if-no-files-found: warn
+          retention-days: 7

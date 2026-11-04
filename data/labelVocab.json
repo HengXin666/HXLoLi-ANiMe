@@ -1,0 +1,70 @@
+{
+  "$comment": "HX-ANiMe 唯一标注词表. 标注表单 / 解析器 / 主站渲染 / bgm 同步只读本文件. 设计见 hx-anime-tag-refactor-design.md 第 3.3 / 4 / 9 节. 增删标签只改这里.",
+  "version": 1,
+  "labelsDir": "data/labels",
+  "groups": [
+    "susume",
+    "genre"
+  ],
+  "susume": [
+    {
+      "key": "monosugoi",
+      "display": "物凄い",
+      "bgmTag": "物凄い",
+      "slugPage": "monosugoi",
+      "note": "最爱, 只在观后感模式邀请勾选"
+    },
+    {
+      "key": "loli",
+      "display": "ロリ",
+      "bgmTag": "ロリ",
+      "slugPage": "loli",
+      "note": "主角或核心角色是小学生年纪 / 幼女外形 (含合法ロリ), 且是作品卖点之一; 只在回忆或 Q 版里出现的不算, 初中生不算"
+    },
+    {
+      "key": "imouto",
+      "display": "シスコン",
+      "bgmTag": "シスコン",
+      "slugPage": "imouto",
+      "note": "旧名 妹控 废弃, 不做自动迁移"
+    }
+  ],
+  "genre": [
+    {
+      "display": "异世界",
+      "bgmTag": "异世界"
+    },
+    {
+      "display": "热血",
+      "bgmTag": "热血"
+    },
+    {
+      "display": "战斗",
+      "bgmTag": "战斗"
+    },
+    {
+      "display": "推理",
+      "bgmTag": "推理"
+    },
+    {
+      "display": "校园",
+      "bgmTag": "校园"
+    },
+    {
+      "display": "日常",
+      "bgmTag": "日常"
+    },
+    {
+      "display": "搞笑",
+      "bgmTag": "搞笑"
+    },
+    {
+      "display": "恋爱",
+      "bgmTag": "恋爱"
+    },
+    {
+      "display": "致郁",
+      "bgmTag": "致郁"
+    }
+  ]
+}

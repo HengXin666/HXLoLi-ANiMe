@@ -8,6 +8,12 @@
 
 产物是生成物, 不手改. 任何一个源失败都直接退出, 保留旧的 ANiMeTags.json 不覆盖.
 
+[DEPRECATED 2026-11-04] 自动上墙 (wallScore=2 打分 / AOD 直接映射 / JUDGEMENTS) 已停用.
+依据 hx-anime-tag-refactor-design.md 第 10 节第 2 步: 以后只认人工标注 (data/labels/<id>.json).
+本脚本保留数据抓取 (bangumi-data / AOD / AniList 映射与 ids), 但 ANiMeTags.json 的
+items[*].tags 与 candidates 一律写空, 原推断结果仅降级保留在 deprecatedInferred 供追溯, 不得被主站读取.
+ANiMeTags.json 整体标记 deprecated, 待主站切到 data/labels/ 后删除.
+
 用法:
     uv run Tags.py                         # 联网下载全部源
     uv run Tags.py --aod-file aod.json     # 用本地 AOD 文件 (调试用, 省掉 62 MB 下载)
@@ -63,7 +69,12 @@ AOD_TAG_MAP: Dict[str, Set[str]] = {
 ANILIST_GENRE_GATE: Dict[str, str] = {"搞笑": "Comedy", "恋爱": "Romance"}
 
 # ロリ (旧名 萝莉) / 妹控 走打分: score >= 2 上墙, == 1 进 candidates
+# [DEPRECATED] 打分仍计算, 但只写入 deprecatedInferred, 不再上墙 (见 AUTO_TAG_DISABLED)
 WALL_SCORE = 2
+
+# 停用自动上墙开关 (DEPRECATED 2026-11-04, 设计文档 第 10 节第 2 步).
+# True: items[*].tags / candidates 写空, 推断结果只进 deprecatedInferred / deprecatedCandidates.
+AUTO_TAG_DISABLED = True
 
 LOLI_AOD_TAGS = {"loli", "lolicon"}  # +2
 LOLI_ANILIST_PCC_RANK = 50  # AniList "Primarily Child Cast" rank >= 50: +1
@@ -366,12 +377,25 @@ def build_item(record: dict, sites: Optional[Dict[str, str]], aod: Optional[dict
             ids[k_out] = int(sites[k_src])
     order = {t: i for i, t in enumerate(TAG_ORDER)}
     tags = sorted(evidence, key=lambda t: order.get(t, 99))
+    cand_sorted = sorted(candidates, key=lambda t: order.get(t, 99))
+    if AUTO_TAG_DISABLED:
+        # [DEPRECATED] 自动上墙已停用: 不再产出 tag, 推断结果仅留档供追溯, 主站与标注流都不读
+        return {
+            "name_cn": name_cn,
+            "tags": [],
+            "candidates": [],
+            "evidence": {},
+            "candidateEvidence": {},
+            "deprecatedInferred": {t: evidence[t] for t in tags},
+            "deprecatedCandidates": {t: candidates[t] for t in cand_sorted},
+            "ids": ids,
+        }
     return {
         "name_cn": name_cn,
         "tags": tags,
-        "candidates": sorted(candidates, key=lambda t: order.get(t, 99)),
+        "candidates": cand_sorted,
         "evidence": {t: evidence[t] for t in tags},
-        "candidateEvidence": {t: candidates[t] for t in sorted(candidates, key=lambda t: order.get(t, 99))},
+        "candidateEvidence": {t: candidates[t] for t in cand_sorted},
         "ids": ids,
     }
 
@@ -429,6 +453,13 @@ def main() -> int:
             stats_cand[t] = stats_cand.get(t, 0) + 1
     out = {
         "generatedAt": datetime.now(CST).isoformat(timespec="seconds"),
+        # [DEPRECATED] 自动 tag 已停用, 本文件待主站切到 data/labels/ 后删除
+        "deprecated": {
+            "autoTagDisabled": AUTO_TAG_DISABLED,
+            "since": "2026-11-04",
+            "reason": "改为人工标注, 唯一落点 data/labels/<bgm_subject_id>.json",
+            "design": "hx-anime-tag-refactor-design.md 第 10 节第 2 步",
+        },
         "sources": {
             "aod": aod_meta,
             "bangumiData": {"version": bd_version, "license": "CC-BY-4.0", "url": "https://github.com/bangumi-data/bangumi-data"},

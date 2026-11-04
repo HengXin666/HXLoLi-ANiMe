@@ -1,15 +1,22 @@
 name: "[LoLi-ANiMe]: 爬取番剧数据 & CDN Tag"
 
 # ─────────────────────────────────────────────────────
-# 触发条件:
+# 触发条件 (保留原有):
 #   1. 定时触发 - 北京时间凌晨 0:00 (UTC 16:00) + 下午 15:00 (UTC 07:00)
 #   2. push 到 main (仅 scripts/ 或 data/ 变更)
 #   3. 手动触发
+#   + pull_request: 仅给 bot/data-* 的 flow:data PR 跑 data-check (检查门禁)
 #
-# 唯一流水线:
-#   初始化 → 爬取 → push → 打 Tag → 向 HXLoLi 发 PR
-#   结束后 deploy-cf-worker.yaml 经 workflow_run 重新部署 CF Worker
-#   (Bot 用 GITHUB_TOKEN push 不会触发其他工作流的 push 事件)
+# data 更新流 (设计文档 5.1 / 7):
+#   初始化 → 爬取 → 有变化 → 推分支 bot/data-<日期> → 开 PR (label: flow:data)
+#   → 检查通过 → gh pr merge --auto --squash (自动合入)
+#   → 合入后打 CDN Tag → 向 HXLoLi 发 cdnVersion PR (沿用现有逻辑)
+#   → 调用路2 的 events.py 产出 events.json (新增 id + 状态变化) 供标注流消费
+#
+# 隔离: data 流 PR 永不含 data/labels/ 改动 (提交前剔除 + data-check 门禁双保险),
+#       标注流只写 data/labels/, 两条流天然隔离.
+# 结束后 deploy-cf-worker.yaml 经 workflow_run 重新部署 CF Worker;
+# 标注流 (路4) 可经 workflow_run 下载本次运行的 artifact "anime-events" (events.json).
 # ─────────────────────────────────────────────────────
 
 on:
@@ -23,18 +30,64 @@ on:
     paths:
       - 'scripts/**'
       - 'data/**'
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
   contents: write
+  pull-requests: write
+
+concurrency:
+  group: anime-pipeline-${{ github.event_name == 'pull_request' && github.head_ref || 'data-flow' }}
+  cancel-in-progress: false
+
+env:
+  DATA_LABEL: 'flow:data'
+  DATA_BRANCH_PREFIX: 'bot/data-'
+  # 路2 产出的事件脚本 (相对 scripts/crawler); 不存在时回退到内联 jq 实现, 输出同一结构
+  EVENTS_SCRIPT: 'events.py'
 
 jobs:
-  pipeline:
-    name: 初始化 → 爬取 → Tag → PR
-    # 跳过 Bot 自己的提交, 避免无限循环
+  # ════════════════════════════════════════════════════
+  # 检查门禁: flow:data PR 的状态检查 (可设为 main 分支保护的必需检查)
+  # ════════════════════════════════════════════════════
+  data-check:
+    name: flow:data 检查
     if: >-
-      github.event_name != 'push' ||
-      !contains(github.event.head_commit.message, '[LoLi-Bot]')
+      github.event_name == 'pull_request' &&
+      startsWith(github.head_ref, 'bot/data-')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🛡️ 禁止改动 data/labels/ & 校验 JSON
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          CHANGED=$(git diff --name-only "${BASE_SHA}" HEAD)
+          if echo "${CHANGED}" | grep -q '^data/labels/'; then
+            echo "::error::flow:data PR 不允许包含 data/labels/ 改动"
+            exit 1
+          fi
+          for f in $(echo "${CHANGED}" | grep '\.json$' || true); do
+            [ -f "$f" ] || continue
+            jq empty "$f" || { echo "::error::非法 JSON: $f"; exit 1; }
+          done
+          echo "✅ 检查通过"
+
+  # ════════════════════════════════════════════════════
+  # data 更新流
+  # ════════════════════════════════════════════════════
+  pipeline:
+    name: 初始化 → 爬取 → PR(flow:data) → 自动合入 → Tag → PR → events
+    # 跳过 Bot 自己的提交 (squash 合入的标题带 [LoLi-Bot]), 避免无限循环; PR 事件只跑 data-check
+    if: >-
+      github.event_name != 'pull_request' &&
+      (github.event_name != 'push' ||
+       !contains(github.event.head_commit.message, '[LoLi-Bot]'))
     runs-on: ubuntu-latest
 
     steps:
@@ -59,6 +112,12 @@ jobs:
           uv sync
         working-directory: ./scripts/crawler
 
+      - name: 📌 记录基线 (爬取前的 main)
+        id: base
+        run: |
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          git show HEAD:data/ANiMeRecord.json > "${RUNNER_TEMP}/ANiMeRecord.prev.json" 2>/dev/null || echo '[]' > "${RUNNER_TEMP}/ANiMeRecord.prev.json"
+
       # ══════════════════════════════════════
       # 阶段 2: 爬取
       # ══════════════════════════════════════
@@ -73,13 +132,15 @@ jobs:
         working-directory: ./scripts/crawler
 
       # ══════════════════════════════════════
-      # 阶段 3: 检查变化 & push
+      # 阶段 3: 检查变化 (剔除 data/labels/)
       # ══════════════════════════════════════
 
       - name: 📊 检查数据变化
         id: changes
         run: |
           git add -A
+          # data 流永不包含 data/labels/ (标注流专属)
+          git reset -q -- data/labels 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "📭 没有数据变化"
@@ -96,16 +157,108 @@ jobs:
             echo "📬 检测到变化: ${JSON_CHANGED} JSON, ${NEW_IMAGES} 图片"
           fi
 
-      - name: 💾 提交并推送
+      # ══════════════════════════════════════
+      # 阶段 4: 推分支 bot/data-<日期> → 开 PR (flow:data)
+      # ══════════════════════════════════════
+
+      - name: 🌿 提交到 bot/data-<日期> 分支并推送
         if: steps.changes.outputs.changed == 'true'
+        id: branch
         run: |
+          STAMP=$(TZ=Asia/Shanghai date +%Y-%m-%d-%H%M)
+          BRANCH="${DATA_BRANCH_PREFIX}${STAMP}"
           git config user.name "Heng_Xin[LoLi-Bot]"
           git config user.email "282000500@qq.com"
-          git commit -m "[LoLi-Bot]: ご主人さま、アニメデータを更新しましたにゃ ($(date +%Y-%m-%d))"
-          git push
+          git checkout -b "${BRANCH}"
+          git commit -m "[LoLi-Bot]: ご主人さま、アニメデータを更新しましたにゃ ($(TZ=Asia/Shanghai date +%Y-%m-%d))"
+          git push --force origin "${BRANCH}"
+          echo "branch=${BRANCH}" >> "$GITHUB_OUTPUT"
+          echo "✅ 已推送 ${BRANCH}"
+
+      - name: 📬 开 PR 并打 label flow:data
+        if: steps.changes.outputs.changed == 'true'
+        id: pr
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRANCH: ${{ steps.branch.outputs.branch }}
+        run: |
+          gh label create "${DATA_LABEL}" --color BFBFBF \
+            --description "data 更新流, 自动合入" --force >/dev/null 2>&1 || true
+
+          TITLE="[LoLi-Bot] data: アニメデータ更新 ($(TZ=Asia/Shanghai date +%Y-%m-%d))"
+          BODY=$(printf '%s\n\n%s\n%s\n' \
+            "## 🤖 data 更新流 (flow:data)" \
+            "- 爬虫定时产出, 检查通过后自动 squash 合入." \
+            "- 不含 \`data/labels/\` 改动; 标注走 flow:label 流.")
+
+          PR_URL=$(gh pr list --head "${BRANCH}" --state open --json url -q '.[0].url')
+          if [ -z "${PR_URL}" ]; then
+            PR_URL=$(gh pr create --base main --head "${BRANCH}" \
+              --title "${TITLE}" --body "${BODY}" --label "${DATA_LABEL}")
+          else
+            gh pr edit "${PR_URL}" --add-label "${DATA_LABEL}"
+          fi
+          echo "url=${PR_URL}" >> "$GITHUB_OUTPUT"
+          echo "✅ PR: ${PR_URL}"
+
+      - name: 🛡️ 检查 (PR 不含 data/labels/, JSON 合法)
+        if: steps.changes.outputs.changed == 'true'
+        env:
+          BASE_SHA: ${{ steps.base.outputs.sha }}
+        run: |
+          CHANGED=$(git diff --name-only "${BASE_SHA}" HEAD)
+          if echo "${CHANGED}" | grep -q '^data/labels/'; then
+            echo "::error::flow:data PR 不允许包含 data/labels/ 改动"
+            exit 1
+          fi
+          for f in $(echo "${CHANGED}" | grep '\.json$' || true); do
+            [ -f "$f" ] || continue
+            jq empty "$f" || { echo "::error::非法 JSON: $f"; exit 1; }
+          done
+          echo "✅ 检查通过"
 
       # ══════════════════════════════════════
-      # 阶段 4: 打 CDN Tag & 清理旧 Tag
+      # 阶段 5: 自动合入 (gh pr merge --auto --squash) 并等待合入
+      # ══════════════════════════════════════
+
+      - name: 🔀 自动合入 & 等待
+        if: steps.changes.outputs.changed == 'true'
+        id: merge
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_URL: ${{ steps.pr.outputs.url }}
+        run: |
+          # 有必需检查时排队等检查通过再合; 无保护规则时 gh 直接合入
+          gh pr merge "${PR_URL}" --auto --squash --delete-branch
+
+          for i in $(seq 1 90); do
+            STATE=$(gh pr view "${PR_URL}" --json state -q .state)
+            if [ "${STATE}" = "MERGED" ]; then
+              MERGE_SHA=$(gh pr view "${PR_URL}" --json mergeCommit -q .mergeCommit.oid)
+              echo "sha=${MERGE_SHA}" >> "$GITHUB_OUTPUT"
+              echo "✅ 已合入: ${MERGE_SHA}"
+              exit 0
+            fi
+            if [ "${STATE}" = "CLOSED" ]; then
+              echo "::error::PR 被关闭, 未合入"
+              exit 1
+            fi
+            sleep 20
+          done
+          echo "::error::等待自动合入超时 (30 分钟), 请检查 PR 检查状态: ${PR_URL}"
+          exit 1
+
+      - name: ⬇️ 切到合入后的 main
+        if: steps.changes.outputs.changed == 'true'
+        env:
+          MERGE_SHA: ${{ steps.merge.outputs.sha }}
+        run: |
+          git fetch origin main --tags
+          git checkout -q "${MERGE_SHA}"
+          git log -1 --oneline
+
+      # ══════════════════════════════════════
+      # 阶段 6: 打 CDN Tag & 清理旧 Tag (沿用)
       # ══════════════════════════════════════
 
       - name: 🏷️ 创建 CDN Tag
@@ -154,14 +307,17 @@ jobs:
           done
 
       # ══════════════════════════════════════
-      # 阶段 5: 分析更新内容 & 向 HXLoLi 发 PR
+      # 阶段 7: 分析更新内容 & 向 HXLoLi 发 cdnVersion PR (沿用)
       # ══════════════════════════════════════
 
       - name: 📊 分析番剧更新内容
         if: steps.changes.outputs.changed == 'true'
         id: diff
+        env:
+          BASE_SHA: ${{ steps.base.outputs.sha }}
         run: |
-          CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD 2>/dev/null || echo "")
+          # squash 合入后, 基线为爬取前的 main
+          CHANGED_FILES=$(git diff --name-only "${BASE_SHA}" HEAD 2>/dev/null || echo "")
 
           NEW_ANIME_NAMES=""   # 新增番剧名 (换行分隔)
           NEW_ANIME_COUNT=0
@@ -173,7 +329,7 @@ jobs:
           if echo "${CHANGED_FILES}" | grep -q "ANiMeRecord.json"; then
             if command -v jq &> /dev/null; then
               CURRENT_IDS=$(jq -r '.[].anime_data.id' data/ANiMeRecord.json 2>/dev/null | sort)
-              PREVIOUS_IDS=$(git show HEAD~1:data/ANiMeRecord.json 2>/dev/null | jq -r '.[].anime_data.id' 2>/dev/null | sort)
+              PREVIOUS_IDS=$(git show "${BASE_SHA}":data/ANiMeRecord.json 2>/dev/null | jq -r '.[].anime_data.id' 2>/dev/null | sort)
 
               if [ -n "${PREVIOUS_IDS}" ]; then
                 # ── 新增番剧: 当前有、之前没有的 ID ──
@@ -196,7 +352,7 @@ jobs:
                 # ── 更新番剧: 两边都有, 但 JSON 内容变化了的 ID ──
                 COMMON_IDS=$(comm -12 <(echo "${CURRENT_IDS}") <(echo "${PREVIOUS_IDS}"))
                 for id in ${COMMON_IDS}; do
-                  OLD_ENTRY=$(git show HEAD~1:data/ANiMeRecord.json 2>/dev/null | jq -c ".[] | select(.anime_data.id == ${id})" 2>/dev/null)
+                  OLD_ENTRY=$(git show "${BASE_SHA}":data/ANiMeRecord.json 2>/dev/null | jq -c ".[] | select(.anime_data.id == ${id})" 2>/dev/null)
                   NEW_ENTRY=$(jq -c ".[] | select(.anime_data.id == ${id})" data/ANiMeRecord.json 2>/dev/null)
                   if [ "${OLD_ENTRY}" != "${NEW_ENTRY}" ]; then
                     UPDATED_ANIME_COUNT=$((UPDATED_ANIME_COUNT + 1))
@@ -282,6 +438,7 @@ jobs:
           # ── 构建 PR 正文 ──
           PR_BODY="## 📺 HXLoLi-ANiMe 数据同步\n\n"
           PR_BODY="${PR_BODY}更新 \`ANIME_CDN_TAG\` → \`${{ steps.tag.outputs.tag }}\`\n\n"
+          PR_BODY="${PR_BODY}来源 data PR: ${{ steps.pr.outputs.url }}\n\n"
           [ -n "${DETAILS}" ] && PR_BODY="${PR_BODY}${DETAILS}\n"
           PR_BODY="${PR_BODY}### 📊 统计\n"
           PR_BODY="${PR_BODY}| 项目 | 数量 |\n|------|------|\n"
@@ -358,3 +515,34 @@ jobs:
             });
 
             console.log(`✅ PR #${pr.number} created: ${prTitle}`);
+
+      # ══════════════════════════════════════
+      # 阶段 8: 产出 events.json (新增 id + 状态变化) 供标注流消费
+      # ══════════════════════════════════════
+
+      - name: 📣 产出 events.json (调用路2 events.py)
+        if: steps.changes.outputs.changed == 'true'
+        env:
+          PREV: ${{ runner.temp }}/ANiMeRecord.prev.json
+          OUT: ${{ runner.temp }}/events.json
+          CDN_TAG: ${{ steps.tag.outputs.tag }}
+          DATA_PR: ${{ steps.pr.outputs.url }}
+        run: |
+          CURR="${GITHUB_WORKSPACE}/data/ANiMeRecord.json"
+          # events.py 是事件检测的唯一口径: 产出 {"new": [id...], "review": [{"id","from","to"}...]}.
+          # PREV 取不到旧版本时是 [], 此时 177 部全部记为 new (首次接入 / 全量回填), 由标注流按 >5 部合并为批量 PR.
+          (cd scripts/crawler && uv run "${EVENTS_SCRIPT}" \
+            --prev-file "${PREV}" --curr-file "${CURR}" --out "${OUT}")
+          # 附上下文, 便于标注流取封面 CDN 地址
+          jq --arg tag "${CDN_TAG}" --arg pr "${DATA_PR}" --arg sha "$(git rev-parse HEAD)" \
+            '. + {cdn_tag: $tag, data_pr: $pr, merge_sha: $sha}' "${OUT}" > "${OUT}.tmp" && mv "${OUT}.tmp" "${OUT}"
+          echo "📣 events.json:"
+          cat "${OUT}"
+
+      - name: "📦 上传 events.json (artifact anime-events)"
+        if: steps.changes.outputs.changed == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: anime-events
+          path: ${{ runner.temp }}/events.json
+          retention-days: 30
