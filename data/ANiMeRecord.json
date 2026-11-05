@@ -236628,7 +236628,7 @@
                     "id": 223910,
                     "name": "福賀郁夫",
                     "relation": "配角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/d2/bb/223910_crt_s1hAh.jpg",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/d2/bb/223910_crt_19kYr.jpg",
                     "actor_ids": [
                         4151
                     ],
@@ -236776,6 +236776,87 @@
                     "birth_month": null,
                     "birth_day": null,
                     "tags": [],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 227663,
+                    "name": "芽吹母",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/6f/26/227663_crt_TTh3K.jpg",
+                    "actor_ids": [
+                        4263
+                    ],
+                    "name_cn": "芽吹的妈妈",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "芽吹的妈妈",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 227664,
+                    "name": "芽吹父",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/72/51/227664_crt_YCI6H.jpg",
+                    "actor_ids": [
+                        4920
+                    ],
+                    "name_cn": "芽吹的爸爸",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "芽吹的爸爸",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 227665,
+                    "name": "芽吹弟",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/5b/ea/227665_crt_E85C9.jpg",
+                    "actor_ids": [
+                        6846
+                    ],
+                    "name_cn": "芽吹的弟弟",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "芽吹的弟弟",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
                     "__dataclass__": "Character"
                 }
             ],
