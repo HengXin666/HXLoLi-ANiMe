@@ -239,68 +239,173 @@ def build_body(sid: int, rec: dict, mode: str, vocab: Tuple[List[dict], List[dic
 BATCH_SIZE = 5
 MERGE_WAIT_S = int(os.environ.get("LABEL_MERGE_WAIT", "60"))
 MERGE_RETRIES = 4
-SID_MARK = re.compile(r"<!--\s*sid:(\d+)\s*-->")
+# <!-- sid:N --> 单部节; 系列节内每部带 <!-- sid:N series:K --> (K = 系列 key = 组内最小 id).
+# group(1) 恒为 sid, pr_sids / 旧正文解析不受影响; group(2) 为系列 key (单部节为 None).
+SID_MARK = re.compile(r"<!--\s*sid:(\d+)(?:\s+series:(\d+))?\s*-->")
+
+# 系列判定: 与主站 HXLoLi/src/components/anime/AnimeGraphPage/buildGraph.ts 的 SERIES_RELATIONS /
+# buildSeriesIndex 同口径 (relations 关系属于白名单, 且对方 id 也在库里, 并查集连通分量).
+# 标注流只用 relations 严格判定, 不引入主站展示层的名字前缀兜底, 避免把不同作品误连成一个系列.
+SERIES_RELATIONS = frozenset({"前传", "续集", "番外篇", "总集篇", "主线故事"})
+
+
+def series_groups(records: Dict[int, dict]) -> List[List[int]]:
+    """把 records 的 id 按系列分组 (并查集连通分量), 单部也保留成单元素列表.
+
+    组内 id 升序, 系列 key = 组内最小 id, 组间按 key 升序, 保证每次运行结果稳定.
+    """
+    parent: Dict[int, int] = {i: i for i in records}
+
+    def find(x: int) -> int:
+        root = x
+        while parent[root] != root:
+            root = parent[root]
+        while parent[x] != root:
+            parent[x], x = root, parent[x]
+        return root
+
+    def union(a: int, b: int) -> None:
+        ra, rb = find(a), find(b)
+        if ra != rb:
+            # 根取较小 id, 与 "系列 key = 组内最小 id" 一致
+            parent[max(ra, rb)] = min(ra, rb)
+
+    for sid, rec in records.items():
+        ad = rec.get("anime_data") if isinstance(rec, dict) else None
+        rels = (ad or {}).get("relations") if isinstance(ad, dict) else None
+        for rel in rels or []:
+            if not isinstance(rel, dict) or rel.get("relation") not in SERIES_RELATIONS:
+                continue
+            try:
+                other = int(rel.get("id"))
+            except (TypeError, ValueError):
+                continue
+            if other != sid and other in parent:
+                union(sid, other)
+    groups: Dict[int, List[int]] = {}
+    for sid in records:
+        groups.setdefault(find(sid), []).append(sid)
+    return sorted((sorted(g) for g in groups.values()), key=lambda g: g[0])
+
+
+def pack_series(groups: List[List[int]], chunk: int) -> List[List[List[int]]]:
+    """把系列组装箱成若干批量 PR: 系列组不可拆分, 每箱番剧总数尽量接近但不超过 chunk;
+    单个组超过 chunk 时独占一箱. 按 series key 顺序 first-fit, 结果稳定."""
+    chunk = max(1, chunk)
+    bins: List[List[List[int]]] = []
+    sizes: List[int] = []
+    for g in sorted(groups, key=lambda x: x[0]):
+        if len(g) > chunk:
+            bins.append([g])
+            sizes.append(len(g))
+            continue
+        for i, n in enumerate(sizes):
+            if n + len(g) <= chunk:  # 独占箱的 n 已 > chunk, 不会再放入
+                bins[i].append(g)
+                sizes[i] += len(g)
+                break
+        else:
+            bins.append([g])
+            sizes.append(len(g))
+    return bins
 
 
 def build_batch_body(ids: List[int], records: dict, vocab: Tuple[List[dict], List[dict], List[str]],
-                     include_monosugoi: bool = False, label: str = "新增番剧") -> str:
-    """多部番剧合并为一个批量标注 PR, 每部一节, 每节独立勾选.
+                     include_monosugoi: bool = False, label: str = "新增番剧",
+                     groups: Optional[List[List[int]]] = None) -> str:
+    """多部番剧合并为一个批量标注 PR, 每个系列一节, 每节独立勾选.
 
-    每节用 <!-- sid:<id> --> 标记, handle 解析时按节归集标签, 支持部分完成后合入已完成部分.
+    单部系列维持原样: 一节一部, 用 <!-- sid:<id> --> 标记.
+    多部系列为「系列节」: 节头列出该系列全部番剧 (封面 + 名 + bgm id), 每部带
+    <!-- sid:<id> series:<key> --> 标记; 勾选框只有一组, 作用于整个系列, handle 解析后
+    把这一组勾选广播写入系列内每一部的 data/labels/<sid>.json, 保证同系列 tag 完全一致.
+    groups 缺省时每个 id 自成一组 (= 旧版每部一节).
     include_monosugoi: 全量回填存量番剧时打开 (很多是已看完的老番, 需要能标「物凄い」);
     真正的新增番剧批量仍不主动展示 (没看完不谈最爱).
     """
     susume, genre, _ = vocab
+    if groups is None:
+        groups = [[sid] for sid in ids]
+    n_series = sum(1 for g in groups if len(g) > 1)
     lines = [
         f"## 批量标注 ({len(ids)} 部{label})",
         "",
-        "每部一节, 勾完各自节内的标签即可; 最下方的完成勾选对全部节生效.",
-        "只想处理某几部时, 其余节留空即可, 合入时只写有标注的文件.",
+        "每个系列一节 (单部番一节一部), 勾完各自节内的标签即可; 最下方的完成勾选对全部节生效.",
+        (f"其中 {n_series} 节是「系列节」: 一组勾选作用于该系列全部番剧, 同系列每一部写入完全相同的 tag."
+         if n_series else "本批没有多部系列, 每部一节."),
+        "只想处理某几节时, 其余节留空即可, 合入时只写有标注的文件.",
         "",
     ]
-    for sid in ids:
-        name = title_of(records.get(sid, {}), sid)
-        lines += [
-            f"<!-- sid:{sid} -->",
-            f'<img src="{poster_url(sid)}" width="120" align="right" alt="封面">',
-            "",
-            f"### 《{name}》 · bgm {sid}",
-            "",
-            "**推荐分类**",
-            "",
-        ]
+
+    def tag_boxes() -> List[str]:
+        out_lines = ["**推荐分类**", ""]
         for s in susume:
             if s["display"] == "物凄い" and not include_monosugoi:
                 continue  # 新增模式不主动展示物凄い
-            lines.append(checkbox(f"{s['display']} (/anime/susume/{s.get('slugPage', '')})"))
-        lines += ["", "**标注**", ""]
+            out_lines.append(checkbox(f"{s['display']} (/anime/susume/{s.get('slugPage', '')})"))
+        out_lines += ["", "**标注**", ""]
         for g in genre:
-            lines.append(checkbox(g["display"]))
+            out_lines.append(checkbox(g["display"]))
+        return out_lines
+
+    for grp in groups:
+        if len(grp) == 1:
+            sid = grp[0]
+            name = title_of(records.get(sid, {}), sid)
+            lines += [
+                f"<!-- sid:{sid} -->",
+                f'<img src="{poster_url(sid)}" width="120" align="right" alt="封面">',
+                "",
+                f"### 《{name}》 · bgm {sid}",
+                "",
+            ]
+        else:
+            key = min(grp)
+            head_name = title_of(records.get(key, {}), key)
+            lines += [
+                f"### 系列《{head_name}》 · 共 {len(grp)} 部",
+                "",
+                f"> 勾选作用于本系列全部 {len(grp)} 部: 下面这一组勾选会原样写入系列内每一部, 同系列 tag 完全一致.",
+                "",
+            ]
+            for sid in grp:
+                lines += [
+                    f"<!-- sid:{sid} series:{key} -->",
+                    f'- <img src="{poster_url(sid)}" width="60" alt="封面"> '
+                    f"《{title_of(records.get(sid, {}), sid)}》 · bgm {sid}",
+                ]
+            lines += [""]
+        lines += tag_boxes()
         lines += ["", "---", ""]
     lines += [
         checkbox("同步到 bgm (默认勾上)"),
         checkbox("✅ 标注完成, 合入 (只写有标注的节)"),
         checkbox("🚫 跳过整批, 关闭"),
         "",
-        "指令: /done /skip /nobgm (批量 PR 上 /tag /untag 不生效, 逐部请用各节勾选框)",
+        "指令: /done /skip /nobgm (批量 PR 上 /tag /untag 不生效, 逐节请用各节勾选框)",
     ]
     return "\n".join(lines)
 
 
 def open_batch(ids: List[int], records: dict, vocab: Tuple[List[dict], List[dict], List[str]],
-               include_monosugoi: bool = False, label: str = "新增番剧") -> dict:
+               include_monosugoi: bool = False, label: str = "新增番剧",
+               groups: Optional[List[List[int]]] = None) -> dict:
     branch = f"label/batch-{ids[0]}"
     # 不再给每部预写 tags 为空的草稿: 空文件会随 squash 进 main, 且被 cmd_backfill 当作已标注永不回填.
     # 只有 handle 真正解析到某节有勾选时才写 data/labels/<sid>.json.
     # GitHub 不允许无提交差异的 PR, 新建分支时只提交一个不改任何文件的空 commit.
     if ensure_branch(branch):
         empty_commit(branch, f"[批量标注] 初始化 {len(ids)} 部 (不预写草稿)")
-    body = build_batch_body(ids, records, vocab, include_monosugoi=include_monosugoi, label=label)
+    body = build_batch_body(ids, records, vocab, include_monosugoi=include_monosugoi, label=label,
+                            groups=groups)
     labels = [LABEL_FLOW, STATE_WAIT, MODE_NEW]
     pr = create_labeled_pr(
         {"title": f"[批量标注] {len(ids)} 部{label}", "head": branch, "base": BASE_BRANCH,
          "body": body, "labels": labels, "maintainer_can_modify": True}, labels)
-    return {"ids": ids, "pr": pr.get("number"), "action": "opened-batch"}
+    res: Dict[str, Any] = {"ids": ids, "pr": pr.get("number"), "action": "opened-batch"}
+    if groups:
+        res["series"] = [g for g in groups if len(g) > 1]
+    return res
 
 
 def pr_sids(pr: dict) -> set:
@@ -475,25 +580,42 @@ def parse_body(body: str, vocab: Tuple[List[dict], List[dict], List[str]]) -> Di
         done = False
     result = {"tags": tags, "rate": rate, "sync_bgm": sync_bgm, "done": done, "skip": skip}
 
-    # 批量 PR: 按 <!-- sid:N --> 分节, 每节独立归集标签, 支持部分完成.
+    # 批量 PR: 按节归集. 单部节 = 一个 <!-- sid:N -->; 系列节 = 连续若干个带同一 series:K 的标记,
+    # 节的勾选区在最后一个成员标记之后. 一节的 tags 勾选集合映射到节内全部 sid (sections),
+    # per_id 是它的广播展开 {sid: tags}, 同系列每个 sid 拿到同一份 tags.
+    # 只有 tags 是作品级 (整系列共用); rate / review 逐季独立, 节里不收集也不广播.
     marks = list(SID_MARK.finditer(body or ""))
     if marks:
+        groups: List[Tuple[Optional[int], List[Any]]] = []
+        for mk in marks:
+            key = int(mk.group(2)) if mk.group(2) else None
+            if key is not None and groups and groups[-1][0] == key:
+                groups[-1][1].append(mk)
+            else:
+                groups.append((key, [mk]))
+        sections: List[Dict[str, Any]] = []
         per_id: Dict[int, List[str]] = {}
-        for i, mk in enumerate(marks):
-            sid = int(mk.group(1))
-            seg = body[mk.end(): marks[i + 1].start() if i + 1 < len(marks) else len(body)]
-            seg_tags = []
+        for gi, (key, mks) in enumerate(groups):
+            seg_end = groups[gi + 1][1][0].start() if gi + 1 < len(groups) else len(body)
+            seg = body[mks[-1].end(): seg_end]
+            seg_tags: List[str] = []
             for c in parse_checked(seg):
                 c_plain = re.sub(r"\s*\(.*?\)\s*$", "", c).strip()
                 if c_plain in names and c_plain not in seg_tags:
                     seg_tags.append(c_plain)
-            per_id[sid] = seg_tags
+            sids = list(dict.fromkeys(int(mk.group(1)) for mk in mks))
+            # series key 只在脚本内部用于分节, 不写进 data/labels/*.json
+            sections.append({"series": key, "ids": sids, "tags": seg_tags})
+            for sid in sids:
+                per_id[sid] = list(seg_tags)  # 广播: 同节 (同系列) 每一部同一份 tags
         result["batch"] = True
         result["per_id"] = per_id
+        result["sections"] = sections
         # 批量 PR 的全局 tags 只用于置顶预览, 不写任何单部草稿
     else:
         result["batch"] = False
         result["per_id"] = {}
+        result["sections"] = []
     return result
 
 
@@ -710,36 +832,78 @@ def cmd_handle(args: argparse.Namespace) -> None:
         print(f"handle: PR #{args.pr} skipped and closed")
         return
 
-    # 批量标注 PR: 按 <!-- sid:N --> 分节逐部写草稿, 只写有标注的节, 支持部分完成.
+    # 批量标注 PR: 按节写草稿, 只写有勾选的节, 支持部分完成.
+    # 系列节广播 (broadcast) 只覆盖 tags: tags / 推荐分类是作品级, 整系列共用;
+    # rate (评分, 按 bgm 逐部) 与 review (观后感, 由单部状态变化触发) 逐季独立, 不广播.
+    # 写回时保留已有文件: 目标 sid 已有 data/labels/<sid>.json (先看 PR 分支, 再看 main) 就读出来,
+    # 只替换 tags, rate / review / by / labeledAt / mode 等其余字段原样保留; 没有文件才用新草稿.
+    # 本节没勾选 -> 节内任何 sid 都不写 (已有非空标注不会被冲掉); 本节勾选了但某 sid 已有不同的
+    # 非空 tags -> 照写 (本次勾选为准), 并列进 overwritten, 写进置顶评论与 report 供核对.
+    # series key 不写进标注文件, 一部番一个文件、按各自 sid; bgm 同步按 sid 逐个走.
     if state.get("batch"):
         per_id = state.get("per_id") or {}
-        written, filled, last_sha = [], [], None
-        for sid, tags in per_id.items():
+        sections = state.get("sections") or [
+            {"series": None, "ids": [sid], "tags": tags} for sid, tags in per_id.items()]
+        labeled_at = datetime.now(timezone(timedelta(hours=8))).isoformat(timespec="seconds")
+        ref = pr["head"]["ref"]
+        written, filled, overwritten, last_sha = [], [], [], None
+        for sec in sections:
+            tags = list(sec.get("tags") or [])
             if not tags:
-                continue  # 这节没勾, 不写文件, 主站仍当作未标注
-            filled.append(sid)
-            path = f"{LABELS_DIR}/{sid}.json"
-            cur, _ = get_file(pr["head"]["ref"], path)
-            if cur and cur.get("tags") == tags and cur.get("sync_bgm") == state["sync_bgm"]:
-                continue  # 与分支上已写的一致, 不重复提交
-            draft = {"id": sid, "tags": tags, "rate": None, "review": "", "mode": "new",
-                     "by": f"pr#{args.pr}", "labeledAt": datetime.now(timezone(timedelta(hours=8))).isoformat(timespec="seconds"),
-                     "bgmSynced": False, "sync_bgm": state["sync_bgm"]}
-            last_sha = write_draft(pr, path, draft, f"[批量标注] 更新 {sid} (tags={','.join(tags)})") or last_sha
-            written.append(sid)
+                continue  # 这节没勾, 不写文件 (未标注的仍是未标注, 已有标注原样保留)
+            for sid in sec["ids"]:
+                filled.append(sid)
+                path = f"{LABELS_DIR}/{sid}.json"
+                cur, _ = get_file(ref, path)
+                existing = cur if cur is not None else get_file(BASE_BRANCH, path)[0]
+                has_file = isinstance(existing, dict) and bool(existing)
+                # 保留已有字段: 以已有文件为底, 只替换 tags; 没有文件才从空底开始
+                draft = dict(existing) if has_file else {}
+                old_tags = list(draft.get("tags") or [])
+                if old_tags and old_tags != tags:
+                    overwritten.append({"id": sid, "old": old_tags, "new": tags})
+                draft["id"] = sid
+                draft["tags"] = tags
+                # rate / review 逐季独立: 已有值原样保留, 缺失才补默认 (不广播本节的任何评分/观后感)
+                draft.setdefault("rate", None)
+                draft.setdefault("review", "")
+                # by / labeledAt / mode: 已有非空值保留, 新文件或缺失时取本次 PR 的同一份值
+                for k, v in (("mode", "new"), ("by", f"pr#{args.pr}"), ("labeledAt", labeled_at)):
+                    if not draft.get(k):
+                        draft[k] = v
+                if old_tags != tags or not has_file:
+                    draft["bgmSynced"] = False  # tags 变了 (或新文件), 需要 (重新) 同步 bgm
+                draft.setdefault("bgmSynced", False)
+                draft["sync_bgm"] = state["sync_bgm"]
+                if cur is not None and cur == draft:
+                    continue  # 与分支上已写的一致, 不重复提交
+                msg = (f"[批量标注] 系列 {sec['series']} 广播 tags 到 {sid} (tags={','.join(tags)})"
+                       if sec.get("series") is not None else f"[批量标注] 更新 {sid} (tags={','.join(tags)})")
+                last_sha = write_draft(pr, path, draft, msg) or last_sha
+                written.append(sid)
+        if overwritten:
+            state["note"] = "本次勾选覆盖了已有非空 tags 的番: " + "; ".join(
+                f"{o['id']} ({','.join(o['old'])} → {','.join(o['new'])})" for o in overwritten)
+            print(f"  覆盖已有 tags: {overwritten}", file=sys.stderr)
+            try:
+                sticky_comment(args.pr, state)
+            except RuntimeError as e:
+                print(f"  sticky_comment: {e}", file=sys.stderr)
         if state["done"] and filled:
             # 合入前删掉 / 还原没勾的节 (兼容旧版预写的空草稿), 保证只有有标注的文件进 main
             last_sha = prune_empty_drafts(pr, [sid for sid, tags in per_id.items() if not tags]) or last_sha
             ok = merge_pr(pr, [t for tags in per_id.values() for t in tags], susume_names, last_sha)
             if ok:
                 out("merged", "true")
-                report({"pr": args.pr, "action": "merged-batch", "written": written, "labeled": filled})
+                report({"pr": args.pr, "action": "merged-batch", "written": written, "labeled": filled,
+                        "overwritten": overwritten})
                 print(f"handle: batch PR #{args.pr} merged, {len(filled)} labels")
             else:
-                report({"pr": args.pr, "action": "merge-failed-batch", "written": written})
+                report({"pr": args.pr, "action": "merge-failed-batch", "written": written,
+                        "overwritten": overwritten})
                 print(f"handle: batch PR #{args.pr} merge 未完成 (head 未刷新或 409/405 重试耗尽)")
         else:
-            report({"pr": args.pr, "action": "updated-batch", "written": written})
+            report({"pr": args.pr, "action": "updated-batch", "written": written, "overwritten": overwritten})
             print(f"handle: batch PR #{args.pr} draft updated, {len(written)} sections")
         return
 
@@ -886,7 +1050,7 @@ def cmd_issue(args: argparse.Namespace) -> None:
 
 
 def cmd_backfill(args: argparse.Namespace) -> None:
-    """全量回填: 列出所有还没有标注文件的番, 合并成批量标注 PR 供人工逐部勾选.
+    """全量回填: 列出所有还没有标注文件的番, 按系列分组后合并成批量标注 PR 供人工逐节勾选.
 
     清空旧 tag 后 data/labels/ 是空的, 这个入口负责把存量番剧一次性摊开给人标.
     """
@@ -912,20 +1076,35 @@ def cmd_backfill(args: argparse.Namespace) -> None:
     open_pr_ids = set()
     for pr in open_label_prs():
         open_pr_ids |= pr_sids(pr)
-    pending = sorted(i for i in records if i not in labeled and i not in open_pr_ids)
-    if not pending:
+    pending_set = {i for i in records if i not in labeled and i not in open_pr_ids}
+    if not pending_set:
         report({"action": "backfill", "pending": 0})
         print(f"backfill: 0 部待标注 (共 {len(records)} 部, 已标注 {len(labeled)} 部)")
         return
-    # 按 BATCH_SIZE 切成多个批量 PR, 每个 PR 正文每部一节独立勾选
+    # 同一个系列的番剧 tag 应该一样: 先按系列分组 (series_groups), 只保留待标注成员;
+    # 一个系列组整体放进同一个批量 PR 的一节 (不拆到不同 PR), 再按 series key 顺序装箱,
+    # 每个 PR 番剧总数接近但不超过 args.chunk; 单个组超过 chunk 时独占一个 PR.
+    all_groups = series_groups(records)
+    groups = [[i for i in g if i in pending_set] for g in all_groups]
+    # 系列里已有成员标注过 (或在开着的 PR 里): 已标注的不进本次 PR, 也不会被广播覆盖; 列出来供核对
+    partial = [{"series": g[0], "pending": [i for i in g if i in pending_set],
+                "excluded": [i for i in g if i not in pending_set]}
+               for g in all_groups if len(g) > 1 and any(i in pending_set for i in g)
+               and any(i not in pending_set for i in g)]
+    groups = [g for g in groups if g]
+    bins = pack_series(groups, args.chunk)
     label_for([LABEL_FLOW, STATE_WAIT, MODE_NEW])
     results = []
-    for start in range(0, len(pending), args.chunk):
-        chunk = pending[start:start + args.chunk]
+    for grp_list in bins:
+        ids = [i for g in grp_list for i in g]
         # 全量回填的是存量番剧 (很多已看完), 要能标「物凄い」这个最强分类
-        results.append(open_batch(chunk, records, vocab, include_monosugoi=True, label="存量番剧回填"))
-    report({"action": "backfill", "pending": len(pending), "prs": results})
-    print(f"backfill: {len(pending)} 部待标注 -> {len(results)} 个批量标注 PR (共 {len(records)} 部)")
+        results.append(open_batch(ids, records, vocab, include_monosugoi=True, label="存量番剧回填",
+                                  groups=grp_list))
+    n_series = sum(1 for g in groups if len(g) > 1)
+    report({"action": "backfill", "pending": len(pending_set), "series": n_series,
+            "series_partial": partial, "prs": results})
+    print(f"backfill: {len(pending_set)} 部待标注 ({len(groups)} 个系列组, 其中多部系列 {n_series} 个)"
+          f" -> {len(results)} 个批量标注 PR (共 {len(records)} 部)")
 
 
 def main() -> None:
