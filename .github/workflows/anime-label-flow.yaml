@@ -6,9 +6,11 @@ name: "[LoLi-ANiMe]: 标注流 (标注 PR / 勾选解析 / bgm 同步 / 一个�
 # 触发:
 #   1. workflow_run   data 流 (爬虫) 合入成功后 → 读取 events.json → 每个事件开/更新一个标注 PR
 #                     (分支 label/<id>, 草稿 data/labels/<id>.json, tags 为空; 正文带封面 CDN 图)
-#   2. pull_request_target edited  用户在 PR 正文点勾选 → 写回草稿 (每次一个 commit)
-#      issue_comment created        /tag /untag /rate /review /done /skip /nobgm (/resync /reopen)
-#   3. 勾【标注完成】或 /done → 自动 squash 合入 → 同一 job 内跑 label-sync-bgm (bgm api + BGM_TOKEN)
+#   2. 勾标签 (在 PR 正文点勾选 / 编辑正文) 全程不触发任何工作流 (已不再监听 edited).
+#      issue_comment created        /tag /untag /rate /review /done /skip /nobgm (/resync /reopen) 作为等价入口
+#   3. 最终确认: 给 PR 打 label「state:待合入」(pull_request_target labeled) 或评论 /done → 只跑一次 handle:
+#      一次性解析正文勾选 → 写回草稿 → 自动 squash 合入 → 同一 job 内跑 label-sync-bgm (bgm api + BGM_TOKEN)
+#      其它 label (flow:label / state:等待标注 / mode:* / susume:* / bgm:*) 的 labeled 事件一律不跑.
 #      pull_request_target closed(merged) 兜底: 人工直接点 Merge 时补齐并同步
 #   4. 过期扫描: 定时入口在 anime-label-expire.yaml; 本文件只保留 workflow_dispatch action=expire
 #
@@ -26,7 +28,7 @@ on:
     types: [completed]
     branches: [main]
   pull_request_target:
-    types: [edited, closed]
+    types: [labeled, closed]
   issue_comment:
     types: [created]
   issues:
@@ -195,14 +197,15 @@ jobs:
   # ══════════════════════════════════════
   handle:
     name: 解析勾选 / 指令
-    # edited: 只在正文真的变了 (changes.body 存在) 时跑, 改标题 / base 的 edited 直接不跑;
-    #         sender 限定为仓库 owner (edited 载荷里没有 sender 的 author_association,
-    #         pull_request.author_association 是 PR 作者即 bot, 不能用来判断 sender).
-    # issue_comment: 评论者 author_association 必须是 OWNER / MEMBER / COLLABORATOR.
-    # 两者都排除 Bot. 勾选集合是否变化在下方「勾选集合门禁」step 里比较.
+    # 勾标签 (编辑 PR 正文) 不触发; 只有最终确认才跑一次:
+    # labeled: 仅当被加上的 label 是「state:待合入」时跑, 其它 label 的 labeled 事件不跑;
+    #          sender 限定为仓库 owner (labeled 载荷里没有 sender 的 author_association,
+    #          pull_request.author_association 是 PR 作者即 bot, 不能用来判断 sender).
+    # issue_comment: 等价入口 (/done 等), 评论者 author_association 必须是 OWNER / MEMBER / COLLABORATOR.
+    # 两者都排除 Bot.
     if: >-
-      (github.event_name == 'pull_request_target' && github.event.action == 'edited' &&
-       github.event.changes.body != null &&
+      (github.event_name == 'pull_request_target' && github.event.action == 'labeled' &&
+       github.event.label.name == 'state:待合入' &&
        contains(github.event.pull_request.labels.*.name, 'flow:label') &&
        github.event.sender.type != 'Bot' &&
        github.event.sender.login == github.repository_owner) ||
@@ -212,39 +215,17 @@ jobs:
        contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association))
     runs-on: ubuntu-latest
     steps:
-      # 勾选集合门禁: edited 时比较旧正文与新正文里已勾选 ([x]) 的行集合, 未变化则后续全部跳过
-      # (挡住只改文字 / 脚本补正文等不改勾选的 edited). issue_comment 直接放行.
-      - name: 🚦 勾选集合门禁
-        id: gate
-        env:
-          OLD_BODY: ${{ github.event.changes.body.from }}
-          NEW_BODY: ${{ github.event.pull_request.body }}
-        run: |
-          if [ "${{ github.event_name }}" != "pull_request_target" ]; then
-            echo "go=true" >> "$GITHUB_OUTPUT"; exit 0
-          fi
-          checked() { printf '%s\n' "$1" | tr -d '\r' | grep -iE '^[[:space:]]*[-*][[:space:]]+\[x\]' | sed -E 's/[[:space:]]+$//' | sort -u; }
-          if [ "$(checked "$OLD_BODY")" = "$(checked "$NEW_BODY")" ]; then
-            echo "ℹ️ 勾选集合未变化, 跳过"
-            echo "go=false" >> "$GITHUB_OUTPUT"
-          else
-            echo "go=true" >> "$GITHUB_OUTPUT"
-          fi
-
       - uses: actions/checkout@v4
-        if: steps.gate.outputs.go == 'true'
         with:
           ref: main
           fetch-depth: 0
           persist-credentials: false
 
       - id: cdn
-        if: steps.gate.outputs.go == 'true'
         run: echo "tag=$(git tag -l 'HX-*' --sort=-creatordate | head -n 1)" >> "$GITHUB_OUTPUT"
 
       - name: ✍️ 写回标注草稿
         id: handle
-        if: steps.gate.outputs.go == 'true'
         env:
           GITHUB_TOKEN: ${{ github.token }}
           ANIME_CDN_TAG: ${{ steps.cdn.outputs.tag }}
@@ -262,7 +243,7 @@ jobs:
         run: python3 scripts/label-sync-bgm.py --pr "${{ steps.handle.outputs.pr }}"
 
       - uses: actions/upload-artifact@v4
-        if: always() && steps.gate.outputs.go == 'true'
+        if: always()
         continue-on-error: true
         with:
           name: label-handle-report

@@ -6,7 +6,8 @@
 
 子命令:
   open       读 events.json (data 流合入后的事件清单), 每个事件开 (或更新/升级) 一个标注 PR
-  handle     处理标注 PR 上的勾选 (PR 正文 edited) 或评论指令, 写回草稿, 完成即合入
+  handle     PR 被打上 label `state:待合入` (labeled) 或评论 /done 时跑一次: 解析正文勾选 + 评论指令,
+             写回草稿并合入. 勾选/编辑正文本身不触发 (workflow 已去掉 edited), 完成信号只看 label / /done
   post-merge 人工在网页上直接合入标注 PR 时补齐 labeledAt/by 与 label
   expire     每日扫描 flow:label + state:等待标注, 满一个月关闭, 第 25 天提醒一次
 
@@ -45,6 +46,9 @@ LABEL_FLOW = "flow:label"
 STATE_WAIT = "state:等待标注"
 STATE_DONE = "state:已标注"
 STATE_EXPIRED = "state:expired"
+# 最终确认: 勾好标签后由人给 PR 打这个 label, workflow 只在 labeled 该 label 时跑一次 handle.
+# done 的唯一正文外来源 (另一来源是评论 /done); 正文里的「✅ 标注完成」旧勾选框不再作为依据.
+STATE_CONFIRM = "state:待合入"
 MODE_NEW = "mode:new"
 MODE_REVIEW = "mode:review"
 
@@ -177,6 +181,7 @@ def label_for(labels: List[str]) -> None:
     colors = {
         LABEL_FLOW: "5319e7", STATE_WAIT: "fbca04", STATE_DONE: "0e8a16",
         STATE_EXPIRED: "b60205", MODE_NEW: "1d76db", MODE_REVIEW: "f9d0c4",
+        STATE_CONFIRM: "d93f0b",
         "state:已合入": "0e8a16", "bgm:synced": "0e8a16", "bgm:sync-failed": "b60205",
     }
     for name in labels:
@@ -189,6 +194,10 @@ def label_for(labels: List[str]) -> None:
 
 
 # ── PR 正文模板 ─────────────────────────────────────────────────────────
+# 正文不再生成「✅ 标注完成, 合入」勾选框: 完成信号只来自 label STATE_CONFIRM (或评论 /done).
+CONFIRM_HINT = "勾好标签后, 给本 PR 加上 label `state:待合入` 才会合入并同步 bgm; 加 label 之前的任意勾选/编辑都不会触发工作流."
+
+
 def checkbox(item: str) -> str:
     return f"- [ ] {item}"
 
@@ -205,7 +214,8 @@ def build_body(sid: int, rec: dict, mode: str, vocab: Tuple[List[dict], List[dic
         "",
         f"- bgm 条目: https://bgm.tv/subject/{sid}",
         f"- 触发: {'状态变化 (在看 → 看过/搁置/抛弃), 邀请评分与标注' if is_review else '新增番剧'}",
-        "- 勾完点最下方【标注完成, 合入】, 或评论 /done",
+        "- 勾好标签后, 给本 PR 加上 label `state:待合入` 才会合入并同步 bgm; 加 label 之前的任意勾选/编辑都不会触发工作流.",
+        "- 备用: 评论 /done 也会合入一次; 要放弃这部请勾「跳过」再加 label, 或直接评论 /skip.",
         "",
     ]
     # 推荐分类: 新增模式不主动展示 物凄い (没看完不谈最爱)
@@ -227,8 +237,9 @@ def build_body(sid: int, rec: dict, mode: str, vocab: Tuple[List[dict], List[dic
                   "", "**一句话观后感** (可选, 评论 /review 内容)", ""]
     lines += [
         checkbox("同步到 bgm (默认勾上)"),
-        checkbox("✅ 标注完成, 合入"),
-        checkbox("🚫 跳过这部, 关闭"),
+        checkbox("🚫 跳过这部, 关闭 (勾上后同样要加 label `state:待合入` 或评论 /skip 才生效)"),
+        "",
+        f"> **{CONFIRM_HINT}**",
         "",
         "---",
         "指令: /tag 词 /untag 词 /rate 1-10 /review 文本 /done /skip /nobgm /resync",
@@ -330,7 +341,8 @@ def build_batch_body(ids: List[int], records: dict, vocab: Tuple[List[dict], Lis
     lines = [
         f"## 批量标注 ({len(ids)} 部{label})",
         "",
-        "每个系列一节 (单部番一节一部), 勾完各自节内的标签即可; 最下方的完成勾选对全部节生效.",
+        "每个系列一节 (单部番一节一部), 勾完各自节内的标签即可.",
+        f"**{CONFIRM_HINT}** 合入时对全部节生效 (只写有标注的节); 备用: 评论 /done.",
         (f"其中 {n_series} 节是「系列节」: 一组勾选作用于该系列全部番剧, 同系列每一部写入完全相同的 tag."
          if n_series else "本批没有多部系列, 每部一节."),
         "只想处理某几节时, 其余节留空即可, 合入时只写有标注的文件.",
@@ -379,8 +391,9 @@ def build_batch_body(ids: List[int], records: dict, vocab: Tuple[List[dict], Lis
         lines += ["", "---", ""]
     lines += [
         checkbox("同步到 bgm (默认勾上)"),
-        checkbox("✅ 标注完成, 合入 (只写有标注的节)"),
-        checkbox("🚫 跳过整批, 关闭"),
+        checkbox("🚫 跳过整批, 关闭 (勾上后同样要加 label `state:待合入` 或评论 /skip 才生效)"),
+        "",
+        f"> **{CONFIRM_HINT}**",
         "",
         "指令: /done /skip /nobgm (批量 PR 上 /tag /untag 不生效, 逐节请用各节勾选框)",
     ]
@@ -498,7 +511,7 @@ def cmd_open(args: argparse.Namespace) -> None:
             new_ids.append(i)
     review_by_id = {int(r["id"]): r for r in events["review"]}
 
-    label_for([LABEL_FLOW, STATE_WAIT, STATE_DONE, STATE_EXPIRED, MODE_NEW, MODE_REVIEW])
+    label_for([LABEL_FLOW, STATE_WAIT, STATE_DONE, STATE_EXPIRED, MODE_NEW, MODE_REVIEW, STATE_CONFIRM])
     opened = []
     # 观后感事件优先按 review 模式处理
     todo: List[Tuple[int, str]] = []
@@ -558,7 +571,19 @@ def parse_checked(body: str) -> List[str]:
     return [m.group(1).strip() for m in CHECKED.finditer(body or "")]
 
 
-def parse_body(body: str, vocab: Tuple[List[dict], List[dict], List[str]]) -> Dict[str, Any]:
+def has_confirm_label(pr: dict) -> bool:
+    """PR 是否已带最终确认 label state:待合入 (pr["labels"] 为 GitHub 返回的 [{name: ...}] 或纯字符串)."""
+    for l in pr.get("labels") or []:
+        name = l.get("name") if isinstance(l, dict) else l
+        if name == STATE_CONFIRM:
+            return True
+    return False
+
+
+def parse_body(body: str, vocab: Tuple[List[dict], List[dict], List[str]],
+               confirm: bool = False) -> Dict[str, Any]:
+    """解析正文勾选. done 的唯一来源 = confirm (PR 已带 label state:待合入), 由 cmd_handle 传入;
+    评论 /done 在 apply_comment 里另行置 done. 正文里的旧版「✅ 标注完成」勾选框只做兼容识别, 不再算 done."""
     _, _, names = vocab
     checked = parse_checked(body)
     tags, rate, sync_bgm, done, skip, nobgm = [], None, True, False, False, False
@@ -570,11 +595,12 @@ def parse_body(body: str, vocab: Tuple[List[dict], List[dict], List[str]]) -> Di
         elif re.fullmatch(r"\d{1,2}", c_plain) and 1 <= int(c_plain) <= 10:
             rate = int(c_plain)
         elif "标注完成" in c:
-            done = True
+            pass  # 旧版正文的完成勾选框: 兼容 (不报错、不当标签), 但不再作为 done 依据
         elif "跳过" in c:
             skip = True
         elif "同步到 bgm" in c:
             sync_bgm = True
+    done = bool(confirm)
     # 勾了跳过优先于完成
     if skip:
         done = False
@@ -750,6 +776,16 @@ def wait_head(num: int, sha: str, timeout: int = MERGE_WAIT_S) -> bool:
         time.sleep(2)
 
 
+def remove_label(num: int, name: str) -> None:
+    """从 PR 上摘掉一个 label (不存在 404 忽略). GITHUB_TOKEN 的操作不会再触发工作流."""
+    import urllib.parse
+    try:
+        api("DELETE", f"/repos/{REPO}/issues/{num}/labels/{urllib.parse.quote(name, safe='')}")
+    except RuntimeError as e:
+        if http_code(e) != 404:
+            print(f"  remove label {name} on #{num}: {e}", file=sys.stderr)
+
+
 def merge_pr(pr: dict, tags: List[str], susume_names: List[str], expect_sha: Optional[str] = None) -> bool:
     """带 sha 合入: 先等 PR head.sha 等于最后一次写入的 commit, merge body 带 sha, 409/405 重试.
     只有词表 susume 分组内的标签才打 susume:<tag> label, genre 不打. 返回是否合入成功."""
@@ -782,7 +818,9 @@ def merge_pr(pr: dict, tags: List[str], susume_names: List[str], expect_sha: Opt
     if not merged:
         return False
     labels = [l["name"] for l in pr.get("labels", [])]
-    labels = [l for l in labels if l != STATE_WAIT] + [STATE_DONE]
+    # 合入成功: 摘掉 state:等待标注 与最终确认 label state:待合入, 换上 state:已标注
+    labels = [l for l in labels if l not in (STATE_WAIT, STATE_CONFIRM)] + [STATE_DONE]
+    label_for([STATE_DONE])
     # susume 结果 label: 只给推荐分类打, 九项 genre 不打
     for t in dict.fromkeys(tags):
         if t not in susume_names:
@@ -800,7 +838,9 @@ def cmd_handle(args: argparse.Namespace) -> None:
     susume, _, names = vocab
     susume_names = [x["display"] for x in susume]
     pr = api("GET", f"/repos/{REPO}/pulls/{args.pr}")
-    body_state = parse_body(pr.get("body") or "", vocab)
+    # 完成信号: 只看 PR 是否带 label state:待合入 (workflow 在 labeled 该 label 时触发); 正文勾选框不算.
+    confirm = has_confirm_label(pr)
+    body_state = parse_body(pr.get("body") or "", vocab, confirm=confirm)
     # 叠加最新一条评论指令 (只取本次触发的评论, 由调用方经 env 传; 缺省扫全部)
     state = dict(body_state)
     state.setdefault("review", "")
@@ -810,17 +850,20 @@ def cmd_handle(args: argparse.Namespace) -> None:
     # review 文本也可能来自 /review
 
     # 合入门槛: 至少一个非空标注节 (批量: 某节有勾选标签; 单部: 标签/评分/观后感任一非空),
-    # 否则 /done 或 ✅ 不写不合并, 只刷新置顶评论.
+    # 否则 label state:待合入 或 /done 都不写不合并, 只刷新置顶评论, 并摘掉 label 以便勾好后重新加.
     if state.get("batch"):
         has_label = any(state.get("per_id", {}).values())
     else:
         has_label = bool(state["tags"]) or state["rate"] is not None or bool(state.get("review"))
     blocked = bool(state["done"]) and not state["skip"] and not has_label
     if blocked:
-        state["note"] = "还没有任何标注, 本次不写入也不合入. 勾选标签后再点完成."
+        state["note"] = ("还没有任何标注, 本次不写入也不合入. 已摘掉 label `state:待合入`, "
+                         "勾选标签后重新加上即可.")
     sticky_comment(args.pr, state)
     out("pr", str(args.pr))
     if blocked:
+        if confirm:
+            remove_label(args.pr, STATE_CONFIRM)
         report({"pr": args.pr, "action": "blocked-empty"})
         print(f"handle: PR #{args.pr} done 被拒: 没有任何非空标注节")
         return
@@ -899,6 +942,8 @@ def cmd_handle(args: argparse.Namespace) -> None:
                         "overwritten": overwritten})
                 print(f"handle: batch PR #{args.pr} merged, {len(filled)} labels")
             else:
+                if confirm:
+                    remove_label(args.pr, STATE_CONFIRM)  # 让人重新加 label 再试一次
                 report({"pr": args.pr, "action": "merge-failed-batch", "written": written,
                         "overwritten": overwritten})
                 print(f"handle: batch PR #{args.pr} merge 未完成 (head 未刷新或 409/405 重试耗尽)")
@@ -925,6 +970,8 @@ def cmd_handle(args: argparse.Namespace) -> None:
             report({"pr": args.pr, "action": "merged", "tags": state["tags"], "rate": state["rate"]})
             print(f"handle: PR #{args.pr} merged")
         else:
+            if confirm:
+                remove_label(args.pr, STATE_CONFIRM)  # 让人重新加 label 再试一次
             report({"pr": args.pr, "action": "merge-failed", "tags": state["tags"]})
             print(f"handle: PR #{args.pr} merge 未完成 (head 未刷新或 409/405 重试耗尽)")
     elif state.get("resync"):
@@ -938,7 +985,7 @@ def cmd_handle(args: argparse.Namespace) -> None:
 def cmd_post_merge(args: argparse.Namespace) -> None:
     pr = api("GET", f"/repos/{REPO}/pulls/{args.pr}")
     labels = [l["name"] for l in pr.get("labels", [])]
-    labels = [l for l in labels if l != STATE_WAIT] + [STATE_DONE]
+    labels = [l for l in labels if l not in (STATE_WAIT, STATE_CONFIRM)] + [STATE_DONE]
     api("PATCH", f"/repos/{REPO}/issues/{args.pr}", {"labels": labels})
     # 补齐草稿的 by / labeledAt (合入后文件已在 main, 用 main 上的内容)
     try:
