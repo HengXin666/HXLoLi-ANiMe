@@ -10,7 +10,7 @@ name: "[LoLi-ANiMe]: 标注流 (标注 PR / 勾选解析 / bgm 同步 / 一个�
 #      issue_comment created        /tag /untag /rate /review /done /skip /nobgm (/resync /reopen)
 #   3. 勾【标注完成】或 /done → 自动 squash 合入 → 同一 job 内跑 label-sync-bgm (bgm api + BGM_TOKEN)
 #      pull_request_target closed(merged) 兜底: 人工直接点 Merge 时补齐并同步
-#   4. schedule 每日扫描 flow:label + state:等待标注, 满一个月关闭并打 state:expired, 第 25 天提醒一次
+#   4. 过期扫描: 定时入口在 anime-label-expire.yaml; 本文件只保留 workflow_dispatch action=expire
 #
 # 安全: pull_request_target / issue_comment 只 checkout 默认分支上的脚本, 绝不执行 PR 分支代码;
 #       只有仓库写权限用户的勾选/指令生效.
@@ -24,15 +24,15 @@ on:
   workflow_run:
     workflows: ["[LoLi-ANiMe]: 爬取番剧数据 & CDN Tag"]
     types: [completed]
+    branches: [main]
   pull_request_target:
     types: [edited, closed]
   issue_comment:
     types: [created]
   issues:
     types: [opened]
-  schedule:
-    # 北京时间每天 09:30 (UTC 01:30) 扫描过期标注 PR
-    - cron: '30 1 * * *'
+  # 过期扫描的定时入口只保留在 anime-label-expire.yaml (UTC 03:17), 此处不再 schedule;
+  # 手动 expire 仍走下面的 workflow_dispatch.
   workflow_dispatch:
     inputs:
       action:
@@ -63,8 +63,10 @@ permissions:
   actions: read
 
 concurrency:
-  # 同一个标注 PR 的勾选/评论串行处理, 避免草稿互相覆盖
-  group: anime-label-${{ github.event.pull_request.number || github.event.issue.number || github.event_name }}
+  # 同一个标注 PR 的勾选/评论串行处理, 避免草稿互相覆盖;
+  # workflow_run / dispatch 等无 PR 号的事件用 github.run_id 各自成组, 不合并,
+  # 避免新 pending 取消旧 pending 把真正爬取 success 触发的 open run 顶掉.
+  group: anime-label-${{ github.event.pull_request.number || github.event.issue.number || github.run_id }}
   cancel-in-progress: false
 
 env:
@@ -137,7 +139,9 @@ jobs:
   open:
     name: 开标注 PR
     if: >-
-      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success') ||
+      (github.event_name == 'workflow_run' &&
+       github.event.workflow_run.event != 'pull_request' &&
+       github.event.workflow_run.conclusion == 'success') ||
       (github.event_name == 'workflow_dispatch' && inputs.action == 'open')
     runs-on: ubuntu-latest
     steps:
@@ -191,26 +195,56 @@ jobs:
   # ══════════════════════════════════════
   handle:
     name: 解析勾选 / 指令
+    # edited: 只在正文真的变了 (changes.body 存在) 时跑, 改标题 / base 的 edited 直接不跑;
+    #         sender 限定为仓库 owner (edited 载荷里没有 sender 的 author_association,
+    #         pull_request.author_association 是 PR 作者即 bot, 不能用来判断 sender).
+    # issue_comment: 评论者 author_association 必须是 OWNER / MEMBER / COLLABORATOR.
+    # 两者都排除 Bot. 勾选集合是否变化在下方「勾选集合门禁」step 里比较.
     if: >-
       (github.event_name == 'pull_request_target' && github.event.action == 'edited' &&
+       github.event.changes.body != null &&
        contains(github.event.pull_request.labels.*.name, 'flow:label') &&
-       github.event.sender.type != 'Bot') ||
+       github.event.sender.type != 'Bot' &&
+       github.event.sender.login == github.repository_owner) ||
       (github.event_name == 'issue_comment' && github.event.issue.pull_request &&
        contains(github.event.issue.labels.*.name, 'flow:label') &&
-       github.event.comment.user.type != 'Bot')
+       github.event.comment.user.type != 'Bot' &&
+       contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association))
     runs-on: ubuntu-latest
     steps:
+      # 勾选集合门禁: edited 时比较旧正文与新正文里已勾选 ([x]) 的行集合, 未变化则后续全部跳过
+      # (挡住只改文字 / 脚本补正文等不改勾选的 edited). issue_comment 直接放行.
+      - name: 🚦 勾选集合门禁
+        id: gate
+        env:
+          OLD_BODY: ${{ github.event.changes.body.from }}
+          NEW_BODY: ${{ github.event.pull_request.body }}
+        run: |
+          if [ "${{ github.event_name }}" != "pull_request_target" ]; then
+            echo "go=true" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          checked() { printf '%s\n' "$1" | tr -d '\r' | grep -iE '^[[:space:]]*[-*][[:space:]]+\[x\]' | sed -E 's/[[:space:]]+$//' | sort -u; }
+          if [ "$(checked "$OLD_BODY")" = "$(checked "$NEW_BODY")" ]; then
+            echo "ℹ️ 勾选集合未变化, 跳过"
+            echo "go=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "go=true" >> "$GITHUB_OUTPUT"
+          fi
+
       - uses: actions/checkout@v4
+        if: steps.gate.outputs.go == 'true'
         with:
           ref: main
           fetch-depth: 0
           persist-credentials: false
 
       - id: cdn
+        if: steps.gate.outputs.go == 'true'
         run: echo "tag=$(git tag -l 'HX-*' --sort=-creatordate | head -n 1)" >> "$GITHUB_OUTPUT"
 
       - name: ✍️ 写回标注草稿
         id: handle
+        if: steps.gate.outputs.go == 'true'
         env:
           GITHUB_TOKEN: ${{ github.token }}
           ANIME_CDN_TAG: ${{ steps.cdn.outputs.tag }}
@@ -228,7 +262,7 @@ jobs:
         run: python3 scripts/label-sync-bgm.py --pr "${{ steps.handle.outputs.pr }}"
 
       - uses: actions/upload-artifact@v4
-        if: always()
+        if: always() && steps.gate.outputs.go == 'true'
         continue-on-error: true
         with:
           name: label-handle-report
@@ -286,14 +320,13 @@ jobs:
           retention-days: 7
 
   # ══════════════════════════════════════
-  # D) 一个月自动关闭: 创建时间 / 最后一次用户交互 较晚者起算
+  # D) 一个月自动关闭 (手动入口; 定时见 anime-label-expire.yaml): 创建时间 / 最后一次用户交互 较晚者起算
   #    满 30 天: 评论 + 关闭 + 删分支 + state:expired, 不写标注文件; 第 25 天提醒一次
   # ══════════════════════════════════════
   expire:
-    name: 过期扫描
-    if: >-
-      github.event_name == 'schedule' ||
-      (github.event_name == 'workflow_dispatch' && inputs.action == 'expire')
+    name: 过期扫描 (手动)
+    # 定时扫描只由 anime-label-expire.yaml 负责, 这里仅保留手动入口
+    if: github.event_name == 'workflow_dispatch' && inputs.action == 'expire'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

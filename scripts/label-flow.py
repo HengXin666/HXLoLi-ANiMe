@@ -237,17 +237,22 @@ def build_body(sid: int, rec: dict, mode: str, vocab: Tuple[List[dict], List[dic
 
 
 BATCH_SIZE = 5
+MERGE_WAIT_S = int(os.environ.get("LABEL_MERGE_WAIT", "60"))
+MERGE_RETRIES = 4
 SID_MARK = re.compile(r"<!--\s*sid:(\d+)\s*-->")
 
 
-def build_batch_body(ids: List[int], records: dict, vocab: Tuple[List[dict], List[dict], List[str]]) -> str:
-    """超过 BATCH_SIZE 部新增番剧合并为一个批量标注 PR, 每部一节, 每节独立勾选.
+def build_batch_body(ids: List[int], records: dict, vocab: Tuple[List[dict], List[dict], List[str]],
+                     include_monosugoi: bool = False, label: str = "新增番剧") -> str:
+    """多部番剧合并为一个批量标注 PR, 每部一节, 每节独立勾选.
 
     每节用 <!-- sid:<id> --> 标记, handle 解析时按节归集标签, 支持部分完成后合入已完成部分.
+    include_monosugoi: 全量回填存量番剧时打开 (很多是已看完的老番, 需要能标「物凄い」);
+    真正的新增番剧批量仍不主动展示 (没看完不谈最爱).
     """
     susume, genre, _ = vocab
     lines = [
-        f"## 批量标注 ({len(ids)} 部新增番剧)",
+        f"## 批量标注 ({len(ids)} 部{label})",
         "",
         "每部一节, 勾完各自节内的标签即可; 最下方的完成勾选对全部节生效.",
         "只想处理某几部时, 其余节留空即可, 合入时只写有标注的文件.",
@@ -265,7 +270,7 @@ def build_batch_body(ids: List[int], records: dict, vocab: Tuple[List[dict], Lis
             "",
         ]
         for s in susume:
-            if s["display"] == "物凄い":
+            if s["display"] == "物凄い" and not include_monosugoi:
                 continue  # 新增模式不主动展示物凄い
             lines.append(checkbox(f"{s['display']} (/anime/susume/{s.get('slugPage', '')})"))
         lines += ["", "**标注**", ""]
@@ -277,48 +282,76 @@ def build_batch_body(ids: List[int], records: dict, vocab: Tuple[List[dict], Lis
         checkbox("✅ 标注完成, 合入 (只写有标注的节)"),
         checkbox("🚫 跳过整批, 关闭"),
         "",
-        "指令: /tag 词 /untag 词 /done /skip /nobgm (批量 PR 上 /tag 作用于全部节, 逐部请用勾选框)",
+        "指令: /done /skip /nobgm (批量 PR 上 /tag /untag 不生效, 逐部请用各节勾选框)",
     ]
     return "\n".join(lines)
 
 
-def open_batch(ids: List[int], records: dict, vocab: Tuple[List[dict], List[dict], List[str]]) -> dict:
+def open_batch(ids: List[int], records: dict, vocab: Tuple[List[dict], List[dict], List[str]],
+               include_monosugoi: bool = False, label: str = "新增番剧") -> dict:
     branch = f"label/batch-{ids[0]}"
-    ensure_branch(branch)
-    for sid in ids:
-        draft = {"id": sid, "tags": [], "rate": None, "review": "", "mode": "new",
-                 "by": "", "labeledAt": "", "bgmSynced": False}
-        put_file(branch, f"{LABELS_DIR}/{sid}.json",
-                 json.dumps(draft, ensure_ascii=False, indent=2) + "\n",
-                 f"[标注] 批量初始化 {sid} 草稿")
-    body = build_batch_body(ids, records, vocab)
+    # 不再给每部预写 tags 为空的草稿: 空文件会随 squash 进 main, 且被 cmd_backfill 当作已标注永不回填.
+    # 只有 handle 真正解析到某节有勾选时才写 data/labels/<sid>.json.
+    # GitHub 不允许无提交差异的 PR, 新建分支时只提交一个不改任何文件的空 commit.
+    if ensure_branch(branch):
+        empty_commit(branch, f"[批量标注] 初始化 {len(ids)} 部 (不预写草稿)")
+    body = build_batch_body(ids, records, vocab, include_monosugoi=include_monosugoi, label=label)
     labels = [LABEL_FLOW, STATE_WAIT, MODE_NEW]
     pr = create_labeled_pr(
-        {"title": f"[批量标注] {len(ids)} 部新增番剧", "head": branch, "base": BASE_BRANCH,
+        {"title": f"[批量标注] {len(ids)} 部{label}", "head": branch, "base": BASE_BRANCH,
          "body": body, "labels": labels, "maintainer_can_modify": True}, labels)
     return {"ids": ids, "pr": pr.get("number"), "action": "opened-batch"}
 
 
+def pr_sids(pr: dict) -> set:
+    """一个标注 PR 覆盖的全部番剧 id: 批量 PR 解析正文 <!-- sid:N --> 标记 (SID_MARK),
+    单部 PR 用分支名 label/<id>. 不再从 label/batch-<ids[0]> 推 id (只含首部)."""
+    ids = {int(m.group(1)) for m in SID_MARK.finditer(pr.get("body") or "")}
+    last = pr.get("head", {}).get("ref", "").split("/")[-1]
+    if last.isdigit():
+        ids.add(int(last))
+    return ids
+
+
+def open_label_prs() -> List[dict]:
+    return [pr for pr in paged(f"/repos/{REPO}/pulls?state=open")
+            if any(l["name"] == LABEL_FLOW for l in pr.get("labels", []))]
+
+
 def find_open_pr(sid: int) -> Optional[dict]:
-    for pr in paged(f"/repos/{REPO}/pulls?state=open"):
-        if any(l["name"] == LABEL_FLOW for l in pr.get("labels", [])):
-            if pr.get("head", {}).get("ref", "").endswith(f"/{sid}") or f"#{sid}" in (pr.get("title") or ""):
-                return pr
+    for pr in open_label_prs():
+        if sid in pr_sids(pr) or f"#{sid}" in (pr.get("title") or ""):
+            return pr
     return None
 
 
-def ensure_branch(branch: str) -> None:
+def ensure_branch(branch: str) -> bool:
+    """确保分支存在; 本次新建返回 True."""
     try:
         api("GET", f"/repos/{REPO}/git/ref/heads/{branch}")
-        return
+        return False
     except RuntimeError:
         pass
     main = api("GET", f"/repos/{REPO}/git/ref/heads/{BASE_BRANCH}")
     sha = main["object"]["sha"]
     api("POST", f"/repos/{REPO}/git/refs", {"ref": f"refs/heads/{branch}", "sha": sha})
+    return True
 
 
-def put_file(branch: str, path: str, content: str, message: str) -> None:
+def branch_sha(branch: str) -> str:
+    return api("GET", f"/repos/{REPO}/git/ref/heads/{branch}")["object"]["sha"]
+
+
+def empty_commit(branch: str, message: str) -> str:
+    """在分支上提交一个树不变的空 commit (让批量 PR 可开, 又不带任何文件改动), 返回 commit sha."""
+    parent = branch_sha(branch)
+    tree = api("GET", f"/repos/{REPO}/git/commits/{parent}")["tree"]["sha"]
+    c = api("POST", f"/repos/{REPO}/git/commits", {"message": message, "tree": tree, "parents": [parent]})
+    api("PATCH", f"/repos/{REPO}/git/refs/heads/{branch}", {"sha": c["sha"], "force": False})
+    return c["sha"]
+
+
+def put_file(branch: str, path: str, content: str, message: str) -> Optional[str]:
     try:
         cur = api("GET", f"/repos/{REPO}/contents/{path}?ref={branch}")
         sha = cur.get("sha")
@@ -332,7 +365,8 @@ def put_file(branch: str, path: str, content: str, message: str) -> None:
     }
     if sha:
         body["sha"] = sha
-    api("PUT", f"/repos/{REPO}/contents/{path}", body)
+    res = api("PUT", f"/repos/{REPO}/contents/{path}", body)
+    return (res.get("commit") or {}).get("sha")
 
 
 # ── open ────────────────────────────────────────────────────────────────
@@ -501,6 +535,11 @@ def sticky_comment(pr: int, state: Dict[str, Any]) -> None:
                f"- 评分: {state['rate'] if state['rate'] is not None else '(未评)'}\n"
                f"- 观后感: {state.get('review') or '(无)'}\n"
                f"- 同步 bgm: {'是' if state['sync_bgm'] else '否'}\n")
+    if state.get("batch"):
+        filled = [str(k) for k, v in (state.get("per_id") or {}).items() if v]
+        preview += f"- 已勾选的节: {', '.join(filled) or '(无)'}\n"
+    if state.get("note"):
+        preview += f"\n> {state['note']}\n"
     for c in paged(f"/repos/{REPO}/issues/{pr}/comments"):
         if marker in (c.get("body") or ""):
             api("PATCH", f"/repos/{REPO}/issues/comments/{c['id']}", {"body": preview})
@@ -517,31 +556,127 @@ def read_draft(pr: dict) -> Tuple[dict, str]:
     return json.loads(content), path
 
 
-def write_draft(pr: dict, path: str, data: dict, msg: str) -> None:
+def get_file(ref: str, path: str) -> Tuple[Optional[dict], Optional[str]]:
+    """读分支上的 JSON 文件, 返回 (内容, blob sha); 不存在返回 (None, None)."""
     import base64
-    cur = api("GET", f"/repos/{REPO}/contents/{path}?ref={pr['head']['ref']}")
-    api("PUT", f"/repos/{REPO}/contents/{path}", {
-        "message": msg, "branch": pr["head"]["ref"], "sha": cur["sha"],
+    try:
+        cur = api("GET", f"/repos/{REPO}/contents/{path}?ref={ref}")
+    except RuntimeError:
+        return None, None
+    try:
+        return json.loads(base64.b64decode(cur["content"]).decode()), cur.get("sha")
+    except (KeyError, ValueError):
+        return None, cur.get("sha")
+
+
+def write_draft(pr: dict, path: str, data: dict, msg: str) -> Optional[str]:
+    """写草稿 (文件不存在则新建), 返回这次写入产生的 commit sha."""
+    import base64
+    _, sha = get_file(pr["head"]["ref"], path)
+    body: Dict[str, Any] = {
+        "message": msg, "branch": pr["head"]["ref"],
         "content": base64.b64encode((json.dumps(data, ensure_ascii=False, indent=2) + "\n").encode()).decode(),
-    })
+    }
+    if sha:
+        body["sha"] = sha
+    res = api("PUT", f"/repos/{REPO}/contents/{path}", body)
+    return (res.get("commit") or {}).get("sha")
 
 
-def merge_pr(pr: dict, state: dict) -> None:
+def prune_empty_drafts(pr: dict, sids: List[int]) -> Optional[str]:
+    """合入前清掉没有标注的节在分支上的文件 (兼容旧版 open_batch 预写的空草稿):
+    main 上已有该文件则还原为 main 的内容, 否则从分支删除. 返回最后一次写入的 commit sha."""
+    import base64
+    ref = pr["head"]["ref"]
+    last = None
+    for sid in sids:
+        path = f"{LABELS_DIR}/{sid}.json"
+        cur, sha = get_file(ref, path)
+        if sha is None:
+            continue
+        main_data, _ = get_file(BASE_BRANCH, path)
+        if main_data is not None:
+            if main_data == cur:
+                continue
+            res = api("PUT", f"/repos/{REPO}/contents/{path}", {
+                "message": f"[批量标注] 还原未标注的 {sid}", "branch": ref, "sha": sha,
+                "content": base64.b64encode((json.dumps(main_data, ensure_ascii=False, indent=2) + "\n").encode()).decode(),
+            })
+        else:
+            res = api("DELETE", f"/repos/{REPO}/contents/{path}",
+                      {"message": f"[批量标注] 删除空草稿 {sid}", "branch": ref, "sha": sha})
+        last = (res.get("commit") or {}).get("sha") or last
+    return last
+
+
+def http_code(err: Exception) -> int:
+    m = re.search(r"-> (\d{3}):", str(err))
+    return int(m.group(1)) if m else 0
+
+
+def wait_head(num: int, sha: str, timeout: int = MERGE_WAIT_S) -> bool:
+    """轮询 GET /pulls/{n}, 等 PR 的 head.sha 追上最后一次写入的 commit (head 刷新是异步的)."""
+    deadline = time.time() + timeout
+    while True:
+        cur = api("GET", f"/repos/{REPO}/pulls/{num}")
+        if cur.get("head", {}).get("sha") == sha:
+            return True
+        if time.time() >= deadline:
+            print(f"  PR #{num} head.sha={cur.get('head', {}).get('sha')} 未追上 {sha} (超时 {timeout}s)",
+                  file=sys.stderr)
+            return False
+        time.sleep(2)
+
+
+def merge_pr(pr: dict, tags: List[str], susume_names: List[str], expect_sha: Optional[str] = None) -> bool:
+    """带 sha 合入: 先等 PR head.sha 等于最后一次写入的 commit, merge body 带 sha, 409/405 重试.
+    只有词表 susume 分组内的标签才打 susume:<tag> label, genre 不打. 返回是否合入成功."""
+    num = pr["number"]
+    ref = pr["head"]["ref"]
+    if not expect_sha:
+        expect_sha = branch_sha(ref)
+    merged = False
+    for attempt in range(MERGE_RETRIES):
+        if not wait_head(num, expect_sha):
+            # head 迟迟不刷新: 以分支 ref (同步更新) 为准再等一轮
+            expect_sha = branch_sha(ref)
+            continue
+        try:
+            api("PUT", f"/repos/{REPO}/pulls/{num}/merge",
+                {"merge_method": "squash", "sha": expect_sha,
+                 "commit_title": f"[标注] {pr['title']} (#{num})"})
+            merged = True
+            break
+        except RuntimeError as e:
+            code = http_code(e)
+            if code not in (405, 409) or attempt == MERGE_RETRIES - 1:
+                print(f"  merge PR #{num} 失败: {e}", file=sys.stderr)
+                if code in (405, 409):
+                    break
+                raise
+            print(f"  merge PR #{num} -> {code}, 重试 ({attempt + 1}/{MERGE_RETRIES})", file=sys.stderr)
+            time.sleep(3 * (attempt + 1))
+            expect_sha = branch_sha(ref)
+    if not merged:
+        return False
     labels = [l["name"] for l in pr.get("labels", [])]
     labels = [l for l in labels if l != STATE_WAIT] + [STATE_DONE]
-    # susume 结果 label
-    for t in state["tags"]:
+    # susume 结果 label: 只给推荐分类打, 九项 genre 不打
+    for t in dict.fromkeys(tags):
+        if t not in susume_names:
+            continue
         lab = f"susume:{t}"
         label_for([lab])
-        labels.append(lab)
-    api("PATCH", f"/repos/{REPO}/issues/{pr['number']}", {"labels": labels, "state": "open"})
-    api("PUT", f"/repos/{REPO}/pulls/{pr['number']}/merge",
-        {"merge_method": "squash", "commit_title": f"[标注] {pr['title']} (#{pr['number']})"})
+        if lab not in labels:
+            labels.append(lab)
+    api("PATCH", f"/repos/{REPO}/issues/{num}", {"labels": labels})
+    return True
 
 
 def cmd_handle(args: argparse.Namespace) -> None:
     vocab = load_vocab()
-    _, _, names = vocab
+    susume, _, names = vocab
+    susume_names = [x["display"] for x in susume]
     pr = api("GET", f"/repos/{REPO}/pulls/{args.pr}")
     body_state = parse_body(pr.get("body") or "", vocab)
     # 叠加最新一条评论指令 (只取本次触发的评论, 由调用方经 env 传; 缺省扫全部)
@@ -551,8 +686,22 @@ def cmd_handle(args: argparse.Namespace) -> None:
     comment = os.environ.get("LABEL_COMMENT_BODY", "")
     state = apply_comment(comment, state, names)
     # review 文本也可能来自 /review
+
+    # 合入门槛: 至少一个非空标注节 (批量: 某节有勾选标签; 单部: 标签/评分/观后感任一非空),
+    # 否则 /done 或 ✅ 不写不合并, 只刷新置顶评论.
+    if state.get("batch"):
+        has_label = any(state.get("per_id", {}).values())
+    else:
+        has_label = bool(state["tags"]) or state["rate"] is not None or bool(state.get("review"))
+    blocked = bool(state["done"]) and not state["skip"] and not has_label
+    if blocked:
+        state["note"] = "还没有任何标注, 本次不写入也不合入. 勾选标签后再点完成."
     sticky_comment(args.pr, state)
     out("pr", str(args.pr))
+    if blocked:
+        report({"pr": args.pr, "action": "blocked-empty"})
+        print(f"handle: PR #{args.pr} done 被拒: 没有任何非空标注节")
+        return
 
     if state["skip"]:
         api("PATCH", f"/repos/{REPO}/pulls/{args.pr}", {"state": "closed"})
@@ -564,21 +713,31 @@ def cmd_handle(args: argparse.Namespace) -> None:
     # 批量标注 PR: 按 <!-- sid:N --> 分节逐部写草稿, 只写有标注的节, 支持部分完成.
     if state.get("batch"):
         per_id = state.get("per_id") or {}
-        written = []
+        written, filled, last_sha = [], [], None
         for sid, tags in per_id.items():
             if not tags:
                 continue  # 这节没勾, 不写文件, 主站仍当作未标注
+            filled.append(sid)
             path = f"{LABELS_DIR}/{sid}.json"
+            cur, _ = get_file(pr["head"]["ref"], path)
+            if cur and cur.get("tags") == tags and cur.get("sync_bgm") == state["sync_bgm"]:
+                continue  # 与分支上已写的一致, 不重复提交
             draft = {"id": sid, "tags": tags, "rate": None, "review": "", "mode": "new",
                      "by": f"pr#{args.pr}", "labeledAt": datetime.now(timezone(timedelta(hours=8))).isoformat(timespec="seconds"),
                      "bgmSynced": False, "sync_bgm": state["sync_bgm"]}
-            write_draft(pr, path, draft, f"[批量标注] 更新 {sid} (tags={','.join(tags)})")
+            last_sha = write_draft(pr, path, draft, f"[批量标注] 更新 {sid} (tags={','.join(tags)})") or last_sha
             written.append(sid)
-        if state["done"] and written:
-            merge_pr(pr, {"tags": [t for tags in per_id.values() for t in tags]})
-            out("merged", "true")
-            report({"pr": args.pr, "action": "merged-batch", "written": written})
-            print(f"handle: batch PR #{args.pr} merged, {len(written)} labels written")
+        if state["done"] and filled:
+            # 合入前删掉 / 还原没勾的节 (兼容旧版预写的空草稿), 保证只有有标注的文件进 main
+            last_sha = prune_empty_drafts(pr, [sid for sid, tags in per_id.items() if not tags]) or last_sha
+            ok = merge_pr(pr, [t for tags in per_id.values() for t in tags], susume_names, last_sha)
+            if ok:
+                out("merged", "true")
+                report({"pr": args.pr, "action": "merged-batch", "written": written, "labeled": filled})
+                print(f"handle: batch PR #{args.pr} merged, {len(filled)} labels")
+            else:
+                report({"pr": args.pr, "action": "merge-failed-batch", "written": written})
+                print(f"handle: batch PR #{args.pr} merge 未完成 (head 未刷新或 409/405 重试耗尽)")
         else:
             report({"pr": args.pr, "action": "updated-batch", "written": written})
             print(f"handle: batch PR #{args.pr} draft updated, {len(written)} sections")
@@ -594,13 +753,16 @@ def cmd_handle(args: argparse.Namespace) -> None:
         draft["by"] = f"pr#{args.pr}"
         draft["labeledAt"] = datetime.now(timezone(timedelta(hours=8))).isoformat(timespec="seconds")
         draft["bgmSynced"] = False
-    write_draft(pr, path, draft, f"[标注] 更新 {sid} (tags={','.join(state['tags']) or '无'})")
+    last_sha = write_draft(pr, path, draft, f"[标注] 更新 {sid} (tags={','.join(state['tags']) or '无'})")
 
     if state["done"]:
-        merge_pr(pr, state)
-        out("merged", "true")
-        report({"pr": args.pr, "action": "merged", "tags": state["tags"], "rate": state["rate"]})
-        print(f"handle: PR #{args.pr} merged")
+        if merge_pr(pr, state["tags"], susume_names, last_sha):
+            out("merged", "true")
+            report({"pr": args.pr, "action": "merged", "tags": state["tags"], "rate": state["rate"]})
+            print(f"handle: PR #{args.pr} merged")
+        else:
+            report({"pr": args.pr, "action": "merge-failed", "tags": state["tags"]})
+            print(f"handle: PR #{args.pr} merge 未完成 (head 未刷新或 409/405 重试耗尽)")
     elif state.get("resync"):
         out("resync", "true")
         report({"pr": args.pr, "action": "resync"})
@@ -730,22 +892,26 @@ def cmd_backfill(args: argparse.Namespace) -> None:
     """
     vocab = load_vocab()
     records = load_records()
-    # 已标注 = data/labels/ 下有文件; 排除已开着标注 PR 的番
+    # 已标注 = data/labels/ 下有非空标注文件 (旧版预写进 main 的空草稿不算); 排除已开着标注 PR 的番
     labeled = set()
     if os.path.isdir(LABELS_DIR):
         for fn in os.listdir(LABELS_DIR):
             if fn.endswith(".json"):
                 try:
-                    labeled.add(int(fn[:-5]))
+                    sid = int(fn[:-5])
                 except ValueError:
-                    pass
+                    continue
+                try:
+                    with open(os.path.join(LABELS_DIR, fn), encoding="utf-8") as f:
+                        d = json.load(f)
+                except (OSError, ValueError):
+                    d = {}
+                if d.get("tags") or d.get("rate") is not None or d.get("review"):
+                    labeled.add(sid)
+    # 已开 PR 覆盖的 id: 解析正文 <!-- sid:N --> (SID_MARK) 收集批量 PR 的全部成员, 不再只看分支名里的 ids[0]
     open_pr_ids = set()
-    for pr in paged(f"/repos/{REPO}/pulls?state=open"):
-        if any(l["name"] == LABEL_FLOW for l in pr.get("labels", [])):
-            ref = pr.get("head", {}).get("ref", "")
-            for part in ref.split("/")[-1].replace("batch-", "").split(","):
-                if part.isdigit():
-                    open_pr_ids.add(int(part))
+    for pr in open_label_prs():
+        open_pr_ids |= pr_sids(pr)
     pending = sorted(i for i in records if i not in labeled and i not in open_pr_ids)
     if not pending:
         report({"action": "backfill", "pending": 0})
@@ -756,7 +922,8 @@ def cmd_backfill(args: argparse.Namespace) -> None:
     results = []
     for start in range(0, len(pending), args.chunk):
         chunk = pending[start:start + args.chunk]
-        results.append(open_batch(chunk, records, vocab))
+        # 全量回填的是存量番剧 (很多已看完), 要能标「物凄い」这个最强分类
+        results.append(open_batch(chunk, records, vocab, include_monosugoi=True, label="存量番剧回填"))
     report({"action": "backfill", "pending": len(pending), "prs": results})
     print(f"backfill: {len(pending)} 部待标注 -> {len(results)} 个批量标注 PR (共 {len(records)} 部)")
 

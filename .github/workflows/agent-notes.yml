@@ -1,6 +1,8 @@
 name: Agent Notes Diff
 on:
   push:
+    # 标注流 label/* 与 data 流 bot/data-* 分支的 push 不跑 Diff (也就不会级联 Report)
+    branches-ignore: ['label/**', 'bot/data-**']
   pull_request:
 permissions:
   contents: read
