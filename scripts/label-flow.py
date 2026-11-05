@@ -133,7 +133,10 @@ def create_labeled_pr(payload: dict, labels: List[str]) -> dict:
     pr = api("POST", f"/repos/{REPO}/pulls", clean)
     num = pr.get("number")
     if num and labels:
-        label_for(labels)
+        # 最终确认 label 也一并确保存在 (只创建, 不打到 PR 上); 否则用户想「打 label 才合入」时
+        # 仓库里根本没有这个 label, gh pr edit --add-label 会报 not found. 不能把它放进 labels 参数,
+        # 那会给 PR 直接打上确认 label 并触发一次 labeled handle.
+        label_for(list(labels) + [STATE_CONFIRM])
         api("POST", f"/repos/{REPO}/issues/{num}/labels", {"labels": labels})
     return pr
 
