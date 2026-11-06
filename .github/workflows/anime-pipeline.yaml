@@ -19,13 +19,17 @@ name: "[LoLi-ANiMe]: 爬取番剧数据 & CDN Tag"
 # 结束后 deploy-cf-worker.yaml 经 workflow_run 重新部署 CF Worker;
 # 标注流 (路4) 可经 workflow_run 下载本次运行的 artifact "anime-events" (events.json).
 #
-# + repository_dispatch (anime-labels-merged): 标注合入 → 搭现成车前移 CDN Tag (job label-cdn-bump)
+# + workflow_run (标注流完成): 标注合入 → 搭现成车前移 CDN Tag (job label-cdn-bump)
 #   标注 PR 由 bot 用 GITHUB_TOKEN 合入, 这种 push 不触发任何 workflow; 且上面 changes 判定剔除
-#   data/labels/, 纯标注变化永远 changed=false, 不打 tag. 所以由 anime-label-flow.yaml 的 handle job
-#   仅在 merged == 'true' 时用 HXLOLI_PR_TOKEN 发一次 dispatch, 这里只跑 label-cdn-bump:
-#   打 HX-* tag → 用与阶段 7 相同的片段向 HXLoLi 开 auto/anime-cdn-<tag> PR. 之后 HXLoLi 的
-#   auto-merge-cdn-sync.yaml 自动合入 → dispatch cdn-updated → documentation.yaml 构建部署,
-#   本 run 结束后 deploy-cf-worker.yaml 经 workflow_run 重部署 CF Worker; 全部沿用现有链路.
+#   data/labels/, 纯标注变化永远 changed=false, 不打 tag. 复用 deploy-cf-worker.yaml 的现成范式
+#   (「Bot 用 GITHUB_TOKEN push 不会触发 push 事件」→ 改听上游 workflow_run): 监听标注流
+#   "[LoLi-ANiMe]: 标注流 (...)" 的 completed, 用 GITHUB_TOKEN (actions: read) 下载该次 run 的
+#   artifact label-handle-report, 仅当 label-handle-report.json 的 action 以 merged- 开头
+#   (= 这次 handle 真的合入了标注 PR) 才跑: 打 HX-* tag → 用与阶段 7 相同的片段向 HXLoLi 开
+#   auto/anime-cdn-<tag> PR. 之后 HXLoLi 的 auto-merge-cdn-sync.yaml 自动合入 → dispatch cdn-updated
+#   → documentation.yaml 构建部署, 本 run 结束后 deploy-cf-worker.yaml 经 workflow_run 重部署 CF Worker;
+#   全部沿用现有链路. 不再依赖任何 PAT 发 repository_dispatch (旧方案因 HXLOLI_PR_TOKEN 无本仓库
+#   Contents:write 而 403, 且被 continue-on-error 吞掉).
 #   该事件下 pipeline job (爬虫 / 检查 / 合入 bot PR) 不跑; changed 判定与 data-changed 路径不变.
 # ─────────────────────────────────────────────────────
 
@@ -50,18 +54,24 @@ on:
       - 'data/**'
       - '!data/labels/**'
   workflow_dispatch:
-  # 标注 PR 真正合入 main 后由 anime-label-flow.yaml handle job 发出 (仅 merged == 'true' 那一次)
-  repository_dispatch:
-    types: [anime-labels-merged]
+  # 标注流每次 run 结束都会到这里; 只有 report artifact 里 action 为 merged-* 的那次才真正打 tag
+  # (判定见 label-cdn-bump 的 gate step). 注意 branches 过滤的是上游 run 的 head_branch:
+  # 标注流的 pull_request_target run 的 head_branch 是 PR 分支 label/<id> | label/batch-<n>
+  # (实测 #42 合入那次 run 42214907588 为 label/batch-386809), issue_comment run 为 main,
+  # 所以两者都要列上, 只写 [main] 会把 label 合入 (state:待合入) 那次过滤掉.
+  workflow_run:
+    workflows: ["[LoLi-ANiMe]: 标注流 (标注 PR / 勾选解析 / bgm 同步 / 一个月自动关闭)"]
+    types: [completed]
+    branches: [main, 'label/**']
 
 permissions:
   contents: write
   pull-requests: write
 
 concurrency:
-  # 原有事件的组名不变 (PR → head_ref, 其余 → data-flow); 标注 dispatch 单独成组 label-bump,
-  # 避免同组 pending 互顶 (标注 dispatch 顶掉排队中的 cron 爬取, 或反之).
-  group: anime-pipeline-${{ github.event_name == 'pull_request' && github.head_ref || github.event_name == 'repository_dispatch' && 'label-bump' || 'data-flow' }}
+  # 原有事件的组名不变 (PR → head_ref, 其余 → data-flow); 标注流 workflow_run 单独成组 label-bump,
+  # 避免同组 pending 互顶 (标注完成触发顶掉排队中的 cron 爬取, 或反之).
+  group: anime-pipeline-${{ github.event_name == 'pull_request' && github.head_ref || github.event_name == 'workflow_run' && 'label-bump' || 'data-flow' }}
   cancel-in-progress: false
 
 env:
@@ -106,10 +116,11 @@ jobs:
   pipeline:
     name: 初始化 → 爬取 → PR(flow:data) → 自动合入 → Tag → PR → events
     # 跳过 Bot 自己的提交 (squash 合入的标题带 [LoLi-Bot]), 避免无限循环; PR 事件只跑 data-check;
-    # 标注 dispatch 只跑下面的 label-cdn-bump, 不爬取
+    # 标注流完成 (workflow_run) 只跑下面的 label-cdn-bump, 不爬取
+    # (本 workflow 只用 workflow_run 监听标注流; deploy-cf / label-flow 监听本 workflow 是反方向, 与此无关)
     if: >-
       github.event_name != 'pull_request' &&
-      github.event_name != 'repository_dispatch' &&
+      github.event_name != 'workflow_run' &&
       (github.event_name != 'push' ||
        !contains(github.event.head_commit.message, '[LoLi-Bot]'))
     runs-on: ubuntu-latest
@@ -573,35 +584,86 @@ jobs:
 
   # ════════════════════════════════════════════════════
   # 标注合入 → 前移 CDN Tag (搭 data 流阶段 6/7 的现成车)
-  #   只在 anime-label-flow.yaml handle job 合入成功 (merged == 'true') 时由 repository_dispatch 触发一次.
+  #   由 workflow_run 监听标注流 completed 触发 (复用 deploy-cf-worker.yaml 范式, 不用 PAT).
+  #   gate: 下载该次 run 的 artifact label-handle-report, 仅 action 以 merged- 开头 (真的合入) 时 go=true;
+  #   找不到 / 下载失败 / 解析失败一律 go=false 并打日志, 不误打 tag. 勾选 / 评论 / updated 等不合入的 run 都跳过.
   #   只做: fetch main+tags → 打 HX-* tag → 阶段 7 同款片段向 HXLoLi 开 auto/anime-cdn-<tag> PR.
   #   自动合入 / 部署不在这里: HXLoLi auto-merge-cdn-sync.yaml 与 documentation.yaml 照旧接手.
   # ════════════════════════════════════════════════════
   label-cdn-bump:
     name: 标注合入 → 打 CDN Tag → 向 HXLoLi 发 PR
+    # handle job 只在 pull_request_target(labeled) / issue_comment 下跑, 其它事件的标注流 run
+    # (workflow_run 开 PR / workflow_dispatch 等) 没有 label-handle-report, 直接在 job 级排除,
+    # 也顺带切断「label-bump run → label-flow open → 再回到这里」的级联.
     if: >-
-      github.event_name == 'repository_dispatch' &&
-      github.event.action == 'anime-labels-merged' &&
-      github.event.client_payload.merged == 'true'
+      github.event_name == 'workflow_run' &&
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.event != 'pull_request' &&
+      (github.event.workflow_run.event == 'pull_request_target' ||
+       github.event.workflow_run.event == 'issue_comment')
     runs-on: ubuntu-latest
+    # job 级权限: 下载其它 run 的 artifact 需要 actions: read; 打 tag + push 需要 contents: write
+    permissions:
+      contents: write
+      actions: read
     steps:
+      # ── gate: 读该次标注流 run 的 label-handle-report.json, action 以 merged- 开头才继续 ──
+      - name: 📥 下载标注流的 report (artifact label-handle-report)
+        id: dl
+        continue-on-error: true
+        uses: actions/download-artifact@v4
+        with:
+          name: label-handle-report
+          path: ${{ runner.temp }}/label-report
+          run-id: ${{ github.event.workflow_run.id }}
+          github-token: ${{ github.token }}
+
+      - name: 🚦 判定是否真的合入 (action == merged-*)
+        id: gate
+        env:
+          DL_OUTCOME: ${{ steps.dl.outcome }}
+          SRC_RUN: ${{ github.event.workflow_run.html_url }}
+          REPORT: ${{ runner.temp }}/label-report/label-handle-report.json
+        run: |
+          echo "🔗 标注流 run: ${SRC_RUN}"
+          if [ "${DL_OUTCOME}" != "success" ] || [ ! -s "${REPORT}" ]; then
+            echo "go=false" >> "$GITHUB_OUTPUT"
+            echo "⏭️ 未取到 label-handle-report.json (下载结果: ${DL_OUTCOME}), 不打 tag"
+            exit 0
+          fi
+          echo "📄 label-handle-report.json:"; cat "${REPORT}"; echo
+          ACTION=$(jq -r '.action // ""' "${REPORT}" 2>/dev/null || echo "")
+          PR=$(jq -r '.pr // ""' "${REPORT}" 2>/dev/null || echo "")
+          echo "pr=${PR}" >> "$GITHUB_OUTPUT"
+          case "${ACTION}" in
+            merged-*)
+              echo "go=true" >> "$GITHUB_OUTPUT"
+              echo "✅ action=${ACTION}: 标注 PR #${PR} 已合入, 前移 CDN Tag" ;;
+            *)
+              echo "go=false" >> "$GITHUB_OUTPUT"
+              echo "⏭️ action=${ACTION:-<空/解析失败>}: 本次未合入, 不打 tag" ;;
+          esac
+
       - uses: actions/checkout@v4
+        if: steps.gate.outputs.go == 'true'
         with:
           ref: main
           fetch-depth: 0
 
       # 同「⬇️ 切到合入后的 main」: 标注 PR 已合入, 取最新 main 与全部 tag
       - name: ⬇️ 切到合入后的 main
+        if: steps.gate.outputs.go == 'true'
         run: |
           git fetch origin main --tags
           git checkout -q origin/main
           git log -1 --oneline
 
-      # 防重复: 已有 HX-* tag 包含当前 main (主站已钉住 / data 流刚打过且其 PR 在途 / 重复 dispatch) 就不再打
+      # 防重复: 已有 HX-* tag 包含当前 main (主站已钉住 / data 流刚打过且其 PR 在途 / 重复触发) 就不再打
       - name: 🔎 是否需要前移
+        if: steps.gate.outputs.go == 'true'
         id: check
         env:
-          SRC_PR: ${{ github.event.client_payload.pr }}
+          SRC_PR: ${{ steps.gate.outputs.pr }}
         run: |
           echo "📨 标注 PR #${SRC_PR:-?} 已合入"
           COVER=$(git tag -l 'HX-*' --contains HEAD)
@@ -614,7 +676,7 @@ jobs:
 
       # 与阶段 6「🏷️ 创建 CDN Tag」相同
       - name: 🏷️ 创建 CDN Tag
-        if: steps.check.outputs.need == 'true'
+        if: steps.gate.outputs.go == 'true' && steps.check.outputs.need == 'true'
         id: tag
         run: |
           TIMESTAMP=$(date +%Y%m%d%H%M%S)
@@ -629,7 +691,7 @@ jobs:
 
       # 并发的 data 流若已在更晚的 main 上打了包含本 tag 的 tag, 交给它的 PR, 本 job 不再发 (避免两次发 PR)
       - name: 🔁 发 PR 前复查
-        if: steps.check.outputs.need == 'true'
+        if: steps.gate.outputs.go == 'true' && steps.check.outputs.need == 'true'
         id: recheck
         env:
           NEW_TAG: ${{ steps.tag.outputs.tag }}
@@ -646,17 +708,17 @@ jobs:
       # 与阶段 7「🔄 向 HXLoLi 发 PR」同一片段 / 同一 HXLOLI_PR_TOKEN / 同一分支名 auto/anime-cdn-<tag>
       # 与同一标题格式 "[LoLi-Bot] 同步 ANiMe: ...", 只是标题/正文不依赖番剧 diff 分析.
       - name: 🔄 向 HXLoLi 发 PR
-        if: steps.check.outputs.need == 'true' && steps.recheck.outputs.send == 'true'
+        if: steps.gate.outputs.go == 'true' && steps.check.outputs.need == 'true' && steps.recheck.outputs.send == 'true'
         uses: actions/github-script@v7
         env:
           NEW_TAG: ${{ steps.tag.outputs.tag }}
-          PR_TITLE: "[LoLi-Bot] 同步 ANiMe: 标注更新 (#${{ github.event.client_payload.pr }})"
+          PR_TITLE: "[LoLi-Bot] 同步 ANiMe: 标注更新 (#${{ steps.gate.outputs.pr }})"
           PR_BODY: |
             ## 📺 HXLoLi-ANiMe 数据同步
 
             更新 `ANIME_CDN_TAG` → `${{ steps.tag.outputs.tag }}`
 
-            来源标注 PR: ${{ github.server_url }}/${{ github.repository }}/pull/${{ github.event.client_payload.pr }}
+            来源标注 PR: ${{ github.server_url }}/${{ github.repository }}/pull/${{ steps.gate.outputs.pr }}
 
             仅标注 (data/labels/) 变化, 番剧数据未变.
 
