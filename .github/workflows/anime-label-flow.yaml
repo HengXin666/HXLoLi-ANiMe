@@ -76,7 +76,7 @@ env:
   LABEL_BASE_BRANCH: main
   LABEL_EXPIRE_DAYS: '30'
   LABEL_REMIND_DAYS: '25'
-  ANIME_CDN_BASE: https://cdn.jsdmirror.com/gh
+  ANIME_CDN_BASE: https://cdn.jsdelivr.net/gh
 
 jobs:
   # ══════════════════════════════════════
