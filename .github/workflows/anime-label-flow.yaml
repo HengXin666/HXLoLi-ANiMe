@@ -242,6 +242,23 @@ jobs:
           LABEL_REPORT: label-sync-bgm-report.json
         run: python3 scripts/label-sync-bgm.py --pr "${{ steps.handle.outputs.pr }}"
 
+      # 标注真正合入 main 之后 (仅 merged == 'true' 那一次) 通知 anime-pipeline.yaml 的 label-cdn-bump job
+      # 打 HX-* tag 并向 HXLoLi 发 auto/anime-cdn-<tag> PR (之后 auto-merge-cdn-sync → documentation 部署照旧).
+      # 用 HXLOLI_PR_TOKEN (PAT) 发, 不用 GITHUB_TOKEN: 本流的合入 push 正因 GITHUB_TOKEN 而不触发下游.
+      # 勾选 / 编辑正文 / 其它 label / 未合入的评论都走不到这里. !cancelled(): bgm 同步失败也照发.
+      - name: 📡 标注已合入 → 通知前移 CDN Tag (repository_dispatch)
+        if: ${{ !cancelled() && steps.handle.outputs.merged == 'true' }}
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.HXLOLI_PR_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number || github.event.issue.number }}
+        run: |
+          gh api "repos/${GITHUB_REPOSITORY}/dispatches" \
+            -f event_type=anime-labels-merged \
+            -f 'client_payload[merged]=true' \
+            -f "client_payload[pr]=${PR_NUMBER}"
+          echo "📡 已发 anime-labels-merged (PR #${PR_NUMBER})"
+
       - uses: actions/upload-artifact@v4
         if: always()
         continue-on-error: true
