@@ -243554,6 +243554,33 @@
                     "__dataclass__": "Character"
                 },
                 {
+                    "id": 160276,
+                    "name": "古都吹栞",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/3c/a2/160276_crt_09ybD.jpg",
+                    "actor_ids": [
+                        33057
+                    ],
+                    "name_cn": "古都吹栞",
+                    "summary": "寿子の妹。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "古都吹栞",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
                     "id": 160280,
                     "name": "照井来理栖",
                     "relation": "配角",
@@ -243950,8 +243977,8 @@
                 },
                 {
                     "id": 1738541,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "こまろの挑戦",
+                    "name_cn": "驹絽的挑战",
                     "air_date": "2026-11-14",
                     "desc": "",
                     "duration_seconds": 1420,
