@@ -658,6 +658,24 @@ jobs:
           git checkout -q origin/main
           git log -1 --oneline
 
+      # 打 tag 前先重建 index.json 汇总, 保证这个 tag 里一定有最新标注的全量索引.
+      # label-flow 的 handle job 也会重建, 但两者是独立 run、没有先后保证: 若 tag 先打,
+      # 主站钉住的 tag 里 index.json 就是旧的 (或缺失), 又得退回恒 403 的目录列表.
+      # build-index 幂等 (内容未变不提交); 用 github.token 写本仓, 不触发下游 workflow.
+      - name: 🧾 重建标注汇总 index.json
+        if: steps.gate.outputs.go == 'true'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 scripts/label-flow.py build-index
+
+      # build-index 可能在 main 上新建了 commit, 必须重新取最新 main 再判断 / 打 tag
+      - name: ⬇️ 刷新到重建后的 main
+        if: steps.gate.outputs.go == 'true'
+        run: |
+          git fetch origin main --tags
+          git checkout -q origin/main
+          git log -1 --oneline
+
       # 防重复: 已有 HX-* tag 包含当前 main (主站已钉住 / data 流刚打过且其 PR 在途 / 重复触发) 就不再打
       - name: 🔎 是否需要前移
         if: steps.gate.outputs.go == 'true'
