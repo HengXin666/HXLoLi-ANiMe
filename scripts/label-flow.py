@@ -10,6 +10,8 @@
              写回草稿并合入. 勾选/编辑正文本身不触发 (workflow 已去掉 edited), 完成信号只看 label / /done
   post-merge 人工在网页上直接合入标注 PR 时补齐 labeledAt/by 与 label
   expire     每日扫描 flow:label + state:等待标注, 满一个月关闭, 第 25 天提醒一次
+  build-index 读 main 上全部 data/labels/<sid>.json, 重建 data/labels/index.json 汇总;
+              主站优先读它, 避免依赖恒 403 的 jsDelivr 目录列表与 60 次/小时的 GitHub contents API.
 
 防回环: 本脚本只写 data/labels/<id>.json; data 流永远不碰 data/labels/, 主站只读 data/labels/.
 所有写操作都用 GITHUB_TOKEN, GitHub 不会因 GITHUB_TOKEN 的提交/编辑再触发工作流, 因此 bot 改正文不会自触发.
@@ -1157,6 +1159,61 @@ def cmd_backfill(args: argparse.Namespace) -> None:
           f" -> {len(results)} 个批量标注 PR (共 {len(records)} 部)")
 
 
+# ── build-index ──────────────────────────────────────────────────────────
+# 决策记录见本目录 cmd_open 上方的 Agent Notes 引用 (同一目录只保留一个锚点).
+def build_index_payload() -> dict:
+    """读 main 上 data/labels/*.json (排除 index.json), 汇总成 parseLabelIndex 接受的形状.
+
+    主站 src/utils/anime/labels.ts 的 parseLabelIndex 接受 {"labels": [...]} / 数组 /
+    {"items": {...}}; 这里固定用 {"labels": [...]} 且每个元素保留原文件全部字段.
+    坏文件 / 无 id 的跳过, 不让它污染整份汇总. 按 id 排序保证内容稳定, 便于幂等比对.
+    """
+    import base64
+    items: List[dict] = []
+    tree = api("GET", f"/repos/{REPO}/git/trees/{BASE_BRANCH}?recursive=1")
+    paths = [t["path"] for t in tree.get("tree", [])
+             if t.get("type") == "blob" and t["path"].startswith(LABELS_DIR + "/")
+             and t["path"].endswith(".json") and not t["path"].endswith("index.json")]
+    for path in sorted(paths):
+        try:
+            cur = api("GET", f"/repos/{REPO}/contents/{path}?ref={BASE_BRANCH}")
+            d = json.loads(base64.b64decode(cur["content"]).decode())
+        except (RuntimeError, KeyError, ValueError):
+            continue
+        if isinstance(d, dict) and isinstance(d.get("id"), int):
+            items.append(d)
+    items.sort(key=lambda x: x["id"])
+    return {"labels": items}
+
+
+def cmd_build_index(_args: argparse.Namespace) -> None:
+    """标注合入 main 后重建 data/labels/index.json. 内容未变则不提交 (幂等)."""
+    import base64
+    path = f"{LABELS_DIR}/index.json"
+    payload = build_index_payload()
+    content = json.dumps(payload, ensure_ascii=False, indent=2) + chr(10)
+    encoded = base64.b64encode(content.encode()).decode()
+    _, sha = get_file(BASE_BRANCH, path)
+    if sha:
+        try:
+            cur = api("GET", f"/repos/{REPO}/contents/{path}?ref={BASE_BRANCH}")
+            if base64.b64decode(cur["content"]).decode() == content:
+                report({"action": "build-index", "count": len(payload["labels"]), "changed": False})
+                print(f"build-index: {len(payload['labels'])} labels, unchanged")
+                return
+        except (RuntimeError, KeyError, ValueError):
+            pass
+    body: Dict[str, Any] = {
+        "message": f"[标注] 重建 index.json 汇总 ({len(payload['labels'])} 部)",
+        "branch": BASE_BRANCH, "content": encoded,
+    }
+    if sha:
+        body["sha"] = sha
+    api("PUT", f"/repos/{REPO}/contents/{path}", body)
+    report({"action": "build-index", "count": len(payload["labels"]), "changed": True})
+    print(f"build-index: {len(payload['labels'])} labels written to {path}")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -1173,10 +1230,11 @@ def main() -> None:
     iss.add_argument("--issue", required=True, type=int)
     bf = sub.add_parser("backfill")
     bf.add_argument("--chunk", type=int, default=20, help="每个批量 PR 最多列几部 (默认 20)")
+    sub.add_parser("build-index")
     args = ap.parse_args()
     {"open": cmd_open, "handle": cmd_handle,
      "post-merge": cmd_post_merge, "expire": cmd_expire, "issue": cmd_issue,
-     "backfill": cmd_backfill}[args.cmd](args)
+     "backfill": cmd_backfill, "build-index": cmd_build_index}[args.cmd](args)
 
 
 if __name__ == "__main__":
