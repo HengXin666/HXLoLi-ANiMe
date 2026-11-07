@@ -17,7 +17,7 @@ Decision-ID: hx-anime-label-pipeline
 
 1. 停用自动上墙, 以后只认人工标注: 入口是标注 PR 正文勾选或评论指令, 最终一律经 PR 合入. 未标注 = `data/labels/` 下没有文件.
 2. 唯一词表 `data/labelVocab.json`: 分组 susume (物凄い / ロリ / シスコン, 各有专属页 slug) 与 genre (异世界 / 热血 / 战斗 / 推理 / 校园 / 日常 / 搞笑 / 恋爱 / 致郁). 标注表单, 解析器, bgm 同步都只读它. 旧名 妹控 废弃不迁移.
-3. 数据落点一番一文件 `data/labels/<bgm_subject_id>.json` (tags / rate / review / mode / by / labeledAt / bgmSynced), 多个标注 PR 并行不冲突.
+3. 数据落点一番一文件 `data/labels/<bgm_subject_id>.json` (tags / rate / review / mode / by / labeledAt / bgmSynced), 多个标注 PR 并行不冲突. 另外由 `scripts/label-flow.py` 的 `build-index` 子命令在每次标注合入后重建 `data/labels/index.json` 汇总 (`{"labels":[...]}`), 主站优先一次请求读它; 逐文件仍是唯一权威数据, 汇总只是派生产物.
 4. `scripts/crawler/events.py` 检测两类事件产出 events.json: new (新增 id) 与 review (3 -> 2/4/5 状态变化).
 5. 拆两条提交流并用 GitHub label 区分: data 流 `flow:data` 自动合入, 永不碰 `data/labels/`; 标注流 `flow:label` 由 data 流合入后 workflow_run 触发, 按事件开 `label/<id>` 分支与草稿, label 为 `mode:new` 或 `mode:review` + `state:等待标注`. 一部番同时最多一个开着的标注 PR, 新增 PR 未完成时状态变化就地升级为观后感模式.
 6. `scripts/label-flow.py` 提供 open / handle / post-merge / expire 四个子命令: PR 正文带封面与番剧名与 bgm 链接与勾选框, 勾选零打字; 评论指令 /tag /untag /rate /review /done /skip /nobgm; 置顶结果评论不刷屏; 勾标注完成自动 squash 合入; 满一个月 (创建或最后用户交互较晚者起算) 关闭并打 `state:expired`, 不写标注文件; 超过 5 部合并为一个批量标注 PR.
@@ -29,7 +29,9 @@ Decision-ID: hx-anime-label-pipeline
 - **什么都不做 / 复用现有 Tags.py 自动推断**: 最强理由是零维护且覆盖率高 (154/160 部有 tag), 流水线不用改. 否决: 误标正是这次重构的起因, 规则调参无法反映个人口味, 四个来源并存依然无法追溯.
 - **只在 bgm 上打标签, 爬虫拉回**: 最强理由是 bgm 已有标注 UI 且天然同步. 否决: bgm 标签是自由文本, 无法约束到 labelVocab, 没有带封面的批量入口和审阅 / 过期机制, 拉回又回到从 user_status.tags 推断的老路.
 - **只用 issue 不用 PR**: 最强理由是 issue 表单更像问卷. 否决: 标注结果要进仓库文件, 只有 PR 能 auto-merge 并留 diff, 也才能和 flow:data 在同一 PR 列表用 label 筛选.
-- **单一 JSON 汇总所有标注**: 最强理由是读取简单, 一次 fetch 拿全量. 否决: 多个标注 PR 并行必冲突, 与 data 流难以按路径隔离, 改为一番一文件.
+- **单一 JSON 汇总所有标注**: 最强理由是读取简单, 一次 fetch 拿全量. 否决: 多个标注 PR 并行必冲突, 与 data 流难以按路径隔离, 改为一番一文件. 但作为**合入后由 CI 重建的只读派生产物** (`data/labels/index.json`) 保留: 它不参与并行写入, 只解决主站列表接口的可用性 (jsDelivr 目录列表因包 >50MB 恒 403, GitHub contents API 未登录限额 60 次/小时/IP). 逐文件仍是唯一权威数据.
+- **什么都不做 / 继续依赖 jsDelivr + GitHub contents 目录列表**: 最强理由是零改动、不用维护汇总产物. 否决: 实测 jsDelivr `data API` 对该 tag 恒 403, GitHub contents API 实测 403 rate limit exceeded, 两路都失败时主站 `fetchAnimeLabels` reject, 页面显示「标注没能加载出来」且各推荐分类计数为 0, 标注明明已在 tag 里却读不到.
+- **复用现有 label-flow.py 的 handle 直接写汇总**: 最强理由是不用新增子命令. 否决: handle 写的是 PR 分支草稿, 合入前读不到 main 上其它文件; 且人工直接 Merge 走 post-merge 兜底 job, 需要在两个 job 之外有独立、幂等、随时可手动重跑的入口 (`workflow_dispatch`), 单列 `build-index` 更清楚.
 - **保留单流, 爬虫提交里附带标注**: 最强理由是不用新增 workflow 与 label. 否决: 标注要等用户, 可能很久不理, 与需及时合入的数据更新绑一起会卡住数据流.
 
 ## Consequences
