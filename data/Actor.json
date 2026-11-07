@@ -11926,5 +11926,12 @@
         "short_summary": "日本の声優、俳優、ナレーター。中華民国浙江省（現：中華人民共和国浙江省）出生、東京都中央区日本橋、文京区大塚仲町（現：東京都文京区大塚）出身。プラスワンカンパニー所属。",
         "image_url": "https://lain.bgm.tv/pic/crt/l/14/8d/4291_seiyu_anidb.jpg",
         "__dataclass__": "Actor"
+    },
+    {
+        "id": 33057,
+        "name": "倉知玲鳳",
+        "short_summary": "幼少期にピアノやエレクトーンを学び、小学校から高校まではチアダンスを習う。\r\n2016年9月開催の「株式会社S第三回新人オーディション」を経てレッスンを重ね、株式会社Sの所属となる。\r\n2017年8月「蒼き雷霆ガンヴォルト」Nintendo Switchストライカーパック特典ドラマCDにて声優デビュー。\r\n2018年より「BanG Dream!（バンドリ！）」プロジェクト内バンドRAISE A SUILENのキーボーディストとしても活動している。",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/84/51/33057_prsn_0bs5W.jpg",
+        "__dataclass__": "Actor"
     }
 ]
