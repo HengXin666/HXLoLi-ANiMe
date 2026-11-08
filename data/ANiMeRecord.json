@@ -241861,20 +241861,20 @@
                 {
                     "id": 226564,
                     "name": "常務",
-                    "relation": "闲角",
+                    "relation": "配角",
                     "image_url": "https://lain.bgm.tv/pic/crt/l/d2/cf/226564_crt_cEqCe.jpg",
                     "actor_ids": [
                         15427
                     ],
-                    "name_cn": "常务",
-                    "summary": "",
+                    "name_cn": "常务董事",
+                    "summary": "保险公司的常务董事。",
                     "birth_year": null,
                     "birth_month": null,
                     "birth_day": null,
                     "tags": [
                         {
                             "key": "简体中文名",
-                            "value": "常务",
+                            "value": "常务董事",
                             "__dataclass__": "KeyValue"
                         },
                         {
