@@ -11933,5 +11933,47 @@
         "short_summary": "幼少期にピアノやエレクトーンを学び、小学校から高校まではチアダンスを習う。\r\n2016年9月開催の「株式会社S第三回新人オーディション」を経てレッスンを重ね、株式会社Sの所属となる。\r\n2017年8月「蒼き雷霆ガンヴォルト」Nintendo Switchストライカーパック特典ドラマCDにて声優デビュー。\r\n2018年より「BanG Dream!（バンドリ！）」プロジェクト内バンドRAISE A SUILENのキーボーディストとしても活動している。",
         "image_url": "https://lain.bgm.tv/pic/crt/l/84/51/33057_prsn_0bs5W.jpg",
         "__dataclass__": "Actor"
+    },
+    {
+        "id": 50062,
+        "name": "藤村花音",
+        "short_summary": "日本声优。出身地区为香川县。2021年4月1日，成为BLACK SHIP所属。\r\n兴趣：棋盘游戏、天文馆、演奏乐器\r\n特长：发现人的优点、钢琴、POP设计、辣的食物、笑容\r\n音域：D3～D6\r\n资格：普免\r\n方言：赞岐方言",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/83/5e/50062_prsn_Nw7u7.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 62333,
+        "name": "折原くるみ",
+        "short_summary": "静岡県出身\r\nT:157㎝ S:24.5㎝\r\n趣味:ギター(エレキ・アコギ)、ランニング、魚釣り\r\n資格: 英語検定2級、普通自動車免許\r\n特技: 犬のマッサージ、周りの人を癒すこと",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/c1/82/62333_prsn_v89b3.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 72257,
+        "name": "花咲心優",
+        "short_summary": "大阪出身的日本女性声优， BLACK SHIP株式会社所属。",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/78/5f/72257_prsn_7fOQQ.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 74853,
+        "name": "中川華緒",
+        "short_summary": "",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/e7/64/74853_prsn_00Hhi.jpg?r=1749919555",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 88241,
+        "name": "畠山一哉",
+        "short_summary": "趣味：ゲーム、ビリヤード、スノーボード\r\n特技：弓道、ゲーム、料理",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/6b/a2/88241_prsn_UdXJO.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 104215,
+        "name": "星河希",
+        "short_summary": "",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/fd/c0/104215_prsn_s5664.jpg",
+        "__dataclass__": "Actor"
     }
 ]
