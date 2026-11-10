@@ -179,7 +179,11 @@ jobs:
       - name: 📊 检查数据变化
         id: changes
         run: |
-          git add -A
+          # 只收爬虫产物 data/, 不要 git add -A: 若 checkout 到的 main 落后于远端 (定时 run 起跑
+          # 后 main 又进了新提交), 工作区仍带着旧版本, git add -A 会把 .github/workflows/ 等无关
+          # 改动卷进 bot 提交; 推送时被 GitHub 以 "refusing to allow a GitHub App to create or
+          # update workflow ... without workflows permission" 拒绝, 整条 data 流失败.
+          git add -A -- data/
           # data 流永不包含 data/labels/ (标注流专属)
           git reset -q -- data/labels 2>/dev/null || true
           if git diff --cached --quiet; then
