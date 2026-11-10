@@ -11975,5 +11975,26 @@
         "short_summary": "",
         "image_url": "https://lain.bgm.tv/pic/crt/l/fd/c0/104215_prsn_s5664.jpg",
         "__dataclass__": "Actor"
+    },
+    {
+        "id": 32683,
+        "name": "胡麻鶴彩",
+        "short_summary": "",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/33/9d/32683_prsn_Rc6tn.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 41014,
+        "name": "新川愛実",
+        "short_summary": "",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/9d/c3/41014_prsn_97777.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 43912,
+        "name": "宮瀬尚也",
+        "short_summary": "日本の男性声優。埼玉県川越市出身。ケンユウオフィス準所属。",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/b0/c0/43912_prsn_GpOyA.jpg",
+        "__dataclass__": "Actor"
     }
 ]
