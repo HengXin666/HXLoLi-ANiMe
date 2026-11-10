@@ -1,0 +1,35 @@
+name: Workflow Run Refs Check
+on:
+  push:
+    paths:
+      - '.github/workflows/**'
+      - 'scripts/ci/**'
+  pull_request:
+    paths:
+      - '.github/workflows/**'
+      - 'scripts/ci/**'
+permissions:
+  contents: read
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    # 门禁只产出诊断, 不阻断流程完成; 结论以 artifact 里的 JSON 为准
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@v6
+        continue-on-error: true
+      - name: Check workflow_run references
+        continue-on-error: true
+        run: uv run --no-project --with pyyaml python scripts/ci/check_workflow_run_refs.py --json workflow-run-refs-report.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        continue-on-error: true
+        with:
+          name: workflow-run-refs-report
+          path: workflow-run-refs-report.json
+          if-no-files-found: warn
+          retention-days: 7

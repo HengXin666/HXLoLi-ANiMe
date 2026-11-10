@@ -8,8 +8,14 @@ on:
   workflow_dispatch:
   # 爬取流水线结束后重新部署: Bot 用 GITHUB_TOKEN push 不会触发上面的 push 事件
   # 只接 main 上非 PR 的成功爬取 run (被跳过 / PR 事件的 pipeline run 不再拖着部署)
+  #
+  # workflows 的值按 glob 通配解析, 不是字面量: 上游 name 的 "[LoLi-ANiMe]" 原样写会被当成
+  # 字符类 (匹配单个 L/o/L/i/-/A/N/i/M/e), 永远匹配不上, 触发解析直接失败; 表现为每次任意
+  # workflow 完成都生成一条 name 为空 / path=BuildFailed 的 startup_failure 幽灵 run, 而本
+  # workflow 从不真正触发. 因此方括号逐个反斜杠转义, 并用 YAML 单引号避免转义歧义.
+  # & 空格 CJK 在 glob 里不是元字符, 不转义. 门禁: scripts/ci/check_workflow_run_refs.py
   workflow_run:
-    workflows: ["[LoLi-ANiMe]: 爬取番剧数据 & CDN Tag"]
+    workflows: ['\[LoLi-ANiMe\]: 爬取番剧数据 & CDN Tag']
     types: [completed]
     branches: [main]
 

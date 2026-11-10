@@ -24,7 +24,10 @@ name: "[LoLi-ANiMe]: 标注流 (标注 PR / 勾选解析 / bgm 同步 / 一个�
 
 on:
   workflow_run:
-    workflows: ["[LoLi-ANiMe]: 爬取番剧数据 & CDN Tag"]
+    # 方括号必须转义: workflows 按 glob 解析, 原样写 "[LoLi-ANiMe]" 会被当成字符类, 匹配不上
+    # 上游 name, 触发解析失败 (每次任意 workflow 完成刷一条 startup_failure 幽灵 run, 本 workflow
+    # 却从不触发). 门禁: scripts/ci/check_workflow_run_refs.py
+    workflows: ['\[LoLi-ANiMe\]: 爬取番剧数据 & CDN Tag']
     types: [completed]
     branches: [main]
   pull_request_target:

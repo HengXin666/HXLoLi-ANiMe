@@ -44,6 +44,9 @@ on:
     paths:
       - 'scripts/**'
       - 'data/**'
+      # 门禁脚本 (scripts/ci/**) 不是爬虫产物, 改它不该触发一次全量爬取;
+      # 后置的否定规则优先级更高, 因此放在最后.
+      - '!scripts/ci/**'
   # PR 事件只为 bot/data-* 的 data-check 服务: 明确 types + paths,
   # 标注 PR (只改 data/labels/) 与 agent-notes 等 PR 不再产生本 workflow 的 run,
   # 从而也不会经 workflow_run 级联 label-flow / deploy-cf.
@@ -60,7 +63,10 @@ on:
   # (实测 #42 合入那次 run 42214907588 为 label/batch-386809), issue_comment run 为 main,
   # 所以两者都要列上, 只写 [main] 会把 label 合入 (state:待合入) 那次过滤掉.
   workflow_run:
-    workflows: ["[LoLi-ANiMe]: 标注流 (标注 PR / 勾选解析 / bgm 同步 / 一个月自动关闭)"]
+    # 方括号必须转义 (glob 字符类陷阱): 原样写 "[LoLi-ANiMe]" 会被当作字符类, 匹配不上上游
+    # name, 触发解析失败 → 每次标注流结束都刷 startup_failure 幽灵 run, 而 label-cdn-bump 永不触发.
+    # 门禁: scripts/ci/check_workflow_run_refs.py
+    workflows: ['\[LoLi-ANiMe\]: 标注流 (标注 PR / 勾选解析 / bgm 同步 / 一个月自动关闭)']
     types: [completed]
     branches: [main, 'label/**']
 
