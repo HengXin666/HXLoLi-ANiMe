@@ -131388,9 +131388,9 @@
             "__dataclass__": "ANiMeData"
         },
         "user_status": {
-            "watch_status": 4,
-            "watched_eps": 1,
-            "last_update": "2025-12-15T12:59:56+08:00",
+            "watch_status": 2,
+            "watched_eps": 12,
+            "last_update": "2026-11-11T23:29:38+08:00",
             "comment": null,
             "tags": [],
             "__dataclass__": "UserStatus"
@@ -239780,8 +239780,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 4,
-            "last_update": "2026-11-06T18:06:36+08:00",
+            "watched_eps": 6,
+            "last_update": "2026-11-11T23:28:54+08:00",
             "comment": null,
             "tags": [
                 "搞笑"
@@ -241043,8 +241043,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 4,
-            "last_update": "2026-11-06T18:06:35+08:00",
+            "watched_eps": 6,
+            "last_update": "2026-11-11T23:29:03+08:00",
             "comment": null,
             "tags": [
                 "ロリ",
@@ -242210,8 +242210,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 4,
-            "last_update": "2026-11-06T18:32:27+08:00",
+            "watched_eps": 5,
+            "last_update": "2026-11-11T23:28:56+08:00",
             "comment": null,
             "tags": [
                 "ロリがある",
@@ -242755,10 +242755,10 @@
                 },
                 {
                     "id": 1741644,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "強制ロスカットなんてヤダもん……",
+                    "name_cn": "人家才不要被强制平仓呢...",
                     "air_date": "2026-11-12",
-                    "desc": "",
+                    "desc": "含み損を抱える芽吹は、生活費までFX口座に入金していた！　しかし、無情にもドル円は上昇を継続。投資バトルの中間報告会では、くるみがドル円ロングで大きく利益を伸ばしていることを知り、芽吹の焦りはますます深まっていく。萌智子に励まされ、幸運を呼び込もうとする芽吹。そして、ドル円が110円から一気に急落して……!?",
                     "duration_seconds": 1425,
                     "ep": 7,
                     "sort": 7,
@@ -242854,8 +242854,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 5,
-            "last_update": "2026-11-06T18:06:32+08:00",
+            "watched_eps": 6,
+            "last_update": "2026-11-11T23:29:00+08:00",
             "comment": null,
             "tags": [
                 "搞笑"
@@ -244179,8 +244179,8 @@
         },
         "user_status": {
             "watch_status": 3,
-            "watched_eps": 8,
-            "last_update": "2026-11-06T18:06:26+08:00",
+            "watched_eps": 9,
+            "last_update": "2026-11-11T23:29:02+08:00",
             "comment": null,
             "tags": [
                 "搞笑",
@@ -278232,6 +278232,205 @@
                 "搞笑",
                 "日常"
             ],
+            "__dataclass__": "UserStatus"
+        },
+        "__dataclass__": "ANiMeRecord"
+    },
+    {
+        "anime_data": {
+            "id": 456077,
+            "name": "世界最高の暗殺者、異世界貴族に転生する Season 2",
+            "name_cn": "世界顶尖的暗杀者转生为异世界贵族 第二季",
+            "short_summary": "世界一の暗殺者が、暗殺貴族の長男に転生した。\r\n異世界で生まれ変わる条件として、彼が女神から請け負ったミッションは只一つ。\r\n\r\n【人類に厄災をもたらすと予言された《勇者》を殺すこと】\r\n\r\nそれこそが世界最高の暗殺者が、新たな人生で果たす",
+            "score": 6.1,
+            "image_url": "https://lain.bgm.tv/pic/cover/l/0a/9d/456077_H444b.jpg",
+            "eps": 0,
+            "date": null,
+            "summary": "世界一の暗殺者が、暗殺貴族の長男に転生した。\r\n異世界で生まれ変わる条件として、彼が女神から請け負ったミッションは只一つ。\r\n\r\n【人類に厄災をもたらすと予言された《勇者》を殺すこと】\r\n\r\nそれこそが世界最高の暗殺者が、新たな人生で果たすべき使命であった。\r\n現代であらゆる暗殺を可能にした幅広い知識と経験、\r\nそして異世界最強と謳われた暗殺者一族の秘術と魔法。\r\nそのすべてが相乗効果をうみ、\r\n彼は史上並び立つものがいない暗殺者へと成長していく――。\r\n\r\n「面白い、まさか生まれ変わってもまた暗殺することになるとはね」\r\n\r\n転生した\"伝説の暗殺者\"が更なる高みへと駆け上がる!\r\n限界突破のアサシンズ・ファンタジー!!",
+            "total_episodes": 0,
+            "characters": [
+                {
+                    "id": 98084,
+                    "name": "ルーグ",
+                    "relation": "主角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/ec/ab/98084_crt_NpM2c.jpg?r=1628725763",
+                    "actor_ids": [
+                        5685
+                    ],
+                    "name_cn": "卢各",
+                    "summary": "元世界最高の暗殺者。組織の裏切りで自らが暗殺された後、暗殺貴族の長男として異世界に転生する。\r\n転生の条件として女神より「勇者暗殺」の任務を与えられる。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "卢各",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 98085,
+                    "name": "ディア",
+                    "relation": "主角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/98/9b/98085_crt_b2Bi1.jpg?r=1648051252",
+                    "actor_ids": [
+                        13164
+                    ],
+                    "name_cn": "蒂雅",
+                    "summary": "隣国の領主・ヴィコーネ家の娘。人類最高レベルの魔術の才能を持つ。\r\n幼馴染のルーグよりも幼く見えるが、実は3歳上で姉のように接したがる。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "蒂雅",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 98086,
+                    "name": "タルト",
+                    "relation": "主角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/ee/5b/98086_crt_7cX2e.jpg?r=1637172554",
+                    "actor_ids": [
+                        18087
+                    ],
+                    "name_cn": "塔儿朵",
+                    "summary": "かつて行き倒れかけていたところをルーグに拾われて以来、彼に忠誠を誓い暗殺稼業の助手兼専属メイドとして身の回りの世話を焼く。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "塔儿朵",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 98087,
+                    "name": "マーハ",
+                    "relation": "主角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/53/a2/98087_crt_6a5X5.jpg?r=1637442074",
+                    "actor_ids": [
+                        14554
+                    ],
+                    "name_cn": "玛荷",
+                    "summary": "悪徳孤児院の人身売買に巻き込まれかけたところを、ルーグに救われる。元商家の娘で頭が良く、ルーグが興した商会の代表代理を務める。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "玛荷",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 221646,
+                    "name": "エポナ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/e7/5d/221646_crt_1L126.jpg",
+                    "actor_ids": [
+                        7307
+                    ],
+                    "name_cn": "",
+                    "summary": "勇者。リアンノン男爵家の長男。強力な腕力と魔力に加え、30のS・Aランクのスキルを持つ。身体強化能力も強靭で、不死身とも言える。勇者にしか魔族と魔王は倒せない。ルーグの暗殺の対象。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 221649,
+                    "name": "ノイシュ",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/2c/ef/221649_crt_v6Z4r.jpg",
+                    "actor_ids": [
+                        29556
+                    ],
+                    "name_cn": "",
+                    "summary": "王立騎士学園にSクラス主席入学（ルーグと同率１位）。四代公爵家のゲフィス公爵家の嫡男。文武共に優れ、人当たりも良く、人気がある。野心家でもあり、将来の部下としてルーグとタルトを欲しがっている。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                }
+            ],
+            "relations": [
+                {
+                    "id": 291443,
+                    "name": "世界最高の暗殺者、異世界貴族に転生する",
+                    "name_cn": "世界顶尖的暗杀者转生为异世界贵族",
+                    "relation": "书籍",
+                    "type": 1,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/77/15/291443_LsS3U.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 328313,
+                    "name": "世界最高の暗殺者、異世界貴族に転生する",
+                    "name_cn": "世界顶尖的暗杀者转生为异世界贵族",
+                    "relation": "前传",
+                    "type": 2,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/49/32/328313_oQlyW.jpg",
+                    "__dataclass__": "Relation"
+                }
+            ],
+            "episodes": [],
+            "__dataclass__": "ANiMeData"
+        },
+        "user_status": {
+            "watch_status": 1,
+            "watched_eps": 0,
+            "last_update": "2026-11-11T23:29:43+08:00",
+            "comment": null,
+            "tags": [],
             "__dataclass__": "UserStatus"
         },
         "__dataclass__": "ANiMeRecord"
