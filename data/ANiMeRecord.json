@@ -241625,6 +241625,33 @@
                     "__dataclass__": "Character"
                 },
                 {
+                    "id": 78629,
+                    "name": "黒妻綿流",
+                    "relation": "客串",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/be/08/78629_crt_rH39V.jpg",
+                    "actor_ids": [
+                        3861
+                    ],
+                    "name_cn": "黑妻绵流",
+                    "summary": "无能力者武装集团“大蜘蛛(Big spider)”的前首领，具有很强正义感。两年前结识了固法美伟，两人结下很深的羁绊。由于受伤被捕而一度失踪。在被释放后，与固法美伟一起制裁了冒用他的名字袭击能力者的蛇谷次雄。背部有蜘蛛和蜘蛛网的刺青，喜欢武藏野牌牛奶。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "黑妻绵流",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
                     "id": 110131,
                     "name": "警備ロボ",
                     "relation": "闲角",
@@ -241969,6 +241996,141 @@
                         }
                     ],
                     "__dataclass__": "Character"
+                },
+                {
+                    "id": 228290,
+                    "name": "女貞木小路楓",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/4e/3d/228290_crt_26Yo9.jpg",
+                    "actor_ids": [
+                        35912
+                    ],
+                    "name_cn": "女贞木小路枫",
+                    "summary": "敌对 Items 的首领",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "女贞木小路枫",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 228291,
+                    "name": "井上ラスペツィア",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/95/50/228291_crt_V2oJY.jpg",
+                    "actor_ids": [
+                        43100
+                    ],
+                    "name_cn": "井上拉斯佩齐亚",
+                    "summary": "敌对 Item 成员，美术部，擅长制作模型",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "井上拉斯佩齐亚",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 228292,
+                    "name": "花山過蜜",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/7b/c8/228292_crt_d96oz.jpg",
+                    "actor_ids": [
+                        25406
+                    ],
+                    "name_cn": "花山过蜜",
+                    "summary": "敌对 Item 成员，看似在抽电子烟，但实际上是在吸氧。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "花山过蜜",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 228293,
+                    "name": "鰐口鋸刃",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/9c/de/228293_crt_Jgd10.jpg",
+                    "actor_ids": [
+                        11523
+                    ],
+                    "name_cn": "鳄口锯刃",
+                    "summary": "敌对 Item 的成员",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "鳄口锯刃",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 228294,
+                    "name": "花露腐草",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/60/32/228294_crt_cbQb5.jpg",
+                    "actor_ids": [
+                        30751
+                    ],
+                    "name_cn": "花露腐草",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "花露腐草",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
                 }
             ],
             "relations": [
@@ -242100,9 +242262,9 @@
                 {
                     "id": 1738564,
                     "name": "Colosseum.",
-                    "name_cn": "",
+                    "name_cn": "竞技场",
                     "air_date": "2026-11-13",
-                    "desc": "入手した保険会社の情報から保険金の流れをたどり、コロシアムの出場者のひとりに目星をつけたアイテム。カロリー革命を起こすシャケ弁や誘惑多きパラソル街の露店群を抜け、長い追跡の先にたどり着いたコロシアムの会場は、閉館時間を迎えた図書館だった。館内に設置されたリングと観客席、それを囲む難題もの中継用の大型カメラ。煽り立てる実況担当に飛び入り枠のホワイトタイガー。莫大な金額が動いていることを裏付けるその光景に、麦野は笑みを浮かべ、行動を開始する――！\r\n\r\nStaff\r\n脚本：猪爪慎一\r\n絵コンテ：石平信司\r\n演出：森義博\r\n総作画監督：木本茂樹\r\n作画監督：山内則康、河野眞也、長塚幸恵、菅谷朱理",
+                    "desc": "「道具」根据取得的保险公司情报，追查保险金的流向，锁定了竞技场其中一名参赛者。她们穿过能引发热量革命的鲑鱼便当店，以及充满诱惑的遮阳伞街，在漫长的追踪后，终于抵达竞技场的会场——一座已经到了闭馆时间的图书馆。馆内设置了擂台与观众席，周围还架设了好几台大型转播摄影机。煽动气氛的现场播报员，以及临时加入的白老虎。眼前这番景象，足以证明有巨额资金正在流动。麦野露出笑容，随即展开行动——！\"\r\n\r\n入手した保険会社の情報から保険金の流れをたどり、コロシアムの出場者のひとりに目星をつけたアイテム。カロリー革命を起こすシャケ弁や誘惑多きパラソル街の露店群を抜け、長い追跡の先にたどり着いたコロシアムの会場は、閉館時間を迎えた図書館だった。館内に設置されたリングと観客席、それを囲む難題もの中継用の大型カメラ。煽り立てる実況担当に飛び入り枠のホワイトタイガー。莫大な金額が動いていることを裏付けるその光景に、麦野は笑みを浮かべ、行動を開始する――！\r\n\r\nStaff\r\n脚本：猪爪慎一\r\n絵コンテ：石平信司\r\n演出：森義博\r\n総作画監督：木本茂樹\r\n作画監督：山内則康、河野眞也、長塚幸恵、菅谷朱理",
                     "duration_seconds": 1420,
                     "ep": 6,
                     "sort": 6,
@@ -242112,7 +242274,7 @@
                 {
                     "id": 1738565,
                     "name": "アイテムvsアイテム",
-                    "name_cn": "",
+                    "name_cn": "道具 vs 道具",
                     "air_date": "2026-11-20",
                     "desc": "",
                     "duration_seconds": 1420,
