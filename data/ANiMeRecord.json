@@ -243037,7 +243037,7 @@
             "eps": 12,
             "date": "2026-10-03",
             "summary": "文学少年水之江梅理科成绩极差，面临留级危机，被迫加入学生会挽救学分。怎知藤成学园的学生会毫不正常，聚集了纯情闷骚的会长、毒舌学长、腹黑会计与不幸庶务等各路奇葩。在这些怪咖成员的环绕下，阿梅随即展开了一段充满青春骚动、爆笑且色彩缤纷的欢乐校园生活。\r\n\r\n\r\n\r\n[简介原文]\r\nここは町はずれにある進学校、私立藤成学園。高等部１年の水之江梅は文学賞などを多数受賞したりと国語の成績は抜群な一方、理系科目は進級に響くほど壊滅的。留年回避のため、内申点をあげるため生徒会の役員となることに。\r\nしかし、彼が入った生徒会にはカリスマむっつり生徒会長・古都吹寿子、怖くて優しい清楚な会計・照井有栖。生意気可愛い男の子・尾鳥たん、小っちゃな捨て猫庶務・陸奥こまろと何やら変わった子たちが勢揃い！\r\nそんなキュートでちぐはぐな面々が織り成す、ドタバタハートフル生徒会ラブ＆コメディ、はじまりです！",
-            "total_episodes": 15,
+            "total_episodes": 16,
             "characters": [
                 {
                     "id": 133201,
@@ -243769,6 +243769,33 @@
                     "__dataclass__": "Character"
                 },
                 {
+                    "id": 160274,
+                    "name": "古都吹真幸",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/a4/af/160274_crt_27I6w.jpg",
+                    "actor_ids": [
+                        5119
+                    ],
+                    "name_cn": "古都吹真幸",
+                    "summary": "寿子の母。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "古都吹真幸",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
                     "id": 160275,
                     "name": "古都吹太賀",
                     "relation": "配角",
@@ -243828,6 +243855,33 @@
                     "__dataclass__": "Character"
                 },
                 {
+                    "id": 160277,
+                    "name": "古都吹樹隆",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/d9/01/160277_crt_kVMWV.jpg?r=1725126084",
+                    "actor_ids": [
+                        5007
+                    ],
+                    "name_cn": "古都吹树隆",
+                    "summary": "寿子の父。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "古都吹树隆",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
                     "id": 160280,
                     "name": "照井来理栖",
                     "relation": "配角",
@@ -243849,6 +243903,38 @@
                         {
                             "key": "性别",
                             "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 160282,
+                    "name": "三枝吉乃",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/fe/7f/160282_crt_FuK9f.jpg",
+                    "actor_ids": [
+                        4792
+                    ],
+                    "name_cn": "三枝吉乃",
+                    "summary": "藤成学園事務室の事務員。",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "三枝吉乃",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "57.4kg",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -244242,8 +244328,8 @@
                 },
                 {
                     "id": 1738542,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "さとみの世界／おそうじとおっぱい／痛いの痛いのとんでいけ！／梅のチャラ男疑惑／たんのたくらみ／みなで集えば",
+                    "name_cn": "敏深的世界／大扫除与大胸部／痛痛全部飞走吧！／梅的花心男疑云／绽的阴谋／大家聚在一起的话",
                     "air_date": "2026-11-21",
                     "desc": "",
                     "duration_seconds": 1420,
@@ -244313,8 +244399,20 @@
                     "__dataclass__": "Episode"
                 },
                 {
+                    "id": 1777761,
+                    "name": "風の中は走るっきゃないっ！",
+                    "name_cn": "",
+                    "air_date": "2026-11-14",
+                    "desc": "",
+                    "duration_seconds": 90,
+                    "ep": 0,
+                    "sort": 2,
+                    "type": 2,
+                    "__dataclass__": "Episode"
+                },
+                {
                     "id": 1770425,
-                    "name": "ぴ ver. 1",
+                    "name": "ぴ ～山あり谷あり、穴もあり。ver.～",
                     "name_cn": "",
                     "air_date": "2026-10-03",
                     "desc": "",
@@ -244326,7 +244424,7 @@
                 },
                 {
                     "id": 1760224,
-                    "name": "ぴ ver. 2",
+                    "name": "ぴ",
                     "name_cn": "",
                     "air_date": "2026-10-25",
                     "desc": "",
