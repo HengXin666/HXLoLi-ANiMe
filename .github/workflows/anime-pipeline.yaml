@@ -320,35 +320,40 @@ jobs:
           echo "tag=${NEW_TAG}" >> "$GITHUB_OUTPUT"
           echo "✅ CDN tag: ${NEW_TAG}"
 
-      - name: 🗑️ 清理旧 Tag (保留最新 5 个, 博客钉住的 Tag 不在其中则失败)
+      - name: 🗑️ 清理旧 Tag (保留最新 5 个 + 博客钉住的 Tag, 绝不阻断后续同步 PR)
         if: steps.changes.outputs.changed == 'true'
+        # 清理只是收尾, 失败不能挡住阶段 7 的 HXLoLi 同步 PR:
+        # 2026-11 曾出现死锁 —— 博客钉住的 Tag 已被删 / 掉出最新 5 个 → 本步 exit 1
+        # → 永远开不出同步 PR → 博客一直钉着失效 Tag (CDN 404) → 下次仍然 exit 1.
+        continue-on-error: true
         env:
           GH_TOKEN: ${{ secrets.HXLOLI_PR_TOKEN }}
           KEEP_TAGS: 5
         run: |
-          # 先读 HXLoLi main 上博客当前钉的 Tag, 读不到就不删任何 Tag
+          # 先读 HXLoLi main 上博客当前钉的 Tag
           PINNED_TAG=$(gh api repos/HengXin666/HXLoLi/contents/data/animeCdnVersion.ts \
             -H "Accept: application/vnd.github.raw" 2>/dev/null \
             | sed -n "s/^export const ANIME_CDN_TAG = '\(.*\)';.*/\1/p" || true)
           echo "📌 博客当前钉的 Tag: ${PINNED_TAG:-<读取失败>}"
           if [ -z "${PINNED_TAG}" ]; then
-            echo "::error::无法读取 HXLoLi main 的 data/animeCdnVersion.ts, 不清理任何 Tag"
-            exit 1
+            echo "::warning::无法读取 HXLoLi main 的 data/animeCdnVersion.ts, 本次不清理任何 Tag (不影响后续同步 PR)"
+            exit 0
+          fi
+
+          if ! git rev-parse -q --verify "refs/tags/${PINNED_TAG}" >/dev/null; then
+            echo "::warning::博客钉住的 ${PINNED_TAG} 已不存在 (CDN 会 404), 本次跳过清理; 阶段 7 的同步 PR 会把博客改钉到新 Tag"
+            exit 0
           fi
 
           BOT_TAGS=$(git tag -l 'HX-*' --sort=-creatordate)
-          KEPT_TAGS=$(echo "${BOT_TAGS}" | head -n "${KEEP_TAGS}")
-          echo "保留的 Tag:"
-          echo "${KEPT_TAGS}"
+          echo "保留: 最新 ${KEEP_TAGS} 个 + 钉住的 ${PINNED_TAG}"
 
-          if ! echo "${KEPT_TAGS}" | grep -qxF "${PINNED_TAG}"; then
-            echo "::error::博客钉住的 ${PINNED_TAG} 不在最新 ${KEEP_TAGS} 个 Tag 中, 停止清理, 请先合并 HXLoLi 的同步 PR"
-            exit 1
-          fi
-
+          # 删除最新 KEEP_TAGS 之外的旧 Tag, 但永远跳过博客钉住的那个
           echo "${BOT_TAGS}" | tail -n +$((KEEP_TAGS + 1)) | while IFS= read -r tag; do
-            [ -n "${tag}" ] && git push origin --delete "${tag}" 2>/dev/null || true
-            [ -n "${tag}" ] && git tag -d "${tag}" 2>/dev/null || true
+            [ -z "${tag}" ] && continue
+            [ "${tag}" = "${PINNED_TAG}" ] && { echo "⏭️ 跳过钉住的 ${tag}"; continue; }
+            git push origin --delete "${tag}" 2>/dev/null || true
+            git tag -d "${tag}" 2>/dev/null || true
           done
 
       # ══════════════════════════════════════
