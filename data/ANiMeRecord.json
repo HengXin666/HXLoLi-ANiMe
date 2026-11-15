@@ -15425,7 +15425,7 @@
                     "name_cn": "靠死亡游戏混饭吃。 44:CLOUDY BEACH",
                     "relation": "续集",
                     "type": 2,
-                    "image_url": "https://lain.bgm.tv/pic/cover/l/80/d8/638185_4Ni0n.jpg",
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/80/d8/638185_HcjUo.jpg",
                     "__dataclass__": "Relation"
                 },
                 {
@@ -242839,6 +242839,15 @@
                     "relation": "衍生",
                     "type": 6,
                     "image_url": "https://lain.bgm.tv/pic/cover/l/3b/61/708228_ImUNm.jpg",
+                    "__dataclass__": "Relation"
+                },
+                {
+                    "id": 720464,
+                    "name": "TVアニメ『FX戦士くるみちゃん』オリジナルサウンドトラック",
+                    "name_cn": "",
+                    "relation": "原声集",
+                    "type": 3,
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/f6/29/720464_76656.jpg",
                     "__dataclass__": "Relation"
                 }
             ],
