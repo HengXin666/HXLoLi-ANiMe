@@ -242,7 +242,18 @@ class Api:
                 for it in data:
                     if int(it["subject_id"]) in self._record_map:
                         ref = self._record_map[int(it["subject_id"])]
-                        user_changed = ref.user_status.last_update != it["updated_at"]
+                        # last_update 是站上「最近更新」排序 (首页在追的番 / 番剧库) 的依据, 只在观看进度真的变了时推进:
+                        # 观看状态或已看集数变化. bgm 的 updated_at 在改标签 / 评分 / 吐槽时也会跳 (标注同步
+                        # label-sync-bgm 会批量写 tags), 照抄它会把一批老番顶到最前面.
+                        progress_changed = (
+                            ref.user_status.watch_status != WatchStatus(it["type"])
+                            or ref.user_status.watched_eps != it["ep_status"]
+                        )
+                        user_changed = (
+                            progress_changed
+                            or ref.user_status.comment != it["comment"]
+                            or ref.user_status.tags != it["tags"]
+                        )
                         if ref.user_status.watch_status != WatchStatus(it["type"]):
                             ref.user_status.watch_status = WatchStatus(it["type"])
 
@@ -261,8 +272,9 @@ class Api:
                         )
                         self._sync_subject_brief(ref, it["subject"])
 
-                        if user_changed:
+                        if progress_changed or not ref.user_status.last_update:
                             ref.user_status.last_update = it["updated_at"]
+                        if user_changed:
                             print(f"更新: {ref.anime_data.name_cn} 的用户数据")
                         if need_full:
                             print(f"刷新: {ref.anime_data.name_cn} 的番剧数据")

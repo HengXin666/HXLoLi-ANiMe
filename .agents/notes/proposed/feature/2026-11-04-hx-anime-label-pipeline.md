@@ -40,6 +40,7 @@ Decision-ID: hx-anime-label-pipeline
 - 新增人工成本: 每部新番 / 每次看完一个标注 PR. 用勾选零打字, 超过 5 部批量 PR, 一个月自动过期压低成本.
 - bgm tag 不允许空格, labelVocab 同步名需预校验; `BGM_TOKEN` 需收藏写权限.
 - 本站与 bgm 是两套标签视图, 手动清理 bgm 旧随手标签需单独确认, 不自动删除.
+- 第 8 步往 bgm 写 tags / rate / comment 会刷新该收藏的 `updated_at`. 爬虫自 2026-11-15 起不再让它推进 `user_status.last_update` (只认观看状态 / 已看集数变化), 否则每批同步都会把一堆老番顶到首页「在追」和番剧库「最近更新」最前; 见 `implemented/bug-fix/2026-11-01-anime-subject-refresh.md`.
 
 ## Verification
 
