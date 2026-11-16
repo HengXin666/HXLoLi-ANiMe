@@ -240661,7 +240661,7 @@
                     "id": 227998,
                     "name": "ワグナス",
                     "relation": "配角",
-                    "image_url": "",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/1e/f8/227998_crt_5O274.jpg",
                     "actor_ids": [
                         64203
                     ],
@@ -240677,7 +240677,7 @@
                     "id": 227999,
                     "name": "ルジン",
                     "relation": "配角",
-                    "image_url": "",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/a8/ea/227999_crt_Et1L1.jpg",
                     "actor_ids": [
                         91352
                     ],
@@ -240686,7 +240686,13 @@
                     "birth_year": null,
                     "birth_month": null,
                     "birth_day": null,
-                    "tags": [],
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
                     "__dataclass__": "Character"
                 }
             ],
@@ -242276,7 +242282,7 @@
                     "name": "アイテムvsアイテム",
                     "name_cn": "道具 vs 道具",
                     "air_date": "2026-11-20",
-                    "desc": "",
+                    "desc": "コロシアムで麦野たちの前に立ちはだかったのは、学園都市第六位――暗部の天敵を名乗る少女・女貞木小路楓。常盤台中学の制服に身を包んだ彼女は、麦野たちアイテムはこれまで勝てる仕事だけを与えられてきた哀れな生贄(ビギナー)だとうそぶく。後手に回る麦野たちの前に、女貞木小路のもとに集った、もうひとつのアイテムが次々と立ちふさがる。どちらが暗部にとって有用なチームなのか。アイテムの名前と地位、互いの誇りをかけた戦いが始まる――。\r\n\r\nStaff\r\n脚本：浅川美也\r\n絵コンテ：木本茂樹\r\n演出：桜美かつし\r\n総作画監督：木本茂樹\r\n作画監督：佐野はるか、中村怜央、坂本哲也、冷水由紀絵",
                     "duration_seconds": 1420,
                     "ep": 7,
                     "sort": 7,
@@ -243786,7 +243792,7 @@
                         5119
                     ],
                     "name_cn": "古都吹真幸",
-                    "summary": "寿子の母。",
+                    "summary": "寿子的母亲。\r\n18岁和25岁的树隆结婚。",
                     "birth_year": null,
                     "birth_month": null,
                     "birth_day": null,
@@ -243799,6 +243805,11 @@
                         {
                             "key": "性别",
                             "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "年龄",
+                            "value": "38",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -243872,7 +243883,7 @@
                         5007
                     ],
                     "name_cn": "古都吹树隆",
-                    "summary": "寿子の父。",
+                    "summary": "寿子的父亲。\r\n25岁时和18岁的真幸结婚后，辞职并继承真幸双亲的家业。",
                     "birth_year": null,
                     "birth_month": null,
                     "birth_day": null,
@@ -243885,6 +243896,11 @@
                         {
                             "key": "性别",
                             "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "年龄",
+                            "value": "45",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -265678,7 +265694,7 @@
             "name": "ソードアート・オンライン アリシゼーション War of Underworld",
             "name_cn": "刀剑神域 爱丽丝篇 异界战争",
             "short_summary": "桐人、尤吉欧、爱丽丝。\r\n距离两名修剑士和一名整合骑士打败了最高祭司阿多米尼斯多雷特已过去了半年。\r\n结束了战斗，爱丽丝在故乡卢利特村生活。\r\n在她的身旁，是失去了挚友，自己也失去了手臂和心的桐人。\r\n献身般支撑着他的爱丽丝，丝毫没有保留像",
-            "score": 6.1,
+            "score": 6,
             "image_url": "https://lain.bgm.tv/pic/cover/l/dd/a6/279457_2p2B9.jpg",
             "eps": 12,
             "date": "2019-10-12",
