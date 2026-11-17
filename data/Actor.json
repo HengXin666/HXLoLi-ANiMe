@@ -12031,5 +12031,12 @@
         "short_summary": "趣味：トランプマジック、物作り(ピアス、ミニチュア、ジオラマ)、料理(おつまみ作り)\r\n特技：奄美大島の歌唱法グィン 、マーチング歩きしながらマウストランペット、ナポリピザ伸ばし(30分で12枚焼けます)\r\n資格：普通自動車第一種運転免許",
         "image_url": "https://lain.bgm.tv/pic/crt/l/52/2a/106099_prsn_72N34.jpg",
         "__dataclass__": "Actor"
+    },
+    {
+        "id": 49636,
+        "name": "田渕将平",
+        "short_summary": "田渕 将平（たぶち しょうへい、1989年8月22日 - ）は、日本の男性声優。",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/f0/04/49636_prsn_vBpIl.jpg",
+        "__dataclass__": "Actor"
     }
 ]
