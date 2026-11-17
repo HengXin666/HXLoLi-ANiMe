@@ -149175,7 +149175,7 @@
             "name": "ご注文はうさぎですか？",
             "name_cn": "请问您今天要来点兔子吗？",
             "short_summary": "为了便于上高中，高中入学新生心爱准备搬来这由石板路、木制房组成的街道。她在寻找寄宿的地点时迷路了，迷茫之中来到了一家名为“rabbit house”的咖啡店门前。看到这间名字都充满小兔风格的可爱咖啡店，心爱忍不住踏进了店门。在店里，她遇见了",
-            "score": 7.3,
+            "score": 7.4,
             "image_url": "https://lain.bgm.tv/pic/cover/l/9f/2f/88287_h4xKo.jpg",
             "eps": 12,
             "date": "2014-04-10",
@@ -239383,6 +239383,7 @@
                         35796,
                         47177,
                         49618,
+                        54859,
                         63611,
                         65988,
                         76941,
@@ -239393,7 +239394,7 @@
                         105315
                     ],
                     "name_cn": "参与配音（被放逐的作弊赋予魔术师享受随心所欲的第二人生。）",
-                    "summary": "ep01\r\n王獣の牙ギルドメンバー：喜屋武和輝、宮城一貴、兼政郁人、大井麻利衣\r\n輩：内野孝聡、高橋伸也\r\n髭男：峰健一\r\n\r\nep02\r\n王獣の牙ギルドメンバー：岡本幸輔、盆子原康\r\n人質：宮城一貴、中井美琴\r\n\r\nep03\r\n星帝の盾ギルドメンバー：安田陸矢、岩崎諒太、小林大紀\r\n冒険者：金子隼人、宮城一貴、内野孝聡、木田祐\r\n\r\nep04\r\nBCGゴブリン：中村太亮\r\nゴブリン：鈴木陽人、椋本愛輝、谷口晴海、加藤優利\r\n\r\nep05\r\n星帝の盾ギルドメンバー：安田陸矢、岩崎諒太、小林大紀",
+                    "summary": "ep01\r\n王獣の牙ギルドメンバー：喜屋武和輝、宮城一貴、兼政郁人、大井麻利衣\r\n輩：内野孝聡、高橋伸也\r\n髭男：峰健一\r\n\r\nep02\r\n王獣の牙ギルドメンバー：岡本幸輔、盆子原康\r\n人質：宮城一貴、中井美琴\r\n\r\nep03\r\n星帝の盾ギルドメンバー：安田陸矢、岩崎諒太、小林大紀\r\n冒険者：金子隼人、宮城一貴、内野孝聡、木田祐\r\n\r\nep04\r\nBCGゴブリン：中村太亮\r\nゴブリン：鈴木陽人、椋本愛輝、谷口晴海、加藤優利\r\n\r\nep05\r\n星帝の盾ギルドメンバー：安田陸矢、岩崎諒太、小林大紀\r\n\r\nep06\r\n半グレ：関幸司、宮城一貴",
                     "birth_year": null,
                     "birth_month": null,
                     "birth_day": null,
@@ -239596,6 +239597,151 @@
                         }
                     ],
                     "__dataclass__": "Character"
+                },
+                {
+                    "id": 228608,
+                    "name": "ミーア",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/e5/d7/228608_crt_LbmLJ.jpg",
+                    "actor_ids": [
+                        16215
+                    ],
+                    "name_cn": "米亚",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "米亚",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 228609,
+                    "name": "CEO",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/d6/d5/228609_crt_5CqFa.jpg",
+                    "actor_ids": [
+                        5007
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 228610,
+                    "name": "ミラスケ",
+                    "relation": "配角",
+                    "image_url": "",
+                    "actor_ids": [
+                        30751
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 228611,
+                    "name": "ミラキチ",
+                    "relation": "配角",
+                    "image_url": "",
+                    "actor_ids": [
+                        25115
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 228612,
+                    "name": "ミラタロウ",
+                    "relation": "配角",
+                    "image_url": "",
+                    "actor_ids": [
+                        32079
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 228613,
+                    "name": "ミラゾウ",
+                    "relation": "配角",
+                    "image_url": "",
+                    "actor_ids": [
+                        35731
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 228614,
+                    "name": "ミラジロウ",
+                    "relation": "配角",
+                    "image_url": "",
+                    "actor_ids": [
+                        39393
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 228615,
+                    "name": "ミラノリ",
+                    "relation": "配角",
+                    "image_url": "",
+                    "actor_ids": [
+                        44308
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [],
+                    "__dataclass__": "Character"
                 }
             ],
             "relations": [
@@ -239623,7 +239769,7 @@
                     "name_cn": "",
                     "relation": "片头曲",
                     "type": 3,
-                    "image_url": "",
+                    "image_url": "https://lain.bgm.tv/pic/cover/l/c8/0a/701656_Z2qS2.jpg",
                     "__dataclass__": "Relation"
                 },
                 {
@@ -239712,9 +239858,9 @@
                 {
                     "id": 1745570,
                     "name": "あのパン屋には一度も行ったことが無かったのでこれを機にメロンパンでも頬張って犬の散歩にでも行くかワフッ。",
-                    "name_cn": "我从来没去过那间麵包店，不如趁这个机会，大口吃个菠萝麵包，顺便去遛狗吧汪汪",
+                    "name_cn": "我从来没去过那间面包店，不如趁这个机会，大口吃个菠萝面包，顺便去遛狗吧汪汪",
                     "air_date": "2026-11-17",
-                    "desc": "「このギルドはもう終わり！解散ね」 レインとリリィから「青の水晶」に誘われ、内心嬉しく思うマーガレット。 しかし、「青の水晶」が借金を抱えて潰れる寸前であることを知り、 ふたりから隠し事をされたと感じたマーガレットは再び心を閉ざしてしまう。 その頃「王獣の牙」はグレンダの死亡を受けてレインに対する方針を 転換するが、それに反発した半グレたちが離脱し、衰退の一途をたどっていた。 バリオスはレインにギルドへ戻るよう懇願するが、「青の水晶」で 良い仲間と居場所を見つけたレインの姿を見て、 諦めて「王獣の牙」を畳むことを決意する。 そんな中、エルシーはギルドメンバーを集めて 「青の水晶」の解散を告げるのだった―—。",
+                    "desc": "玛格丽特受到「青之水晶」的邀请，内心其实很高兴，却因为一场小小的误会，再次对雷恩和莉莉等人筑起心墙。就在此时，艾尔西召集所有公会成员，宣告「青之水晶」即将解散。\r\n\r\n「このギルドはもう終わり！解散ね」 レインとリリィから「青の水晶」に誘われ、内心嬉しく思うマーガレット。 しかし、「青の水晶」が借金を抱えて潰れる寸前であることを知り、 ふたりから隠し事をされたと感じたマーガレットは再び心を閉ざしてしまう。 その頃「王獣の牙」はグレンダの死亡を受けてレインに対する方針を 転換するが、それに反発した半グレたちが離脱し、衰退の一途をたどっていた。 バリオスはレインにギルドへ戻るよう懇願するが、「青の水晶」で 良い仲間と居場所を見つけたレインの姿を見て、 諦めて「王獣の牙」を畳むことを決意する。 そんな中、エルシーはギルドメンバーを集めて 「青の水晶」の解散を告げるのだった―—。",
                     "duration_seconds": 1420,
                     "ep": 7,
                     "sort": 7,
@@ -240054,7 +240200,7 @@
                 },
                 {
                     "id": 222098,
-                    "name": "アスマ",
+                    "name": "アスマ・ヒノキ",
                     "relation": "配角",
                     "image_url": "https://lain.bgm.tv/pic/crt/l/b1/53/222098_crt_fczJ9.jpg",
                     "actor_ids": [
@@ -240547,7 +240693,7 @@
                         91352
                     ],
                     "name_cn": "参与配音(乱世千金倪亚‧利斯顿转生为娇弱千金的弑神武人华丽无双录)",
-                    "summary": "EP02\r\n劇団員A　　　　真野あゆみ\r\n劇団員B　　　　室元気\r\nチンピラA　　　綿貫竜之介\r\nチンピラB　　　喜屋武和輝\r\n\r\nEP03\r\nジグザグA\t　高橋伸也\r\nジグザグB\t　綿貫竜之介\r\n部下A　　　　　室元気\r\n部下B　　　　　喜屋武和輝\r\n取り巻き女A　　神田みか\r\n取り巻き女B　　高橋雛子\r\n\r\nEP04\r\n女子生徒　　　　真野あゆみ\r\n女子A 　　　　　高橋雛子\r\n女子B 　　　　　小針彩希\r\n\r\nEP05\r\n教師　　　　　　岡田幸子\t\r\n野次馬A　 　　　漆山ゆうき\t\r\n野次馬B 　　　　南波遥海\t\r\n女子A　　　 　　大下菜摘\t\r\n女子B　　 　　　小針彩希\t\r\n男子A　　 　　　真野あゆみ\t\r\n男子B　　　 　　高橋雛子\r\n\r\nEP06\r\nカメラマン　　　　　　　　　宮瀬尚也\r\nアシスタントディレクター　　高橋雛子\r\nメイク　　　　　　　　　　　真野あゆみ\r\n音声　　　　　　　　　　　　室元気\r\n審判　　　　　　　　　　　　綿貫竜之介\r\n男性客　　　　　　　　　　　相馬康一\r\n男子A　　　　　　　　　　　新川愛実\r\n男子B　　　　　　　　　　　胡麻鶴彩",
+                    "summary": "EP02\r\n劇団員A　　　　真野あゆみ\r\n劇団員B　　　　室元気\r\nチンピラA　　　綿貫竜之介\r\nチンピラB　　　喜屋武和輝\r\n\r\nEP03\r\nジグザグA\t　高橋伸也\r\nジグザグB\t　綿貫竜之介\r\n部下A　　　　　室元気\r\n部下B　　　　　喜屋武和輝\r\n取り巻き女A　　神田みか\r\n取り巻き女B　　高橋雛子\r\n\r\nEP04\r\n女子生徒　　　　真野あゆみ\r\n女子A 　　　　　高橋雛子\r\n女子B 　　　　　小針彩希\r\n\r\nEP05\r\n教師　　　　　　岡田幸子\t\r\n野次馬A　 　　　漆山ゆうき\t\r\n野次馬B 　　　　南波遥海\t\r\n女子A　　　 　　大下菜摘\t\r\n女子B　　 　　　小針彩希\t\r\n男子A　　 　　　真野あゆみ\t\r\n男子B　　　 　　高橋雛子\r\n\r\nEP06\r\nカメラマン　　　　　　　　　宮瀬尚也\r\nアシスタントディレクター　　高橋雛子\r\nメイク　　　　　　　　　　　真野あゆみ\r\n音声　　　　　　　　　　　　室元気\r\n審判　　　　　　　　　　　　綿貫竜之介\r\n男性客　　　　　　　　　　　相馬康一\r\n男子A　　　　　　　　　　　新川愛実\r\n男子B　　　　　　　　　　　胡麻鶴彩\r\n\r\nEP07\r\n実況　　　　　　　　　　　　相馬康一\r\n出場者　　　　　　　　　　　綿貫竜之介\r\n受付係　　　　　　　　　　　室元気\r\n番宣ナレーション　　　　　　高橋伸也\r\n女性教師　　　　　　　　　　神田みか\r\n女子生徒　　　　　　　　　　小針彩希\r\n男子生徒Ａ　　　　　　　　　胡麻鶴彩\r\n男子生徒Ｂ　　　　　　　　　高橋雛子",
                     "birth_year": null,
                     "birth_month": null,
                     "birth_day": null,
@@ -240700,6 +240846,55 @@
                         }
                     ],
                     "__dataclass__": "Character"
+                },
+                {
+                    "id": 228621,
+                    "name": "ドライジャン",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/43/d0/228621_crt_rF8fx.jpg",
+                    "actor_ids": [
+                        49636
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 228622,
+                    "name": "バニーガール",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/10/68/228622_crt_GWDdP.jpg",
+                    "actor_ids": [
+                        35911
+                    ],
+                    "name_cn": "兔女郎",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "兔女郎",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
                 }
             ],
             "relations": [
@@ -240827,7 +241022,7 @@
                     "name": "潜入、闇の闘技場",
                     "name_cn": "潜入黑暗斗技场",
                     "air_date": "2026-11-17",
-                    "desc": "学院武闘大会の放送で学院中が盛り上がる夜。ニアはリノキスの目を盗んで寮を抜け出し、自身を師匠と敬うガンドルフと合流。親子に扮装し、念願だった裏社会の「闇闘技場」への潜入を果たす。血湧き肉躍る死闘を鑑賞するニアだったが、リングに現れた「ミス・サーバント」と名乗る謎の仮面闘士の戦いぶりを見て驚愕する。その正体は、ニアを危険から守るため密かに先回りして出場していた、リノキスの変装した姿だったのだ。",
+                    "desc": "倪亚避开侍女莉诺琪丝的耳目，在甘得鲁夫带领下，潜入向往已久的黑暗斗技场观赏死斗，并且靠赌金大赚一笔。没想到接下来登上擂台的蒙面斗士，真实身份竟然是莉诺琪丝！\r\n\r\n学院武闘大会の放送で学院中が盛り上がる夜。ニアはリノキスの目を盗んで寮を抜け出し、自身を師匠と敬うガンドルフと合流。親子に扮装し、念願だった裏社会の「闇闘技場」への潜入を果たす。血湧き肉躍る死闘を鑑賞するニアだったが、リングに現れた「ミス・サーバント」と名乗る謎の仮面闘士の戦いぶりを見て驚愕する。その正体は、ニアを危険から守るため密かに先回りして出場していた、リノキスの変装した姿だったのだ。",
                     "duration_seconds": 1440,
                     "ep": 7,
                     "sort": 7,
