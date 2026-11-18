@@ -240693,7 +240693,7 @@
                         91352
                     ],
                     "name_cn": "参与配音(乱世千金倪亚‧利斯顿转生为娇弱千金的弑神武人华丽无双录)",
-                    "summary": "EP02\r\n劇団員A　　　　真野あゆみ\r\n劇団員B　　　　室元気\r\nチンピラA　　　綿貫竜之介\r\nチンピラB　　　喜屋武和輝\r\n\r\nEP03\r\nジグザグA\t　高橋伸也\r\nジグザグB\t　綿貫竜之介\r\n部下A　　　　　室元気\r\n部下B　　　　　喜屋武和輝\r\n取り巻き女A　　神田みか\r\n取り巻き女B　　高橋雛子\r\n\r\nEP04\r\n女子生徒　　　　真野あゆみ\r\n女子A 　　　　　高橋雛子\r\n女子B 　　　　　小針彩希\r\n\r\nEP05\r\n教師　　　　　　岡田幸子\t\r\n野次馬A　 　　　漆山ゆうき\t\r\n野次馬B 　　　　南波遥海\t\r\n女子A　　　 　　大下菜摘\t\r\n女子B　　 　　　小針彩希\t\r\n男子A　　 　　　真野あゆみ\t\r\n男子B　　　 　　高橋雛子\r\n\r\nEP06\r\nカメラマン　　　　　　　　　宮瀬尚也\r\nアシスタントディレクター　　高橋雛子\r\nメイク　　　　　　　　　　　真野あゆみ\r\n音声　　　　　　　　　　　　室元気\r\n審判　　　　　　　　　　　　綿貫竜之介\r\n男性客　　　　　　　　　　　相馬康一\r\n男子A　　　　　　　　　　　新川愛実\r\n男子B　　　　　　　　　　　胡麻鶴彩\r\n\r\nEP07\r\n実況　　　　　　　　　　　　相馬康一\r\n出場者　　　　　　　　　　　綿貫竜之介\r\n受付係　　　　　　　　　　　室元気\r\n番宣ナレーション　　　　　　高橋伸也\r\n女性教師　　　　　　　　　　神田みか\r\n女子生徒　　　　　　　　　　小針彩希\r\n男子生徒Ａ　　　　　　　　　胡麻鶴彩\r\n男子生徒Ｂ　　　　　　　　　高橋雛子",
+                    "summary": "EP02\r\n劇団員A　　　　真野あゆみ\r\n劇団員B　　　　室元気\r\nチンピラA　　　綿貫竜之介\r\nチンピラB　　　喜屋武和輝\r\n\r\nEP03\r\nジグザグA\t　高橋伸也\r\nジグザグB\t　綿貫竜之介\r\n部下A　　　　　室元気\r\n部下B　　　　　喜屋武和輝\r\n取り巻き女A　　神田みか\r\n取り巻き女B　　高橋雛子\r\n\r\nEP04\r\n女子生徒　　　　真野あゆみ\r\n女子A 　　　　　高橋雛子\r\n女子B 　　　　　小針彩希\r\n\r\nEP05\r\n教師　　　　　　岡田幸子\t\r\n野次馬A　 　　　漆山ゆうき\t\r\n野次馬B 　　　　南波遥海\t\r\n女子A　　　 　　大下菜摘\t\r\n女子B　　 　　　小針彩希\t\r\n男子A　　 　　　真野あゆみ\t\r\n男子B　　　 　　高橋雛子\r\n\r\nEP06\r\nカメラマン　　　　　　　　　宮瀬尚也\r\nアシスタントディレクター　　高橋雛子\r\nメイク　　　　　　　　　　　真野あゆみ\r\n音声　　　　　　　　　　　　室元気\r\n審判　　　　　　　　　　　　綿貫竜之介\r\n男性客　　　　　　　　　　　相馬康一\r\n男子A　　　　　　　 　　　　新川愛実\r\n男子B　　　　　　 　　　　　胡麻鶴彩\r\n\r\nEP07\r\n実況　　　　　　　　　　　　相馬康一\r\n出場者　　　　　　　　　　　綿貫竜之介\r\n受付係　　　　　　　　　　　室元気\r\n番宣ナレーション　　　　　　高橋伸也\r\n女子生徒　　　　　　　　　　小針彩希\r\n男子生徒Ａ　　　　　　　　　胡麻鶴彩\r\n男子生徒Ｂ　　　　　　　　　高橋雛子",
                     "birth_year": null,
                     "birth_month": null,
                     "birth_day": null,
@@ -240888,6 +240888,28 @@
                             "value": "兔女郎",
                             "__dataclass__": "KeyValue"
                         },
+                        {
+                            "key": "性别",
+                            "value": "女",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 228633,
+                    "name": "女性教師",
+                    "relation": "闲角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/f3/23/228633_crt_iDAk1.jpg",
+                    "actor_ids": [
+                        16277
+                    ],
+                    "name_cn": "",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": null,
+                    "birth_day": null,
+                    "tags": [
                         {
                             "key": "性别",
                             "value": "女",
@@ -243501,8 +243523,8 @@
                     "name_cn": "狐塚稻穗",
                     "summary": "初登场于漫画28话。31岁。保健室老师。",
                     "birth_year": null,
-                    "birth_month": null,
-                    "birth_day": null,
+                    "birth_month": 1,
+                    "birth_day": 28,
                     "tags": [
                         {
                             "key": "简体中文名",
@@ -243512,6 +243534,26 @@
                         {
                             "key": "性别",
                             "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "1月28日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "AB",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "135cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "35.6kg",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -243528,8 +243570,8 @@
                     "name_cn": "平冢敏深",
                     "summary": "梅の担任。ズボラな性格。",
                     "birth_year": null,
-                    "birth_month": null,
-                    "birth_day": null,
+                    "birth_month": 5,
+                    "birth_day": 5,
                     "tags": [
                         {
                             "key": "简体中文名",
@@ -243539,6 +243581,26 @@
                         {
                             "key": "性别",
                             "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "5月5日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "B",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "160cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "53.5kg",
                             "__dataclass__": "KeyValue"
                         },
                         {
@@ -243560,8 +243622,8 @@
                     "name_cn": "青木辰子",
                     "summary": "",
                     "birth_year": null,
-                    "birth_month": null,
-                    "birth_day": null,
+                    "birth_month": 12,
+                    "birth_day": 14,
                     "tags": [
                         {
                             "key": "简体中文名",
@@ -243571,6 +243633,26 @@
                         {
                             "key": "性别",
                             "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "12月14日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "AB",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "139cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "32.2kg",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -243587,8 +243669,8 @@
                     "name_cn": "梶龙二",
                     "summary": "高等部1年生。ロボ研。",
                     "birth_year": null,
-                    "birth_month": null,
-                    "birth_day": null,
+                    "birth_month": 5,
+                    "birth_day": 22,
                     "tags": [
                         {
                             "key": "简体中文名",
@@ -243598,6 +243680,26 @@
                         {
                             "key": "性别",
                             "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "5月22日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "AB",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "166cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "51.7kg",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -243614,8 +243716,8 @@
                     "name_cn": "凤条鹰香",
                     "summary": "風紀委員で有栖の友達。",
                     "birth_year": null,
-                    "birth_month": null,
-                    "birth_day": null,
+                    "birth_month": 1,
+                    "birth_day": 21,
                     "tags": [
                         {
                             "key": "简体中文名",
@@ -243628,8 +243730,23 @@
                             "__dataclass__": "KeyValue"
                         },
                         {
+                            "key": "生日",
+                            "value": "1月21日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "O",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
                             "key": "身高",
                             "value": "193cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "95.2kg",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -243646,8 +243763,8 @@
                     "name_cn": "寝子下英里依",
                     "summary": "茶道部(英国式)に所属。",
                     "birth_year": null,
-                    "birth_month": null,
-                    "birth_day": null,
+                    "birth_month": 8,
+                    "birth_day": 14,
                     "tags": [
                         {
                             "key": "简体中文名",
@@ -243660,8 +243777,18 @@
                             "__dataclass__": "KeyValue"
                         },
                         {
+                            "key": "生日",
+                            "value": "8月14日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
                             "key": "身高",
                             "value": "153cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "52.4kg",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -243678,8 +243805,8 @@
                     "name_cn": "喜屋武桃佳",
                     "summary": "茶道部(英国式)に所属。",
                     "birth_year": null,
-                    "birth_month": null,
-                    "birth_day": null,
+                    "birth_month": 12,
+                    "birth_day": 8,
                     "tags": [
                         {
                             "key": "简体中文名",
@@ -243692,8 +243819,23 @@
                             "__dataclass__": "KeyValue"
                         },
                         {
+                            "key": "生日",
+                            "value": "12月8日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "O",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
                             "key": "身高",
                             "value": "159cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "53.5kg",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -243710,8 +243852,8 @@
                     "name_cn": "本间黑江",
                     "summary": "水泳部に所属。",
                     "birth_year": null,
-                    "birth_month": null,
-                    "birth_day": null,
+                    "birth_month": 8,
+                    "birth_day": 12,
                     "tags": [
                         {
                             "key": "简体中文名",
@@ -243721,6 +243863,26 @@
                         {
                             "key": "性别",
                             "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "8月12日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "B",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "157cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "50.1kg",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -243737,8 +243899,8 @@
                     "name_cn": "中出奈玛子",
                     "summary": "水泳部に所属。",
                     "birth_year": null,
-                    "birth_month": null,
-                    "birth_day": null,
+                    "birth_month": 6,
+                    "birth_day": 30,
                     "tags": [
                         {
                             "key": "简体中文名",
@@ -243748,6 +243910,26 @@
                         {
                             "key": "性别",
                             "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "6月30日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "O",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "160.2cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "55.2kg",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -243877,8 +244059,8 @@
                     "name_cn": "水之江松",
                     "summary": "梅の姉。",
                     "birth_year": null,
-                    "birth_month": null,
-                    "birth_day": null,
+                    "birth_month": 1,
+                    "birth_day": 1,
                     "tags": [
                         {
                             "key": "简体中文名",
@@ -243888,6 +244070,26 @@
                         {
                             "key": "性别",
                             "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "1月1日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "A",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "169cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "58.7kg",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -243931,8 +244133,8 @@
                     "name_cn": "财前罚之介",
                     "summary": "手芸部に所属。",
                     "birth_year": null,
-                    "birth_month": null,
-                    "birth_day": null,
+                    "birth_month": 5,
+                    "birth_day": 9,
                     "tags": [
                         {
                             "key": "简体中文名",
@@ -243945,8 +244147,23 @@
                             "__dataclass__": "KeyValue"
                         },
                         {
+                            "key": "生日",
+                            "value": "5月9日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "O",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
                             "key": "身高",
                             "value": "186cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "78kg",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -243954,21 +244171,21 @@
                 },
                 {
                     "id": 160273,
-                    "name": "こうき",
+                    "name": "久世こうき",
                     "relation": "配角",
                     "image_url": "https://lain.bgm.tv/pic/crt/l/f9/ff/160273_crt_2wXfl.jpg",
                     "actor_ids": [
                         4398
                     ],
-                    "name_cn": "光希",
+                    "name_cn": "久世光希",
                     "summary": "軽音部員にしてレズサーの一員。プリン頭が特徴。",
                     "birth_year": null,
-                    "birth_month": null,
-                    "birth_day": null,
+                    "birth_month": 2,
+                    "birth_day": 20,
                     "tags": [
                         {
                             "key": "简体中文名",
-                            "value": "光希",
+                            "value": "久世光希",
                             "__dataclass__": "KeyValue"
                         },
                         {
@@ -243977,8 +244194,23 @@
                             "__dataclass__": "KeyValue"
                         },
                         {
+                            "key": "生日",
+                            "value": "2月20日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "O",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
                             "key": "身高",
                             "value": "154cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "48.3kg",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -243995,8 +244227,8 @@
                     "name_cn": "古都吹真幸",
                     "summary": "寿子的母亲。\r\n18岁和25岁的树隆结婚。",
                     "birth_year": null,
-                    "birth_month": null,
-                    "birth_day": null,
+                    "birth_month": 6,
+                    "birth_day": 12,
                     "tags": [
                         {
                             "key": "简体中文名",
@@ -244006,6 +244238,26 @@
                         {
                             "key": "性别",
                             "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "6月12日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "A",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "164cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "67.8kg",
                             "__dataclass__": "KeyValue"
                         },
                         {
@@ -244027,8 +244279,8 @@
                     "name_cn": "古都吹太贺",
                     "summary": "寿子の弟。",
                     "birth_year": null,
-                    "birth_month": null,
-                    "birth_day": null,
+                    "birth_month": 9,
+                    "birth_day": 18,
                     "tags": [
                         {
                             "key": "简体中文名",
@@ -244041,8 +244293,23 @@
                             "__dataclass__": "KeyValue"
                         },
                         {
+                            "key": "生日",
+                            "value": "9月18日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "O",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
                             "key": "身高",
                             "value": "147cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "43.2kg",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -244059,8 +244326,8 @@
                     "name_cn": "古都吹栞",
                     "summary": "寿子の妹。",
                     "birth_year": null,
-                    "birth_month": null,
-                    "birth_day": null,
+                    "birth_month": 1,
+                    "birth_day": 16,
                     "tags": [
                         {
                             "key": "简体中文名",
@@ -244070,6 +244337,26 @@
                         {
                             "key": "性别",
                             "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "1月16日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "A",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "119cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "20.2kg",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -244086,8 +244373,8 @@
                     "name_cn": "古都吹树隆",
                     "summary": "寿子的父亲。\r\n25岁时和18岁的真幸结婚后，辞职并继承真幸双亲的家业。",
                     "birth_year": null,
-                    "birth_month": null,
-                    "birth_day": null,
+                    "birth_month": 10,
+                    "birth_day": 9,
                     "tags": [
                         {
                             "key": "简体中文名",
@@ -244097,6 +244384,26 @@
                         {
                             "key": "性别",
                             "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "10月9日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "A",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "176cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "66.2kg",
                             "__dataclass__": "KeyValue"
                         },
                         {
@@ -244118,8 +244425,8 @@
                     "name_cn": "照井来理栖",
                     "summary": "有栖の母。",
                     "birth_year": null,
-                    "birth_month": null,
-                    "birth_day": null,
+                    "birth_month": 2,
+                    "birth_day": 13,
                     "tags": [
                         {
                             "key": "简体中文名",
@@ -244129,6 +244436,26 @@
                         {
                             "key": "性别",
                             "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "2月13日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "A",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "169cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "51.5kg",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -244145,8 +244472,8 @@
                     "name_cn": "三枝吉乃",
                     "summary": "藤成学園事務室の事務員。",
                     "birth_year": null,
-                    "birth_month": null,
-                    "birth_day": null,
+                    "birth_month": 4,
+                    "birth_day": 29,
                     "tags": [
                         {
                             "key": "简体中文名",
@@ -244156,6 +244483,21 @@
                         {
                             "key": "性别",
                             "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "4月29日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "B",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "156cm",
                             "__dataclass__": "KeyValue"
                         },
                         {
@@ -244177,8 +244519,8 @@
                     "name_cn": "石竹和希",
                     "summary": "コンビニバイトチーフ。",
                     "birth_year": null,
-                    "birth_month": null,
-                    "birth_day": null,
+                    "birth_month": 5,
+                    "birth_day": 30,
                     "tags": [
                         {
                             "key": "简体中文名",
@@ -244188,6 +244530,26 @@
                         {
                             "key": "性别",
                             "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "5月30日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "O",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "162cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "54kg",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -244202,8 +244564,8 @@
                     "name_cn": "刚鬼雪",
                     "summary": "高等部3年生。寿子の友達。元柔道部エース。",
                     "birth_year": null,
-                    "birth_month": null,
-                    "birth_day": null,
+                    "birth_month": 11,
+                    "birth_day": 28,
                     "tags": [
                         {
                             "key": "简体中文名",
@@ -244213,6 +244575,26 @@
                         {
                             "key": "性别",
                             "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "11月28日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "B",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "167.8cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "71.8kg",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -244227,8 +244609,8 @@
                     "name_cn": "川尻爱菜",
                     "summary": "高等部3年生。寿子の友達。元ソフトテニス部。",
                     "birth_year": null,
-                    "birth_month": null,
-                    "birth_day": null,
+                    "birth_month": 3,
+                    "birth_day": 22,
                     "tags": [
                         {
                             "key": "简体中文名",
@@ -244238,6 +244620,26 @@
                         {
                             "key": "性别",
                             "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "3月22日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "O",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "152.1cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "54.2kg",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -244252,8 +244654,8 @@
                     "name_cn": "楢井咏子",
                     "summary": "",
                     "birth_year": null,
-                    "birth_month": null,
-                    "birth_day": null,
+                    "birth_month": 10,
+                    "birth_day": 3,
                     "tags": [
                         {
                             "key": "简体中文名",
@@ -244263,6 +244665,26 @@
                         {
                             "key": "性别",
                             "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "10月3日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "O",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "158cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "53.8kg",
                             "__dataclass__": "KeyValue"
                         }
                     ],
