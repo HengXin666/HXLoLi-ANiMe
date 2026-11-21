@@ -239088,7 +239088,7 @@
             "name": "追放されたチート付与魔術師は気ままなセカンドライフを謳歌する。",
             "name_cn": "被放逐的作弊赋予魔术师享受随心所欲的第二人生。",
             "short_summary": "赋予魔术师雷恩突然被公会逐出。他非但没有绝望，反而收回以往施加在同伴装备上的大量强化点数，以冒险者身份开启新生活。聚集在他身边的，尽是身负重创的异类：心灵封闭的天才、失去亲人的战士，自幼被培育成杀手的暗杀者。雷恩都温柔地接纳了他们的过去与伤",
-            "score": 6.1,
+            "score": 6,
             "image_url": "https://lain.bgm.tv/pic/cover/l/af/3a/625799_ycox6.jpg",
             "eps": 12,
             "date": "2026-10-06",
@@ -242426,6 +242426,15 @@
                     "type": 6,
                     "image_url": "https://lain.bgm.tv/pic/cover/l/63/53/701401_q5o55.jpg",
                     "__dataclass__": "Relation"
+                },
+                {
+                    "id": 731082,
+                    "name": "とある暗部の少女共棲 オリジナル・サウンドトラック",
+                    "name_cn": "",
+                    "relation": "原声集",
+                    "type": 3,
+                    "image_url": "",
+                    "__dataclass__": "Relation"
                 }
             ],
             "episodes": [
@@ -243271,7 +243280,7 @@
             "name": "生徒会にも穴はある！",
             "name_cn": "学生会也有洞！",
             "short_summary": "文学少年水之江梅理科成绩极差，面临留级危机，被迫加入学生会挽救学分。怎知藤成学园的学生会毫不正常，聚集了纯情闷骚的会长、毒舌学长、腹黑会计与不幸庶务等各路奇葩。在这些怪咖成员的环绕下，阿梅随即展开了一段充满青春骚动、爆笑且色彩缤纷的欢乐校园",
-            "score": 7.7,
+            "score": 7.8,
             "image_url": "https://lain.bgm.tv/pic/cover/l/17/c7/554779_oPitO.jpg",
             "eps": 12,
             "date": "2026-10-03",
@@ -243783,6 +243792,11 @@
                             "__dataclass__": "KeyValue"
                         },
                         {
+                            "key": "血型",
+                            "value": "O",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
                             "key": "身高",
                             "value": "153cm",
                             "__dataclass__": "KeyValue"
@@ -243947,8 +243961,8 @@
                     "name_cn": "押里沙原",
                     "summary": "水泳部に所属。",
                     "birth_year": null,
-                    "birth_month": null,
-                    "birth_day": null,
+                    "birth_month": 9,
+                    "birth_day": 17,
                     "tags": [
                         {
                             "key": "简体中文名",
@@ -243959,32 +243973,72 @@
                             "key": "性别",
                             "value": "女",
                             "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "9月17日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "B",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "158.2cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "52.9kg",
+                            "__dataclass__": "KeyValue"
                         }
                     ],
                     "__dataclass__": "Character"
                 },
                 {
                     "id": 160267,
-                    "name": "つかさ",
+                    "name": "月岡つかさ",
                     "relation": "配角",
                     "image_url": "https://lain.bgm.tv/pic/crt/l/e1/02/160267_crt_7u5ut.jpg",
                     "actor_ids": [
                         25977
                     ],
-                    "name_cn": "司",
+                    "name_cn": "月冈司",
                     "summary": "軽音部に所属。",
                     "birth_year": null,
-                    "birth_month": null,
-                    "birth_day": null,
+                    "birth_month": 4,
+                    "birth_day": 18,
                     "tags": [
                         {
                             "key": "简体中文名",
-                            "value": "司",
+                            "value": "月冈司",
                             "__dataclass__": "KeyValue"
                         },
                         {
                             "key": "性别",
                             "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "4月18日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "A",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "162.3cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "51.8kg",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -244018,32 +244072,67 @@
                             "key": "生日",
                             "value": "11月1日",
                             "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "B",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "154cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "54.2kg",
+                            "__dataclass__": "KeyValue"
                         }
                     ],
                     "__dataclass__": "Character"
                 },
                 {
                     "id": 160269,
-                    "name": "みのり",
+                    "name": "御影みのり",
                     "relation": "配角",
                     "image_url": "https://lain.bgm.tv/pic/crt/l/47/8c/160269_crt_IDPvH.jpg",
                     "actor_ids": [
                         10869
                     ],
-                    "name_cn": "实里",
+                    "name_cn": "御影实里",
                     "summary": "軽音部に所属。",
                     "birth_year": null,
-                    "birth_month": null,
-                    "birth_day": null,
+                    "birth_month": 8,
+                    "birth_day": 28,
                     "tags": [
                         {
                             "key": "简体中文名",
-                            "value": "实里",
+                            "value": "御影实里",
                             "__dataclass__": "KeyValue"
                         },
                         {
                             "key": "性别",
                             "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "8月28日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "AB",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "172.3cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "56.1kg",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -244107,8 +244196,8 @@
                     "name_cn": "蛇目和迩",
                     "summary": "生物部に所属。",
                     "birth_year": null,
-                    "birth_month": null,
-                    "birth_day": null,
+                    "birth_month": 2,
+                    "birth_day": 9,
                     "tags": [
                         {
                             "key": "简体中文名",
@@ -244118,6 +244207,26 @@
                         {
                             "key": "性别",
                             "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "2月9日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "AB",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "156cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "42.1kg",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -244273,7 +244382,7 @@
                     "id": 160275,
                     "name": "古都吹太賀",
                     "relation": "配角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/41/a4/160275_crt_uDj01.jpg?r=1719688014",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/41/a4/160275_crt_rQ6yV.jpg",
                     "actor_ids": [
                         20631
                     ],
@@ -244320,7 +244429,7 @@
                     "id": 160276,
                     "name": "古都吹栞",
                     "relation": "配角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/3c/a2/160276_crt_09ybD.jpg",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/3c/a2/160276_crt_e0F99.jpg",
                     "actor_ids": [
                         33057
                     ],
@@ -244367,7 +244476,7 @@
                     "id": 160277,
                     "name": "古都吹樹隆",
                     "relation": "配角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/d9/01/160277_crt_kVMWV.jpg?r=1725126084",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/d9/01/160277_crt_dt74r.jpg",
                     "actor_ids": [
                         5007
                     ],
@@ -244419,7 +244528,7 @@
                     "id": 160280,
                     "name": "照井来理栖",
                     "relation": "配角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/04/3b/160280_crt_krAT2.jpg",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/04/3b/160280_crt_IGlkK.jpg",
                     "actor_ids": [
                         3867
                     ],
@@ -244560,7 +244669,7 @@
                     "id": 160285,
                     "name": "剛鬼雪",
                     "relation": "配角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/63/5d/160285_crt_lTBlJ.jpg?r=1719687521",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/63/5d/160285_crt_rj5b5.jpg",
                     "actor_ids": [],
                     "name_cn": "刚鬼雪",
                     "summary": "高等部3年生。寿子の友達。元柔道部エース。",
@@ -244605,7 +244714,7 @@
                     "id": 160286,
                     "name": "川尻愛菜",
                     "relation": "配角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/f2/27/160286_crt_yjES2.jpg?r=1719687529",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/f2/27/160286_crt_4q97Q.jpg",
                     "actor_ids": [],
                     "name_cn": "川尻爱菜",
                     "summary": "高等部3年生。寿子の友達。元ソフトテニス部。",
@@ -244650,7 +244759,7 @@
                     "id": 215462,
                     "name": "楢井詠子",
                     "relation": "配角",
-                    "image_url": "https://lain.bgm.tv/pic/crt/l/fd/08/215462_crt_7Q5BZ.jpg",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/fd/08/215462_crt_k5gt2.jpg",
                     "actor_ids": [],
                     "name_cn": "楢井咏子",
                     "summary": "",
@@ -244721,15 +244830,25 @@
                     "actor_ids": [
                         5677
                     ],
-                    "name_cn": "",
+                    "name_cn": "校长",
                     "summary": "",
                     "birth_year": null,
-                    "birth_month": null,
-                    "birth_day": null,
+                    "birth_month": 1,
+                    "birth_day": 9,
                     "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "校长",
+                            "__dataclass__": "KeyValue"
+                        },
                         {
                             "key": "性别",
                             "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "1月9日",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -244839,8 +244958,8 @@
                     "name_cn": "玛娜米亚=布鲁加拉鲁",
                     "summary": "",
                     "birth_year": null,
-                    "birth_month": null,
-                    "birth_day": null,
+                    "birth_month": 15,
+                    "birth_day": 56,
                     "tags": [
                         {
                             "key": "简体中文名",
@@ -244850,6 +244969,68 @@
                         {
                             "key": "性别",
                             "value": "女",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "魔歷8432年15月56日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "148cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "42.7kg",
+                            "__dataclass__": "KeyValue"
+                        }
+                    ],
+                    "__dataclass__": "Character"
+                },
+                {
+                    "id": 228828,
+                    "name": "田中萌",
+                    "relation": "配角",
+                    "image_url": "https://lain.bgm.tv/pic/crt/l/cb/53/228828_crt_VnZDG.jpg",
+                    "actor_ids": [
+                        5089
+                    ],
+                    "name_cn": "田中萌",
+                    "summary": "",
+                    "birth_year": null,
+                    "birth_month": 2,
+                    "birth_day": 12,
+                    "tags": [
+                        {
+                            "key": "简体中文名",
+                            "value": "田中萌",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "性别",
+                            "value": "男",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "生日",
+                            "value": "2月12日",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "血型",
+                            "value": "A",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "身高",
+                            "value": "178cm",
+                            "__dataclass__": "KeyValue"
+                        },
+                        {
+                            "key": "体重",
+                            "value": "72kg",
                             "__dataclass__": "KeyValue"
                         }
                     ],
@@ -244993,8 +245174,8 @@
                 },
                 {
                     "id": 1738543,
-                    "name": "",
-                    "name_cn": "",
+                    "name": "こまろと動物園／ありすいんノーブラんど",
+                    "name_cn": "驹絽与动物园／有栖上空游仙境",
                     "air_date": "2026-11-28",
                     "desc": "",
                     "duration_seconds": 1420,
