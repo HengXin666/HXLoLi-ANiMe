@@ -12038,5 +12038,26 @@
         "short_summary": "田渕 将平（たぶち しょうへい、1989年8月22日 - ）は、日本の男性声優。",
         "image_url": "https://lain.bgm.tv/pic/crt/l/f0/04/49636_prsn_vBpIl.jpg",
         "__dataclass__": "Actor"
+    },
+    {
+        "id": 55736,
+        "name": "大桃陽介",
+        "short_summary": "出身地：東京都\r\n趣味：スポーツ観戦、イスでぼーっとする\r\n特技：バスケットボール、短距離走\r\n資格：日本漢字能力検定 ３級、実用英語技能検定 ３級\r\n経歴：プロ・フィット声優養成所　卒",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/fe/a1/55736_prsn_I0qv0.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 98471,
+        "name": "野田航矢",
+        "short_summary": "趣味：ゲーム（RPG）、サッカーを見る、黄昏る\r\n特技：カードゲーム、サッカー",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/37/b5/98471_prsn_u90iW.jpg",
+        "__dataclass__": "Actor"
+    },
+    {
+        "id": 58154,
+        "name": "北島善紀",
+        "short_summary": "日本の声優、舞台俳優。長崎県出身。劇団AUN、マウスプロモーションにそれぞれ所属。\r\n\r\n文学座附属演劇研究所にて26期生として演技を学ぶ。その後、東京宝映テレビを経て劇団AUNに所属。\r\n\r\n声優としては、ケッケコーポレーションを経て、2020年よりマウスプロモーションに所属。",
+        "image_url": "https://lain.bgm.tv/pic/crt/l/26/df/58154_prsn_Pfs9I.jpg?r=1699205795",
+        "__dataclass__": "Actor"
     }
 ]
