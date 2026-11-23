@@ -22,6 +22,7 @@ from ANiMeType import (
     WatchStatus,
 )
 from ApiReqRateLimiter import ApiReqRateLimiter
+from split import write_split
 
 # --- 配置 ---
 # 替换为你的 Bangumi 用户名
@@ -550,6 +551,8 @@ def save_to_json(api: Api) -> None:
                 ensure_ascii=False,
             )
         )
+    # 前端按需读取的拆分产物 (record/<id>.json + ANiMeIndex.json), 每次落盘后跟着重写
+    write_split(DATA_ROOT_PATH)
 
 
 if __name__ == "__main__":
