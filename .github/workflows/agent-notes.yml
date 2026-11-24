@@ -4,6 +4,8 @@ on:
     # 标注流 label/* 与 data 流 bot/data-* 分支的 push 不跑 Diff (也就不会级联 Report)
     branches-ignore: ['label/**', 'bot/data-**']
   pull_request:
+    # bot/data-* 与 label/* PR 只改 data/**, 由 GITHUB_TOKEN 开出, 跑不起来只留 0 job 幽灵 run
+    paths-ignore: ['data/**']
 permissions:
   contents: read
 jobs:

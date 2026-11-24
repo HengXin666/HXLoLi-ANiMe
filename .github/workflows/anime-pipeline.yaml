@@ -5,8 +5,8 @@ name: "[LoLi-ANiMe]: 爬取番剧数据 & CDN Tag"
 #   1. 定时触发 - 北京时间凌晨 0:00 (UTC 16:00) + 下午 15:00 (UTC 07:00)
 #   2. push 到 main (仅 scripts/ 或 data/ 变更)
 #   3. 手动触发
-#   + pull_request: 仅给 bot/data-* 的 flow:data PR 跑 data-check (检查门禁)
-#     (types opened/synchronize/reopened + paths data/** 且排除 data/labels/**, 标注 PR 不触发)
+#   (不监听 pull_request: bot/data-* PR 由 GITHUB_TOKEN 开出, 其 PR 事件 run 不会执行任何 job,
+#    只会留下 0 job 的 failure / action_required 幽灵 run; 检查已在 pipeline 内联完成)
 #
 # data 更新流 (设计文档 5.1 / 7):
 #   初始化 → 爬取 → 有变化 → 推分支 bot/data-<日期> → 开 PR (label: flow:data)
@@ -47,15 +47,6 @@ on:
       # 门禁脚本 (scripts/ci/**) 不是爬虫产物, 改它不该触发一次全量爬取;
       # 后置的否定规则优先级更高, 因此放在最后.
       - '!scripts/ci/**'
-  # PR 事件只为 bot/data-* 的 data-check 服务: 明确 types + paths,
-  # 标注 PR (只改 data/labels/) 与 agent-notes 等 PR 不再产生本 workflow 的 run,
-  # 从而也不会经 workflow_run 级联 label-flow / deploy-cf.
-  pull_request:
-    branches: [main]
-    types: [opened, synchronize, reopened]
-    paths:
-      - 'data/**'
-      - '!data/labels/**'
   workflow_dispatch:
   # 标注流每次 run 结束都会到这里; 只有 report artifact 里 action 为 merged-* 的那次才真正打 tag
   # (判定见 label-cdn-bump 的 gate step). 注意 branches 过滤的是上游 run 的 head_branch:
@@ -75,9 +66,9 @@ permissions:
   pull-requests: write
 
 concurrency:
-  # 原有事件的组名不变 (PR → head_ref, 其余 → data-flow); 标注流 workflow_run 单独成组 label-bump,
+  # 爬取相关事件同组 data-flow; 标注流 workflow_run 单独成组 label-bump,
   # 避免同组 pending 互顶 (标注完成触发顶掉排队中的 cron 爬取, 或反之).
-  group: anime-pipeline-${{ github.event_name == 'pull_request' && github.head_ref || github.event_name == 'workflow_run' && 'label-bump' || 'data-flow' }}
+  group: anime-pipeline-${{ github.event_name == 'workflow_run' && 'label-bump' || 'data-flow' }}
   cancel-in-progress: false
 
 env:
@@ -88,44 +79,14 @@ env:
 
 jobs:
   # ════════════════════════════════════════════════════
-  # 检查门禁: flow:data PR 的状态检查 (可设为 main 分支保护的必需检查)
-  # ════════════════════════════════════════════════════
-  data-check:
-    name: flow:data 检查
-    if: >-
-      github.event_name == 'pull_request' &&
-      startsWith(github.head_ref, 'bot/data-')
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: 🛡️ 禁止改动 data/labels/ & 校验 JSON
-        env:
-          BASE_SHA: ${{ github.event.pull_request.base.sha }}
-        run: |
-          CHANGED=$(git diff --name-only "${BASE_SHA}" HEAD)
-          if echo "${CHANGED}" | grep -q '^data/labels/'; then
-            echo "::error::flow:data PR 不允许包含 data/labels/ 改动"
-            exit 1
-          fi
-          for f in $(echo "${CHANGED}" | grep '\.json$' || true); do
-            [ -f "$f" ] || continue
-            jq empty "$f" || { echo "::error::非法 JSON: $f"; exit 1; }
-          done
-          echo "✅ 检查通过"
-
-  # ════════════════════════════════════════════════════
   # data 更新流
   # ════════════════════════════════════════════════════
   pipeline:
     name: 初始化 → 爬取 → PR(flow:data) → 自动合入 → Tag → PR → events
-    # 跳过 Bot 自己的提交 (squash 合入的标题带 [LoLi-Bot]), 避免无限循环; PR 事件只跑 data-check;
+    # 跳过 Bot 自己的提交 (squash 合入的标题带 [LoLi-Bot]), 避免无限循环;
     # 标注流完成 (workflow_run) 只跑下面的 label-cdn-bump, 不爬取
     # (本 workflow 只用 workflow_run 监听标注流; deploy-cf / label-flow 监听本 workflow 是反方向, 与此无关)
     if: >-
-      github.event_name != 'pull_request' &&
       github.event_name != 'workflow_run' &&
       (github.event_name != 'push' ||
        !contains(github.event.head_commit.message, '[LoLi-Bot]'))
